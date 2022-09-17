@@ -8,3 +8,4 @@ Max4Live devices.
 * [Learning The Live Object Model and Creating 0dB Max](https://www.youtube.com/watch?v=agtnMQkDjUE)
 * [Traversing the Ableton Live Object Model](https://www.youtube.com/watch?v=qeabaagMZr8)
 * [Mira](https://cycling74.com/products/mira/)
+* [JavaScript Live API Tutorials](http://compusition.com/writings/js-live-api)
