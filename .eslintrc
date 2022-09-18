@@ -1,0 +1,43 @@
+{
+  "root": true,
+  "parser": "@babel/eslint-parser",
+  "extends": [
+      "airbnb-base/legacy",
+      "plugin:jsdoc/recommended"
+  ],
+  "plugins": [
+      "@babel",
+      "jsdoc"
+  ],
+  "globals": {
+    "LiveAPI": true,
+    "post": true
+  },   
+  "ignorePatterns": [
+      "node_modules/",
+      "./*.js"
+  ],
+  "rules": {
+      "array-bracket-spacing": ["error", "always"],
+      "block-spacing": ["error", "always"],
+      "comma-spacing": ["error"],
+      "func-names": ["warn", "as-needed"],
+      "indent": ["warn", 4],
+      "max-len": [ "error", {
+          "code": 120,
+          "tabWidth": 4,
+          "ignoreUrls": true,
+          "ignoreComments": true,
+          "ignoreRegExpLiterals": true,
+          "ignoreStrings": true,
+          "ignoreTemplateLiterals": true
+      }],
+      "no-global-assign": 0,
+      "no-param-reassign": [ "warn", {
+        "props": false
+      }],
+      "no-unused-vars": "warn",
+      "no-unused-expressions": 0,
+      "no-use-before-define": "warn"
+  }
+}

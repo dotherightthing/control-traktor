@@ -1,0 +1,51 @@
+{
+  "name": "m4l-devices",
+  "version": "1.0.0",
+  "description": "Max4Live devices.",
+  "main": "resample-adjacent-track.amxd",
+  "engines": {
+    "node": "18.7.0",
+    "npm": "8.15.0"
+  },
+  "person": {
+    "name": "Dan Smith",
+    "email": "dev@dotherightthing.co.nz"
+  },
+  "scripts": {
+    "build": "npm run lint && npm run compile",
+    "compile": "babel src -d .",
+    "lint": "eslint './src/*.js'",
+    "prepare": "husky install",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dotherightthing/m4l-devices.git"
+  },
+  "keywords": [
+    "m4l",
+    "max4live"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dotherightthing/m4l-devices/issues"
+  },
+  "homepage": "https://github.com/dotherightthing/m4l-devices#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.19.1",
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/eslint-plugin": "^7.19.1",
+    "@babel/preset-env": "^7.19.1",
+    "core-js": "^3.25.1",
+    "eslint": "^8.23.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-compat": "^4.0.2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsdoc": "^39.3.6",
+    "husky": "^8.0.1",
+    "nodemon": "^2.0.20"
+  }
+}
