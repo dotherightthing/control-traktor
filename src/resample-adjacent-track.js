@@ -74,6 +74,29 @@ const newTrackName = function (baseName, suffix = '', timeStamp = true) {
 };
 
 /**
+ * @function getTrackInputType
+ * @param {string} availableInputTypes Stringified array of objects
+ * @param {string} sourceTrackName Name of existing track to use as the audio source
+ * @returns {object} inputType
+ * @see https://github.com/weston-bailey/m4l-plugins/blob/067fd5b9da8350229d1539ae97a2be7f5ed6c19c/max-projects/FFX%20Freq%20Seq%20Proj/code/fsTracker.js#L116
+ */
+const getTrackInputType = function (availableInputTypes = [], sourceTrackName = '') {
+    const sourceTrackNameStr = sourceTrackName.toString();
+    let trackInputType;
+    let routing = JSON.parse(availableInputTypes); // de-string
+
+    for (let i = 0; i < routing.available_input_routing_types.length; i += 1) { // iterate and look for match
+        const obj = routing.available_input_routing_types[i];
+
+        if (obj.display_name === sourceTrackNameStr) {
+            trackInputType = routing.available_input_routing_types[i];
+        }
+    }
+
+    return trackInputType;
+};
+
+/**
  * @function bang
  * @summary Runs automatically when 'live.thisdevice' left outlet is connected to 'js this_file_name.js' inlet
  */
@@ -81,7 +104,7 @@ const bang = function () { // eslint-disable-line no-unused-vars
     // paths
     // https://docs.cycling74.com/max8/vignettes/live_object_model
     // this_device = the Max for Live Device object that contains our JavaScript code
-    var sourceTrackObj = new LiveAPI('this_device canonical_parent'); // console.log('path:', sourceTrackObj.path);
+    const sourceTrackObj = new LiveAPI('this_device canonical_parent'); // console.log('path:', sourceTrackObj.path);
     // console.log('id:', sourceTrackObj.id);
     // console.log(setObj.info);
     // var sourceTrackObjChildren = new LiveAPI('this_device canonical_parent devices 0');
@@ -90,19 +113,8 @@ const bang = function () { // eslint-disable-line no-unused-vars
 
     const newTrackObj = newTrack(sourceTrackObj.id, 'audio', 'after'); // var routing = sourceTrackObj.get('available_input_routing_types');
     const trackName = newTrackName(sourceTrackObj.get('name'), 'rs', true);
+    const trackInputType = getTrackInputType(newTrackObj.get('available_input_routing_types'), sourceTrackObj.get('name'));
 
     newTrackObj.set('name', trackName);
-
-    // console.log(available_input_routing_types);
-    // ==> js: {'available_input_routing_types': [{'display_name': 'Resampling', 'identifier': 0}, {'display_name': '3-Audio', 'identifier': 1}, {'display_name': 'A-Reverb', 'identifier': 2}, {'display_name': 'B-Delay', 'identifier': 3}, {'display_name': 'Master', 'identifier': 4}, {'display_name': 'No Input', 'identifier': 5}]}
-    // https://github.com/weston-bailey/m4l-plugins/blob/067fd5b9da8350229d1539ae97a2be7f5ed6c19c/max-projects/FFX%20Freq%20Seq%20Proj/code/fsTracker.js#L116
-    // routing = JSON.parse(routing); // de-string
-    // var type = sourceTrackObj.get('input_routing_type');
-    // for (var i = 0; i < routing.available_input_routing_types.length; i++){ //iterate and look for match
-    //   var obj = routing.available_input_routing_types[i];
-    //   if (obj.display_name == trackName) {
-    //     type = routing.available_input_routing_types[i];
-    //   }
-    // }
-    // sourceTrackObj.set('input_routing_type', type);
+    newTrackObj.set('input_routing_type', trackInputType);
 };
