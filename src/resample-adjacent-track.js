@@ -1,5 +1,6 @@
 /**
- * http://compusition.com/writings/js-live-sourceTrackObj-logging
+ * @function log
+ * @see {@link http://compusition.com/writings/js-live-sourceTrackObj-logging}
  */
 const log = function () {
     post('------------\n');
@@ -23,8 +24,9 @@ const log = function () {
     }
 
     post('\n');
-}; // allow console.log
+};
 
+// support console.log
 console = { log };
 
 /**
@@ -85,13 +87,11 @@ const getTrackInputType = function (availableInputTypes = [], sourceTrackName = 
     let trackInputType;
     let routing = JSON.parse(availableInputTypes); // de-string
 
-    for (let i = 0; i < routing.available_input_routing_types.length; i += 1) { // iterate and look for match
-        const obj = routing.available_input_routing_types[i];
-
-        if (obj.display_name === sourceTrackNameStr) {
-            trackInputType = routing.available_input_routing_types[i];
+    routing.available_input_routing_types.forEach((type) => {
+        if (type.display_name === sourceTrackNameStr) {
+            trackInputType = type;
         }
-    }
+    });
 
     return trackInputType;
 };
