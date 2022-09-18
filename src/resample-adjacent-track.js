@@ -35,6 +35,7 @@ console = { log };
  * @param {string} trackType Type of new track (audio|midi)
  * @param {string} insertPosition Position of new track relative to existing track (after|before)
  * @returns {object} newTrackObj
+ * @todo setObj fails if Preview is off - is this expected?
  */
 const newTrack = function (sourceTrackId, trackType = 'audio', insertPosition = 'after') {
     const setObj = new LiveAPI('live_set');
