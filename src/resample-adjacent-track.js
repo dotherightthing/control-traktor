@@ -28,46 +28,49 @@ const log = function () {
 console = { log };
 
 /**
- * @function addTrack
- * @param {string} sourceTrackId
- * @param {string} sourceTrackName
- * @param {string} trackType audio|midi
- * @param {string} insertPosition after|before
+ * @function newTrack
+ * @param {string} sourceTrackId ID of existing track to insert the new track next to
+ * @param {string} trackType Type of new track (audio|midi)
+ * @param {string} insertPosition Position of new track relative to existing track (after|before)
+ * @returns {object} newTrackObj
  */
-
-const addTrack = function (sourceTrackId, sourceTrackName, trackType, insertPosition) {
+const newTrack = function (sourceTrackId, trackType = 'audio', insertPosition = 'after') {
     const setObj = new LiveAPI('live_set');
     const trackId = parseInt(sourceTrackId, 10); // convert string id to number
+    const trackIds = setObj.get('tracks').filter(key => key !== 'id'); // remove 'id' strings from [id,11,id,12,id,13,id,1,id,7,id,8,id,9]
+    const trackIndex = trackIds.indexOf(trackId);
+    const newTrackIndex = (insertPosition === 'before') ? trackIndex : (trackIndex + 1);
 
-    const date = new Date();
-    const time = date.getHours() + ':' + date.getMinutes().toString().padStart(2, '0');
-    let tracks = setObj.get('tracks');
-    let newTrackIndex;
-
-    tracks = tracks.filter(key => key !== 'id'); // remove 'id' strings from [id,11,id,12,id,13,id,1,id,7,id,8,id,9]
-
-    const trackIndex = tracks.indexOf(trackId);
-
-    if (insertPosition === 'before') {
-        // before
-        newTrackIndex = trackIndex;
-    } else {
-        // after
-        newTrackIndex = trackIndex + 1;
-    }
-
-    if (trackType === 'midi') {
-        // midi
-        setObj.call('create_midi_track', newTrackIndex);
-    } else {
-        // audio
-        setObj.call('create_audio_track', newTrackIndex);
-    }
+    setObj.call(`create_${trackType}_track`, newTrackIndex);
 
     const newTrackObj = new LiveAPI('live_set tracks ' + newTrackIndex);
-    const newTrackName = `${sourceTrackName} rs ${time}`;
 
-    newTrackObj.set('name', newTrackName);
+    return newTrackObj;
+};
+
+/**
+ * @function newTrackName
+ * @param {string} baseName Base name
+ * @param {string} suffix Suffix
+ * @param {boolean} timeStamp Whether to output a timestamp after the suffix
+ * @returns {string} trackName
+ */
+const newTrackName = function (baseName, suffix = '', timeStamp = true) {
+    let suffixStr = '';
+    let timeStampStr = '';
+    let trackName = '';
+
+    if (timeStamp) {
+        const date = new Date();
+        timeStampStr = date.getHours().toString().padStart(2, '0') + ':' + date.getMinutes().toString().padStart(2, '0');
+    }
+
+    suffixStr = (suffix !== '') ? (` ${suffix}`) : '';
+    timeStampStr = timeStamp ? (` ${timeStampStr}`) : '';
+
+    trackName = `${baseName}${suffixStr}${timeStampStr}`;
+
+    return trackName;
 };
 
 /**
@@ -85,7 +88,11 @@ const bang = function () { // eslint-disable-line no-unused-vars
     // var p = sourceTrackObj.get('canonical_parent');
     // console.log(p); // id,4
 
-    addTrack(sourceTrackObj.id, sourceTrackObj.get('name'), 'audio', 'after'); // var routing = sourceTrackObj.get('available_input_routing_types');
+    const newTrackObj = newTrack(sourceTrackObj.id, 'audio', 'after'); // var routing = sourceTrackObj.get('available_input_routing_types');
+    const trackName = newTrackName(sourceTrackObj.get('name'), 'rs', true);
+
+    newTrackObj.set('name', trackName);
+
     // console.log(available_input_routing_types);
     // ==> js: {'available_input_routing_types': [{'display_name': 'Resampling', 'identifier': 0}, {'display_name': '3-Audio', 'identifier': 1}, {'display_name': 'A-Reverb', 'identifier': 2}, {'display_name': 'B-Delay', 'identifier': 3}, {'display_name': 'Master', 'identifier': 4}, {'display_name': 'No Input', 'identifier': 5}]}
     // https://github.com/weston-bailey/m4l-plugins/blob/067fd5b9da8350229d1539ae97a2be7f5ed6c19c/max-projects/FFX%20Freq%20Seq%20Proj/code/fsTracker.js#L116
