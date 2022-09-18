@@ -109,4 +109,5 @@ const bang = function () { // eslint-disable-line no-unused-vars
 
     newTrackObj.set('name', trackName);
     newTrackObj.set('input_routing_type', trackInputType);
+    newTrackObj.set('arm', 1);
 };
