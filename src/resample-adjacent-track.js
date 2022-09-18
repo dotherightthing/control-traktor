@@ -76,9 +76,9 @@ const newTrackName = function (baseName, suffix = '', timeStamp = true) {
 /**
  * @function getTrackInputType
  * @param {string} availableInputTypes Stringified array of objects
- * @param {string} sourceTrackName Name of existing track to use as the audio source
+ * @param {symbol} sourceTrackName Name of existing track to use as the audio source
  * @returns {object} inputType
- * @see https://github.com/weston-bailey/m4l-plugins/blob/067fd5b9da8350229d1539ae97a2be7f5ed6c19c/max-projects/FFX%20Freq%20Seq%20Proj/code/fsTracker.js#L116
+ * @see {@link https://github.com/weston-bailey/m4l-plugins/blob/067fd5b9da8350229d1539ae97a2be7f5ed6c19c/max-projects/FFX%20Freq%20Seq%20Proj/code/fsTracker.js#L116}
  */
 const getTrackInputType = function (availableInputTypes = [], sourceTrackName = '') {
     const sourceTrackNameStr = sourceTrackName.toString();
@@ -101,17 +101,9 @@ const getTrackInputType = function (availableInputTypes = [], sourceTrackName = 
  * @summary Runs automatically when 'live.thisdevice' left outlet is connected to 'js this_file_name.js' inlet
  */
 const bang = function () { // eslint-disable-line no-unused-vars
-    // paths
-    // https://docs.cycling74.com/max8/vignettes/live_object_model
-    // this_device = the Max for Live Device object that contains our JavaScript code
-    const sourceTrackObj = new LiveAPI('this_device canonical_parent'); // console.log('path:', sourceTrackObj.path);
-    // console.log('id:', sourceTrackObj.id);
-    // console.log(setObj.info);
-    // var sourceTrackObjChildren = new LiveAPI('this_device canonical_parent devices 0');
-    // var p = sourceTrackObj.get('canonical_parent');
-    // console.log(p); // id,4
-
-    const newTrackObj = newTrack(sourceTrackObj.id, 'audio', 'after'); // var routing = sourceTrackObj.get('available_input_routing_types');
+    // this_device = the Max for Live Device object that contains this JavaScript code
+    const sourceTrackObj = new LiveAPI('this_device canonical_parent');
+    const newTrackObj = newTrack(sourceTrackObj.id, 'audio', 'after');
     const trackName = newTrackName(sourceTrackObj.get('name'), 'rs', true);
     const trackInputType = getTrackInputType(newTrackObj.get('available_input_routing_types'), sourceTrackObj.get('name'));
 
