@@ -14,8 +14,9 @@
     "post": true
   },   
   "ignorePatterns": [
-      "node_modules/",
-      "./*.js"
+    "dist/",
+    "node_modules/",
+    "src/polyfills/"
   ],
   "rules": {
       "array-bracket-spacing": ["error", "always"],

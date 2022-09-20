@@ -12,9 +12,10 @@
     "email": "dev@dotherightthing.co.nz"
   },
   "scripts": {
-    "build": "npm run lint && npm run compile",
-    "compile": "babel src -d .",
-    "lint": "eslint './src/*.js'",
+    "build": "npm run lint && npm run compile && npm run copy",
+    "compile": "cat ./src/polyfills/string.polyfill.js ./src/resample-adjacent-track.js > ./dist/resample-adjacent-track.js && babel ./dist -d ./dist",
+    "copy": "cp ./src/resample-adjacent-track.amxd ./dist",
+    "lint": "eslint './src/resample-adjacent-track.js'",
     "prepare": "husky install",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "nodemon"
