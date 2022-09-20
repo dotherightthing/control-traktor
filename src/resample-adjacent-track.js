@@ -27,7 +27,7 @@ const log = function () {
 };
 
 // support console.log
-console = { log };
+const console = { log }; // eslint-disable-line no-unused-vars
 
 /**
  * @function newTrack
