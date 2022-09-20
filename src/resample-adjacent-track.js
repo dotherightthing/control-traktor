@@ -111,4 +111,10 @@ const bang = function () { // eslint-disable-line no-unused-vars
     newTrackObj.set('name', trackName);
     newTrackObj.set('input_routing_type', trackInputType);
     newTrackObj.set('arm', 1);
+
+    // - to here is the equivalent of ClyphX's INSAUDIO/INSMIDI:
+    //
+    // Insert an Audio or MIDI Track to the right of the selected Track that will be armed and routed from the selected Track.
+    // This will not perform an insertion if the selected Track is not the correct type.
+    // For example, if the selected Track doesn't have Audio output, INSAUDIO will do nothing.
 };

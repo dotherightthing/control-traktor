@@ -10,3 +10,4 @@ Max4Live devices.
 * [Mira](https://cycling74.com/products/mira/)
 * [JavaScript Live API Tutorials](http://compusition.com/writings/js-live-api)
 * [LOM - The Live Object Model](https://docs.cycling74.com/max8/vignettes/live_object_model)
+* [Max JS Require Guide](https://docs.cycling74.com/max8/vignettes/jsrequire)
