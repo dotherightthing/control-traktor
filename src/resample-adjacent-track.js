@@ -65,7 +65,7 @@ const newTrackName = function (baseName, suffix = '', timeStamp = true) {
 
     if (timeStamp) {
         const date = new Date();
-        timeStampStr = date.getHours().toString().padStart(2, '0') + ':' + date.getMinutes().toString().padStart(2, '0');
+        timeStampStr = `${date.getHours().toString().padStart(2, '0')}:${date.getMinutes().toString().padStart(2, '0')}`;
     }
 
     suffixStr = (suffix !== '') ? (` ${suffix}`) : '';
