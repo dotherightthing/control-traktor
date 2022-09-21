@@ -119,16 +119,26 @@ const bang = function () { // eslint-disable-line no-unused-vars
 
     if (hostTrackName.toString() === deviceTrackObjName.toString()) {
         const sourceTrackObj = new LiveAPI('live_set view selected_track');
+        const sourceTrackHasAudioOutput = sourceTrackObj.get('has_audio_output');
+        const sourceTrackHasMidiOutput = sourceTrackObj.get('has_midi_output');
 
-        // TODO if selectedTrack is xyz
+        if (sourceTrackHasAudioOutput) {
+            const newTrackObj = newTrack(sourceTrackObj.id, 'audio', 'after');
+            const trackName = newTrackName(sourceTrackObj.get('name'), 'rs', true);
+            const trackInputType = getTrackInputType(newTrackObj.get('available_input_routing_types'), sourceTrackObj.get('name'));
 
-        const newTrackObj = newTrack(sourceTrackObj.id, 'audio', 'after');
-        const trackName = newTrackName(sourceTrackObj.get('name'), 'rs', true);
-        const trackInputType = getTrackInputType(newTrackObj.get('available_input_routing_types'), sourceTrackObj.get('name'));
+            newTrackObj.set('name', trackName);
+            newTrackObj.set('input_routing_type', trackInputType);
+            newTrackObj.set('arm', 1);
+        } else if (sourceTrackHasMidiOutput) {
+            const newTrackObj = newTrack(sourceTrackObj.id, 'midi', 'after');
+            const trackName = newTrackName(sourceTrackObj.get('name'), 'rs', true);
+            const trackInputType = getTrackInputType(newTrackObj.get('available_input_routing_types'), sourceTrackObj.get('name'));
 
-        newTrackObj.set('name', trackName);
-        newTrackObj.set('input_routing_type', trackInputType);
-        newTrackObj.set('arm', 1);
+            newTrackObj.set('name', trackName);
+            newTrackObj.set('input_routing_type', trackInputType);
+            newTrackObj.set('arm', 1);
+        }
     }
 
     // - to here is the equivalent of ClyphX's INSAUDIO/INSMIDI:
