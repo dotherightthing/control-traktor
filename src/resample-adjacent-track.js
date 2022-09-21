@@ -45,6 +45,11 @@ const console = { log }; // eslint-disable-line no-unused-vars
  */
 const insertTrack = function (sourceTrackId, trackType = 'audio', insertPosition = 'after') {
     const setObj = new LiveAPI('live_set');
+
+    if (!setObj) {
+        console.log('setObj not found');
+    }
+
     const trackId = parseInt(sourceTrackId, 10); // convert string id to number
     const trackIds = setObj.get('tracks').filter(key => key !== 'id'); // remove 'id' strings from [id,11,id,12,id,13,id,1,id,7,id,8,id,9]
     const trackIndex = trackIds.indexOf(trackId);
@@ -111,28 +116,48 @@ const bang = function () { // eslint-disable-line no-unused-vars
     // this_device = the Max for Live Device object that contains this JavaScript code
     const deviceTrackObj = new LiveAPI('this_device canonical_parent');
 
+    if (!deviceTrackObj) {
+        return;
+    }
+
     // Plugin must be loaded on Master track
 
-    const hostTrack = new LiveAPI('live_set master_track');
-    const hostTrackName = hostTrack.get('name');
-    const deviceTrackName = deviceTrackObj.get('name');
+    const deviceTrackName = deviceTrackObj.get('name').toString();
+    const hostTrackObj = new LiveAPI('live_set master_track');
 
-    if (hostTrackName.toString() === deviceTrackName.toString()) {
+    if (!hostTrackObj) {
+        return;
+    }
+
+    const hostTrackName = hostTrackObj.get('name').toString();
+
+    if (hostTrackName === deviceTrackName) {
         const sourceTrackObj = new LiveAPI('live_set view selected_track');
+
+        if (!sourceTrackObj) {
+            return;
+        }
+
         const sourceTrackId = sourceTrackObj.id;
-        const sourceTrackName = sourceTrackObj.get('name');
-        const sourceTrackHasAudioOutput = sourceTrackObj.get('has_audio_output');
-        const sourceTrackHasMidiOutput = sourceTrackObj.get('has_midi_output');
+        const sourceTrackName = sourceTrackObj.get('name').toString();
+
+        const sourceTrackHasAudioOutput = Boolean(Number(sourceTrackObj.get('has_audio_output')));
+        const sourceTrackHasMidiOutput = Boolean(Number(sourceTrackObj.get('has_midi_output')));
         let newTrackType = null;
 
-        if (Number(sourceTrackHasAudioOutput) === 1) {
+        if (sourceTrackHasAudioOutput) {
             newTrackType = 'audio';
-        } else if (Number(sourceTrackHasMidiOutput) === 1) {
+        } else if (sourceTrackHasMidiOutput) {
             newTrackType = 'midi';
         }
 
         if (newTrackType !== null) {
             const newTrackObj = insertTrack(sourceTrackId, newTrackType, 'after');
+
+            if (!newTrackObj) {
+                return;
+            }
+
             const newTrackInputRoutingTypes = newTrackObj.get('available_input_routing_types');
             const newTrackName = createTrackName(sourceTrackName, 'rs', true);
             const newTrackInputType = getTrackInputType(newTrackInputRoutingTypes, sourceTrackName);
