@@ -39,11 +39,13 @@ const console = { log }; // eslint-disable-line no-unused-vars
  * @function insertTrack
  * @param {string} sourceTrackId ID of existing track to insert the new track next to
  * @param {string} trackType Type of new track (audio|midi)
- * @param {string} argInsertPosition Position of new track relative to existing track (after|before)
+ * @param {string} insertPosition Position of new track relative to existing track (after|before)
  * @returns {object|null} newTrackObj
  * @todo setObj fails if Preview is off - is this expected?
  */
-const insertTrack = function (sourceTrackId, trackType = 'audio', argInsertPosition = 'after') {
+const insertTrack = function (sourceTrackId, trackType = 'audio', insertPosition = 'after') {
+    console.log(arguments);
+
     const setObj = new LiveAPI('live_set');
 
     // setObj fails if Preview is off
@@ -55,7 +57,7 @@ const insertTrack = function (sourceTrackId, trackType = 'audio', argInsertPosit
     const trackId = parseInt(sourceTrackId, 10); // convert string id to number
     const trackIds = setTracks.filter(key => key !== 'id'); // remove 'id' strings from [id,11,id,12,id,13,id,1,id,7,id,8,id,9]
     const trackIndex = trackIds.indexOf(trackId);
-    const newTrackIndex = (argInsertPosition === 'before') ? trackIndex : (trackIndex + 1);
+    const newTrackIndex = (insertPosition === 'before') ? trackIndex : (trackIndex + 1);
 
     setObj.call(`create_${trackType}_track`, newTrackIndex);
 
@@ -115,7 +117,11 @@ const getTrackInputType = function (availableInputTypes = [], sourceTrackName = 
  * @summary Runs automatically when 'live.thisdevice' left outlet is connected to 'js this_file_name.js' inlet
  */
 const bang = function () { // eslint-disable-line no-unused-vars
+    const argInsertPosition = String(jsarguments[1]);
+
     // this_device = the Max for Live Device object that contains this JavaScript code
+    // in the max object, live.thisdevice determines when the Max Device has completely loaded
+    // and sends a bang from its left outlet when the Device is fully initialized, including the Live API).
     const deviceTrackObj = new LiveAPI('this_device canonical_parent');
 
     if (!deviceTrackObj) {
@@ -160,9 +166,9 @@ const bang = function () { // eslint-disable-line no-unused-vars
         }
 
         if (typeof newTrackType !== 'undefined') {
-            const newTrackObj = insertTrack(sourceTrackId, newTrackType, 'after');
+            const newTrackObj = insertTrack(sourceTrackId, newTrackType, argInsertPosition);
 
-            if (!newTrackObj) {
+            if (!newTrackObj || (newTrackObj === null)) {
                 return;
             }
 
@@ -181,4 +187,6 @@ const bang = function () { // eslint-disable-line no-unused-vars
     // Insert an Audio or MIDI Track to the right of the selected Track that will be armed and routed from the selected Track.
     // This will not perform an insertion if the selected Track is not the correct type.
     // For example, if the selected Track doesn't have Audio output, INSAUDIO will do nothing.
+
+    // outlet(0, 'hello?'); // not working
 };

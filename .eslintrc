@@ -11,6 +11,7 @@
   ],
   "globals": {
     "inlets": true,
+    "jsarguments": true,
     "LiveAPI": true,
     "outlet": true,
     "outlets": true,
