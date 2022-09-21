@@ -123,26 +123,24 @@ const bang = function () { // eslint-disable-line no-unused-vars
         const sourceTrackName = sourceTrackObj.get('name');
         const sourceTrackHasAudioOutput = sourceTrackObj.get('has_audio_output');
         const sourceTrackHasMidiOutput = sourceTrackObj.get('has_midi_output');
-        let newTrackType;
+        let newTrackType = null;
 
-        if (sourceTrackHasAudioOutput) {
+        if (Number(sourceTrackHasAudioOutput) === 1) {
             newTrackType = 'audio';
-        } else if (sourceTrackHasMidiOutput) {
+        } else if (Number(sourceTrackHasMidiOutput) === 1) {
             newTrackType = 'midi';
-        } else {
-            return;
         }
 
-        console.log('newTrackType', newTrackType);
+        if (newTrackType !== null) {
+            const newTrackObj = insertTrack(sourceTrackId, newTrackType, 'after');
+            const newTrackInputRoutingTypes = newTrackObj.get('available_input_routing_types');
+            const newTrackName = createTrackName(sourceTrackName, 'rs', true);
+            const newTrackInputType = getTrackInputType(newTrackInputRoutingTypes, sourceTrackName);
 
-        const newTrackObj = insertTrack(sourceTrackId, newTrackType, 'after');
-        const newTrackInputRoutingTypes = newTrackObj.get('available_input_routing_types');
-        const newTrackName = createTrackName(sourceTrackName, 'rs', true);
-        const newTrackInputType = getTrackInputType(newTrackInputRoutingTypes, sourceTrackName);
-
-        newTrackObj.set('name', newTrackName);
-        newTrackObj.set('input_routing_type', newTrackInputType);
-        newTrackObj.set('arm', 1);
+            newTrackObj.set('name', newTrackName);
+            newTrackObj.set('input_routing_type', newTrackInputType);
+            newTrackObj.set('arm', 1);
+        }
     }
 
     // - to here is the equivalent of ClyphX's INSAUDIO/INSMIDI:
