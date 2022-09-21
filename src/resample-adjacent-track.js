@@ -44,12 +44,10 @@ const console = { log }; // eslint-disable-line no-unused-vars
  * @todo setObj fails if Preview is off - is this expected?
  */
 const insertTrack = function (sourceTrackId, trackType = 'audio', insertPosition = 'after') {
-    console.log(arguments);
-
     const setObj = new LiveAPI('live_set');
 
     // setObj fails if Preview is off
-    if (!setObj || !Object.prototype.hasOwnProperty.call(setObj, 'get')) {
+    if (!setObj) {
         return null;
     }
 
@@ -57,6 +55,7 @@ const insertTrack = function (sourceTrackId, trackType = 'audio', insertPosition
     const trackId = Number(sourceTrackId);
     const trackIds = setTracks.filter(key => key !== 'id'); // remove 'id' strings from [id,11,id,12,id,13,id,1,id,7,id,8,id,9]
     const trackIndex = trackIds.indexOf(trackId);
+
     const newTrackIndex = (insertPosition === 'before') ? trackIndex : (trackIndex + 1);
 
     setObj.call(`create_${trackType}_track`, newTrackIndex);
