@@ -2,6 +2,10 @@
 
 Max4Live devices.
 
+* RST - Resample Selected Track
+
+---
+
 ## Reading
 
 * [Ableton Max For Live Beginner's Masterclass with Phelan Kane](https://www.youtube.com/watch?v=tkXz8sf-KwU&t=751s)

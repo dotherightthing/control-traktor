@@ -185,4 +185,6 @@ const bang = function () { // eslint-disable-line no-unused-vars
     // For example, if the selected Track doesn't have Audio output, INSAUDIO will do nothing.
 
     // outlet(0, 'hello?'); // not working
+
+    // TODO mapping keys to the buttons results in 2 presses reqd for activation - on and off
 };
