@@ -109,14 +109,27 @@ const getTrackInputType = function (availableInputTypes = [], sourceTrackName = 
  */
 const bang = function () { // eslint-disable-line no-unused-vars
     // this_device = the Max for Live Device object that contains this JavaScript code
-    const sourceTrackObj = new LiveAPI('this_device canonical_parent');
-    const newTrackObj = newTrack(sourceTrackObj.id, 'audio', 'after');
-    const trackName = newTrackName(sourceTrackObj.get('name'), 'rs', true);
-    const trackInputType = getTrackInputType(newTrackObj.get('available_input_routing_types'), sourceTrackObj.get('name'));
+    const deviceTrackObj = new LiveAPI('this_device canonical_parent');
 
-    newTrackObj.set('name', trackName);
-    newTrackObj.set('input_routing_type', trackInputType);
-    newTrackObj.set('arm', 1);
+    // Plugin must be loaded on Master track
+
+    const hostTrack = new LiveAPI('live_set master_track');
+    const hostTrackName = hostTrack.get('name');
+    const deviceTrackObjName = deviceTrackObj.get('name');
+
+    if (hostTrackName.toString() === deviceTrackObjName.toString()) {
+        const sourceTrackObj = new LiveAPI('live_set view selected_track');
+
+        // TODO if selectedTrack is xyz
+
+        const newTrackObj = newTrack(sourceTrackObj.id, 'audio', 'after');
+        const trackName = newTrackName(sourceTrackObj.get('name'), 'rs', true);
+        const trackInputType = getTrackInputType(newTrackObj.get('available_input_routing_types'), sourceTrackObj.get('name'));
+
+        newTrackObj.set('name', trackName);
+        newTrackObj.set('input_routing_type', trackInputType);
+        newTrackObj.set('arm', 1);
+    }
 
     // - to here is the equivalent of ClyphX's INSAUDIO/INSMIDI:
     //
