@@ -68,12 +68,10 @@ const insertTrack = function (sourceTrackId, trackType = 'audio', insertPosition
 /**
  * @function createTrackName
  * @param {string} baseName Base name
- * @param {string} suffix Suffix
- * @param {boolean} timeStamp Whether to output a timestamp after the suffix
+ * @param {boolean} timeStamp Whether to output a trailing timestamp
  * @returns {string} trackName
  */
-const createTrackName = function (baseName, suffix = '', timeStamp = true) {
-    let suffixStr = '';
+const createTrackName = function (baseName, timeStamp = true) {
     let timeStampStr = '';
     let trackName = '';
 
@@ -82,10 +80,9 @@ const createTrackName = function (baseName, suffix = '', timeStamp = true) {
         timeStampStr = `${String(date.getHours()).padStart(2, '0')}:${String(date.getMinutes()).padStart(2, '0')}`;
     }
 
-    suffixStr = (suffix !== '') ? (` ${suffix}`) : '';
-    timeStampStr = timeStamp ? (` ${timeStampStr}`) : '';
+    timeStampStr = timeStamp ? (` (${timeStampStr})`) : '';
 
-    trackName = `${baseName}${suffixStr}${timeStampStr}`;
+    trackName = `[${baseName}]${timeStampStr}`;
 
     return trackName;
 };
@@ -172,7 +169,7 @@ const bang = function () { // eslint-disable-line no-unused-vars
             }
 
             const newTrackInputRoutingTypes = newTrackObj.get('available_input_routing_types');
-            const newTrackName = createTrackName(sourceTrackName, 'rs', true);
+            const newTrackName = createTrackName(sourceTrackName, true);
             const newTrackInputType = getTrackInputType(newTrackInputRoutingTypes, sourceTrackName);
 
             newTrackObj.set('name', newTrackName);
