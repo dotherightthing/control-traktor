@@ -141,6 +141,11 @@ const bang = function () { // eslint-disable-line no-unused-vars
         const sourceTrackId = sourceTrackObj.id;
         const sourceTrackName = sourceTrackObj.get('name').toString();
 
+        // Master track can't be renamed
+        if (sourceTrackName === 'Master') {
+            return;
+        }
+
         const sourceTrackHasAudioOutput = Boolean(Number(sourceTrackObj.get('has_audio_output')));
         const sourceTrackHasMidiOutput = Boolean(Number(sourceTrackObj.get('has_midi_output')));
         let newTrackType = null;
