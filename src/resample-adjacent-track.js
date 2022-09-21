@@ -76,7 +76,7 @@ const createTrackName = function (baseName, suffix = '', timeStamp = true) {
 
     if (timeStamp) {
         const date = new Date();
-        timeStampStr = `${date.getHours().toString().padStart(2, '0')}:${date.getMinutes().toString().padStart(2, '0')}`;
+        timeStampStr = `${String(date.getHours()).padStart(2, '0')}:${String(date.getMinutes()).padStart(2, '0')}`;
     }
 
     suffixStr = (suffix !== '') ? (` ${suffix}`) : '';
@@ -95,7 +95,7 @@ const createTrackName = function (baseName, suffix = '', timeStamp = true) {
  * @see {@link https://github.com/weston-bailey/m4l-plugins/blob/067fd5b9da8350229d1539ae97a2be7f5ed6c19c/max-projects/FFX%20Freq%20Seq%20Proj/code/fsTracker.js#L116}
  */
 const getTrackInputType = function (availableInputTypes = [], sourceTrackName = '') {
-    const sourceTrackNameStr = sourceTrackName.toString();
+    const sourceTrackNameStr = String(sourceTrackName);
     let trackInputType;
     let routing = JSON.parse(availableInputTypes); // de-string
 
@@ -122,14 +122,14 @@ const bang = function () { // eslint-disable-line no-unused-vars
 
     // Plugin must be loaded on Master track
 
-    const deviceTrackName = deviceTrackObj.get('name').toString();
+    const deviceTrackName = String(deviceTrackObj.get('name'));
     const hostTrackObj = new LiveAPI('live_set master_track');
 
     if (!hostTrackObj) {
         return;
     }
 
-    const hostTrackName = hostTrackObj.get('name').toString();
+    const hostTrackName = String(hostTrackObj.get('name'));
 
     if (hostTrackName === deviceTrackName) {
         const sourceTrackObj = new LiveAPI('live_set view selected_track');
@@ -139,7 +139,7 @@ const bang = function () { // eslint-disable-line no-unused-vars
         }
 
         const sourceTrackId = sourceTrackObj.id;
-        const sourceTrackName = sourceTrackObj.get('name').toString();
+        const sourceTrackName = String(sourceTrackObj.get('name'));
 
         // Master track can't be renamed
         if (sourceTrackName === 'Master') {
