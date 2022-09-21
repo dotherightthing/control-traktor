@@ -39,21 +39,23 @@ const console = { log }; // eslint-disable-line no-unused-vars
  * @function insertTrack
  * @param {string} sourceTrackId ID of existing track to insert the new track next to
  * @param {string} trackType Type of new track (audio|midi)
- * @param {string} insertPosition Position of new track relative to existing track (after|before)
- * @returns {object} newTrackObj
+ * @param {string} argInsertPosition Position of new track relative to existing track (after|before)
+ * @returns {object|null} newTrackObj
  * @todo setObj fails if Preview is off - is this expected?
  */
-const insertTrack = function (sourceTrackId, trackType = 'audio', insertPosition = 'after') {
+const insertTrack = function (sourceTrackId, trackType = 'audio', argInsertPosition = 'after') {
     const setObj = new LiveAPI('live_set');
 
-    if (!setObj) {
-        console.log('setObj not found');
+    // setObj fails if Preview is off
+    if (!setObj || !Object.prototype.hasOwnProperty.call(setObj, 'get')) {
+        return null;
     }
 
+    const setTracks = setObj.get('tracks');
     const trackId = parseInt(sourceTrackId, 10); // convert string id to number
-    const trackIds = setObj.get('tracks').filter(key => key !== 'id'); // remove 'id' strings from [id,11,id,12,id,13,id,1,id,7,id,8,id,9]
+    const trackIds = setTracks.filter(key => key !== 'id'); // remove 'id' strings from [id,11,id,12,id,13,id,1,id,7,id,8,id,9]
     const trackIndex = trackIds.indexOf(trackId);
-    const newTrackIndex = (insertPosition === 'before') ? trackIndex : (trackIndex + 1);
+    const newTrackIndex = (argInsertPosition === 'before') ? trackIndex : (trackIndex + 1);
 
     setObj.call(`create_${trackType}_track`, newTrackIndex);
 
