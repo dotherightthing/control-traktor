@@ -10,7 +10,10 @@
       "jsdoc"
   ],
   "globals": {
+    "inlets": true,
     "LiveAPI": true,
+    "outlet": true,
+    "outlets": true,
     "post": true
   },   
   "ignorePatterns": [

@@ -1,3 +1,9 @@
+// inlets and outlets
+inlets = 1;
+outlets = 1;
+
+// global variables and arrays
+
 /**
  * @function log
  * @see {@link http://compusition.com/writings/js-live-sourceTrackObj-logging}
