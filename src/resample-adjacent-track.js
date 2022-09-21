@@ -138,17 +138,18 @@ const bang = function () { // eslint-disable-line no-unused-vars
             return;
         }
 
-        const sourceTrackId = sourceTrackObj.id;
-        const sourceTrackName = String(sourceTrackObj.get('name'));
+        const sourceTrackCanBeArmed = Boolean(Number(sourceTrackObj.get('can_be_armed')));
 
-        // Master track can't be renamed
-        if (sourceTrackName === 'Master') {
+        // Excludes return and master tracks
+        if (!sourceTrackCanBeArmed) {
             return;
         }
 
         const sourceTrackHasAudioOutput = Boolean(Number(sourceTrackObj.get('has_audio_output')));
         const sourceTrackHasMidiOutput = Boolean(Number(sourceTrackObj.get('has_midi_output')));
-        let newTrackType = null;
+        const sourceTrackId = sourceTrackObj.id;
+        const sourceTrackName = String(sourceTrackObj.get('name'));
+        let newTrackType;
 
         if (sourceTrackHasAudioOutput) {
             newTrackType = 'audio';
@@ -156,7 +157,7 @@ const bang = function () { // eslint-disable-line no-unused-vars
             newTrackType = 'midi';
         }
 
-        if (newTrackType !== null) {
+        if (typeof newTrackType !== 'undefined') {
             const newTrackObj = insertTrack(sourceTrackId, newTrackType, 'after');
 
             if (!newTrackObj) {
