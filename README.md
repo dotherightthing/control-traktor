@@ -12,3 +12,7 @@ Max4Live devices.
 * [LOM - The Live Object Model](https://docs.cycling74.com/max8/vignettes/live_object_model)
 * [Max JS Require Guide](https://docs.cycling74.com/max8/vignettes/jsrequire)
 * [Max JS Reference - Arguments](https://docs.cycling74.com/max8/refpages/js#jsarguments)
+
+## Gotchas
+
+* Editing the Max device in Live opens the `dist` copy. A pre-commit git hook copies this file back to the `src` folder for push to the git repository.
