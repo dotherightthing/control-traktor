@@ -54,7 +54,7 @@ const insertTrack = function (sourceTrackId, trackType = 'audio', insertPosition
     }
 
     const setTracks = setObj.get('tracks');
-    const trackId = parseInt(sourceTrackId, 10); // convert string id to number
+    const trackId = Number(sourceTrackId);
     const trackIds = setTracks.filter(key => key !== 'id'); // remove 'id' strings from [id,11,id,12,id,13,id,1,id,7,id,8,id,9]
     const trackIndex = trackIds.indexOf(trackId);
     const newTrackIndex = (insertPosition === 'before') ? trackIndex : (trackIndex + 1);
