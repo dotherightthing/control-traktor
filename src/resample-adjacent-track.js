@@ -36,14 +36,14 @@ const log = function () {
 const console = { log }; // eslint-disable-line no-unused-vars
 
 /**
- * @function newTrack
+ * @function insertTrack
  * @param {string} sourceTrackId ID of existing track to insert the new track next to
  * @param {string} trackType Type of new track (audio|midi)
  * @param {string} insertPosition Position of new track relative to existing track (after|before)
  * @returns {object} newTrackObj
  * @todo setObj fails if Preview is off - is this expected?
  */
-const newTrack = function (sourceTrackId, trackType = 'audio', insertPosition = 'after') {
+const insertTrack = function (sourceTrackId, trackType = 'audio', insertPosition = 'after') {
     const setObj = new LiveAPI('live_set');
     const trackId = parseInt(sourceTrackId, 10); // convert string id to number
     const trackIds = setObj.get('tracks').filter(key => key !== 'id'); // remove 'id' strings from [id,11,id,12,id,13,id,1,id,7,id,8,id,9]
@@ -58,13 +58,13 @@ const newTrack = function (sourceTrackId, trackType = 'audio', insertPosition = 
 };
 
 /**
- * @function newTrackName
+ * @function createTrackName
  * @param {string} baseName Base name
  * @param {string} suffix Suffix
  * @param {boolean} timeStamp Whether to output a timestamp after the suffix
  * @returns {string} trackName
  */
-const newTrackName = function (baseName, suffix = '', timeStamp = true) {
+const createTrackName = function (baseName, suffix = '', timeStamp = true) {
     let suffixStr = '';
     let timeStampStr = '';
     let trackName = '';
@@ -115,30 +115,34 @@ const bang = function () { // eslint-disable-line no-unused-vars
 
     const hostTrack = new LiveAPI('live_set master_track');
     const hostTrackName = hostTrack.get('name');
-    const deviceTrackObjName = deviceTrackObj.get('name');
+    const deviceTrackName = deviceTrackObj.get('name');
 
-    if (hostTrackName.toString() === deviceTrackObjName.toString()) {
+    if (hostTrackName.toString() === deviceTrackName.toString()) {
         const sourceTrackObj = new LiveAPI('live_set view selected_track');
+        const sourceTrackId = sourceTrackObj.id;
+        const sourceTrackName = sourceTrackObj.get('name');
         const sourceTrackHasAudioOutput = sourceTrackObj.get('has_audio_output');
         const sourceTrackHasMidiOutput = sourceTrackObj.get('has_midi_output');
+        let newTrackType;
 
         if (sourceTrackHasAudioOutput) {
-            const newTrackObj = newTrack(sourceTrackObj.id, 'audio', 'after');
-            const trackName = newTrackName(sourceTrackObj.get('name'), 'rs', true);
-            const trackInputType = getTrackInputType(newTrackObj.get('available_input_routing_types'), sourceTrackObj.get('name'));
-
-            newTrackObj.set('name', trackName);
-            newTrackObj.set('input_routing_type', trackInputType);
-            newTrackObj.set('arm', 1);
+            newTrackType = 'audio';
         } else if (sourceTrackHasMidiOutput) {
-            const newTrackObj = newTrack(sourceTrackObj.id, 'midi', 'after');
-            const trackName = newTrackName(sourceTrackObj.get('name'), 'rs', true);
-            const trackInputType = getTrackInputType(newTrackObj.get('available_input_routing_types'), sourceTrackObj.get('name'));
-
-            newTrackObj.set('name', trackName);
-            newTrackObj.set('input_routing_type', trackInputType);
-            newTrackObj.set('arm', 1);
+            newTrackType = 'midi';
+        } else {
+            return;
         }
+
+        console.log('newTrackType', newTrackType);
+
+        const newTrackObj = insertTrack(sourceTrackId, newTrackType, 'after');
+        const newTrackInputRoutingTypes = newTrackObj.get('available_input_routing_types');
+        const newTrackName = createTrackName(sourceTrackName, 'rs', true);
+        const newTrackInputType = getTrackInputType(newTrackInputRoutingTypes, sourceTrackName);
+
+        newTrackObj.set('name', newTrackName);
+        newTrackObj.set('input_routing_type', newTrackInputType);
+        newTrackObj.set('arm', 1);
     }
 
     // - to here is the equivalent of ClyphX's INSAUDIO/INSMIDI:
