@@ -12,6 +12,7 @@ On the Push2, creation of a track-based resampling track necessitates multiple b
 4. Scroll to select 'Input Type'
 5. Press Record + Track Select
 6. Rename new track in software
+7. Recolour new track
 
 Key/MIDI mapping RST's BEFORE and AFTER buttons automates this process:
 
@@ -20,6 +21,7 @@ Key/MIDI mapping RST's BEFORE and AFTER buttons automates this process:
 3. RST sets the input of the new track to the name of the selected track
 4. RST arms the new track
 5. RST names the new track to indicate the source name and the time of creation
+6. RST recolours the new track to match the source colour
 
 Recording can now be started via a single button press on the desired clip slot.
 

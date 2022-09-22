@@ -152,6 +152,7 @@ const bang = function () { // eslint-disable-line no-unused-vars
         const sourceTrackHasAudioOutput = Boolean(Number(sourceTrackObj.get('has_audio_output')));
         const sourceTrackHasMidiOutput = Boolean(Number(sourceTrackObj.get('has_midi_output')));
         const sourceTrackId = sourceTrackObj.id;
+        const sourceTrackColor = String(sourceTrackObj.get('color'));
         const sourceTrackName = String(sourceTrackObj.get('name'));
         let newTrackType;
 
@@ -173,6 +174,7 @@ const bang = function () { // eslint-disable-line no-unused-vars
             const newTrackInputType = getTrackInputType(newTrackInputRoutingTypes, sourceTrackName);
 
             newTrackObj.set('name', newTrackName);
+            newTrackObj.set('color', sourceTrackColor);
             newTrackObj.set('input_routing_type', newTrackInputType);
             newTrackObj.set('arm', 1);
         }
