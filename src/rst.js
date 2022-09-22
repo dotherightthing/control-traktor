@@ -196,6 +196,9 @@ const bang = function () { // eslint-disable-line no-unused-vars
             newTrackObj.set('color', sourceTrackColor);
             newTrackObj.set('input_routing_type', newTrackInputType);
             newTrackObj.set('arm', 1);
+
+            const viewObj = new LiveAPI('live_set view');
+            viewObj.set('selected_track', 'id', sourceTrackId);
         }
     }
 
