@@ -85,7 +85,7 @@ const insertTrack = function (sourceTrackId, trackType = 'audio', insertPosition
 /**
  * @function createTrackName
  * @param {string} baseName Base name
- * @param {boolean} timeStamp Whether to output a trailing timestamp
+ * @param {boolean} timeStamp Whether to output a trailing timestamp (aids debugging)
  * @returns {string} trackName
  */
 const createTrackName = function (baseName, timeStamp = true) {
