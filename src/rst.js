@@ -182,13 +182,5 @@ const bang = function () { // eslint-disable-line no-unused-vars
         }
     }
 
-    // - to here is the equivalent of ClyphX's INSAUDIO/INSMIDI:
-    //
-    // Insert an Audio or MIDI Track to the right of the selected Track that will be armed and routed from the selected Track.
-    // This will not perform an insertion if the selected Track is not the correct type.
-    // For example, if the selected Track doesn't have Audio output, INSAUDIO will do nothing.
-
     // outlet(0, 'hello?'); // not working
-
-    // TODO mapping keys to the buttons results in 2 presses reqd for activation - on and off
 };
