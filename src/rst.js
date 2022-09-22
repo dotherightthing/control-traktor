@@ -89,6 +89,16 @@ const insertTrack = function (sourceTrackId, trackType = 'audio', insertPosition
  * @returns {string} trackName
  */
 const createTrackName = function (baseName, timeStamp = true) {
+    const trackIds = getTrackIds();
+    const trackNames = [];
+
+    trackIds.forEach((trackId, i) => {
+        const trackObj = new LiveAPI(`live_set tracks ${i}`);
+        const trackName = trackObj.get('name');
+
+        trackNames.push(trackName);
+    });
+
     let timeStampStr = '';
     let trackName = '';
 
@@ -97,9 +107,12 @@ const createTrackName = function (baseName, timeStamp = true) {
         timeStampStr = `${String(date.getHours()).padStart(2, '0')}:${String(date.getMinutes()).padStart(2, '0')}`;
     }
 
+    const instances = trackNames.filter(trkName => String(trkName).indexOf(`[${baseName}]`) !== -1);
+    const instanceIndex = instances + 1;
+
     timeStampStr = timeStamp ? (` (${timeStampStr})`) : '';
 
-    trackName = `[${baseName}]${timeStampStr}`;
+    trackName = `[${baseName}] ${instanceIndex}${timeStampStr}`;
 
     return trackName;
 };
