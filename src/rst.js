@@ -36,6 +36,24 @@ const log = function () {
 const console = { log }; // eslint-disable-line no-unused-vars
 
 /**
+ * @function getTrackIds
+ * @returns {Array} trackIds
+ */
+const getTrackIds = function () {
+    const setObj = new LiveAPI('live_set');
+
+    // setObj fails if Preview is off
+    if (!setObj) {
+        return null;
+    }
+
+    const setTracks = setObj.get('tracks');
+    const trackIds = setTracks.filter(key => key !== 'id'); // remove 'id' strings from [id,11,id,12,id,13,id,1,id,7,id,8,id,9]
+
+    return trackIds;
+};
+
+/**
  * @function insertTrack
  * @param {string} sourceTrackId ID of existing track to insert the new track next to
  * @param {string} trackType Type of new track (audio|midi)
@@ -51,9 +69,8 @@ const insertTrack = function (sourceTrackId, trackType = 'audio', insertPosition
         return null;
     }
 
-    const setTracks = setObj.get('tracks');
     const trackId = Number(sourceTrackId);
-    const trackIds = setTracks.filter(key => key !== 'id'); // remove 'id' strings from [id,11,id,12,id,13,id,1,id,7,id,8,id,9]
+    const trackIds = getTrackIds();
     const trackIndex = trackIds.indexOf(trackId);
 
     const newTrackIndex = (insertPosition === 'before') ? trackIndex : (trackIndex + 1);
