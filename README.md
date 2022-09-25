@@ -2,14 +2,22 @@
 
 Max4Live devices.
 
-## Installation
+## Installation only
 
-This repo uses a build script so that I can write JavaScript using ES6 rather than ES5.
+1. Click *Code > Download ZIP*
+2. Copy the `dist` folder (or the whole folder) into `~/Music/Ableton/User Library/Presets/Audio Effects/Max Audio Effect/`
+3. See device usage instructions below (*renameSelectedTrack*, *resampleSelectedTrack*)
 
-1. [Install Node and NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
-2. Run the build script: `npm run build`
-3. A Max-friendly (ES5) version of the JavaScript is output into the `dist` folder
-4. Copy the `dist` folder (or the whole folder) into `~/Music/Ableton/User Library/Presets/Audio Effects/Max Audio Effect/`.
+## Installation and development
+
+This repo uses a build script so that I can write JavaScript in ES6 rather than ES5.
+
+1. [Install Node and NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+2. `git clone` this repo to `~/Music/Ableton/User Library/Presets/Audio Effects/Max Audio Effect/`
+3. Run `npm install` to install dependencies
+4. Run `npm run watch` to lint, build and watch for JavaScript file changes
+5. Edit `src/m4l-helpers.js` - the Max-friendly (ES5) version of the JavaScript in the `dist` folder is updated
+6. Edit `dist/M4L Helpers.amxd`
 
 ---
 
