@@ -13,7 +13,6 @@
     "inlets": true,
     "jsarguments": true,
     "LiveAPI": true,
-    "outlet": true,
     "outlets": true,
     "post": true
   },   
@@ -41,8 +40,8 @@
       "no-param-reassign": [ "warn", {
         "props": false
       }],
-      "no-unused-vars": "warn",
+      "no-unused-vars": 0,
       "no-unused-expressions": 0,
-      "no-use-before-define": "warn"
+      "no-use-before-define": 0
   }
 }

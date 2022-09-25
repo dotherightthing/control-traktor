@@ -1,8 +1,8 @@
 {
-  "name": "m4l-devices",
+  "name": "m4l-helpers",
   "version": "1.0.0",
-  "description": "Max4Live devices.",
-  "main": "dist/rst.amxd",
+  "description": "Max4Live helper devices.",
+  "main": "dist/M4l Helpers.amxd",
   "engines": {
     "node": "18.7.0",
     "npm": "8.15.0"
@@ -13,15 +13,16 @@
   },
   "scripts": {
     "build": "npm run lint && npm run compile",
-    "compile": "cat ./src/polyfills/string.polyfill.js ./src/rst.js > ./dist/rst.js && babel ./dist -d ./dist",
-    "lint": "eslint './src/rst.js'",
+    "concat": "cat ./src/polyfills/string.polyfill.js ./src/m4l-helpers.js > ./dist/m4l-helpers.js",
+    "compile": "npm run concat && babel ./dist -d ./dist",
+    "lint": "eslint './src/*.js'",
     "prepare": "husky install",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "nodemon"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dotherightthing/m4l-devices.git"
+    "url": "git+https://github.com/dotherightthing/m4l-helpers.git"
   },
   "keywords": [
     "m4l",
@@ -30,9 +31,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dotherightthing/m4l-devices/issues"
+    "url": "https://github.com/dotherightthing/m4l-helpers/issues"
   },
-  "homepage": "https://github.com/dotherightthing/m4l-devices#readme",
+  "homepage": "https://github.com/dotherightthing/m4l-helpers#readme",
   "devDependencies": {
     "@babel/cli": "^7.18.10",
     "@babel/core": "^7.19.1",
