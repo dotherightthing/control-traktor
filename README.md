@@ -13,13 +13,13 @@ When jamming it's easy to lose track of what each track represents. This functio
 1. add *M4L Helpers* to Master track
 2. map tabs object to encoder on non-Push controller
 3. select an Audio, MIDI, or Instrument track
-4. turn encoder from (2) to change the track name and see it update instantly
+4. turn mapped encoder from (2) to change the track name and see it update instantly
 5. alternatively use [Mira](https://cycling74.com/products/mira/) to view the Mira frame on an iPad, then tap a tab (option) on Mira to change the selected track name
 6. alternatively lock Push to the device on the Master track, and turn the `TRACKNAME` encoder
 
 ### Roadmap
 
-* add preset or picked track colours
+See <https://github.com/dotherightthing/m4l-helpers/labels/Rename%20Selected%20Track>
 
 ## resampleSelectedTrack
 
@@ -37,14 +37,15 @@ On the Push2, creation of a track-based audio (or MIDI) resampling track necessi
 6. Rename new track in software
 7. Recolour new track
 
-Key/MIDI mapping RST's BEFORE and AFTER buttons automates this process:
+Key/MIDI mapping the `Insert before` and `Insert after` buttons automates this process, by:
 
-1. RST inserts a new track BEFORE (to the left of) or AFTER (to the right of) the selected track
-2. RST matches the type of the new track to the type of the selected track (Audio or MIDI)
-3. RST sets the input of the new track to the name of the selected track
-4. RST arms the new track
-5. RST names the new track to indicate the source name and the time of creation
-6. RST recolours the new track to match the source colour
+1. inserting a new track BEFORE (to the left of) or AFTER (to the right of) the selected track
+2. matching the type of the new track to the type of the selected track (Audio or MIDI)
+3. setting the input of the new track to the name of the selected track
+4. arming the new track
+5. naming the new track to indicate the source name and the time of creation
+6. recolouring the new track to match the selected track's colour
+7. returning the focus to the selected track
 
 Recording can now be started via a single button press on the desired clip slot.
 
@@ -53,13 +54,14 @@ Note: This patch is functionally similar to ClyphX Pro's `INSAUDIO`/`INSMIDI`.
 ### Usage
 
 1. add *M4L Helpers* to Master track
-2. TODO..
-* tap a tab on Mira (iPad)
-* map button on Push2 or other controller
+2. map button on Push2 or other controller to `Insert before` and/or `Insert after` buttons
+3. select an Audio, MIDI, or Instrument track
+4. push mapped button from (2) to insert a resampling track
+5. alternatively use [Mira](https://cycling74.com/products/mira/) to view the Mira frame on an iPad, then tap one of the *(Mira)* buttons to insert a resampling track
 
 ### Roadmap
 
-.
+See <https://github.com/dotherightthing/m4l-helpers/labels/Resample%20Selected%20Track>
 
 ---
 
