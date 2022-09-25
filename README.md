@@ -65,7 +65,7 @@ Note: This patch is functionally similar to ClyphX Pro's `INSAUDIO`/`INSMIDI`.
 ### Usage
 
 1. add *M4L Helpers* to Master track
-2. map button on Push2 or other controller to `Insert before` and/or `Insert after` buttons
+2. map button on Push2 or other controller to `Insert before` and/or `Insert after` button
 3. select an Audio, MIDI, or Instrument track
 4. push mapped button from (2) to insert a resampling track
 5. alternatively use [Mira](https://cycling74.com/products/mira/) to view the Mira frame on an iPad, then tap one of the *(Mira)* buttons to insert a resampling track
