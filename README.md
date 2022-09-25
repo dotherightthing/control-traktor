@@ -2,6 +2,17 @@
 
 Max4Live devices.
 
+## Installation
+
+This repo uses a build script so that I can write JavaScript using ES6 rather than ES5.
+
+1. [Install Node and NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+2. Run the build script: `npm run build`
+3. A Max-friendly (ES5) version of the JavaScript is output into the `dist` folder
+4. Copy the `dist` folder (or the whole folder) into `~/Music/Ableton/User Library/Presets/Audio Effects/Max Audio Effect/`.
+
+---
+
 ## renameSelectedTrack
 
 ### Description
