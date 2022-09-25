@@ -157,7 +157,7 @@ function bang() {
   // Run garbage collection
   gc();
 
-  // Target object fron patcher
+  // Target object from patcher
   const obj = this.patcher.getnamed('namedObject');
 
   // Assign listener
