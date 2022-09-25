@@ -85,7 +85,7 @@ Tip: Search a YouTube video for 'Push': *Click 3 dots > Show transcript > Search
 
 ### Passing variables to the JavaScript file
 
-#### Arguments
+#### Technique A: Arguments
 
 Patcher:
 
@@ -136,7 +136,7 @@ Links:
 * <https://docs.cycling74.com/max8/refpages/js#jsarguments>
 * <https://docs.cycling74.com/max8/vignettes/jsbasic#How_Input_to_the_js_Object_is_Handled>
 
-#### Listeners
+#### Technique B: Listeners
 
 Patcher:
 
@@ -183,11 +183,10 @@ Links:
 * <https://docs.cycling74.com/max8/vignettes/scripting_topic> - `maxobjlistener-example.maxpat`
 * <https://docs.cycling74.com/max8/vignettes/jsmaxobjlistener>
 
-#### Public (global) functions
+#### Technique C: Global functions
 
-As the above two techniques didn't work for me, I settled on using public functions.
-This encouraged me to merge several separate scripts into one,
-and then to hide helper functions using `privateFunctionName.local = 1`.
+As the above two techniques didn't work for me, I settled on using global functions.
+This encouraged me to merge several separate scripts into one, and then to hide helper functions using `privateFunctionName.local = 1`.
 
 Patcher:
 
@@ -212,6 +211,16 @@ Links:
 
 * <https://docs.cycling74.com/max8/vignettes/jsbasic#Private_(Local)_Functions>
 
+---
+
+### Inspector: Bang when Transition from
+
+For buttons (`live.text`) MIDI mappable controls should activate on mouse down AND mouse up, to prevent 2 clicks being required to repeat the action.
+
+For buttons (`live.text`) Mira-only controls should only activate on transition from zero to one, otherwise every touch would trigger the action twice.
+
+---
+
 ### Mira
 
 #### Mira supports
@@ -235,12 +244,6 @@ Links:
 * `live.menu`
 * `live.scope`
 * `live.step`
-
-#### Bang whem Transition from
-
-For buttons (`live.text`) MIDI mappable controls should activate on mouse down AND mouse up, to prevent 2 clicks being required to repeat the action.
-
-For buttons (`live.text`) Mira-only controls should only activate on transition from zero to one, otherwise every touch would trigger the action twice.
 
 #### Links
 
