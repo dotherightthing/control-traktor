@@ -10,6 +10,7 @@
       "jsdoc"
   ],
   "globals": {
+    "include": true,
     "inlets": true,
     "jsarguments": true,
     "LiveAPI": true,
@@ -19,7 +20,7 @@
   "ignorePatterns": [
     "dist/",
     "node_modules/",
-    "src/polyfills/"
+    "src/*.polyfill.js"
   ],
   "rules": {
       "array-bracket-spacing": ["error", "always"],

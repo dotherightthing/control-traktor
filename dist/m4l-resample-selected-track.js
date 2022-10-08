@@ -1,51 +1,28 @@
-"use strict";
+/* exported bang, loadbang, resampleSelectedTrack */
+// https://docs.cycling74.com/max8/vignettes/jsrequire
+include('_string.polyfill.js');
 
-/**
- * @file Raw polyfill as the babel/core-js internal require system wasn't respected by Max
- * @see {@link https://raw.githubusercontent.com/behnammodi/polyfill/master/string.polyfill.js}
- */
+var getSelectedTrackObj = require('_getSelectedTrackObj');
 
-/**
- * String.padStart()
- * version 1.0.1
- * Feature	        Chrome  Firefox Internet Explorer   Opera	Safari	Edge
- * Basic support	57   	51      (No)	            44   	10      15
- * -------------------------------------------------------------------------------
- */
-if (!String.prototype.padStart) {
-  Object.defineProperty(String.prototype, 'padStart', {
-    configurable: true,
-    writable: true,
-    value: function value(targetLength, padString) {
-      targetLength = targetLength >> 0; //floor if number or convert non-number to 0;
+var getTrackIds = require('_getTrackIds');
 
-      padString = String(typeof padString !== 'undefined' ? padString : ' ');
+var log = require('_log');
 
-      if (this.length > targetLength) {
-        return String(this);
-      } else {
-        targetLength = targetLength - this.length;
+var selfOnMasterTrack = require('_selfOnMasterTrack'); // support console.log
 
-        if (targetLength > padString.length) {
-          padString += padString.repeat(targetLength / padString.length); //append to original to ensure we are longer than needed
-        }
-
-        return padString.slice(0, targetLength) + String(this);
-      }
-    }
-  });
-}
-/* exported loadbang, renameSelectedTrack, resampleSelectedTrack */
-// inlets and outlets
-
-
-inlets = 1;
-outlets = 1; // global functions and variables
-// support console.log
 
 var console = {
   log: log
 }; // eslint-disable-line no-unused-vars
+// inlets and outlets
+
+inlets = 1;
+outlets = 1; // local functions and variables
+
+getSelectedTrackObj.local = 1;
+getTrackIds.local = 1;
+log.local = 1;
+selfOnMasterTrack.local = 1; // global functions and variables
 
 /**
  * @function bang
@@ -64,21 +41,7 @@ function bang() {// eslint-disable-line no-unused-vars
 
 
 function loadbang() {
-  console.log('m4l-helpers initialized.'); // eslint-disable-line no-console
-}
-/**
- * @function renameSelectedTrack
- * @summary Rename the selected track
- * @param {string} trackName Track name
- */
-
-
-function renameSelectedTrack(trackName) {
-  var selectedTrackObj = getSelectedTrackObj();
-
-  if (typeof selectedTrackObj === 'object') {
-    selectedTrackObj.set('name', trackName);
-  }
+  console.log('m4l-resample-selected-track initialized.'); // eslint-disable-line no-console
 }
 /**
  * @function resampleSelectedTrack
@@ -91,7 +54,8 @@ function resampleSelectedTrack(insertPosition) {
   var onMasterTrack = selfOnMasterTrack();
 
   if (onMasterTrack) {
-    var selectedTrackObj = getSelectedTrackObj();
+    var selectedTrackObj = getSelectedTrackObj(); // console.log(selectedTrackObj.get('clip_slots')); // eslint-disable-line no-console
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof#typeof_null
 
     if (typeof selectedTrackObj === 'object' && selectedTrackObj !== null) {
       var selectedTrackHasAudioOutput = Boolean(Number(selectedTrackObj.get('has_audio_output')));
@@ -114,53 +78,22 @@ function resampleSelectedTrack(insertPosition) {
         } // get selectedTrackName after insertion as an insert to the left will change its numeric suffix
 
 
-        var selectedTrackName = String(selectedTrackObj.get('name'));
+        var selectedTrackName = String(selectedTrackObj.get('name')); // const selectedTrackClipLength = 0; // TODO
+
         var newTrackInputRoutingTypes = newTrackObj.get('available_input_routing_types');
         var newTrackName = createTrackName(selectedTrackName, true);
         var newTrackInputType = getTrackInputType(newTrackInputRoutingTypes, selectedTrackName);
         newTrackObj.set('name', newTrackName);
         newTrackObj.set('color', selectedTrackColor);
         newTrackObj.set('input_routing_type', newTrackInputType);
-        newTrackObj.set('arm', 1); // move focus from new track back to selected track
+        newTrackObj.set('arm', 1); // ...
+        // move focus from new track back to selected track
 
         var viewObj = new LiveAPI('live_set view');
         viewObj.set('selected_track', 'id', selectedTrackId);
       }
     }
   }
-} // local functions and variables
-
-
-log.local = 1;
-getSelectedTrackObj.local = 1;
-selfOnMasterTrack.local = 1;
-/**
- * @function log
- * @see {@link http://compusition.com/writings/js-live-selectedTrackObj-logging}
- */
-
-function log() {
-  post('------------\n');
-
-  for (var i = 0, len = arguments.length; i < len; i += 1) {
-    var message = arguments[i];
-
-    if (message && message.toString) {
-      var s = message.toString();
-
-      if (s.indexOf('[object ') >= 0) {
-        s = JSON.stringify(message);
-      }
-
-      post(s);
-    } else if (message === null) {
-      post('<null>');
-    } else {
-      post(message);
-    }
-  }
-
-  post('\n');
 }
 /**
  * @function createTrackName
@@ -183,48 +116,6 @@ function createTrackName(baseName) {
   timeStampStr = timeStamp ? " (".concat(timeStampStr, ")") : '';
   trackName = "[".concat(baseName, "]").concat(timeStampStr);
   return trackName;
-}
-/**
- * @function getSelectedTrackObj
- * @summary Checks whether the selected track is an Audio/Midi/Instrument track and not a Return/Master track
- * @returns {object} selectedTrackObj
- * @todo "jsliveapi: 'available_input_routing_types' not available on return tracks" - try..catch doesn't help
- * @todo "jsliveapi: 'available_input_routing_types' not available on master track" - try..catch doesn't help
- */
-
-
-function getSelectedTrackObj() {
-  var selectedTrackObj = new LiveAPI('live_set view selected_track');
-
-  if (selectedTrackObj) {
-    var inputOptions = selectedTrackObj.get('available_input_routing_types'); // Excludes return and master tracks
-
-    if (typeof inputOptions !== 'object') {
-      selectedTrackObj = null;
-    }
-  }
-
-  return selectedTrackObj;
-}
-/**
- * @function getTrackIds
- * @returns {Array} trackIds
- */
-
-
-function getTrackIds() {
-  var setObj = new LiveAPI('live_set'); // setObj fails if Preview is off
-
-  if (!setObj) {
-    return null;
-  }
-
-  var setTracks = setObj.get('tracks');
-  var trackIds = setTracks.filter(function (key) {
-    return key !== 'id';
-  }); // remove 'id' strings from [id,11,id,12,id,13,id,1,id,7,id,8,id,9]
-
-  return trackIds;
 }
 /**
  * @function getTrackInputType
@@ -275,27 +166,4 @@ function insertTrack(sourceTrackId) {
   setObj.call("create_".concat(trackType, "_track"), newTrackIndex);
   var newTrackObj = new LiveAPI('live_set tracks ' + newTrackIndex);
   return newTrackObj;
-}
-/**
- * @function selfOnMasterTrack
- * @summary Checks whether the max device is on the Master track
- * @returns {boolean} isOnMasterTrack
- */
-
-
-function selfOnMasterTrack() {
-  var isOnMasterTrack = false;
-  var deviceTrackObj = new LiveAPI('this_device canonical_parent');
-  var deviceTrackName = String(deviceTrackObj.get('name'));
-  var hostTrackObj = new LiveAPI('live_set master_track');
-
-  if (hostTrackObj) {
-    var hostTrackName = String(hostTrackObj.get('name'));
-
-    if (hostTrackName === deviceTrackName) {
-      isOnMasterTrack = true;
-    }
-  }
-
-  return isOnMasterTrack;
 }

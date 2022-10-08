@@ -24,6 +24,7 @@
         if (targetLength > padString.length) {
           padString += padString.repeat(targetLength / padString.length); //append to original to ensure we are longer than needed
         }
+
         return padString.slice(0, targetLength) + String(this);
       }
     },

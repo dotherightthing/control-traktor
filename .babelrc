@@ -1,9 +1,9 @@
 {
   "presets": [
     [
-      "@babel/env",
-      {
-        "exclude": ["@babel/plugin-transform-typeof-symbol"]
+      "@babel/env", {
+        "exclude": ["@babel/plugin-transform-typeof-symbol"],
+        "modules": false
       }
     ]
   ]
