@@ -1,7 +1,5 @@
 "use strict";
 
-function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
-
 /**
  * @file Raw polyfill as the babel/core-js internal require system wasn't respected by Max
  * @see {@link https://raw.githubusercontent.com/behnammodi/polyfill/master/string.polyfill.js}
@@ -73,7 +71,7 @@ function loadbang() {
 function renameSelectedTrack(trackName) {
   var selectedTrackObj = getSelectedTrackObj();
 
-  if (_typeof(selectedTrackObj) === 'object') {
+  if (typeof selectedTrackObj === 'object') {
     selectedTrackObj.set('name', trackName);
   }
 }

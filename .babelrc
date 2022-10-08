@@ -1,5 +1,10 @@
 {
   "presets": [
-    "@babel/env"
+    [
+      "@babel/env",
+      {
+        "exclude": ["@babel/plugin-transform-typeof-symbol"]
+      }
+    ]
   ]
 }
