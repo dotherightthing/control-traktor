@@ -16,7 +16,7 @@
     "build": "npm run backup && npm run lint && npm run compile",
     "changelog": "git log --pretty='* [%h] %s' --no-merges $(git describe --tags --abbrev=0 @^)..@ > CHANGELOG.md",
     "compile": "babel ./src/js/*.js -d ./dist",
-    "postinstall": "cp ./src/patches/*.amxd ./dist",
+    "postinstall": "mkdir dist && cp ./src/patches/*.amxd ./dist && npm run build",
     "lint": "eslint './src/js/*.js'",
     "prepare": "husky install",
     "release": "npm run changelog && rm -r ./release && mkdir release && cp ./README.md ./release && cp ./src/js/*.js ./release && cp ./src/patches/*.amxd ./release",
@@ -55,7 +55,8 @@
     "ext": "js,amxd",
     "exec": "npm run build",
     "watch": [
-      "src"
+      "dist/*.amxd",
+      "src/js"
     ]
   }
 }
