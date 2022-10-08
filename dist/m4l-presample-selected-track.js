@@ -1,4 +1,4 @@
-/* exported bang, loadbang, resampleSelectedTrack */
+/* exported bang, loadbang, presampleSelectedTrack */
 // https://docs.cycling74.com/max8/vignettes/jsrequire
 include('_string.polyfill.js');
 
@@ -41,16 +41,16 @@ function bang() {// eslint-disable-line no-unused-vars
 
 
 function loadbang() {
-  console.log('m4l-resample-selected-track initialized.'); // eslint-disable-line no-console
+  console.log('m4l-presample-selected-track initialized.'); // eslint-disable-line no-console
 }
 /**
- * @function resampleSelectedTrack
+ * @function presampleSelectedTrack
  * @summary Resample the selected track
  * @param {string} insertPosition Insert position relative to selected track (before|after)
  */
 
 
-function resampleSelectedTrack(insertPosition) {
+function presampleSelectedTrack(insertPosition) {
   var onMasterTrack = selfOnMasterTrack();
 
   if (onMasterTrack) {

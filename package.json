@@ -12,9 +12,11 @@
     "email": "dev@dotherightthing.co.nz"
   },
   "scripts": {
-    "build": "npm run lint && npm run compile",
-    "compile": "babel ./src/m4l-*.js -d ./dist",
-    "lint": "eslint './src/*.js'",
+    "backup": "cp ./dist/*.amxd ./src/patches",
+    "build": "npm run lint && npm run compile && npm run backup",
+    "compile": "babel ./src/js/m4l-*.js -d ./dist",
+    "postinstall": "cp ./src/patches/*.amxd ./dist",
+    "lint": "eslint './src/js/*.js'",
     "prepare": "husky install",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "nodemon"
@@ -46,5 +48,12 @@
     "eslint-plugin-jsdoc": "^39.3.6",
     "husky": "^8.0.1",
     "nodemon": "^2.0.20"
+  },
+  "nodemonConfig": {
+    "ext": "js,amxd",
+    "exec": "npm run build",
+    "watch": [
+      "src"
+    ]
   }
 }

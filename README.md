@@ -1,12 +1,12 @@
 # M4L Helpers
 
-Max4Live devices.
+A collection of Max4Live devices which speed up aspects of my DJing and jamming workflows.
 
 ## Installation only
 
 1. Click *Code > Download ZIP*
 2. Copy the `dist` folder (or the whole folder) into `~/Music/Ableton/User Library/Presets/Audio Effects/Max Audio Effect/`
-3. See device usage instructions below (*renameSelectedTrack*, *resampleSelectedTrack*)
+3. See device usage instructions below (*renameSelectedTrack*, *presampleSelectedTrack*)
 
 ## Installation and development
 
@@ -40,7 +40,7 @@ When jamming it's easy to lose track of what each track represents. This functio
 
 See <https://github.com/dotherightthing/m4l-helpers/labels/Rename%20Selected%20Track>
 
-## resampleSelectedTrack
+## presampleSelectedTrack
 
 ### Description
 
