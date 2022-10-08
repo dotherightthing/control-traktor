@@ -21,4 +21,4 @@ function selfOnMasterTrack() {
     return isOnMasterTrack;
 }
 
-exports._selfOnMasterTrack = selfOnMasterTrack; // eslint-disable-line no-underscore-dangle
+// exports._selfOnMasterTrack = selfOnMasterTrack; // eslint-disable-line no-underscore-dangle

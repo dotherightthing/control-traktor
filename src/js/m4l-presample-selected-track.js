@@ -1,25 +1,30 @@
 /* exported bang, loadbang, presampleSelectedTrack */
+/* global getSelectedTrackObj, getTrackIds, log, selfOnMasterTrack */
+
+const console = {};
+const lib = {};
 
 // https://docs.cycling74.com/max8/vignettes/jsrequire
-include('_string.polyfill.js');
-const getSelectedTrackObj = require('_getSelectedTrackObj');
-const getTrackIds = require('_getTrackIds');
-const log = require('_log');
-const selfOnMasterTrack = require('_selfOnMasterTrack');
+// Unsure how to work with Max search path so using includes rather than modules for now
 
-// support console.log
-const console = { log }; // eslint-disable-line no-unused-vars
+include('_get-selected-track-obj.js', lib);
+include('_get-track-ids.js', lib);
+include('_log.js', console);
+include('_self-on-master-track.js', lib);
+include('_string.polyfill.js');
+
+// const getSelectedTrackObj = require('_getSelectedTrackObj');
+// const getTrackIds = require('_getTrackIds');
+// const log = require('_log');
+// const selfOnMasterTrack = require('_selfOnMasterTrack');
 
 // inlets and outlets
 inlets = 1;
 outlets = 1;
 
 // local functions and variables
-
-getSelectedTrackObj.local = 1;
-getTrackIds.local = 1;
-log.local = 1;
-selfOnMasterTrack.local = 1;
+console.local = 1;
+lib.local = 1;
 
 // global functions and variables
 
@@ -47,10 +52,10 @@ function loadbang() {
  * @param {string} insertPosition Insert position relative to selected track (before|after)
  */
 function presampleSelectedTrack(insertPosition) {
-    const onMasterTrack = selfOnMasterTrack();
+    const onMasterTrack = lib.selfOnMasterTrack();
 
     if (onMasterTrack) {
-        const selectedTrackObj = getSelectedTrackObj();
+        const selectedTrackObj = lib.getSelectedTrackObj();
 
         // console.log(selectedTrackObj.get('clip_slots')); // eslint-disable-line no-console
 
@@ -160,7 +165,7 @@ function insertTrack(sourceTrackId, trackType = 'audio', insertPosition = 'after
     }
 
     const trackId = Number(sourceTrackId);
-    const trackIds = getTrackIds();
+    const trackIds = lib.getTrackIds();
     const trackIndex = trackIds.indexOf(trackId);
 
     const newTrackIndex = (insertPosition === 'before') ? trackIndex : (trackIndex + 1);

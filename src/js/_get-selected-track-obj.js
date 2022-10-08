@@ -20,4 +20,4 @@ function getSelectedTrackObj() {
     return selectedTrackObj;
 }
 
-exports._getSelectedTrackObj = getSelectedTrackObj; // eslint-disable-line no-underscore-dangle
+// exports._getSelectedTrackObj = getSelectedTrackObj; // eslint-disable-line no-underscore-dangle

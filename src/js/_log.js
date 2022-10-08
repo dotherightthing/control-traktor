@@ -26,4 +26,4 @@ function log() {
     post('\n');
 }
 
-exports._log = log; // eslint-disable-line no-underscore-dangle
+// exports._log = log; // eslint-disable-line no-underscore-dangle

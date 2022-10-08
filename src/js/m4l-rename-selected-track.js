@@ -1,21 +1,26 @@
 /* exported bang, loadbang, renameSelectedTrack */
+/* global getSelectedTrackObj, log */
+
+const console = {};
+const lib = {};
 
 // https://docs.cycling74.com/max8/vignettes/jsrequire
-include('_string.polyfill.js');
-const getSelectedTrackObj = require('_getSelectedTrackObj');
-const log = require('_log');
+// Unsure how to work with Max search path so using includes rather than modules for now
 
-// support console.log
-const console = { log }; // eslint-disable-line no-unused-vars
+include('_get-selected-track-obj.js', lib);
+include('_log.js', console);
+include('_string.polyfill.js');
+
+// const getSelectedTrackObj = require('_getSelectedTrackObj');
+// const log = require('_log');
 
 // inlets and outlets
 inlets = 1;
 outlets = 1;
 
 // local functions and variables
-
-getSelectedTrackObj.local = 1;
-log.local = 1;
+console.local = 1;
+lib.local = 1;
 
 // global functions and variables
 
@@ -43,7 +48,7 @@ function loadbang() {
  * @param {string} trackName Track name
  */
 function renameSelectedTrack(trackName) {
-    const selectedTrackObj = getSelectedTrackObj();
+    const selectedTrackObj = lib.getSelectedTrackObj();
 
     if (typeof selectedTrackObj === 'object') {
         selectedTrackObj.set('name', trackName);
