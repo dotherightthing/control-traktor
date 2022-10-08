@@ -90,7 +90,7 @@ function resampleSelectedTrack(insertPosition) {
   if (onMasterTrack) {
     var selectedTrackObj = getSelectedTrackObj();
 
-    if (_typeof(selectedTrackObj) === 'object') {
+    if (typeof selectedTrackObj === 'object' && selectedTrackObj !== null) {
       var selectedTrackHasAudioOutput = Boolean(Number(selectedTrackObj.get('has_audio_output')));
       var selectedTrackHasMidiOutput = Boolean(Number(selectedTrackObj.get('has_midi_output')));
       var selectedTrackId = selectedTrackObj.id;
