@@ -1,14 +1,15 @@
 /**
  * @function selfOnMasterTrack
  * @summary Checks whether the max device is on the Master track
+ * @param deviceTrackObj LiveAPI Device Track Object
+ * @param masterTrackObj LiveAPI Master Track Object
  * @returns {boolean} isOnMasterTrack
  */
-function selfOnMasterTrack() {
+function selfOnMasterTrack(deviceTrackObj, masterTrackObj) {
     let isOnMasterTrack = false;
 
-    const deviceTrackObj = new LiveAPI('this_device canonical_parent');
     const deviceTrackName = String(deviceTrackObj.get('name'));
-    const hostTrackObj = new LiveAPI('live_set master_track');
+    const hostTrackObj = masterTrackObj;
 
     if (hostTrackObj) {
         const hostTrackName = String(hostTrackObj.get('name'));

@@ -1,10 +1,9 @@
 /**
  * @function getTrackIds
+ * @param {object} setObj LiveAPI Set Object
  * @returns {Array} trackIds
  */
-function getTrackIds() {
-    const setObj = new LiveAPI('live_set');
-
+function getTrackIds(setObj) {
     // setObj fails if Preview is off
     if (!setObj) {
         return null;

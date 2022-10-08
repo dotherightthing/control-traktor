@@ -23,8 +23,8 @@ inlets = 1;
 outlets = 1;
 
 // local functions and variables
-console.local = 1;
-lib.local = 1;
+// console.local = 1;
+// lib.local = 1;
 
 // global functions and variables
 
@@ -52,10 +52,14 @@ function loadbang() {
  * @param {string} insertPosition Insert position relative to selected track (before|after)
  */
 function presampleSelectedTrack(insertPosition) {
-    const onMasterTrack = lib.selfOnMasterTrack();
+    const deviceTrackObj = new LiveAPI('this_device canonical_parent');
+    const masterTrackObj = new LiveAPI('live_set master_track');
+
+    const onMasterTrack = lib.selfOnMasterTrack(deviceTrackObj, masterTrackObj);
 
     if (onMasterTrack) {
-        const selectedTrackObj = lib.getSelectedTrackObj();
+        const liveApi = new LiveAPI('live_set view selected_track');
+        const selectedTrackObj = lib.getSelectedTrackObj(liveApi);
 
         // console.log(selectedTrackObj.get('clip_slots')); // eslint-disable-line no-console
 
@@ -165,7 +169,7 @@ function insertTrack(sourceTrackId, trackType = 'audio', insertPosition = 'after
     }
 
     const trackId = Number(sourceTrackId);
-    const trackIds = lib.getTrackIds();
+    const trackIds = lib.getTrackIds(setObj);
     const trackIndex = trackIds.indexOf(trackId);
 
     const newTrackIndex = (insertPosition === 'before') ? trackIndex : (trackIndex + 1);
