@@ -6,6 +6,9 @@ outlets = 1;
 
 // global functions and variables
 
+// support console.log
+const console = { log }; // eslint-disable-line no-unused-vars
+
 /**
  * @function bang
  * @summary Runs automatically when 'live.thisdevice' left outlet is connected to 'js script-name.js' inlet
@@ -94,9 +97,6 @@ function resampleSelectedTrack(insertPosition) {
 log.local = 1;
 getSelectedTrackObj.local = 1;
 selfOnMasterTrack.local = 1;
-
-// support console.log
-console = { log }; // eslint-disable-line no-unused-vars
 
 /**
  * @function log

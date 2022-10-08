@@ -41,6 +41,11 @@ if (!String.prototype.padStart) {
 
 inlets = 1;
 outlets = 1; // global functions and variables
+// support console.log
+
+var console = {
+  log: log
+}; // eslint-disable-line no-unused-vars
 
 /**
  * @function bang
@@ -128,12 +133,7 @@ function resampleSelectedTrack(insertPosition) {
 
 log.local = 1;
 getSelectedTrackObj.local = 1;
-selfOnMasterTrack.local = 1; // support console.log
-
-console = {
-  log: log
-}; // eslint-disable-line no-unused-vars
-
+selfOnMasterTrack.local = 1;
 /**
  * @function log
  * @see {@link http://compusition.com/writings/js-live-selectedTrackObj-logging}
