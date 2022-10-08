@@ -2,7 +2,7 @@
   "name": "m4l-helpers",
   "version": "1.0.0",
   "description": "Max4Live helper devices.",
-  "main": "dist/M4l Helpers.amxd",
+  "main": "README.md",
   "engines": {
     "node": "18.7.0",
     "npm": "8.15.0"
@@ -13,11 +13,13 @@
   },
   "scripts": {
     "backup": "cp ./dist/*.amxd ./src/patches",
-    "build": "npm run lint && npm run compile && npm run backup",
-    "compile": "babel ./src/js/m4l-*.js -d ./dist",
+    "build": "npm run backup && npm run lint && npm run compile",
+    "changelog": "git log --pretty='* [%h] %s' --no-merges $(git describe --tags --abbrev=0 @^)..@ > CHANGELOG.md",
+    "compile": "babel ./src/js/*.js -d ./dist",
     "postinstall": "cp ./src/patches/*.amxd ./dist",
     "lint": "eslint './src/js/*.js'",
     "prepare": "husky install",
+    "release": "npm run changelog && rm -r ./release && mkdir release && cp ./README.md ./release && cp ./src/js/*.js ./release && cp ./src/patches/*.amxd ./release",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "nodemon"
   },

@@ -1,0 +1,113 @@
+# https://stackoverflow.com/questions/59518658/how-to-use-github-release-version-number-in-github-action
+# https://help.github.com/en/actions/automating-your-workflow-with-github-actions/events-that-trigger-workflows#release-event-release
+# https://help.github.com/en/actions/reference/events-that-trigger-workflows#release-event-release
+# https://help.github.com/en/actions/configuring-and-managing-workflows/persisting-workflow-data-using-artifacts#passing-data-between-jobs-in-a-workflow
+
+name: Build and release if tagged
+
+on: push
+
+jobs:
+  build:
+    if: github.event_name == 'push' && contains(toJson(github.event.commits), '[ci skip]') == false && contains(toJson(github.event.commits), '[skip ci]') == false
+
+    runs-on: ubuntu-latest
+
+    steps:
+    # check out the repository, so the workflow can access it
+    - name: Checkout repo
+      uses: actions/checkout@v2
+
+    - name: Install Node
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18.7.0'
+    
+    # https://github.com/cypress-io/github-action#install-cypress-only
+    - name: Cache dependencies
+      uses: actions/cache@v2
+      id: cache
+      with:
+        path: |
+          ~/.cache
+        key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
+
+    - name: Install dependencies
+      run: |
+        npm ci
+
+    - name: Run build
+      run: |
+        npm run lint --if-present
+        npm run compile --if-present
+
+    - name: Copy built files to release folder
+      run: npm run release --if-present
+
+    # https://help.github.com/en/actions/configuring-and-managing-workflows/persisting-workflow-data-using-artifacts
+    - name: Archive release folder
+      uses: actions/upload-artifact@v1
+      with:
+        name: release
+        path: release
+
+    - name: Archive changelog
+      uses: actions/upload-artifact@v1
+      with:
+        name: changelog
+        path: CHANGELOG.md
+
+  # The 'release' job starts with a clean directory,
+  # we don't check out the repo again
+  # instead we download and work with
+  # the artifacts from the previous 'build' job
+  release:
+    runs-on: ubuntu-latest
+    needs: build
+
+    # https://stackoverflow.com/a/58869470/6850747
+    # https://help.github.com/en/actions/reference/workflow-commands-for-github-actions#setting-an-output-parameter
+    steps:
+    - name: Check Tag
+      id: check-tag
+      run: |
+        if [[ ${{ github.event.ref }} =~ ^refs\/tags\/[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+          echo ::set-output name=match::true
+        fi
+
+    # Download 'release' folder artifact
+    # to 'release' sub folder
+    # otherwise the contents will be added
+    # to the (empty) root
+    # (as of download-artifact@v2)
+    - name: Download release folder from Build
+      if: steps.check-tag.outputs.match == 'true'
+      uses: actions/download-artifact@v2
+      with:
+        name: release
+        path: release
+
+    - name: Download changelog from Build
+      if: steps.check-tag.outputs.match == 'true'
+      uses: actions/download-artifact@v2
+      with:
+        name: changelog
+        path: changelog
+
+    - name: Check that artifacts were downloaded as expected
+      run: ls -R
+
+    - name: Zip release folder
+      if: steps.check-tag.outputs.match == 'true'
+      uses: montudor/action-zip@v0.1.0
+      with:
+        args: zip -qq -r ./release.zip ./release
+
+    - name: Upload release to the repository's Releases page
+      if: steps.check-tag.outputs.match == 'true'
+      uses: yakuhzi/action-release@v1
+      with:
+        file: release.zip
+        changelog: changelog/CHANGELOG.md
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
