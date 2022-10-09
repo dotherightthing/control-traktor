@@ -48,7 +48,8 @@ function loadbang() {
  * @param {string} trackName Track name
  */
 function renameSelectedTrack(trackName) {
-    const selectedTrackObj = lib.getSelectedTrackObj();
+    const trackObj = new LiveAPI('live_set view selected_track');
+    const selectedTrackObj = lib.getSelectedTrackObj(trackObj);
 
     if (typeof selectedTrackObj === 'object') {
         selectedTrackObj.set('name', trackName);

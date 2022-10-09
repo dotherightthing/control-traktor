@@ -58,8 +58,8 @@ function presampleSelectedTrack(insertPosition) {
     const onMasterTrack = lib.selfOnMasterTrack(deviceTrackObj, masterTrackObj);
 
     if (onMasterTrack) {
-        const liveApi = new LiveAPI('live_set view selected_track');
-        const selectedTrackObj = lib.getSelectedTrackObj(liveApi);
+        const trackObj = new LiveAPI('live_set view selected_track');
+        const selectedTrackObj = lib.getSelectedTrackObj(trackObj);
 
         // console.log(selectedTrackObj.get('clip_slots')); // eslint-disable-line no-console
 
