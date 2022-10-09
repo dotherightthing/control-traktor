@@ -23,8 +23,8 @@ inlets = 1;
 outlets = 1;
 
 // local functions and variables
-// console.local = 1;
-// lib.local = 1;
+console.local = 1;
+lib.local = 1;
 
 // global functions and variables
 
