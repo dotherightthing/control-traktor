@@ -16,8 +16,8 @@ This repo uses a build script so that I can write JavaScript in ES6 rather than 
 2. `git clone` this repo to `~/Music/Ableton/User Library/`
 3. Run `npm install` to install dependencies, run the build
 4. Run `npm run watch` to lint and build as you save file changes
-5. Edit `src/js/m4l-*.js` - the Max-friendly (ES5) version of the JavaScript files are in the `dist` folder is updated
-6. Edit `dist/*.amxd` in Max - `npm run watch` will copy this file back to `src/patches` whenever you save changes to it
+   * Edit `src/js/m4l-*.js` - the Max-friendly (ES5) version of this file is updated in the `dist` folder
+   * Edit `dist/*.amxd` in Max - this file is copied back to the `src/patches` folder
 
 ---
 
