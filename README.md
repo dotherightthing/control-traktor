@@ -45,7 +45,7 @@ Set `MIDI To` to:
 1. *Traktor > Preferences > Controller Manager > Import > `m4l-control-traktor-deck.tsi`*
    * In-Port: *Traktor Virtual Input*
    * Out-Port: *Traktor Virtual Output*
-2. add *Control Traktor Deck.amxd* to the Ableton Live track, into which audio is streaming from Traktor (see my [Traktor Live v3 template](https://github.com/dotherightthing/traktor-live-v3#ableton-live))
+2. add *Control Traktor Deck.amxd* to a **MIDI** track in Ableton Live (see my [Traktor Live v3 template](https://github.com/dotherightthing/traktor-live-v3#ableton-live))
    * map controllers to the controls on the device
 
 ### Roadmap for *Control Traktor Deck*
@@ -84,11 +84,11 @@ Note: This patch is functionally similar to ClyphX Pro's `INSAUDIO`/`INSMIDI`.
 
 ### Usage of *Presample Selected Track*
 
-1. add *Presample Selected Track.amxd* to Master track
-2. map button on Push2 or other controller to `Insert before` and/or `Insert after` button
-3. select an Audio, MIDI, or Instrument track
-4. push mapped button from (2) to insert a resampling track
-5. alternatively use [Mira](https://cycling74.com/products/mira/) to view the Mira frame on an iPad, then tap one of the *(Mira)* buttons to insert a resampling track
+1. add *Presample Selected Track.amxd* to the Master **Audio** track in Ableton Live
+   * map button on Push2 or other controller to `Insert before` and/or `Insert after` button
+2. select an Audio, MIDI, or Instrument track
+   * push mapped button from (2) to insert a resampling track
+   * alternatively use [Mira](https://cycling74.com/products/mira/) to view the Mira frame on an iPad, then tap one of the *(Mira)* buttons to insert a resampling track
 
 ### Roadmap for *Presample Selected Track*
 
@@ -102,12 +102,12 @@ When jamming it's easy to lose track of what each track represents. This functio
 
 ### Usage of *Rename Selected Track*
 
-1. add *Rename Selected Track.amxd* to Master track
-2. map tabs object to encoder on non-Push controller
-3. select an Audio, MIDI, or Instrument track
-4. turn mapped encoder from (2) to change the track name and see it update instantly
-5. alternatively use [Mira](https://cycling74.com/products/mira/) to view the Mira frame on an iPad, then tap a tab (option) on Mira to change the selected track name
-6. alternatively lock Push to the device on the Master track, and turn the `TRACKNAME` encoder
+1. add *Rename Selected Track.amxd* to the Master **Audio** track in Ableton Live
+   * map tabs object to encoder on non-Push controller
+2. select an Audio, MIDI, or Instrument track
+   * turn mapped encoder from (2) to change the track name and see it update instantly
+   * alternatively use [Mira](https://cycling74.com/products/mira/) to view the Mira frame on an iPad, then tap a tab (option) on Mira to change the selected track name
+   * alternatively lock Push to the device on the Master track, and turn the `TRACKNAME` encoder
 
 ### Roadmap for *Rename Selected Track*
 
