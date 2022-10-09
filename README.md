@@ -21,6 +21,39 @@ This repo uses a build script so that I can write JavaScript in ES6 rather than 
 
 ---
 
+## Control Traktor Deck
+
+When using Traktor in unconventional ways, multiple controllers can be involved. This requires setting up a `.tsi` file for each controller in order to map specific controls to Traktor.
+
+This is fiddly and the work needs to be done again when controllers change.
+
+This patch exposes the Traktor controls that I use in my DJing workflow, so that I can easily map my controllers using Ableton Live rather than Traktor.
+
+The same device is used for Deck A and B, the only difference will be the output channel as per the mappings in the TSI file:
+
+* Deck A: Channel 2
+* Deck B: Channel 3
+* Global mappings are replicated on both channels
+
+Set `MIDI To` to:
+
+* `Traktor Virtual Input`
+* `Ch. [channel number, see above]`
+
+### Usage of *Control Traktor Deck*
+
+1. *Traktor > Preferences > Controller Manager > Import > `m4l-control-traktor-deck.tsi`*
+   * In-Port: *Traktor Virtual Input*
+   * Out-Port: *Traktor Virtual Output*
+2. add *Control Traktor Deck.amxd* to the Ableton Live track, into which audio is streaming from Traktor (see my [Traktor Live v3 template](https://github.com/dotherightthing/traktor-live-v3#ableton-live))
+   * map controllers to the controls on the device
+
+### Roadmap for *Control Traktor Deck*
+
+See <https://github.com/dotherightthing/m4l-helpers/labels/Control%20Traktor%20Deck>
+
+---
+
 ## Presample Selected Track
 
 When jamming with soft synths or hardware synths, MIDI notes are driving that synth. Recording into the instrument channel would therefore record the MIDI input rather than the audio output. When recorded MIDI is played back at a later date, the sound is often different to what was originally played, due to some combination of synth settings not being saved with the MIDI input (this is especially the case with hardware synths). In this instance it's better to capture the audio output rather than the MIDI input. For synths that don't have MIDI input, audio capture is the only option.
