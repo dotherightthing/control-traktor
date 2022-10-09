@@ -1,6 +1,7 @@
 /**
  * @function log
  * @see {@link http://compusition.com/writings/js-live-selectedTrackObj-logging}
+ * @todo error() - https://github.com/xyzes/harmonizer/blob/666b32f4d8f01ad537ffdcfa94d55872d939165f/ioRouting.js#L30
  */
 function log() {
     post('------------\n');
