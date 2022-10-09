@@ -13,11 +13,11 @@ A collection of Max4Live devices which speed up aspects of my DJing and jamming 
 This repo uses a build script so that I can write JavaScript in ES6 rather than ES5.
 
 1. [Install Node and NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-2. `git clone` this repo to `~/Music/Ableton/User Library/Presets/Audio Effects/Max Audio Effect/`
-3. Run `npm install` to install dependencies
-4. Run `npm run watch` to lint, build and watch for JavaScript file changes
-5. Edit `src/m4l-helpers.js` - the Max-friendly (ES5) version of the JavaScript in the `dist` folder is updated
-6. Edit `dist/M4L Helpers.amxd`
+2. `git clone` this repo to `~/Music/Ableton/User Library/`
+3. Run `npm install` to install dependencies, run the build
+4. Run `npm run watch` to lint and build as you save file changes
+5. Edit `src/js/m4l-*.js` - the Max-friendly (ES5) version of the JavaScript files are in the `dist` folder is updated
+6. Edit `dist/*.amxd` in Max - `npm run watch` will copy this file back to `src/patches` whenever you save changes to it
 
 ---
 
@@ -81,6 +81,22 @@ When jamming it's easy to lose track of what each track represents. This functio
 See <https://github.com/dotherightthing/m4l-helpers/labels/Rename%20Selected%20Track>
 
 ---
+
+## Thanks to
+
+* [Ableton Max For Live Beginner's Masterclass (Phelan Kane / CM)](https://www.youtube.com/watch?v=tkXz8sf-KwU&t=751s)
+* [Learning The Live Object Model and Creating 0dB Max (Josh Spoon / The Producer's Kitchen)](https://www.youtube.com/watch?v=agtnMQkDjUE)
+* [Traversing the Ableton Live Object Model (Jeff Merkel)](https://www.youtube.com/watch?v=qeabaagMZr8)
+* [JavaScript Live API Tutorials (Adam Murray / Compusition)](http://compusition.com/writings/js-live-api)
+* [LOM - The Live Object Model (Cycling 74)](https://docs.cycling74.com/max8/vignettes/live_object_model)
+* [Max JS Require Guide (Cycling 74)](https://docs.cycling74.com/max8/vignettes/jsrequire)
+* [Paste pre-formed Max patches from Max's library](https://youtu.be/GvBAKJcK_S0?t=48)
+* [Map UI objects to control surfaces incl Push2 (Phelan Kane)](https://youtu.be/tkXz8sf-KwU?t=3478)
+* [Using prototypes to change the appearance of UI objects (Cycling 74)](https://youtu.be/yLhsm64lHS8?t=190)
+* [Long Name is for Automation, Short Name is for UI (Cycling 74)](https://youtu.be/jfA61vLImNI?t=48)
+* [The Max js object uses version 1.8.5 of the JavaScript language, a Mozilla specific superset of ECMAScript 5 (Cycling 74)](https://docs.cycling74.com/max8/tutorials/javascriptchapter01)
+
+Tip: Search a YouTube video for 'Push': *Click 3 dots > Show transcript > Search in video*
 
 ## Insights
 
@@ -251,19 +267,3 @@ For buttons (`live.text`) Mira-only controls should only activate on transition 
 * [Mira iPad app (Cycling 74)](https://cycling74.com/products/mira/)
 
 ---
-
-## Thanks to
-
-* [Ableton Max For Live Beginner's Masterclass (Phelan Kane / CM)](https://www.youtube.com/watch?v=tkXz8sf-KwU&t=751s)
-* [Learning The Live Object Model and Creating 0dB Max (Josh Spoon / The Producer's Kitchen)](https://www.youtube.com/watch?v=agtnMQkDjUE)
-* [Traversing the Ableton Live Object Model (Jeff Merkel)](https://www.youtube.com/watch?v=qeabaagMZr8)
-* [JavaScript Live API Tutorials (Adam Murray / Compusition)](http://compusition.com/writings/js-live-api)
-* [LOM - The Live Object Model (Cycling 74)](https://docs.cycling74.com/max8/vignettes/live_object_model)
-* [Max JS Require Guide (Cycling 74)](https://docs.cycling74.com/max8/vignettes/jsrequire)
-* [Paste pre-formed Max patches from Max's library](https://youtu.be/GvBAKJcK_S0?t=48)
-* [Map UI objects to control surfaces incl Push2 (Phelan Kane)](https://youtu.be/tkXz8sf-KwU?t=3478)
-* [Using prototypes to change the appearance of UI objects (Cycling 74)](https://youtu.be/yLhsm64lHS8?t=190)
-* [Long Name is for Automation, Short Name is for UI (Cycling 74)](https://youtu.be/jfA61vLImNI?t=48)
-* [The Max js object uses version 1.8.5 of the JavaScript language, a Mozilla specific superset of ECMAScript 5 (Cycling 74)](https://docs.cycling74.com/max8/tutorials/javascriptchapter01)
-
-Tip: Search a YouTube video for 'Push': *Click 3 dots > Show transcript > Search in video*
