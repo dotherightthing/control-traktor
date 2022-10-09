@@ -59,7 +59,7 @@ Note: This patch is functionally similar to ClyphX Pro's `INSAUDIO`/`INSMIDI`.
 
 ### Roadmap for *Presample Selected Track*
 
-See <https://github.com/dotherightthing/m4l-helpers/labels/Resample%20Selected%20Track>
+See <https://github.com/dotherightthing/m4l-helpers/labels/Presample%20Selected%20Track>
 
 ---
 
