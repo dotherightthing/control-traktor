@@ -4,8 +4,8 @@ A collection of Max4Live devices which speed up aspects of my DJing and jamming 
 
 ## Installation only
 
-1. Click *Code > Download ZIP*
-2. Copy the `dist` folder (or the whole folder) into `~/Music/Ableton/User Library/Presets/Audio Effects/Max Audio Effect/`
+1. Download `release.zip` from the latest [Release](https://github.com/dotherightthing/m4l-helpers/releases)
+2. Unzip/expand the folder and copy to `~/Music/Ableton/User\ Library/` (note: devices may be a mix of Audio/Instrument/MIDI types)
 3. See device usage instructions below (*renameSelectedTrack*, *presampleSelectedTrack*)
 
 ## Installation and development
@@ -21,28 +21,26 @@ This repo uses a build script so that I can write JavaScript in ES6 rather than 
 
 ---
 
-## renameSelectedTrack
-
-### Description
+## Rename Selected Track
 
 When jamming it's easy to lose track of what each track represents. This function provides a quick way to name the track from a list of common options.
 
-### Usage
+### Usage of *Rename Selected Track*
 
-1. add *M4L Helpers* to Master track
+1. add *Rename Selected Track.amxd* to Master track
 2. map tabs object to encoder on non-Push controller
 3. select an Audio, MIDI, or Instrument track
 4. turn mapped encoder from (2) to change the track name and see it update instantly
 5. alternatively use [Mira](https://cycling74.com/products/mira/) to view the Mira frame on an iPad, then tap a tab (option) on Mira to change the selected track name
 6. alternatively lock Push to the device on the Master track, and turn the `TRACKNAME` encoder
 
-### Roadmap
+### Roadmap for *Rename Selected Track*
 
 See <https://github.com/dotherightthing/m4l-helpers/labels/Rename%20Selected%20Track>
 
-## presampleSelectedTrack
+---
 
-### Description
+## Presample Selected Track
 
 When jamming with soft synths or hardware synths, MIDI notes are driving that synth. Recording into the instrument channel would therefore record the MIDI input rather than the audio output. When recorded MIDI is played back at a later date, the sound is often different to what was originally played, due to some combination of synth settings not being saved with the MIDI input (this is especially the case with hardware synths). In this instance it's better to capture the audio output rather than the MIDI input. For synths that don't have MIDI input, audio capture is the only choice.
 
@@ -70,35 +68,17 @@ Recording can now be started via a single button press on the desired clip slot.
 
 Note: This patch is functionally similar to ClyphX Pro's `INSAUDIO`/`INSMIDI`.
 
-### Usage
+### Usage of *Presample Selected Track*
 
-1. add *M4L Helpers* to Master track
+1. add *Presample Selected Track.amxd* to Master track
 2. map button on Push2 or other controller to `Insert before` and/or `Insert after` button
 3. select an Audio, MIDI, or Instrument track
 4. push mapped button from (2) to insert a resampling track
 5. alternatively use [Mira](https://cycling74.com/products/mira/) to view the Mira frame on an iPad, then tap one of the *(Mira)* buttons to insert a resampling track
 
-### Roadmap
+### Roadmap for *Presample Selected Track*
 
 See <https://github.com/dotherightthing/m4l-helpers/labels/Resample%20Selected%20Track>
-
----
-
-## Research
-
-* [Ableton Max For Live Beginner's Masterclass (Phelan Kane / CM)](https://www.youtube.com/watch?v=tkXz8sf-KwU&t=751s)
-* [Learning The Live Object Model and Creating 0dB Max (Josh Spoon / The Producer's Kitchen)](https://www.youtube.com/watch?v=agtnMQkDjUE)
-* [Traversing the Ableton Live Object Model (Jeff Merkel)](https://www.youtube.com/watch?v=qeabaagMZr8)
-* [JavaScript Live API Tutorials (Adam Murray / Compusition)](http://compusition.com/writings/js-live-api)
-* [LOM - The Live Object Model (Cycling 74)](https://docs.cycling74.com/max8/vignettes/live_object_model)
-* [Max JS Require Guide (Cycling 74)](https://docs.cycling74.com/max8/vignettes/jsrequire)
-* [Paste pre-formed Max patches from Max's library](https://youtu.be/GvBAKJcK_S0?t=48)
-* [Map UI objects to control surfaces incl Push2 (Phelan Kane)](https://youtu.be/tkXz8sf-KwU?t=3478)
-* [Using prototypes to change the appearance of UI objects (Cycling 74)](https://youtu.be/yLhsm64lHS8?t=190)
-* [Long Name is for Automation, Short Name is for UI (Cycling 74)](https://youtu.be/jfA61vLImNI?t=48)
-* [The Max js object uses version 1.8.5 of the JavaScript language, a Mozilla specific superset of ECMAScript 5 (Cycling 74)](https://docs.cycling74.com/max8/tutorials/javascriptchapter01)
-
-Tip: Search a YouTube video for 'Push': *Click 3 dots > Show transcript > Search in video*
 
 ---
 
@@ -269,3 +249,21 @@ For buttons (`live.text`) Mira-only controls should only activate on transition 
 #### Links
 
 * [Mira iPad app (Cycling 74)](https://cycling74.com/products/mira/)
+
+---
+
+## Thanks to
+
+* [Ableton Max For Live Beginner's Masterclass (Phelan Kane / CM)](https://www.youtube.com/watch?v=tkXz8sf-KwU&t=751s)
+* [Learning The Live Object Model and Creating 0dB Max (Josh Spoon / The Producer's Kitchen)](https://www.youtube.com/watch?v=agtnMQkDjUE)
+* [Traversing the Ableton Live Object Model (Jeff Merkel)](https://www.youtube.com/watch?v=qeabaagMZr8)
+* [JavaScript Live API Tutorials (Adam Murray / Compusition)](http://compusition.com/writings/js-live-api)
+* [LOM - The Live Object Model (Cycling 74)](https://docs.cycling74.com/max8/vignettes/live_object_model)
+* [Max JS Require Guide (Cycling 74)](https://docs.cycling74.com/max8/vignettes/jsrequire)
+* [Paste pre-formed Max patches from Max's library](https://youtu.be/GvBAKJcK_S0?t=48)
+* [Map UI objects to control surfaces incl Push2 (Phelan Kane)](https://youtu.be/tkXz8sf-KwU?t=3478)
+* [Using prototypes to change the appearance of UI objects (Cycling 74)](https://youtu.be/yLhsm64lHS8?t=190)
+* [Long Name is for Automation, Short Name is for UI (Cycling 74)](https://youtu.be/jfA61vLImNI?t=48)
+* [The Max js object uses version 1.8.5 of the JavaScript language, a Mozilla specific superset of ECMAScript 5 (Cycling 74)](https://docs.cycling74.com/max8/tutorials/javascriptchapter01)
+
+Tip: Search a YouTube video for 'Push': *Click 3 dots > Show transcript > Search in video*
