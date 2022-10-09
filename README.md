@@ -265,5 +265,3 @@ For buttons (`live.text`) Mira-only controls should only activate on transition 
 #### Links
 
 * [Mira iPad app (Cycling 74)](https://cycling74.com/products/mira/)
-
----
