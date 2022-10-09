@@ -6,7 +6,7 @@ A collection of Max4Live devices which speed up aspects of my DJing and jamming 
 
 1. Download `release.zip` from the latest [Release](https://github.com/dotherightthing/m4l-helpers/releases)
 2. Unzip/expand the folder and copy to `~/Music/Ableton/User\ Library/` (note: devices may be a mix of Audio/Instrument/MIDI types)
-3. See device usage instructions below (*renameSelectedTrack*, *presampleSelectedTrack*)
+3. See device usage instructions below (*Rename Selected Track*, *Presample Selected Track*)
 
 ## Installation and development
 
@@ -18,25 +18,6 @@ This repo uses a build script so that I can write JavaScript in ES6 rather than 
 4. Run `npm run watch` to lint, build and watch for JavaScript file changes
 5. Edit `src/m4l-helpers.js` - the Max-friendly (ES5) version of the JavaScript in the `dist` folder is updated
 6. Edit `dist/M4L Helpers.amxd`
-
----
-
-## Rename Selected Track
-
-When jamming it's easy to lose track of what each track represents. This function provides a quick way to name the track from a list of common options.
-
-### Usage of *Rename Selected Track*
-
-1. add *Rename Selected Track.amxd* to Master track
-2. map tabs object to encoder on non-Push controller
-3. select an Audio, MIDI, or Instrument track
-4. turn mapped encoder from (2) to change the track name and see it update instantly
-5. alternatively use [Mira](https://cycling74.com/products/mira/) to view the Mira frame on an iPad, then tap a tab (option) on Mira to change the selected track name
-6. alternatively lock Push to the device on the Master track, and turn the `TRACKNAME` encoder
-
-### Roadmap for *Rename Selected Track*
-
-See <https://github.com/dotherightthing/m4l-helpers/labels/Rename%20Selected%20Track>
 
 ---
 
@@ -79,6 +60,25 @@ Note: This patch is functionally similar to ClyphX Pro's `INSAUDIO`/`INSMIDI`.
 ### Roadmap for *Presample Selected Track*
 
 See <https://github.com/dotherightthing/m4l-helpers/labels/Resample%20Selected%20Track>
+
+---
+
+## Rename Selected Track
+
+When jamming it's easy to lose track of what each track represents. This function provides a quick way to name the track from a list of common options.
+
+### Usage of *Rename Selected Track*
+
+1. add *Rename Selected Track.amxd* to Master track
+2. map tabs object to encoder on non-Push controller
+3. select an Audio, MIDI, or Instrument track
+4. turn mapped encoder from (2) to change the track name and see it update instantly
+5. alternatively use [Mira](https://cycling74.com/products/mira/) to view the Mira frame on an iPad, then tap a tab (option) on Mira to change the selected track name
+6. alternatively lock Push to the device on the Master track, and turn the `TRACKNAME` encoder
+
+### Roadmap for *Rename Selected Track*
+
+See <https://github.com/dotherightthing/m4l-helpers/labels/Rename%20Selected%20Track>
 
 ---
 
