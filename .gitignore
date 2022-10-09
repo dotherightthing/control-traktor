@@ -1,4 +1,6 @@
 dist
 node_modules
-release
+release/*.amxd
+release/*.js
+release/*.md
 *.xmp

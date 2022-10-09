@@ -19,7 +19,7 @@
     "postinstall": "mkdir dist && cp ./src/patches/*.amxd ./dist && npm run build",
     "lint": "eslint './src/js/*.js'",
     "prepare": "husky install",
-    "release": "npm run changelog && rm -r ./release && mkdir release && cp ./README.md ./release && cp ./dist/*.js ./release && cp ./dist/*.amxd ./release",
+    "release": "npm run changelog && cp ./README.md ./release && cp ./dist/*.js ./release && cp ./dist/*.amxd ./release",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "nodemon"
   },
