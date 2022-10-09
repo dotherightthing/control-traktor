@@ -1,8 +1,8 @@
 /**
  * @function selfOnMasterTrack
  * @summary Checks whether the max device is on the Master track
- * @param deviceTrackObj LiveAPI Device Track Object
- * @param masterTrackObj LiveAPI Master Track Object
+ * @param {object} deviceTrackObj LiveAPI Device Track Object
+ * @param {object} masterTrackObj LiveAPI Master Track Object
  * @returns {boolean} isOnMasterTrack
  */
 function selfOnMasterTrack(deviceTrackObj, masterTrackObj) {
