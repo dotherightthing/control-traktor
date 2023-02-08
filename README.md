@@ -130,6 +130,7 @@ See <https://github.com/dotherightthing/m4l-helpers/labels/Rename%20Selected%20T
 * [The Max js object uses version 1.8.5 of the JavaScript language, a Mozilla specific superset of ECMAScript 5 (Cycling 74)](https://docs.cycling74.com/max8/tutorials/javascriptchapter01)
 * [Places to Learn Max (Cycling 74)](https://cycling74.com/places-to-learn-max) > Books > [Max for Live Ultimate Zen Guide](https://leanpub.com/Max-for-Live-Ultimate-Zen-Guide)
 * [How to map Encoders in Traktor](https://www.youtube.com/watch?v=BJZ27iVoq2A)
+* [Midi Filter Select 1.4](https://www.maxforlive.com/library/device/4365/midi-filter-select) for the [gswitch](https://docs.cycling74.com/max8/refpages/gswitch?q=gswitch) tip
 
 Tip: Search a YouTube video for 'Push': *Click 3 dots > Show transcript > Search in video*
 
