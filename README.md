@@ -128,6 +128,7 @@ See <https://github.com/dotherightthing/m4l-helpers/labels/Rename%20Selected%20T
 * [Using prototypes to change the appearance of UI objects (Cycling 74)](https://youtu.be/yLhsm64lHS8?t=190)
 * [Long Name is for Automation, Short Name is for UI (Cycling 74)](https://youtu.be/jfA61vLImNI?t=48)
 * [The Max js object uses version 1.8.5 of the JavaScript language, a Mozilla specific superset of ECMAScript 5 (Cycling 74)](https://docs.cycling74.com/max8/tutorials/javascriptchapter01)
+* [How to map Encoders in Traktor](https://www.youtube.com/watch?v=BJZ27iVoq2A)
 
 Tip: Search a YouTube video for 'Push': *Click 3 dots > Show transcript > Search in video*
 
