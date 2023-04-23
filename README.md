@@ -21,7 +21,141 @@ This repo uses a build script so that I can write JavaScript in ES6 rather than 
 
 ---
 
-## Control Traktor Deck
+## Control Traktor Deck v3 (2023.04.23)
+
+### Description
+
+* sequences Traktor via MIDI Hot Cue manipulation
+* this is faster than sampling into Live and then resequencing
+* this is more flexible than sampling into Traktor's Remix Decks
+* this is more robust than sampling into Traktor's Loop Recorder
+
+### Files
+
+* `src/patches/Control Traktor Deck v3.amxd`
+* `src/traktor/Control Traktor Deck v3 A.tsi`
+* `src/presets/Control Traktor Deck v3 - Deck A Cues.adg`
+* `src/presets/Control Traktor Deck v3 - Deck A Keys + Controls.adg`
+* `src/sets/Control Traktor Deck v3.als`
+
+### Setup
+
+#### Live
+
+* create a MIDI track and insert *Control Traktor Deck v3 - Deck A Cues.adg*
+  * set input to *Push2* (to exclude input from MIDI keyboard which would otherwise be recorded into the sequencer)
+* create a MIDI track and insert *Control Traktor Deck v3 - Deck A Keys + Controls.adg*
+  * set input to *All* (to allow control from Push2 or MIDI Keyboard)
+
+### Traktor controls
+
+* Global MIDI Sync:
+  * trigger from a coloured pad in the Drum Rack
+* Track *Hot Cues*:
+  * sequence from Drum Rack Sequencer
+* Track *KEY*:
+  * capture middle note of the 2-octave MIDI keyboard key range
+  * control via encoder/automation or MIDI keyboard/automation
+  * sequence from Melodic Sequencer
+* Track *PAN*:
+  * control via encoder/automation
+  * sequence from Melodic Sequencer
+* Track *GAIN*:
+  * control via encoder/automation
+  * sequence from Melodic Sequencer
+
+### Dev notes
+
+#### Initial experiment
+
+* Had a play with sequencing as forgot about *Drum Rack To CC Hot Cue Sequencer* - used TST1 Live set.
+* Hot cue automation doesn't seem to be recorded from Push2 so had to draw it in.
+* Pitch automation was recorded from CS1x.
+
+and
+
+* The Drum Rack is programmed by sending notes rather than CCs
+* Grabbing MIDI from the Drum Rack channel on a separate MIDI out channel was still problematic to get it into Traktor
+* Rather than looking at the notes on the software Drum Rack to figure out how to map Push inside the Traktor controller manager, it's easier to click the Learn button in Traktor and press the notes on the controller
+* Deleting the Drum Rack channel and inputting directly into a Melodic Sequencer on the MIDI Out channel works better
+* The note length can be changed by holding down the start position on the sequencer and pushing the end position
+* Nothing else can be edited - this is where an M4L device would come in - to allow e.g. pitch or volume to be set at a sequencer position
+
+and
+
+* Good article here: [Using Ableton Push and Drum Racks to Control External Hardware](https://ask.audio/articles/using-ableton-push-and-drum-racks-to-control-external-hardware)
+* Apparently the way to do it is to have an External Instrument on every pad of the Drum Rack. This allows MIDI notes to be sent out of the Drum Rack, so that the Hot Cues to be sequenced individually.
+* Other deck controls can be managed via a single device at the Rack level. This can be controlled from each Hot Cue by sequencing the rack macros.
+* A parent Instrument Rack allows different key ranges to be assigned to the Drum Rack and the Key Adjust (via the Max4Live plugin). This prevents input intended for the Key Adjust from accidentally triggering a Drum Rack pad (or moving the focus by selecting one without an External Instrument on it). However it didn't restrict what was actually recorded into the sequencer.
+
+#### Solution
+
+* replaced `js filename` with sub `patcher` to resolve JS randomly reverting to an old version with less outlets
+* used `expr` to reimplement JS formulas in a more succinct way than using lots of graphical numbers and operators
+* MIDI keyboard drives the Key dial
+* Gain and Balance knobs are on the same device as Key control, so that it's intuitive to select the correct device to automate them from
+* Dual tracks used in order to use the best sequencer for the job and keep the recorded MIDI data clean and easily editable
+  * triggers: Drum Rack (Hot Cues)
+  * melody: M4L plugin (Key pitching)
+
+#### Issues
+
+* Dial automation is intended to allow per-step pitch changes, but this is problematic:
+  * MIDI notes drive the Live Dial (good) but are also captured as MIDI notes
+  * Recorded MIDI notes trump encoder Dial automation (forcing the Re-Enable Automation light to turn on)
+  * Macro knob mapping not usable as this prevents MIDI keyboard control of the Key dial
+  * Deleting Dial automation doesn't delete MIDI notes
+  * Per-step Dial automation can be fiddly when trying to effect a range
+* Getting rid of the dial would be better
+  * [Learn Push 2: 32-Note Melodic Step Sequencer](https://www.youtube.com/watch?v=GVilj3bChHY) has info on programming the notes - if I mastered this then the desired but problematic per-step control over the Key encoder position would be less useful.
+
+### TODO
+
+* Create variants for Deck B etc
+
+#### Usage tips
+
+* Sequencer: Layout > Note (Drums: Loop Selector)
+* Drum Rack macros: Device > Drum Rack > Rec + Automate > Adjust encoder
+* Note length (Traktor's Hot Key mapping is "Hold" rather than "Trigger")
+  * Clip > Press on sequencer pad > Length
+  * Clip > Press on sequencer pad > Press on another pad
+* To stop clip (e.g. to delete and create Cue point in Traktor):
+  * Layout > Session > Select clip > Stop clip, or
+  * Layout > Session > Select clip > Toggle Clip to "Loop OFF"
+* Load same track into another deck: drag and drop track header (triggering polyphony is 1)
+* Delete automation: Delete > Touch encoder
+* Phrasing
+  * If duplicating a clip and triggering the new one, be aware that it might not sound the same as Traktor could be mid sequence when the new clip is triggered.
+  * The solution is to stop playback of the Traktor deck and/or check that there are no gaps between the MIDI notes, so that Traktor is not filling in the silent gaps.
+  * Also setting the MIDI clips to Trigger "Legato" so there's no drop out in audio when transitioning between clips.
+* Note mapping
+  * There is an octave difference between Live and Traktor:
+  * Live Drum Rack "Hot Cue 1" plays C0 on MIDI channel 4
+  * Traktor: Hot Cue 1 mapped to Note C1 on Channel 4
+* Editing clip / viewing sequencer
+  * Push2 > Clip > Select > Tap Drum Pad
+* MIDI note recording
+  * keyboard midi notes are recorded regardless of the Chain key range settings
+  * so the MIDI In must be configured to restrict recorded input
+* Melodic sequencer
+  * Scale mode "Sequential" + "Major" + "Chromatic" + "Vertical" visually makes some sense (light off = black key)
+  * Select + note highlights the note in the sequencer.
+  * Orange pad indicates a C note.
+* Traktor gotchas
+  * Toggling from Deck C to Deck A  interrupts playback of MIDI.
+* M4L
+  * when using `live.foo` components in M4L, set the "Parameter Visibility" to `hidden` to remove irrelevant cruft from Live's MIDI clip's Envelopes drop-down
+
+---
+
+## Control Traktor Deck v?
+
+### Status
+
+* Superceded by *Control Traktor Deck v3*
+
+### Description
 
 When using Traktor in unconventional ways, multiple controllers can be involved. This requires setting up a `.tsi` file for each controller in order to map specific controls to Traktor.
 
@@ -42,15 +176,91 @@ Set `MIDI To` to:
 
 ### Usage of *Control Traktor Deck*
 
-1. *Traktor > Preferences > Controller Manager > Import > `m4l-control-traktor-deck.tsi`*
+1. *Traktor > Preferences > Controller Manager > Import > `m4l-control-Traktor-deck.tsi`*
    * In-Port: *Traktor Virtual Input*
    * Out-Port: *Traktor Virtual Output*
-2. add *Control Traktor Deck.amxd* to a **MIDI** track in Ableton Live (see my [Traktor Live v3 template](https://github.com/dotherightthing/traktor-live-v3#ableton-live))
+2. add *Control Traktor Deck.amxd* to a **MIDI** track in Ableton Live (see my [Traktor Live v3 template](https://github.com/dotherightthing/Traktor-live-v3#ableton-live))
    * map controllers to the controls on the device
 
 ### Roadmap for *Control Traktor Deck*
 
 See <https://github.com/dotherightthing/m4l-helpers/labels/Control%20Traktor%20Deck>
+
+---
+
+## Drum Rack To CC Hot Cue Sequencer (2023.02.09)
+
+* triggers a Traktor Hot Cue from a Live Drum Rack, by converting the Drum Rack MIDI note to a MIDI CC that is mapped to the Hot Cues in Traktor
+* superceded by *Control Traktor Deck v3* which maps the Drum Rack notes directly to Traktor's Hot Cues in the `.tsi` file
+
+### Files
+
+* `src/patches/Drum Rack To CC Hot Cue Sequencer.amxd`
+* `src/traktor/Drum Rack To CC Hot Cue Sequencer.tsi`
+
+### Dev notes
+
+#### Initial experiment
+
+##### Traktor
+
+* created a TSI
+* mapped 'Select/Set+Store Hotcue' 1-8 Deck A to Ch2 CC 20-28
+
+##### Live
+
+* created a MIDI channel
+* MIDI To = Traktor Virtual Input Ch2
+* created a MIDI clip
+* Notes tab: drew in some notes (note there seems to be an octave difference between how Live and Traktor experience notes)
+* MIDI Ctrl tab: drew in events for 20, 21, 22, 23
+* played clip
+* Deck A jumps between hot cues and changes the pitch
+
+##### Push 2
+
+* melodic sequencer only shows note events
+* note selection is confusing
+* can't see how to change CC on push
+* however on Deck A, the Control Traktor Deck also appears in the MIDI Ctrl tab, so could have hot cues assigned to a single encoder and then set this position in the sequencer (this works with sequencing the balance knob on Deck A)
+
+##### Thoughts
+
+That was pretty easy to set up, but the UX is pretty bad unless you're interacting with Live directly.
+
+It would be better if I could either
+
+* capture pad presses coming out of Traktor, or
+* use M4L to hijack a key range of a drum rack to send cc messages
+
+#### Solution
+
+* added M4L midi device on same track as Drum Rack; it sits before the Drum Rack but this is ok
+* notein captures the Drum Rack output as a pitch value (int)
+* then subtracted known difference between that value and hot cue int 
+* then triggered hot cue tab (visual confirmation)
+* then this is output as the CC message that Traktor is expecting
+* select the M4L device on Push2, + Note + Layout > Drums: Loop Selector - this shows the Hot Cue setting being automated as well as the drum pads triggering and the sequencer for the selected drum pad
+* Drum Rack only has an audio out, but Deck A can have MIDI From the Drum Rack track, then MIDI To Traktor Virtual Input
+
+##### Issues
+
+* difficult to select a pad without side effects, even when pressing Select on Push2 - looks like Select sends a MIDI event which causes Traktor to send a note off so the phrasing temporarily changes
+* need to assign a set hot cue (eg 0 or 8) as a 'note off', otherwise it's impossible to retrigger a hot cue; setting a hot cue to the end of the track produces an audible glitch, perhaps it's an inter track mix sound for this track
+* have to toggle track arm on to program notes from Push2, then off afterwards to hear what you've programmed
+* cannot color code a drum pad without loading a sample into it
+
+##### TODO
+
+* limit the pitch range affected by the M4L device, to the topmost rack (or a configurable root note)
+* allow notes to also be set from the Drum Rack e.g. bottommost rack (or a configurable root note)
+* map hot cue (cc) 'velocity' to track volume, could also be used for faux ADSR
+* filter out the Push2 select button if this isn't filtered in the pitch limiting
+* all CCs are going out at 127 value, could try 0 for true note off, or initially 0 then small ms delay then 127
+* make the note off cue a loop of silence so there's no risk of a sound being eard
+* or make the note off volume 0, and/or ramp the volume down
+* name MIDI clip with the name of the song to 'save the patch' so it can be loaded again with the same song and hot cues
+* And bookmark <https://www.ableton.com/en/manual/using-push-2/> - 31.3 and 31.4
 
 ---
 
