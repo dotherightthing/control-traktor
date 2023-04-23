@@ -16,7 +16,7 @@
     "build": "npm run backup && npm run lint && npm run compile",
     "changelog": "git log --pretty='* [%h] %s' --no-merges $(git describe --tags --abbrev=0 @^)..@ > CHANGELOG.md",
     "compile": "babel ./src/js/*.js -d ./dist",
-    "postinstall": "mkdir dist && cp ./src/patches/*.amxd ./dist && npm run build",
+    "postinstall": "rm -r dist && mkdir dist && cp ./src/patches/*.amxd ./dist && npm run build",
     "lint": "eslint './src/js/*.js'",
     "prepare": "husky install",
     "release": "npm run changelog && cp ./README.md ./release && cp ./dist/*.amxd ./release && cp ./dist/*.js ./release && cp ./src/traktor/*.tsi ./release",
