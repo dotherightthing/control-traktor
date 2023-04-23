@@ -18,7 +18,13 @@ This repo uses a build script so that I can write JavaScript in ES6 rather than 
 4. Run `npm run watch` to lint and build as you save file changes
    * Edit `src/js/m4l-*.js` - the Max-friendly (ES5) version of this file is updated in the `dist` folder
    * Edit `dist/*.amxd` in Max - this file is copied back to the `src/patches` folder
-5. Run `npm run postinstall` to recreate `dist` folder
+5. Run `npm run reinstall` to recreate `dist` folder
+
+## Release
+
+1. Run `npm run changelog`
+2. Tag the latest commit with the message `Bump version`
+3. Push to Github and an action will run to generate a new *Release*
 
 ---
 
