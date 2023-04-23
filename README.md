@@ -13,7 +13,7 @@ A collection of Max4Live devices which speed up aspects of my DJing and jamming 
 This repo uses a build script so that I can write JavaScript in ES6 rather than ES5.
 
 1. [Install Node and NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-2. `git clone` this repo to `~/Music/Ableton/User Library/`
+2. `git clone` this repo to `~/Music/Ableton/User Library/` (I also symlink this to my *Websites* folder so I can find it)
 3. Run `npm install` to install dependencies, run the build
 4. Run `npm run watch` to lint and build as you save file changes
    * Edit `src/js/m4l-*.js` - the Max-friendly (ES5) version of this file is updated in the `dist` folder
