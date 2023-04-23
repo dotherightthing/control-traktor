@@ -1,6 +1,6 @@
 {
   "name": "m4l-helpers",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "Max4Live helper devices.",
   "main": "README.md",
   "engines": {
