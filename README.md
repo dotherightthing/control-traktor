@@ -157,6 +157,7 @@ and
 
 ### Files
 
+* `src/js/m4l-control-traktor-deck.js`
 * `/src/patches/Control Traktor Deck v2.amxd`
 * `/src/traktor/Control Traktor Deck v2.tsi`
 
@@ -179,7 +180,7 @@ Set `MIDI To` to:
 * `Traktor Virtual Input`
 * `Ch. [channel number, see above]`
 
-### Usage of *Control Traktor Deck*
+### Usage
 
 1. *Traktor > Preferences > Controller Manager > Import > `m4l-control-Traktor-deck.tsi`*
    * In-Port: *Traktor Virtual Input*
@@ -187,7 +188,7 @@ Set `MIDI To` to:
 2. add *Control Traktor Deck.amxd* to a **MIDI** track in Ableton Live (see my [Traktor Live v3 template](https://github.com/dotherightthing/Traktor-live-v3#ableton-live))
    * map controllers to the controls on the device
 
-### Roadmap for *Control Traktor Deck*
+### Roadmap
 
 See <https://github.com/dotherightthing/m4l-helpers/labels/Control%20Traktor%20Deck>
 
@@ -271,6 +272,13 @@ It would be better if I could either
 
 ## Presample Selected Track
 
+### Files
+
+* `src/js/m4l-presample-selected-track.js`
+* `src/patches/Presample Selected Track.amxd`
+
+### Description
+
 When jamming with soft synths or hardware synths, MIDI notes are driving that synth. Recording into the instrument channel would therefore record the MIDI input rather than the audio output. When recorded MIDI is played back at a later date, the sound is often different to what was originally played, due to some combination of synth settings not being saved with the MIDI input (this is especially the case with hardware synths). In this instance it's better to capture the audio output rather than the MIDI input. For synths that don't have MIDI input, audio capture is the only option.
 
 On the Push2, creation of a track-based audio (or MIDI) resampling track necessitates multiple button presses and two hands. This interrupts the creative flow as it requires extensive hand-eye coordination:
@@ -297,7 +305,7 @@ Recording can now be started via a single button press on the desired clip slot.
 
 Note: This patch is functionally similar to ClyphX Pro's `INSAUDIO`/`INSMIDI`.
 
-### Usage of *Presample Selected Track*
+### Usage
 
 1. add *Presample Selected Track.amxd* to the Master **Audio** track in Ableton Live
    * map button on Push2 or other controller to `Insert before` and/or `Insert after` button
@@ -305,7 +313,7 @@ Note: This patch is functionally similar to ClyphX Pro's `INSAUDIO`/`INSMIDI`.
    * push mapped button from (2) to insert a resampling track
    * alternatively use [Mira](https://cycling74.com/products/mira/) to view the Mira frame on an iPad, then tap one of the *(Mira)* buttons to insert a resampling track
 
-### Roadmap for *Presample Selected Track*
+### Roadmap
 
 See <https://github.com/dotherightthing/m4l-helpers/labels/Presample%20Selected%20Track>
 
@@ -313,9 +321,16 @@ See <https://github.com/dotherightthing/m4l-helpers/labels/Presample%20Selected%
 
 ## Rename Selected Track
 
+### Files
+
+* `src/js/m4l-rename-selected-track.js`
+* `src/patches/Rename Selected Track.amxd`
+
+### Description
+
 When jamming it's easy to lose track of what each track represents. This function provides a quick way to name the track from a list of common options.
 
-### Usage of *Rename Selected Track*
+### Usage
 
 1. add *Rename Selected Track.amxd* to the Master **Audio** track in Ableton Live
    * map tabs object to encoder on non-Push controller
@@ -324,7 +339,7 @@ When jamming it's easy to lose track of what each track represents. This functio
    * alternatively use [Mira](https://cycling74.com/products/mira/) to view the Mira frame on an iPad, then tap a tab (option) on Mira to change the selected track name
    * alternatively lock Push to the device on the Master track, and turn the `TRACKNAME` encoder
 
-### Roadmap for *Rename Selected Track*
+### Roadmap
 
 See <https://github.com/dotherightthing/m4l-helpers/labels/Rename%20Selected%20Track>
 
