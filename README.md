@@ -149,11 +149,16 @@ and
 
 ---
 
-## Control Traktor Deck v?
+## Control Traktor Deck v2
 
 ### Status
 
 * Superceded by *Control Traktor Deck v3*
+
+### Files
+
+* `/src/patches/Control Traktor Deck v2.amxd`
+* `/src/traktor/Control Traktor Deck v2.tsi`
 
 ### Description
 
