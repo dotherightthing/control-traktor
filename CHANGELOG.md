@@ -1,1 +1,1 @@
-* [f29006b] Document release process; Fix error "cannot remove 'dist'"
+* [55cdc2e] Add Control Traktor v4; structure archive; documentation

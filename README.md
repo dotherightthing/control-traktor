@@ -28,6 +28,179 @@ This repo uses a build script so that I can write JavaScript in ES6 rather than 
 
 ---
 
+## Control Traktor v4 (2023.10.10)
+
+### Description
+
+* changes resulting from using Traktor without Live after a 6 months gap
+* shortened name to better differentiate import/export of TSIs in Traktor Controller Manager
+* added sequencing of Traktor via MIDI Freeze Slice manipulation
+* handed back some control to the S8 by overriding redundant controls and adding invisible functionality
+* removed additional hardware
+* re-embraced the Loop Recorder - with length control and manual triggering
+* merged in documentation from `traktor-live-v4`
+* this replaces `traktor-live-v5`
+
+### Files
+
+* `src/patches/`
+  * `Control Traktor v4 - Params - Dk`
+* `src/presets/`
+  * `Control Traktor v4 - Loop Recorder Rack`
+  * `Control Traktor v4 - Params - Dk Rack`
+  * `Control Traktor v4 - Params - Dk`
+  * `Control Traktor v4 - Triggers - Dk A Rack`
+  * `Control Traktor v4 - Triggers - Dk B Rack`
+  * `Control Traktor v4 - Triggers - Freeze Slices - Dk A`
+  * `Control Traktor v4 - Triggers - Freeze Slices - Dk B`
+  * `Control Traktor v4 - Triggers - Hot Cues - Dk A`
+  * `Control Traktor v4 - Triggers - Hot Cues - Dk B`
+* `src/sets/`
+  * `Control Traktor v4.als`
+* `src/traktor/`
+  * `Control Traktor v4 - App.tsi` (Controller Manager > Export: check all boxes except Controller Mappings)
+  * `Control Traktor v4 - CS1x.tsi` (when NOT using Live)
+  * `Control Traktor v4 - Dk A.tsi` (for `Params - Dk`, but shorter name to fit in UI)
+  * `Control Traktor v4 - Dk B.tsi` (for `Params - Dk`, but shorter name to fit in UI)
+  * `Control Traktor v4 - Global.tsi` (for `Params - Global`, but shorter name to fit in UI)
+  * `Control Traktor v4 - S8.tsi` (overrides for S8 without requiring use of MIDI Mode)
+
+### Setup
+
+* Traktor Pro: Open > Import >
+  * `Control Traktor v4 - App.tsi`
+  * `Control Traktor v4 - CS1x.tsi` (optional - when NOT using Live)
+  * `Control Traktor v4 - Dk A.tsi` (Traktor Virtual Input / Traktor Virtual Output / Deck A)
+  * `Control Traktor v4 - Dk B.tsi` (Traktor Virtual Input / Traktor Virtual Output / Deck A)
+  * `Control Traktor v4 - Global.tsi` (Traktor Virtual Input / Traktor Virtual Output)
+  * `Control Traktor v4 - S8.tsi` (S8 / S8 / Focus)
+* Live:
+  * Open > `Control Traktor v4.als`
+  * `Ext: On`
+  * `Options > Chase MIDI Notes: Off`
+  * MIDI Control Surfaces
+  ```
+  Push 2    / Ableton Push 2 (Live Port) / Ableton Push 2 (Live Port)
+  touchAble / touchAble                  / touchAble
+  ```
+  * MIDI Ports
+  ```
+  In:  Ableton Push 2 (User Port)   / Track /  -   / Remote
+  In:  Traktor Virtual Output       / Track / Sync / Remote
+  In:  touchAble Input (touchAble)  / Track /  -   / Remote
+  In:  from Max 1                   / Track
+  In:  from Max 2                   / Track
+  Out: Ableton Push 2 (User Port)   / Track /  -   / Remote
+  Out: Traktor Virtual Input        / Track /  -   / Remote
+  Out: touchAble Output (touchAble) / Track /  -   / Remote
+  ```
+
+### Traktor controls
+
+#### Added
+
+* S8 overrides via Controller Manager > Add > Traktor > Kontrol S8
+  * Balance - 4 faders (right)
+  * Loop Recorder Loop Size 4/8/16/32 - REMIX (right) + PADS 5/6/7/8 (right)
+  * Loop Recorder Record - REMIX (right) + PAD 1 (right)
+  * Loop Recorder Undo/Redo - REMIX (right) + PAD 2 (right)
+  * Loop Recorder Delete - REMIX (right) + PAD 3 (right)
+  * Copy Track from Deck B to Deck A - SHIFT (left) + BROWSE (left)
+  * Copy Track from Deck A to Deck B - SHIFT (right) + BROWSE (right)
+  * Focus Deck A - REMIX (right) + touch BROWSE (left) = DECK (left) bright blue
+  * Focus Deck B - REMIX (right) + touch BROWSE (right) = DECK (right) bright blue
+  * Focus Deck C - REMIX (right) + touch ENCODER (left) = DECK (left) dull blue
+  * Focus Deck D - REMIX (right) + touch ENCODER (right) = DECK (right) dull blue
+  * Reverse Focussed Deck - SHIFT (left/right) + PLAY (left/right)
+* Melodic MIDI sequencing of Drum Rack MIDI, incl default pattern clips
+  * Hot Cues (existing but added chain range)
+  * Freeze Slices
+* Loop Recorder Rack (duplicates S8 overrides)
+  * Loop Recorder Loop Size 4/8/16/32 - PADS 1/2/3/4
+  * Loop Recorder Record - PAD 5
+  * Loop Recorder Undo/Redo - PAD 6
+  * Loop Recorder Delete - PAD 7
+  * Cue Deck C - PAD 9
+  * Cue Deck A - PAD 10
+  * Cue Deck B - PAD 11
+  * Cue Deck D - PAD 12
+  * MIDI Sync button - PAD 13
+* Automation sequencing of M4L params
+  * Key Adjust from keyboard (existing but simplified mappings)
+  * Gain
+  * Balance
+  * Trigger Mode (Hot Cues / Freeze Slices)
+  * Freeze Length (2/4/8/16)
+  * Play Mode (Stop / Play)
+  * Play Direction (Fwd / Rev)
+* Key Adjust map for Yamaha CS1x (when NOT using Live)
+
+#### Removed
+
+* Support for JU-06A (`traktor-live-v4` - sold)
+* Support for KORG nanoKEY Studio (faulty)
+* ClyphX / X-Clips (these automated the Loop Sequencer but sync phasing was tricky)
+* Plans to use Supreme Edition Mod for Traktor screens (`traktor-live-v4` - never used)
+
+### Usage tips
+
+#### Misc
+
+* SHIFT + Browse speeds up scrolling
+* When editing in "Clip" mode, Push touchstrip shows bright dots for current scroll position and dull dots for note positions
+
+#### FX Tails
+
+#### Hot Cues
+
+* You may need to engage "PLAY" (automatable) to get it sounding right
+* Have a simple loop running in the other deck as a guide for manual triggering of MIDI Clock Sync
+
+#### Freeze Slices
+
+* Ensure that source deck is Sync Master or matches it
+* Trigger MIDI clock sync at down beat of source deck
+* Disabling "Snap" and/or "Quantise" may help with getting the freeze slices aligned when activating "FREEZE" mode
+* Set the step length to 1/4 on Push to see all the steps
+* Disengage "PLAY" (automatable) to hear gaps between sequenced/held slices
+* Have a simple loop running in the other deck as a guide for manual triggering of MIDI Clock Sync
+
+#### Control Track
+
+* To record and playback movements of M4L params
+* To change parameters on a step from Push2: Melodic Sequencer + Device + Press and hold a step (or draw in clip, or use TouchablePro)
+* To pitch Live e.g. sampler rather than a deck, set focus to Deck D (it won't actually get focus but it will blur the others)
+
+#### Loop Recorder
+
+* Set loop size, delete loop, then record on downbeat
+* Resample from Remix deck, then overdub by triggering record a second time
+
+#### Remix Deck
+
+* CAPTURE + REMIX Pad to overwrite sample <https://www.native-instruments.com/forum/threads/deleting-remix-samples.229019/>
+* Browse to "All Remix Sets" > Set name > Sample, to load a sample into a track deck rather than the remix deck, for control over individual effects, balance etc
+* SYNC can be used on Remix Decks too
+
+#### Editing
+
+* MIDI editing (Traktor deck manipulation) - TouchablePro using the Apple Pencil is far easier
+  * USB connection
+  * Top: Clip Grid > Menu > Show All Clips
+  * Bottom: Clip editing - Clip Editor + Tap Clip
+    * Fold
+    * Editor > Quantisation 1/8 (default is 8!)
+    * Editor > Automations (Push2 M4L parameters also appear here when track with Control device is selected)
+* Waveform editing (sampler as Traktor Deck D input) - Push2 makes it easier to zoom into the waveform but TouchablePro exposes more of the sampler controls without button pushing
+
+### Soundcard/keyboard
+
+* Macbook output (and/or Monotron output) are plugged into CS1x input, CS1x output runs into Deck D
+* If I can find a cheap small format 6+ channel analog mixer I'll use that input
+* CS1x outputs MIDI regardless of sound output (enabled in CS1x settings)
+
+---
+
 ## Control Traktor Deck v3 (2023.04.23)
 
 ### Description
@@ -120,7 +293,7 @@ and
 
 * Create variants for Deck B etc
 
-#### Usage tips
+### Usage tips
 
 * Sequencer: Layout > Note (Drums: Loop Selector)
 * Drum Rack macros: Device > Drum Rack > Rec + Automate > Adjust encoder
