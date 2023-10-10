@@ -125,6 +125,7 @@ This repo uses a build script so that I can write JavaScript in ES6 rather than 
   * Cue Deck B - PAD 11
   * Cue Deck D - PAD 12
   * MIDI Sync button - PAD 13
+  * Loop Recorder Dry/Wet
 * Automation sequencing of M4L params
   * Key Adjust from keyboard (existing but simplified mappings)
   * Gain
@@ -147,10 +148,6 @@ This repo uses a build script so that I can write JavaScript in ES6 rather than 
 #### Misc
 
 * SHIFT + Browse speeds up scrolling
-* Recording FX Tails
-  * "FRZ" button in effects
-  * Triggered Freeze Slice with "PLAY" disengaged
-  * Triggered Hot Cue of limited length
 
 #### Drum Racks
 
@@ -164,12 +161,14 @@ This repo uses a build script so that I can write JavaScript in ES6 rather than 
     * Editor > Automations (Push2 M4L parameters also appear here when track with Control device is selected)
 * Push2 is best for Waveform editing (sampler as Traktor Deck D input) - it makes it easier to zoom into the waveform, but TouchablePro exposes more of the sampler controls without button pushing
 * When editing in "Clip" mode, Push2 touchstrip shows bright dots for current scroll position and dull dots for note positions
+* Use one deck for Hot Cues and the other for Freeze Slices, or go nuts switching between both on both
 
 ##### Hot Cues
 
 * You may need to engage "PLAY" (automatable) to get it sounding right
 * Have a simple loop running in the other deck as a guide for manual triggering of MIDI Clock Sync
 * Limit note length to hear FX tails after the sound ends
+* SNAP affects setting of HOT CUE points including the initial CUE point
 
 ##### Freeze Slices
 
@@ -183,7 +182,21 @@ This repo uses a build script so that I can write JavaScript in ES6 rather than 
 ##### Loop Recorder
 
 * Set loop size, delete loop, then record on downbeat
+* Sync master to source deck to capture a tidy loop
+* Trigger MIDI clock sync before starting recording to avoid having to tweak in the REMIX deck
 * Resample from Remix deck, then overdub by triggering record a second time
+* Recording FX Tails
+  * FX must use INSERT to record via CUE
+  * FRZ button in effects
+  * Triggered Freeze Slice with "PLAY" disengaged
+  * Triggered Hot Cue of limited length
+* To generate interesting breakbeats, XFADE between sampled loop and offset shorter loop, then replicate with CUEs
+* LOOP and BEATJUMP are recorded ("LOOP" in Performance section)
+* Turn CUE MIX to far right to prevent jump in headphone volume when activating CUE for the purpose of sampling
+
+#### Live Input
+
+* If playing both Audio and MIDI from CS1x, look for tracks with "Key: C" so the sounds are in tune
 
 #### Devices
 
@@ -202,6 +215,7 @@ This repo uses a build script so that I can write JavaScript in ES6 rather than 
 * Lower button to left of screen sets trigger quantisation
 * Browse to "All Remix Sets" > Set name > Sample, to load a sample into a track deck rather than the remix deck, for control over individual effects, balance etc
 * SYNC can be used on Remix Decks too
+* Newly created Remix Decks only appear in browser after Traktor is restarted
 
 ### Soundcard/keyboard
 
