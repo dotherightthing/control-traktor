@@ -147,16 +147,31 @@ This repo uses a build script so that I can write JavaScript in ES6 rather than 
 #### Misc
 
 * SHIFT + Browse speeds up scrolling
-* When editing in "Clip" mode, Push touchstrip shows bright dots for current scroll position and dull dots for note positions
+* Recording FX Tails
+  * "FRZ" button in effects
+  * Triggered Freeze Slice with "PLAY" disengaged
+  * Triggered Hot Cue of limited length
 
-#### FX Tails
+#### Drum Racks
 
-#### Hot Cues
+* If pads select but don't trigger check the input is within the range in the key zone editor
+* TouchablePro is best for MIDI editing (using the Apple Pencil)
+  * USB connection
+  * Top: Clip Grid > Menu > Show All Clips
+  * Bottom: Clip editing - Clip Editor + Tap Clip
+    * Fold
+    * Editor > Quantisation 1/8 (default is 8!)
+    * Editor > Automations (Push2 M4L parameters also appear here when track with Control device is selected)
+* Push2 is best for Waveform editing (sampler as Traktor Deck D input) - it makes it easier to zoom into the waveform, but TouchablePro exposes more of the sampler controls without button pushing
+* When editing in "Clip" mode, Push2 touchstrip shows bright dots for current scroll position and dull dots for note positions
+
+##### Hot Cues
 
 * You may need to engage "PLAY" (automatable) to get it sounding right
 * Have a simple loop running in the other deck as a guide for manual triggering of MIDI Clock Sync
+* Limit note length to hear FX tails after the sound ends
 
-#### Freeze Slices
+##### Freeze Slices
 
 * Ensure that source deck is Sync Master or matches it
 * Trigger MIDI clock sync at down beat of source deck
@@ -165,38 +180,33 @@ This repo uses a build script so that I can write JavaScript in ES6 rather than 
 * Disengage "PLAY" (automatable) to hear gaps between sequenced/held slices
 * Have a simple loop running in the other deck as a guide for manual triggering of MIDI Clock Sync
 
-#### Control Track
+##### Loop Recorder
+
+* Set loop size, delete loop, then record on downbeat
+* Resample from Remix deck, then overdub by triggering record a second time
+
+#### Devices
+
+##### Params
 
 * To record and playback movements of M4L params
 * To change parameters on a step from Push2: Melodic Sequencer + Device + Press and hold a step (or draw in clip, or use TouchablePro)
 * To pitch Live e.g. sampler rather than a deck, set focus to Deck D (it won't actually get focus but it will blur the others)
 
-#### Loop Recorder
-
-* Set loop size, delete loop, then record on downbeat
-* Resample from Remix deck, then overdub by triggering record a second time
-
 #### Remix Deck
 
+* CAPTURE + ENCODER to change capture source
+* Tap REMIX Pad to copy source to that pad
 * CAPTURE + REMIX Pad to overwrite sample <https://www.native-instruments.com/forum/threads/deleting-remix-samples.229019/>
+* Buttons to right of screen page through slots
+* Lower button to left of screen sets trigger quantisation
 * Browse to "All Remix Sets" > Set name > Sample, to load a sample into a track deck rather than the remix deck, for control over individual effects, balance etc
 * SYNC can be used on Remix Decks too
-
-#### Editing
-
-* MIDI editing (Traktor deck manipulation) - TouchablePro using the Apple Pencil is far easier
-  * USB connection
-  * Top: Clip Grid > Menu > Show All Clips
-  * Bottom: Clip editing - Clip Editor + Tap Clip
-    * Fold
-    * Editor > Quantisation 1/8 (default is 8!)
-    * Editor > Automations (Push2 M4L parameters also appear here when track with Control device is selected)
-* Waveform editing (sampler as Traktor Deck D input) - Push2 makes it easier to zoom into the waveform but TouchablePro exposes more of the sampler controls without button pushing
 
 ### Soundcard/keyboard
 
 * Macbook output (and/or Monotron output) are plugged into CS1x input, CS1x output runs into Deck D
-* If I can find a cheap small format 6+ channel analog mixer I'll use that input
+* This will be replaced by a XENYX shortly
 * CS1x outputs MIDI regardless of sound output (enabled in CS1x settings)
 
 ---
