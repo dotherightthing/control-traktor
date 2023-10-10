@@ -220,7 +220,7 @@ This repo uses a build script so that I can write JavaScript in ES6 rather than 
 ### Soundcard/keyboard
 
 * Macbook output (and/or Monotron output) are plugged into CS1x input, CS1x output runs into Deck D
-* This will be replaced by a XENYX shortly
+* This will be replaced by a Behringer XENYX 1202 mixer shortly
 * CS1x outputs MIDI regardless of sound output (enabled in CS1x settings)
 
 ---
