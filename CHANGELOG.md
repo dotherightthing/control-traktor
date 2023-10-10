@@ -1,1 +1,1 @@
-* [55cdc2e] Add Control Traktor v4; structure archive; documentation
+* [1926c42] Add Control Traktor v4; structure archive; documentation
