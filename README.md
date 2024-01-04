@@ -28,6 +28,15 @@ This repo uses a build script so that I can write JavaScript in ES6 rather than 
 
 ---
 
+## Control Traktor v4 update (2024.01.05)
+
+### Description
+
+* Loop Recorder now controlled by [MIDI Touchbar](https://urbanlienert.com/miditouchbar/)
+  * has labelled buttons - yay!
+  * does not require Ableton Live
+  * to discourage touchbar dimming: "macOS System Prefs → Keyboard → Turn Keyboard backlight off after XXX of inactivity"
+
 ## Control Traktor v4 (2023.10.10)
 
 ### Description
