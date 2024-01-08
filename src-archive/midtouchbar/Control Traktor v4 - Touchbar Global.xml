@@ -616,67 +616,112 @@
 		</dict>
 		<key>4slider-group1</key>
 		<dict>
+			<key>color</key>
+			<data>
+			BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2Jq
+			ZWN0AIWEAWMBhARmZmZmg0lZMT+D2g+tPoM3g5E8AYY=
+			</data>
 			<key>label</key>
-			<string>-1-</string>
+			<string>Pans</string>
 			<key>slider1</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg0lZMT+D2g+tPoM3
+				g5E8AYY=
+				</data>
 				<key>kind</key>
 				<string>ctrl</string>
 				<key>label</key>
-				<string>1</string>
+				<string>Pan C</string>
 				<key>oscAddress</key>
 				<string>/fader5</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>volume</string>
+				<string>pan</string>
 				<key>value</key>
-				<integer>4</integer>
+				<integer>3</integer>
 			</dict>
 			<key>slider2</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg0lZMT+D2g+tPoM3
+				g5E8AYY=
+				</data>
 				<key>kind</key>
 				<string>ctrl</string>
 				<key>label</key>
-				<string>2</string>
+				<string>Pan A</string>
 				<key>oscAddress</key>
 				<string>/fader6</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>volume</string>
+				<string>pan</string>
 				<key>value</key>
-				<integer>5</integer>
+				<integer>4</integer>
 			</dict>
 			<key>slider3</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg0lZMT+D2g+tPoM3
+				g5E8AYY=
+				</data>
 				<key>kind</key>
 				<string>ctrl</string>
 				<key>label</key>
-				<string>3</string>
+				<string>Pan B</string>
 				<key>oscAddress</key>
 				<string>/fader7</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>volume</string>
+				<string>pan</string>
 				<key>value</key>
-				<integer>6</integer>
+				<integer>5</integer>
 			</dict>
 			<key>slider4</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg0lZMT+D2g+tPoM3
+				g5E8AYY=
+				</data>
 				<key>kind</key>
 				<string>ctrl</string>
 				<key>label</key>
-				<string>4</string>
+				<string>Pan D</string>
 				<key>oscAddress</key>
 				<string>/fader8</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>volume</string>
+				<string>pan</string>
 				<key>value</key>
-				<integer>7</integer>
+				<integer>6</integer>
 			</dict>
 		</dict>
 		<key>4slider-group2</key>
@@ -876,177 +921,297 @@
 		</dict>
 		<key>8pad-group1</key>
 		<dict>
+			<key>color</key>
+			<data>
+			BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2Jq
+			ZWN0AIWEAWMBhARmZmZmAQGDchkfPgGG
+			</data>
 			<key>label</key>
-			<string>-1-</string>
+			<string>Loop Recorder</string>
 			<key>pad1</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg4Wwij2DOxkKP4OG
+				4jI/AYY=
+				</data>
 				<key>kind</key>
 				<string>note</string>
 				<key>label</key>
-				<string>1</string>
+				<string>Size 4</string>
 				<key>oscAddress</key>
 				<string>/pad1</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>48</integer>
+				<integer>0</integer>
 			</dict>
 			<key>pad10</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg0j4mT2DdnEQP4MG
+				Hm88AYY=
+				</data>
 				<key>kind</key>
-				<string>note</string>
+				<string>ctrl</string>
 				<key>label</key>
-				<string>10</string>
+				<string>Save Remix Set</string>
 				<key>oscAddress</key>
 				<string>/pad10</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>57</integer>
+				<integer>10</integer>
 			</dict>
 			<key>pad2</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg4Wwij2DOxkKP4OG
+				4jI/AYY=
+				</data>
 				<key>kind</key>
 				<string>note</string>
 				<key>label</key>
-				<string>2</string>
+				<string>Size 8</string>
 				<key>oscAddress</key>
 				<string>/pad2</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>49</integer>
+				<integer>1</integer>
 			</dict>
 			<key>pad3</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg4Wwij2DOxkKP4OG
+				4jI/AYY=
+				</data>
 				<key>kind</key>
 				<string>note</string>
 				<key>label</key>
-				<string>3</string>
+				<string>Size 16</string>
 				<key>oscAddress</key>
 				<string>/pad3</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>50</integer>
+				<integer>2</integer>
 			</dict>
 			<key>pad4</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg4Wwij2DOxkKP4OG
+				4jI/AYY=
+				</data>
 				<key>kind</key>
 				<string>note</string>
 				<key>label</key>
-				<string>4</string>
+				<string>Size 32</string>
 				<key>oscAddress</key>
 				<string>/pad4</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>51</integer>
+				<integer>3</integer>
 			</dict>
 			<key>pad5</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg34yQj+Dw1kOPYN4
+				69I8AYY=
+				</data>
 				<key>kind</key>
 				<string>note</string>
 				<key>label</key>
-				<string>5</string>
+				<string>Loop Record</string>
 				<key>oscAddress</key>
 				<string>/pad5</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>1</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>52</integer>
+				<integer>4</integer>
 			</dict>
 			<key>pad6</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg9eQfT+Db04BP4ND
+				bwo9AYY=
+				</data>
 				<key>kind</key>
 				<string>note</string>
 				<key>label</key>
-				<string>6</string>
+				<string>Undo/Redo</string>
 				<key>oscAddress</key>
 				<string>/pad6</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>53</integer>
+				<integer>5</integer>
 			</dict>
 			<key>pad7</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg8OW9j6DpYALP4O/
+				sBI/AYY=
+				</data>
 				<key>kind</key>
 				<string>note</string>
 				<key>label</key>
-				<string>7</string>
+				<string>Delete</string>
 				<key>oscAddress</key>
 				<string>/pad7</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>54</integer>
+				<integer>6</integer>
 			</dict>
 			<key>pad8</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg0f5OT8Ag50nST8B
+				hg==
+				</data>
 				<key>kind</key>
 				<string>note</string>
 				<key>label</key>
-				<string>8</string>
+				<string>Clock Sync</string>
 				<key>oscAddress</key>
 				<string>/pad8</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>55</integer>
+				<integer>24</integer>
 			</dict>
 			<key>pad9</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg34yQj+Dw1kOPYN4
+				69I8AYY=
+				</data>
 				<key>kind</key>
-				<string>note</string>
+				<string>ctrl</string>
 				<key>label</key>
-				<string>9</string>
+				<string>Audio Record</string>
 				<key>oscAddress</key>
 				<string>/pad9</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>1</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>56</integer>
+				<integer>2</integer>
 			</dict>
 		</dict>
 		<key>8pad-group2</key>
 		<dict>
+			<key>color</key>
+			<data>
+			BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2Jq
+			ZWN0AIWEAWMBhARmZmZmg0f5OT8Ag50nST8Bhg==
+			</data>
 			<key>label</key>
-			<string>-2-</string>
+			<string>Browser</string>
 			<key>pad1</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmgwHfFj8Ag01JMT8B
+				hg==
+				</data>
 				<key>kind</key>
 				<string>note</string>
 				<key>label</key>
-				<string>1</string>
+				<string>Search</string>
 				<key>oscAddress</key>
 				<string>/pad11</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>60</integer>
+				<integer>9</integer>
 			</dict>
 			<key>pad10</key>
 			<dict>
@@ -1066,142 +1231,237 @@
 			<key>pad2</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg0Iz0j6DKtihPoM+
+				cc0+AYY=
+				</data>
 				<key>kind</key>
 				<string>note</string>
 				<key>label</key>
-				<string>2</string>
+				<string>Search Clear</string>
 				<key>oscAddress</key>
 				<string>/pad12</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>61</integer>
+				<integer>10</integer>
 			</dict>
 			<key>pad3</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg0f5OT8Ag50nST8B
+				hg==
+				</data>
 				<key>kind</key>
 				<string>note</string>
 				<key>label</key>
-				<string>3</string>
+				<string>Top</string>
 				<key>oscAddress</key>
 				<string>/pad13</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>62</integer>
+				<integer>11</integer>
 			</dict>
 			<key>pad4</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg0f5OT8Ag50nST8B
+				hg==
+				</data>
 				<key>kind</key>
 				<string>note</string>
 				<key>label</key>
-				<string>4</string>
+				<string>Bottom</string>
 				<key>oscAddress</key>
 				<string>/pad14</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>63</integer>
+				<integer>12</integer>
 			</dict>
 			<key>pad5</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg0f5OT8Ag50nST8B
+				hg==
+				</data>
 				<key>kind</key>
 				<string>note</string>
 				<key>label</key>
-				<string>5</string>
+				<string>Up</string>
 				<key>oscAddress</key>
 				<string>/pad15</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>64</integer>
+				<integer>13</integer>
 			</dict>
 			<key>pad6</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg0f5OT8Ag50nST8B
+				hg==
+				</data>
 				<key>kind</key>
 				<string>note</string>
 				<key>label</key>
-				<string>6</string>
+				<string>Down</string>
 				<key>oscAddress</key>
 				<string>/pad16</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>65</integer>
+				<integer>14</integer>
 			</dict>
 			<key>pad7</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg0f5OT8Ag50nST8B
+				hg==
+				</data>
 				<key>kind</key>
 				<string>note</string>
 				<key>label</key>
-				<string>7</string>
+				<string>Load A</string>
 				<key>oscAddress</key>
 				<string>/pad17</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>66</integer>
+				<integer>15</integer>
 			</dict>
 			<key>pad8</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg0f5OT8Ag50nST8B
+				hg==
+				</data>
 				<key>kind</key>
 				<string>note</string>
 				<key>label</key>
-				<string>8</string>
+				<string>Load B</string>
 				<key>oscAddress</key>
 				<string>/pad18</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>67</integer>
+				<integer>16</integer>
 			</dict>
 			<key>pad9</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg0f5OT8Ag50nST8B
+				hg==
+				</data>
 				<key>kind</key>
-				<string>note</string>
+				<string>ctrl</string>
 				<key>label</key>
-				<string>9</string>
+				<string>Current Track</string>
 				<key>oscAddress</key>
 				<string>/pad19</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>68</integer>
+				<integer>20</integer>
 			</dict>
 		</dict>
 		<key>8pad-group3</key>
 		<dict>
+			<key>color</key>
+			<data>
+			BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2Jq
+			ZWN0AIWEAWMBhARmZmZmg4Wwij2DOxkKP4OG4jI/AYY=
+			</data>
 			<key>label</key>
-			<string>-3-</string>
+			<string>Decks</string>
 			<key>pad1</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg4Wwij2DOxkKP4OG
+				4jI/AYY=
+				</data>
 				<key>kind</key>
 				<string>note</string>
 				<key>label</key>
-				<string>1</string>
+				<string>Focus C</string>
 				<key>oscAddress</key>
 				<string>/pad21</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>72</integer>
+				<integer>17</integer>
 			</dict>
 			<key>pad10</key>
 			<dict>
@@ -1221,77 +1481,127 @@
 			<key>pad2</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg4Wwij2DOxkKP4OG
+				4jI/AYY=
+				</data>
 				<key>kind</key>
 				<string>note</string>
 				<key>label</key>
-				<string>2</string>
+				<string>Focus A</string>
 				<key>oscAddress</key>
 				<string>/pad22</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>73</integer>
+				<integer>18</integer>
 			</dict>
 			<key>pad3</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg4Wwij2DOxkKP4OG
+				4jI/AYY=
+				</data>
 				<key>kind</key>
 				<string>note</string>
 				<key>label</key>
-				<string>3</string>
+				<string>Focus B</string>
 				<key>oscAddress</key>
 				<string>/pad23</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>74</integer>
+				<integer>19</integer>
 			</dict>
 			<key>pad4</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg4Wwij2DOxkKP4OG
+				4jI/AYY=
+				</data>
 				<key>kind</key>
 				<string>note</string>
 				<key>label</key>
-				<string>4</string>
+				<string>Focus D</string>
 				<key>oscAddress</key>
 				<string>/pad24</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>75</integer>
+				<integer>20</integer>
 			</dict>
 			<key>pad5</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg4Wwij2DOxkKP4OG
+				4jI/AYY=
+				</data>
 				<key>kind</key>
 				<string>note</string>
 				<key>label</key>
-				<string>5</string>
+				<string>Copy A to B</string>
 				<key>oscAddress</key>
 				<string>/pad25</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>76</integer>
+				<integer>21</integer>
 			</dict>
 			<key>pad6</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg4Wwij2DOxkKP4OG
+				4jI/AYY=
+				</data>
 				<key>kind</key>
 				<string>note</string>
 				<key>label</key>
-				<string>6</string>
+				<string>Copy B to A</string>
 				<key>oscAddress</key>
 				<string>/pad26</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>77</integer>
+				<integer>22</integer>
 			</dict>
 			<key>pad7</key>
 			<dict>
@@ -1341,157 +1651,262 @@
 		</dict>
 		<key>8pad-group4</key>
 		<dict>
+			<key>color</key>
+			<data>
+			BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2Jq
+			ZWN0AIWEAWMBhARmZmZmg3KE8j6DRtC8PoMoGZE+AYY=
+			</data>
 			<key>label</key>
-			<string>-4-</string>
+			<string>Loop</string>
 			<key>pad1</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg3KE8j6DRtC8PoMo
+				GZE+AYY=
+				</data>
 				<key>kind</key>
-				<string>note</string>
+				<string>ctrl</string>
 				<key>label</key>
-				<string>1</string>
+				<string>Beatjump</string>
 				<key>oscAddress</key>
 				<string>/pad31</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>84</integer>
+				<integer>30</integer>
 			</dict>
 			<key>pad10</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg3KE8j6DRtC8PoMo
+				GZE+AYY=
+				</data>
 				<key>kind</key>
-				<string>note</string>
+				<string>ctrl</string>
 				<key>label</key>
-				<string>10</string>
+				<string>1</string>
 				<key>oscAddress</key>
 				<string>/pad40</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>93</integer>
+				<integer>39</integer>
 			</dict>
 			<key>pad2</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg3KE8j6DRtC8PoMo
+				GZE+AYY=
+				</data>
 				<key>kind</key>
-				<string>note</string>
+				<string>ctrl</string>
 				<key>label</key>
-				<string>2</string>
+				<string>Loop</string>
 				<key>oscAddress</key>
 				<string>/pad32</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>85</integer>
+				<integer>31</integer>
 			</dict>
 			<key>pad3</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg3KE8j6DRtC8PoMo
+				GZE+AYY=
+				</data>
 				<key>kind</key>
-				<string>note</string>
+				<string>ctrl</string>
 				<key>label</key>
-				<string>3</string>
+				<string>Back</string>
 				<key>oscAddress</key>
 				<string>/pad33</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>86</integer>
+				<integer>32</integer>
 			</dict>
 			<key>pad4</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg3KE8j6DRtC8PoMo
+				GZE+AYY=
+				</data>
 				<key>kind</key>
-				<string>note</string>
+				<string>ctrl</string>
 				<key>label</key>
-				<string>4</string>
+				<string>Fwd</string>
 				<key>oscAddress</key>
 				<string>/pad34</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>87</integer>
+				<integer>33</integer>
 			</dict>
 			<key>pad5</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg3KE8j6DRtC8PoMo
+				GZE+AYY=
+				</data>
 				<key>kind</key>
-				<string>note</string>
+				<string>ctrl</string>
 				<key>label</key>
-				<string>5</string>
+				<string>Fine</string>
 				<key>oscAddress</key>
 				<string>/pad35</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>88</integer>
+				<integer>34</integer>
 			</dict>
 			<key>pad6</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg3KE8j6DRtC8PoMo
+				GZE+AYY=
+				</data>
 				<key>kind</key>
-				<string>note</string>
+				<string>ctrl</string>
 				<key>label</key>
-				<string>6</string>
+				<string>/16</string>
 				<key>oscAddress</key>
 				<string>/pad36</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>89</integer>
+				<integer>35</integer>
 			</dict>
 			<key>pad7</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg3KE8j6DRtC8PoMo
+				GZE+AYY=
+				</data>
 				<key>kind</key>
-				<string>note</string>
+				<string>ctrl</string>
 				<key>label</key>
-				<string>7</string>
+				<string>/8</string>
 				<key>oscAddress</key>
 				<string>/pad37</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>90</integer>
+				<integer>36</integer>
 			</dict>
 			<key>pad8</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg3KE8j6DRtC8PoMo
+				GZE+AYY=
+				</data>
 				<key>kind</key>
-				<string>note</string>
+				<string>ctrl</string>
 				<key>label</key>
-				<string>8</string>
+				<string>/4</string>
 				<key>oscAddress</key>
 				<string>/pad38</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>91</integer>
+				<integer>37</integer>
 			</dict>
 			<key>pad9</key>
 			<dict>
 				<key>channel</key>
-				<integer>1</integer>
+				<integer>16</integer>
+				<key>color</key>
+				<data>
+				BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMBhARmZmZmg3KE8j6DRtC8PoMo
+				GZE+AYY=
+				</data>
 				<key>kind</key>
-				<string>note</string>
+				<string>ctrl</string>
 				<key>label</key>
-				<string>9</string>
+				<string>/2</string>
 				<key>oscAddress</key>
 				<string>/pad39</string>
+				<key>scaleFrom</key>
+				<real>0.0</real>
+				<key>scaleTo</key>
+				<real>127</real>
 				<key>type</key>
-				<string>momentary</string>
+				<string>push</string>
 				<key>value</key>
-				<integer>92</integer>
+				<integer>38</integer>
 			</dict>
 		</dict>
 		<key>pad1</key>
@@ -1506,7 +1921,7 @@
 			<key>kind</key>
 			<string>ctrl</string>
 			<key>label</key>
-			<string>Audio Record</string>
+			<string>Audio Rec</string>
 			<key>oscAddress</key>
 			<string>/button1</string>
 			<key>scaleFrom</key>
@@ -1545,17 +1960,26 @@
 		<key>pad2</key>
 		<dict>
 			<key>channel</key>
-			<integer>1</integer>
+			<integer>16</integer>
+			<key>color</key>
+			<data>
+			BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2Jq
+			ZWN0AIWEAWMBhARmZmZmg4/qUT8Ag7C0Oz8Bhg==
+			</data>
 			<key>kind</key>
 			<string>note</string>
 			<key>label</key>
-			<string>2</string>
+			<string>Browser</string>
 			<key>oscAddress</key>
 			<string>/button2</string>
+			<key>scaleFrom</key>
+			<real>0.0</real>
+			<key>scaleTo</key>
+			<real>127</real>
 			<key>type</key>
-			<string>momentary</string>
+			<string>push</string>
 			<key>value</key>
-			<integer>37</integer>
+			<integer>7</integer>
 		</dict>
 		<key>pad3</key>
 		<dict>
@@ -1564,12 +1988,12 @@
 			<key>color</key>
 			<data>
 			BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2Jq
-			ZWN0AIWEAWMBhARmZmZmg4Wwij2DOxkKP4OG4jI/AYY=
+			ZWN0AIWEAWMBhARmZmZmg0j4mT2DdnEQP4MGHm88AYY=
 			</data>
 			<key>kind</key>
 			<string>note</string>
 			<key>label</key>
-			<string>Size 4</string>
+			<string>Decks</string>
 			<key>oscAddress</key>
 			<string>/button3</string>
 			<key>scaleFrom</key>
@@ -1579,7 +2003,7 @@
 			<key>type</key>
 			<string>push</string>
 			<key>value</key>
-			<integer>0</integer>
+			<integer>8</integer>
 		</dict>
 		<key>pad4</key>
 		<dict>
@@ -1588,12 +2012,12 @@
 			<key>color</key>
 			<data>
 			BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2Jq
-			ZWN0AIWEAWMBhARmZmZmg4Wwij2DOxkKP4OG4jI/AYY=
+			ZWN0AIWEAWMBhARmZmZmg0f5OT8Ag50nST8Bhg==
 			</data>
 			<key>kind</key>
 			<string>note</string>
 			<key>label</key>
-			<string>Size 8</string>
+			<string>Browse/Search</string>
 			<key>oscAddress</key>
 			<string>/button4</string>
 			<key>scaleFrom</key>
@@ -1603,7 +2027,7 @@
 			<key>type</key>
 			<string>push</string>
 			<key>value</key>
-			<integer>1</integer>
+			<integer>9</integer>
 		</dict>
 		<key>pad5</key>
 		<dict>
@@ -1617,7 +2041,7 @@
 			<key>kind</key>
 			<string>note</string>
 			<key>label</key>
-			<string>Size 16</string>
+			<string>16</string>
 			<key>oscAddress</key>
 			<string>/button5</string>
 			<key>scaleFrom</key>
@@ -1641,7 +2065,7 @@
 			<key>kind</key>
 			<string>note</string>
 			<key>label</key>
-			<string>Size 32</string>
+			<string>32</string>
 			<key>oscAddress</key>
 			<string>/button6</string>
 			<key>scaleFrom</key>
@@ -1689,7 +2113,7 @@
 			<key>kind</key>
 			<string>note</string>
 			<key>label</key>
-			<string>Record</string>
+			<string>Rec</string>
 			<key>oscAddress</key>
 			<string>/button8</string>
 			<key>scaleFrom</key>
@@ -1797,7 +2221,7 @@
 			<key>kind</key>
 			<string>ctrl</string>
 			<key>label</key>
-			<string>Loop Recorder: Volume</string>
+			<string>Loop Rec: Vol</string>
 			<key>oscAddress</key>
 			<string>/fader1</string>
 			<key>scaleFrom</key>
@@ -1985,15 +2409,11 @@
 		<key>CurrentItems</key>
 		<array>
 			<string>ch.uebe.midi-touchbar.slider1</string>
-			<string>ch.uebe.midi-touchbar.pad3</string>
-			<string>ch.uebe.midi-touchbar.pad4</string>
-			<string>ch.uebe.midi-touchbar.pad5</string>
-			<string>ch.uebe.midi-touchbar.pad6</string>
-			<string>ch.uebe.midi-touchbar.pad8</string>
-			<string>ch.uebe.midi-touchbar.pad7</string>
-			<string>ch.uebe.midi-touchbar.pad9</string>
-			<string>ch.uebe.midi-touchbar.pad10</string>
-			<string>ch.uebe.midi-touchbar.pad1</string>
+			<string>ch.uebe.midi-touchbar.8pad-group1</string>
+			<string>ch.uebe.midi-touchbar.8pad-group2</string>
+			<string>ch.uebe.midi-touchbar.8pad-group3</string>
+			<string>ch.uebe.midi-touchbar.4slider-group1</string>
+			<string>ch.uebe.midi-touchbar.8pad-group4</string>
 		</array>
 		<key>DefaultItems</key>
 		<array>

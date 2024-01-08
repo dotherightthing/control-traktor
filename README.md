@@ -28,6 +28,13 @@ This repo uses a build script so that I can write JavaScript in ES6 rather than 
 
 ---
 
+## Control Traktor v5 (2024.01.08)
+
+### Description
+
+* Removed all extra functionality from S8 except pan controls
+* Created a one-page Traktor profile for my new Stream Deck XL
+
 ## Control Traktor v4 update (2024.01.05)
 
 ### Description
