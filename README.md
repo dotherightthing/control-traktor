@@ -35,6 +35,19 @@ This repo uses a build script so that I can write JavaScript in ES6 rather than 
 * Removed all extra functionality from S8 except pan controls
 * Created a one-page Traktor profile for my new Stream Deck XL
 
+### Tips
+
+#### Traktor Step Sequencer workflow
+
+* SHIFT + REMIX to exit Remix Deck and enter Step Sequencer
+* After sequencer programmed, cue Deck C and record to Loop Recorder
+* Set Loop Recorder level to Wet
+* SHIFT + REMIX to exit Step Sequencer and enter Remix Deck
+* Dump Loop Recorder sample to Remix Deck and Play
+* Set Loop Recorder level to Dry
+* Toggle Wet/Dry to cut between the Loop Recorder and Remix Deck containing the LR loop, FX and anything else
+* Eventually clear Loop Recorder
+
 ## Control Traktor v4 update (2024.01.05)
 
 ### Description
