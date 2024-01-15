@@ -33,7 +33,7 @@ This repo uses a build script so that I can write JavaScript in ES6 rather than 
 ### Description
 
 * Removed all extra functionality from S8 except pan controls
-* Created a one-page Traktor profile for my new Stream Deck XL
+* Created Traktor profiles for my new Stream Deck XL: [streamdeck-profiles](https://github.com/dotherightthing/streamdeck-profiles/)
 
 ### Tips
 
