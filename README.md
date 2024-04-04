@@ -32,7 +32,7 @@ This repo uses a build script so that I can write JavaScript in ES6 rather than 
 
 ### Description
 
-* Removed all extra functionality from S8 except pan controls
+* Removed all extra functionality from S8 except pan controls and reverse play
 * Created Traktor profiles for my new Stream Deck XL: [streamdeck-profiles](https://github.com/dotherightthing/streamdeck-profiles/)
 
 ### Tips
@@ -47,6 +47,25 @@ This repo uses a build script so that I can write JavaScript in ES6 rather than 
 * Set Loop Recorder level to Dry
 * Toggle Wet/Dry to cut between the Loop Recorder and Remix Deck containing the LR loop, FX and anything else
 * Eventually clear Loop Recorder
+
+#### Beatgridding
+
+* S8: Disable Sync and Quantise
+* S8: Edit > Lock, to enable changes
+* S8: Cuepoint 2: set cue point at first down beat
+  * Software: To remove unwanted extra beat grid lines, set that cuepoint type to Grid (white)
+* S8: Cuepoint 1: Enable loop. then Use loop shift to jump back N loops from Cuepoint 2 to closest point near beginning of track
+  * Software: set that cuepoint type to Load (yellow) (and Traktor > Settings > Loading > Initially cue to load marker)
+* S8: Edit > Lock, to save changes
+* S8: Enable Sync and Quantise
+
+To half or double BPM of track on the fly, disable Lock then use BPM /2 or BPM x2 on Streamdeck.
+
+[How To Beat Grid](https://www.youtube.com/watch?v=KTD0MVypY8I)
+
+##### Notes
+
+* Shift + Cue always jumps to start of track, not first cue point
 
 ## Control Traktor v4 update (2024.01.05)
 
