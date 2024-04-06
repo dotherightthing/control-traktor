@@ -63,6 +63,15 @@ To half or double BPM of track on the fly, disable Lock then use BPM /2 or BPM x
 
 [How To Beat Grid](https://www.youtube.com/watch?v=KTD0MVypY8I)
 
+#### Loading new Loop Recorder recordings in Deck A/B
+
+Loading a recording into a Deck allows provides access to the Freeze function to trigger different parts of the loop.
+
+Unsure of exact steps, but these two actions seem to prompt Traktor to update the list for a Library Favourite folder:
+
+1. Load the recording to a remix deck slot
+2. Change to a different Library Favourite folder, then change back
+
 ##### Notes
 
 * Shift + Cue always jumps to start of track, not first cue point
