@@ -1,6 +1,6 @@
-# M4L Helpers
+# Traktor Pro
 
-A collection of Max4Live devices which speed up aspects of my DJing and jamming workflows.
+A collection of settings and Max4Live devices which speed up aspects of my DJing and jamming workflows.
 
 ## Installation only
 
