@@ -101,7 +101,16 @@ Note: there is a little noise from each of the S8 inputs, even if nothing is plu
 | Pass-Thru:  9/10           | Traktor Output Routing - Output Master  | Channels  9 & 10          | Traktor Kontrol S8: Channels 1 & 2         |
 | Pass-Thru: 11/12           | Traktor Output Routing - Output Monitor | Channels 11 & 12          | Traktor Kontrol S8: Channels 3 & 4         |
 
-See also screenshots in <src/rogue-amoeba-loopback/>.
+Screenshots:
+
+* [Live Audio Preferences](./src/rogue-amoeba-loopback/live-audio-preferences.png)
+* [Live Audio Preferences: Input](./src/rogue-amoeba-loopback/live-audio-preferences-input.png)
+* [Live Audio Preferences: Output](./src/rogue-amoeba-loopback/live-audio-preferences-output.png)
+* [Live track routing](./src/rogue-amoeba-loopback/live-track-routing.png)
+* [S8 Loopback virtual device](./src/rogue-amoeba-loopback/s8-loopback.png)
+* [Traktor Audio Setup](./src/rogue-amoeba-loopback/traktor-audio-setup.png)
+* [Traktor Input Routing](./src/rogue-amoeba-loopback/traktor-input-routing.png)
+* [Traktor Output Routing](./src/rogue-amoeba-loopback/traktor-output-routing.png)
 
 ##### Notes
 
