@@ -1,0 +1,6 @@
+[submodule "submodules/streamdeck-profiles"]
+	path = submodules/streamdeck-profiles
+	url = git@github.com:dotherightthing/streamdeck-profiles.git
+[submodule "submodules/streamdeck-clicker"]
+	path = submodules/streamdeck-clicker
+	url = git@github.com:dotherightthing/streamdeck-clicker.git
