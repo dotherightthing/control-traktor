@@ -34,6 +34,7 @@ This repo uses a build script so that I can write JavaScript in ES6 rather than 
 
 * Removed all extra functionality from S8 except pan controls and reverse play
 * Created Traktor profiles for my new Stream Deck XL: [streamdeck-profiles](https://github.com/dotherightthing/streamdeck-profiles/)
+* Replaced Behringer XENYX 1202 mixer with *S8 Loopback* virtual device
 
 ### Tips
 
@@ -63,7 +64,7 @@ To half or double BPM of track on the fly, disable Lock then use BPM /2 or BPM x
 
 [How To Beat Grid](https://www.youtube.com/watch?v=KTD0MVypY8I)
 
-#### Loading new Loop Recorder recordings in Deck A/B
+#### Deck A/B: Loading new Loop Recorder recordings
 
 Loading a recording into a Deck allows provides access to the Freeze function to trigger different parts of the loop.
 
@@ -71,6 +72,36 @@ Unsure of exact steps, but these two actions seem to prompt Traktor to update th
 
 1. Load the recording to a remix deck slot
 2. Change to a different Library Favourite folder, then change back
+
+#### MIDI Sync
+
+If a MIDI clip in Ableton drifts out of phase sync with Traktor, an alternative to pressing *Clock Sync* is to adjust the clip's *Start Offset* on Push2.
+
+#### Deck D: Combining Ableton output with multiple external synths using loopback
+
+Using the *Traktor Kontrol S8* audio device, one set of S8 inputs can be routed to one Deck input.
+
+Using the *S8 Loopback* audio device in my licensed copy of *Rogue Amoeba Loopback*, any S8 input can be routed to any S8 output (e.g. Deck D), whilst all S8 mixer controls remain usable in Traktor. Additionally software synths and samplers in Ableton can be played using the CS1x and Push2 then sampled into Traktor via Deck D.
+
+Note: there is a little noise from each of the S8 inputs, even if nothing is plugged in; this can be reduced relative to Traktor output by reducing the output level, but amounts below 50% reduce useful level meters and waveform amplitude in the remix decks.
+
+* Ableton Live - Audio - Audio Input Device: Traktor Kontrol S8
+  * Input Config: none enabled, but could activate any of the mono or stereo inputs to record from these
+* Ableton Live - Audio - Audio Output Device: S8 Loopback
+  * Output Config: 7/8 S8 Deck D
+
+| Loopback Source: Channels  | Description                             | Loopback Output Channels  | Loopback Monitors: Channels                |
+| -------------------------- | --------------------------------------- | ------------------------- | ------------------------------------------ |
+| Traktor Kontrol S8: 1/2    | S8 Input A L/R (not currently used)     | -                         | -                                          |
+| Traktor Kontrol S8: 3/4    | S8 Input B L/R (not currently used)     | -                         | -                                          |
+| Traktor Kontrol S8: 5/6    | S8 Input C L (Monotron - mono)          | Channels  7 &  8          | N/A - Traktor outputs to Master or Monitor |
+| Traktor Kontrol S8: 7/8    | S8 Input D L/R (CS1x - stereo)          | Channels  7 &  8          | N/A - Traktor outputs to Master or Monitor |
+| Traktor Kontrol S8: 9/10   | ?                                       | -                         | -                                          |
+| Pass-Thru:   7/8           | Live - Output Config (Ext. Out) - 7/8   | Channels  7 &  8          | N/A - Traktor outputs to Master or Monitor |
+| Pass-Thru:  9/10           | Traktor Output Routing - Output Master  | Channels  9 & 10          | Traktor Kontrol S8: Channels 1 & 2         |
+| Pass-Thru: 11/12           | Traktor Output Routing - Output Monitor | Channels 11 & 12          | Traktor Kontrol S8: Channels 3 & 4         |
+
+See also screenshots in <src/rogue-amoeba-loopback/>.
 
 ##### Notes
 
