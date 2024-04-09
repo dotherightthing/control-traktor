@@ -52,6 +52,16 @@ When Settings > Remix Decks > Auto Enable Deck Play on Sample Trigger = unchecke
 
 The [streamdeck-clicker](https://github.com/dotherightthing/streamdeck-clicker) plugin automates mouse clicks on the 16 Remix Deck slots visible in the software, to ensure that the Advanced Panel on the Remix Deck exposes the per-slot controls and displays the settings relative to the clip in that slot.
 
+### Sidecar
+
+I display Traktor on an iPad Pro 1 using MacOS Sidecar.
+
+To remove black bars at top and bottom of display:
+
+1. Install <https://github.com/waydabber/BetterDisplay>
+2. Default setting: 164% - 1680x1050
+3. Chang to: 100% - 1366x1024
+
 ### Tips
 
 #### Traktor Step Sequencer workflow
