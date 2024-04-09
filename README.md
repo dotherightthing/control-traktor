@@ -33,7 +33,7 @@ This repo uses a build script so that I can write JavaScript in ES6 rather than 
 ### Description
 
 * Removed all extra functionality from S8 except pan controls and reverse play
-* Created Traktor profiles for my new Stream Deck XL: [streamdeck-profiles](https://github.com/dotherightthing/streamdeck-profiles/)
+* Created Traktor profiles for my new Stream Deck XL
 * Replaced Behringer XENYX 1202 mixer with *S8 Loopback* virtual device
 
 ### Streamdeck XL
@@ -54,56 +54,17 @@ The [streamdeck-clicker](https://github.com/dotherightthing/streamdeck-clicker) 
 
 ### Sidecar
 
-I display Traktor on an iPad Pro 1 using MacOS Sidecar.
+I display Traktor on an iPad Pro12.9"  1 using MacOS Sidecar.
 
 To remove black bars at top and bottom of display:
 
 1. Install <https://github.com/waydabber/BetterDisplay>
 2. Default setting: 164% - 1680x1050
-3. Chang to: 100% - 1366x1024
+3. Change to: 100% - 1366x1024
 
-### Tips
+### Loopback
 
-#### Traktor Step Sequencer workflow
-
-* SHIFT + REMIX to exit Remix Deck and enter Step Sequencer
-* After sequencer programmed, cue Deck C and record to Loop Recorder
-* Set Loop Recorder level to Wet
-* SHIFT + REMIX to exit Step Sequencer and enter Remix Deck
-* Dump Loop Recorder sample to Remix Deck and Play
-* Set Loop Recorder level to Dry
-* Toggle Wet/Dry to cut between the Loop Recorder and Remix Deck containing the LR loop, FX and anything else
-* Eventually clear Loop Recorder
-
-#### Beatgridding
-
-* S8: Disable Sync and Quantise
-* S8: Edit > Lock, to enable changes
-* S8: Cuepoint 2: set cue point at first down beat
-  * Software: To remove unwanted extra beat grid lines, set that cuepoint type to Grid (white)
-* S8: Cuepoint 1: Enable loop. then Use loop shift to jump back N loops from Cuepoint 2 to closest point near beginning of track
-  * Software: set that cuepoint type to Load (yellow) (and Traktor > Settings > Loading > Initially cue to load marker)
-* S8: Edit > Lock, to save changes
-* S8: Enable Sync and Quantise
-
-To half or double BPM of track on the fly, disable Lock then use BPM /2 or BPM x2 on Streamdeck.
-
-[How To Beat Grid](https://www.youtube.com/watch?v=KTD0MVypY8I)
-
-#### Deck A/B: Loading new Loop Recorder recordings
-
-Loading a recording into a Deck allows provides access to the Freeze function to trigger different parts of the loop.
-
-Unsure of exact steps, but these two actions seem to prompt Traktor to update the list for a Library Favourite folder:
-
-1. Load the recording to a remix deck slot
-2. Change to a different Library Favourite folder, then change back
-
-#### MIDI Sync
-
-If a MIDI clip in Ableton drifts out of phase sync with Traktor, an alternative to pressing *Clock Sync* is to adjust the clip's *Start Offset* on Push2.
-
-#### Deck D: Combining Ableton output with multiple external synths using loopback
+*Deck D: Combining Ableton output with multiple external synths using loopback.*
 
 Using the *Traktor Kontrol S8* audio device, one set of S8 inputs can be routed to one Deck input.
 
@@ -138,9 +99,48 @@ Screenshots:
 * [Traktor Input Routing](./src/rogue-amoeba-loopback/traktor-input-routing.png)
 * [Traktor Output Routing](./src/rogue-amoeba-loopback/traktor-output-routing.png)
 
-##### Notes
+### Tips
 
-* Shift + Cue always jumps to start of track, not first cue point
+#### Traktor Step Sequencer workflow
+
+* SHIFT + REMIX to exit Remix Deck and enter Step Sequencer
+* After sequencer programmed, cue Deck C and record to Loop Recorder
+* Set Loop Recorder level to Wet
+* SHIFT + REMIX to exit Step Sequencer and enter Remix Deck
+* Dump Loop Recorder sample to Remix Deck and Play
+* Set Loop Recorder level to Dry
+* Toggle Wet/Dry to cut between the Loop Recorder and Remix Deck containing the LR loop, FX and anything else
+* Eventually clear Loop Recorder
+
+#### Beatgridding
+
+* S8: Disable Sync and Quantise
+* S8: Edit > Lock, to enable changes
+* S8: Cuepoint 2: set cue point at first down beat
+  * Software: To remove unwanted extra beat grid lines, set that cuepoint type to Grid (white)
+* S8: Cuepoint 1: Enable loop. then Use loop shift to jump back N loops from Cuepoint 2 to closest point near beginning of track
+  * Software: set that cuepoint type to Load (yellow) (and Traktor > Settings > Loading > Initially cue to load marker)
+* S8: Edit > Lock, to save changes
+* S8: Enable Sync and Quantise
+
+To half or double BPM of track on the fly, disable Lock then use BPM /2 or BPM x2 on Streamdeck.
+
+[How To Beat Grid](https://www.youtube.com/watch?v=KTD0MVypY8I)
+
+Note: Shift + Cue always jumps to start of track, not first cue point
+
+#### Loading new Loop Recorder recordings
+
+Loading a recording into a Deck rather than the Remix Deck provides access to the Freeze function to trigger different parts of the loop.
+
+Unsure of exact steps, but these two actions seem to prompt Traktor to update the list for a Library Favourite folder:
+
+1. Load the recording to a remix deck slot
+2. Change to a different Library Favourite folder, then change back
+
+#### MIDI Sync
+
+If a MIDI clip in Ableton drifts out of phase sync with Traktor, an alternative to pressing *Clock Sync* is to adjust the clip's *Start Offset* on Push2.
 
 ## Control Traktor v4 update (2024.01.05)
 
