@@ -1,7 +1,7 @@
 {
   "name": "traktor-pro",
   "version": "1.2.1",
-  "description": "Max4Live helper devices.",
+  "description": "A collection of settings and Max4Live devices which speed up aspects of my DJing and jamming workflows.",
   "main": "README.md",
   "engines": {
     "node": "18.7.0",
