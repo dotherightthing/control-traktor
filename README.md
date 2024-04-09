@@ -4,7 +4,7 @@ A collection of settings and Max4Live devices which speed up aspects of my DJing
 
 ## Installation only
 
-1. Download `release.zip` from the latest [Release](https://github.com/dotherightthing/m4l-helpers/releases)
+1. Download `release.zip` from the latest [Release](https://github.com/dotherightthing/traktor-pro/releases)
 2. Unzip/expand the folder and copy to `~/Music/Ableton/User\ Library/` (note: devices may be a mix of Audio/Instrument/MIDI types)
 3. See device usage instructions below (*Rename Selected Track*, *Presample Selected Track*)
 
@@ -517,7 +517,7 @@ Set `MIDI To` to:
 
 ### Roadmap
 
-See <https://github.com/dotherightthing/m4l-helpers/labels/Control%20Traktor%20Deck>
+See <https://github.com/dotherightthing/traktor-pro/labels/Control%20Traktor%20Deck>
 
 ---
 
@@ -642,7 +642,7 @@ Note: This patch is functionally similar to ClyphX Pro's `INSAUDIO`/`INSMIDI`.
 
 ### Roadmap
 
-See <https://github.com/dotherightthing/m4l-helpers/labels/Presample%20Selected%20Track>
+See <https://github.com/dotherightthing/traktor-pro/labels/Presample%20Selected%20Track>
 
 ---
 
@@ -668,7 +668,7 @@ When jamming it's easy to lose track of what each track represents. This functio
 
 ### Roadmap
 
-See <https://github.com/dotherightthing/m4l-helpers/labels/Rename%20Selected%20Track>
+See <https://github.com/dotherightthing/traktor-pro/labels/Rename%20Selected%20Track>
 
 ---
 

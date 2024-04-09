@@ -1,5 +1,5 @@
 {
-  "name": "m4l-helpers",
+  "name": "traktor-pro",
   "version": "1.2.1",
   "description": "Max4Live helper devices.",
   "main": "README.md",
@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dotherightthing/m4l-helpers.git"
+    "url": "git+https://github.com/dotherightthing/traktor-pro.git"
   },
   "keywords": [
     "m4l",
@@ -35,9 +35,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dotherightthing/m4l-helpers/issues"
+    "url": "https://github.com/dotherightthing/traktor-pro/issues"
   },
-  "homepage": "https://github.com/dotherightthing/m4l-helpers#readme",
+  "homepage": "https://github.com/dotherightthing/traktor-pro#readme",
   "devDependencies": {
     "@babel/cli": "^7.18.10",
     "@babel/core": "^7.19.1",
