@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MidiSteps version="1.1">
+  <Default send="yes" receive="yes" display="" image="" displayonsend="yes" useclosestvalueonreceive="yes"/>
+  <StepValues>
+    <Step value="127" display="Loop Out" image="/Users/dan/Websites/streamdeck-profiles/streamdeck-xl/icons/button-creator/arrow.forward.to.line.png"/>
+    <Step value="84" display="Loop In" image="/Users/dan/Websites/streamdeck-profiles/streamdeck-xl/icons/button-creator/arrow.backward.to.line.png"/>
+    <Step value="42" display="Loop" image="/Users/dan/Websites/streamdeck-profiles/streamdeck-xl/icons/button-creator/arrow.triangle.to.circlepath.png"/>
+    <Step value="0" display="BeatJump" image="/Users/dan/Websites/streamdeck-profiles/streamdeck-xl/icons/button-creator/arrow.turn.up.right.png"/> 
+  </StepValues>
+</MidiSteps>

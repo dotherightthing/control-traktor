@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MidiSteps version="1.1">
+  <Default send="yes" receive="yes" display="" image="" displayonsend="yes" useclosestvalueonreceive="yes"/>
+  <StepValues>
+    <Step value="0" display="xFine"/>
+    <Step value="10" display="Fine"/>
+    <Step value="21" display="1/16 bar"/>
+    <Step value="31" display="1/8 bar"/>
+    <Step value="42" display="1/4 bar"/>
+    <Step value="52" display="1/2 bar"/>
+    <Step value="63" display="1 bar"/>
+    <Step value="74" display="2 bars"/>
+    <Step value="84" display="4 bars"/>
+    <Step value="95" display="8 bars"/>
+    <Step value="105" display="16 bars"/>
+    <Step value="116" display="32 bars"/>
+    <Step value="127" display="Loop"/>
+  </StepValues>
+</MidiSteps>

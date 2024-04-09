@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MidiSteps version="1.1">
+  <Default send="yes" receive="yes" display="" image="" displayonsend="yes" useclosestvalueonreceive="no"/>
+  <StepValues>
+    <Step value="127" display="Browser" image="/Users/dan/Websites/streamdeck-profiles/streamdeck-xl/icons/button-creator/display-and-list.dash.png"/>
+    <Step value="0" display="Decks" image="/Users/dan/Websites/streamdeck-profiles/streamdeck-xl/icons/button-creator/play.display.png"/>
+  </StepValues>
+</MidiSteps>

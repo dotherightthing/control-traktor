@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MidiSteps version="1.1">
+  <Default send="yes" receive="yes" display="" image="" displayonsend="yes" useclosestvalueonreceive="yes"/>
+  <StepValues>
+    <Step value="0" display="-"/>
+    <Step value="10" display="Prep List"/>
+    <Step value="21" display="Playlists"/>
+    <Step value="31" display="Collection"/>
+    <Step value="42" display="All Tracks"/>
+    <Step value="52" display="History"/>
+    <Step value="63" display="Rmx Sets"/>
+    <Step value="74" display="Mix Recs"/>
+    <Step value="84" display="Loop Recs"/>
+    <Step value="95" display="X" send="no"/>
+    <Step value="105" display="X" send="no"/>
+    <Step value="116" display="X" send="no"/>
+    <Step value="127" display="X" send="no"/>
+  </StepValues>
+</MidiSteps>
