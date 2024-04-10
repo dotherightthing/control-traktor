@@ -10,3 +10,6 @@
 [submodule "submodules/traktor-live-v4"]
 	path = submodules/traktor-live-v4
 	url = git@github.com:dotherightthing/traktor-live-v4.git
+[submodule "submodules/traktor-live-v1"]
+	path = submodules/traktor-live-v1
+	url = git@github.com:dotherightthing/traktor-live-v1.git
