@@ -1,10 +1,10 @@
-# Traktor Pro
+# Control Traktor
 
-A collection of settings and Max4Live devices which speed up aspects of my DJing and jamming workflows.
+A collection of settings and Max4Live devices for improved control over Traktor Pro.
 
 ## Installation only
 
-1. Download `release.zip` from the latest [Release](https://github.com/dotherightthing/traktor-pro/releases)
+1. Download `release.zip` from the latest [Release](https://github.com/dotherightthing/control-traktor/releases)
 2. Unzip/expand the folder and copy to `~/Music/Ableton/User\ Library/` (note: devices may be a mix of Audio/Instrument/MIDI types)
 3. See device usage instructions below (*Rename Selected Track*, *Presample Selected Track*)
 
@@ -90,14 +90,14 @@ Note: there is a little noise from each of the S8 inputs, even if nothing is plu
 
 Screenshots:
 
-* [Live Audio Preferences](./src/rogue-amoeba-loopback/live-audio-preferences.png)
-* [Live Audio Preferences: Input](./src/rogue-amoeba-loopback/live-audio-preferences-input.png)
-* [Live Audio Preferences: Output](./src/rogue-amoeba-loopback/live-audio-preferences-output.png)
-* [Live track routing](./src/rogue-amoeba-loopback/live-track-routing.png)
-* [S8 Loopback virtual device](./src/rogue-amoeba-loopback/s8-loopback.png)
-* [Traktor Audio Setup](./src/rogue-amoeba-loopback/traktor-audio-setup.png)
-* [Traktor Input Routing](./src/rogue-amoeba-loopback/traktor-input-routing.png)
-* [Traktor Output Routing](./src/rogue-amoeba-loopback/traktor-output-routing.png)
+* [Live Audio Preferences](./src/loopback/screenshots/live-audio-preferences.png)
+* [Live Audio Preferences: Input](./src/loopback/screenshots/live-audio-preferences-input.png)
+* [Live Audio Preferences: Output](./src/loopback/screenshots/live-audio-preferences-output.png)
+* [Live track routing](./src/loopback/screenshots/live-track-routing.png)
+* [S8 Loopback virtual device](./src/loopback/screenshots/s8-loopback.png)
+* [Traktor Audio Setup](./src/loopback/screenshots/traktor-audio-setup.png)
+* [Traktor Input Routing](./src/loopback/screenshots/traktor-input-routing.png)
+* [Traktor Output Routing](./src/loopback/screenshots/traktor-output-routing.png)
 
 ### Tips
 
@@ -517,7 +517,7 @@ Set `MIDI To` to:
 
 ### Roadmap
 
-See <https://github.com/dotherightthing/traktor-pro/labels/Control%20Traktor%20Deck>
+See <https://github.com/dotherightthing/control-traktor/labels/Control%20Traktor%20Deck>
 
 ---
 
@@ -642,7 +642,7 @@ Note: This patch is functionally similar to ClyphX Pro's `INSAUDIO`/`INSMIDI`.
 
 ### Roadmap
 
-See <https://github.com/dotherightthing/traktor-pro/labels/Presample%20Selected%20Track>
+See <https://github.com/dotherightthing/control-traktor/labels/Presample%20Selected%20Track>
 
 ---
 
@@ -668,7 +668,7 @@ When jamming it's easy to lose track of what each track represents. This functio
 
 ### Roadmap
 
-See <https://github.com/dotherightthing/traktor-pro/labels/Rename%20Selected%20Track>
+See <https://github.com/dotherightthing/control-traktor/labels/Rename%20Selected%20Track>
 
 ---
 

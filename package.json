@@ -1,7 +1,7 @@
 {
-  "name": "traktor-pro",
+  "name": "control-traktor",
   "version": "1.2.1",
-  "description": "A collection of settings and Max4Live devices which speed up aspects of my DJing and jamming workflows.",
+  "description": "A collection of settings and Max4Live devices for improved control over Traktor Pro.",
   "main": "README.md",
   "engines": {
     "node": "18.7.0",
@@ -12,21 +12,20 @@
     "email": "dev@dotherightthing.co.nz"
   },
   "scripts": {
-    "backup": "cp ./dist/*.amxd ./src/patches",
-    "build": "npm run backup && npm run lint && npm run compile",
+    "backup": "./scripts/backup.sh",
+    "build": "npm run backup && npm run lint && rm -r dist && mkdir dist && ./scripts/dist.sh",
     "changelog": "git log --pretty='* [%h] %s' --no-merges $(git describe --tags --abbrev=0 @^)..@ > CHANGELOG.md",
-    "compile": "babel ./src/js/*.js -d ./dist",
-    "postinstall": "mkdir dist && cp ./src/patches/*.amxd ./dist && cp ./src/presets/*.adg ./dist && cp ./src/sets/*.als ./dist && cp ./src/traktor/*.tsi ./dist && npm run build",
-    "reinstall": "rm -r dist && mkdir dist && cp ./src/patches/*.amxd ./dist && cp ./src/presets/*.adg ./dist && cp ./src/sets/*.als ./dist && cp ./src/traktor/*.tsi ./dist && npm run build",
+    "postinstall": "chmod a+x scripts/*sh && mkdir dist && npm run build",
+    "reinstall": "rm -r dist && mkdir dist && npm run build",
     "lint": "eslint './src/js/*.js'",
     "prepare": "husky install",
-    "release": "npm run changelog && cp ./README.md ./release && cp ./dist/* ./release",
+    "release": "npm run build && npm run changelog && cp ./dist/* ./release",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "nodemon"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dotherightthing/traktor-pro.git"
+    "url": "git+https://github.com/dotherightthing/control-traktor.git"
   },
   "keywords": [
     "m4l",
@@ -35,9 +34,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dotherightthing/traktor-pro/issues"
+    "url": "https://github.com/dotherightthing/control-traktor/issues"
   },
-  "homepage": "https://github.com/dotherightthing/traktor-pro#readme",
+  "homepage": "https://github.com/dotherightthing/control-traktor#readme",
   "devDependencies": {
     "@babel/cli": "^7.18.10",
     "@babel/core": "^7.19.1",
