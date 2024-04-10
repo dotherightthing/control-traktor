@@ -3,13 +3,13 @@
 	url = git@github.com:dotherightthing/streamdeck-clicker.git
 [submodule "submodules/traktor-live-v2"]
 	path = submodules/traktor-live-v2
-	url = git@github.com:dotherightthing/traktor-live-v2.git
+	url = https://github.com/dotherightthing/traktor-live-v2
 [submodule "submodules/traktor-live-v3"]
 	path = submodules/traktor-live-v3
-	url = git@github.com:dotherightthing/traktor-live-v3.git
+	url = https://github.com/dotherightthing/traktor-live-v3
 [submodule "submodules/traktor-live-v4"]
 	path = submodules/traktor-live-v4
-	url = git@github.com:dotherightthing/traktor-live-v4.git
+	url = https://github.com/dotherightthing/traktor-live-v4
 [submodule "submodules/traktor-live-v1"]
 	path = submodules/traktor-live-v1
 	url = git@github.com:dotherightthing/traktor-live-v1.git
