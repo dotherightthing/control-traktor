@@ -13,11 +13,12 @@
 
 # e: exit the script if any statement returns a non-true return value
 # v: print shell input lines as they are read (including all comments!)
+# suppress both error message and exit code: 2>/dev/null || :
 set -e
 
 cd "$INIT_CWD" \
-&& echo "Copying files from ./dist to ./src/patches" \
-&& cp ./dist/*.amxd ./src/patches \
-&& echo "Copying files from 'Library/Application Support/Loopback' to ./src/Loopback" \
+&& echo "Backing up Ableton patch files" \
+&& cp ./dist/*.amxd ./src/patches 2>/dev/null || : \
+&& echo "Backing up Loopback configuration files" \
 && cp ~/Library/Application\ Support/Loopback/*.plist ./src/loopback \
-&& echo "Backup task complete"
+&& echo "Backup tasks complete"

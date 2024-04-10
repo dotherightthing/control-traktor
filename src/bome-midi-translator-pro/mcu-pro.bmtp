@@ -1,0 +1,38 @@
+; ------- Bome MIDI Translator: signed project file
+; ------- You can modify this file as you like, but that will invalidate the
+; ------- signature so that it cannot be opened in the BomeBox or MT Player anymore.
+;
+[Preset.0]
+Active=1
+Comments=
+DefaultInPorts=MIDA00010017MCU Pro USB v3.1 Port 1
+DefaultOutPorts=MIDA00010017MCU Pro USB v3.1 Port 1
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x45"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x43"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x44"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x43"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Name=MCU Pro
+Name0=Focus Ableton Live
+Name1=Focus Ableton Live (EXT)
+Name2=Focus Traktor
+Name3=Click EXT
+Options0=Actv01Stop00OutO00
+Options1=Actv01Stop00OutO00
+Options2=Actv01Stop00OutO00
+Options3=Actv01Stop00OutO00Dlay1:Seconds
+Outgoing0=AcApA001CAbleton Live 11 Standard.app
+Outgoing1=AcApA001CAbleton Live 11 Standard.app
+Outgoing2=AcApA000BTraktor.app
+Outgoing3=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="17"/><Y num="72"/></Outgoing>
+PresetSwitchIgnore=0
+
+[Project]
+DefaultInPorts=MIDA0000
+DefaultOutPorts=MIDA0000
+Version=2
+
+[Signatures]
+SigName-1=[Midi Translator Pro Internal]
+Signature-1=MdVF8KVdopRQeKgFI9QjjEoMmKfEyINaJxuk079zb/x42stYprKEnmPIkScCCyjYfiTIorBxVAJi1aFseZyLCoOMsXBlSsoRYZoYIxqWo1KF2y5a9hUic3D72PXAY4ZNg2IAVYUmLCSdFMHjvqWN6ZMdxM0AicCIx9+ipbX6gy8=
+SignedBy-1=Dan Smith
+

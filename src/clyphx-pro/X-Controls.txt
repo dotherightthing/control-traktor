@@ -1,0 +1,87 @@
+#********************************** [SETTINGS NOTES] **********************************
+
+# Please DO NOT change any of the spacing in this file.
+
+# Please DO NOT change the name of this file or its file extension.  When done making
+# your changes to the settings below, just save the file.
+
+# After saving this file, you will need to load a new Live Set/reload the
+# current Live Set for your changes to take effect.
+
+
+
+# --------------------------------------------------------------------------------------
+
+[X-CONTROLS]
+
+# Below, you can specify a list of MIDI Controls to use as X-Controls.
+
+# The entry format is: NAME = TYPE, CHANNEL, NOTE_OR_CC, OFF_LED, ON_LED, ON_ACTION_LIST
+
+# --------------------------------------------------------------------------------------
+# | ENTRY          |  DESCRIPTION
+# --------------------------------------------------------------------------------------
+# | NAME           |  A unique one-word name for the control.
+# --------------------------------------------------------------------------------------
+# | TYPE           |  The type of MIDI message the control sends (NOTE or CC).
+# --------------------------------------------------------------------------------------
+# | CHANNEL        |  The MIDI Channel number in the range of 1-16
+# --------------------------------------------------------------------------------------
+# | NOTE_OR_CC     |  The Note or CC number in the range of 0-127.
+# --------------------------------------------------------------------------------------
+# | OFF_LED        |  The LED value in the range of 0-127 to use by default and when the
+# |                |  control sends an off message. If in doubt, use 0.
+# --------------------------------------------------------------------------------------
+# | ON_LED         |  The LED value in the range of 0-127 to use when the control sends
+# |                |  an on message. If in doubt, use 127.
+# --------------------------------------------------------------------------------------
+# | ON_ACTION_LIST |  The Action List to trigger when the control sends an on message.
+# --------------------------------------------------------------------------------------
+
+# Example: MY_BTN1 = NOTE, 1, 10, 0, 127, 1/MUTE ; 2/MUTE
+
+# You can optionally specify an Action List to trigger when the control sends an off
+# message. To do this, place a colon after the On Action List and then specify the
+# Off Action List.
+
+# Example: MY_BTN2 = CC, 16, 117, 0, 127, 1/MUTE ; 2/MUTE : 3/PLAY >
+
+# To trigger the same Action List for the On Action List and Off Action List, just specify
+# an asterisk for the Off Action List.
+
+# Example: MY_BTN3 = NOTE, 5, 0, 0, 127, 1/MUTE : *
+
+# --------------------------------------------------------------------------------------
+
+# Below is an example list that has been commented out (the # at the beginning of
+# a line makes the line a comment). Your list should be formatted in the same way
+# except without the # at the beginning of each line.
+
+# BTN_1 = NOTE, 1, 0, 0, 127, MUTE : *
+
+# BTN_2 = NOTE, 1, 1, 25, 15, SOLO
+
+# BTN_3 = CC, 9, 2, 127, 0, ARM
+
+# When using long Action Lists, it's possible to split the Action List up over multiple
+# lines.  This requires that each additional line is indented by 1 space.
+
+# BTN_4 = CC, 9, 3, 1, 5,
+#  MON;
+#  ARM;
+#  NAME "My Track"
+
+# --------------------------------------------------------------------------------------
+
+# Controls for Mackie MCU Pro
+#
+# Live > Settings > MIDI
+# - Control Surface: ClyphX Pro
+# - Input: MCU Pro USB v3.1 (Port 1) (Only 'Remote' checked)
+# - Output: MCU Pro USB v3.1 (Port 1) (Only 'Remote' checked)
+#
+# For note numbers, see https://computermusicresource.com/midikeys.html
+
+AUTOMATION_ARM = NOTE, 1, 54, 127, 0, SATM
+AUTOMATION_REENABLE = NOTE, 1, 55, 127, 0, SATMR
+SESSION_REC = NOTE, 1, 56, 127, 0, SREC

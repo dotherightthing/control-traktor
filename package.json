@@ -52,10 +52,10 @@
     "nodemon": "^2.0.20"
   },
   "nodemonConfig": {
-    "ext": "js,amxd",
+    "ext": "js,amxd,txt",
     "exec": "npm run build",
     "watch": [
-      "dist/*.amxd",
+      "src/clyphx-pro",
       "src/js"
     ]
   }

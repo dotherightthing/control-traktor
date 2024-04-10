@@ -32,11 +32,19 @@ This repo uses a build script so that I can write JavaScript in ES6 rather than 
 
 ### Description
 
+* Added Mackie MCU Pro
+* Added Stream Deck XL
 * Removed all extra functionality from S8 except pan controls and reverse play
-* Created Traktor profiles for my new Stream Deck XL
 * Replaced Behringer XENYX 1202 mixer with *S8 Loopback* virtual device
 
-### Streamdeck XL
+### Mackie MCU Pro
+
+* Uses MackieControl protocol
+* 16 mappable function buttons at top right, used for:
+  * Bome MIDI translators
+  * ClyphX Pro X-Controls
+
+### Stream Deck XL
 
 * `profiles`
   * `Traktor.streamDeckProfile` - Controls features of Traktor Pro that aren't covered by my S8 controller
@@ -54,7 +62,7 @@ The [streamdeck-clicker](https://github.com/dotherightthing/streamdeck-clicker) 
 
 ### Sidecar
 
-I display Traktor on an iPad Pro12.9"  1 using MacOS Sidecar.
+I display Traktor on an iPad Pro12.9" 1 using MacOS Sidecar.
 
 To remove black bars at top and bottom of display:
 

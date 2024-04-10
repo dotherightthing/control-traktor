@@ -18,7 +18,9 @@ set -e
 cd "$INIT_CWD" \
 && echo "Compiling JavaScript" \
 && babel ./src/js/*.js -d ./dist \
-&& echo "Copying files from ./src/Loopback to 'Library/Application Support/Loopback'" \
+&& echo "Installing configuration files for ClyphX Pro" \
+&& cp ./src/clyphx-pro/* ~/nativeKONTROL/ClyphX_Pro \
+&& echo "Installing configuration files for Loopback" \
 && cp ./src/loopback/*.plist ~/Library/Application\ Support/Loopback \
 && echo "Copying files from ./src to ./dist" \
 && cp ./src/patches/*.amxd ./dist \
@@ -28,4 +30,4 @@ cd "$INIT_CWD" \
 && cp ./src/streamdeck-xl/profiles/Traktor.streamDeckProfile ./dist \
 && cp ./src/traktor/*.png ./dist \
 && cp ./src/traktor/*.tsi ./dist \
-&& echo "Dist task complete"
+&& echo "Dist tasks complete"
