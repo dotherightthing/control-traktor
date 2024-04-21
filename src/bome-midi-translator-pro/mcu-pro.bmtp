@@ -5,18 +5,46 @@
 [Preset.0]
 Active=1
 Comments=
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x40"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x40"/><Value2 num="0x7F"/></Simple></Incoming>
+Name=F11
+Name0=Focus Ableton Live
+Name1=Split clip
+Options0=Actv01Stop00OutO00
+Options1=Actv01Stop01OutO00Dlay1:Seconds
+Outgoing0=AcApA001CAbleton Live 11 Standard.app
+Outgoing1=KAM3<Outgoing Action="KeyStrokes"><Type>Text</Type><Keys><Key Ext="Y" VK="91"/><Key Char="e"/><Key Release="Y" Ext="Y" VK="91"/></Keys></Outgoing>
+PresetSwitchIgnore=0
+
+[Preset.1]
+Active=1
+Comments=
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x41"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x41"/><Value2 num="0x7F"/></Simple></Incoming>
+Name=F12
+Name0=Focus Ableton Live
+Name1=Save Set As
+Options0=Actv01Stop00OutO00
+Options1=Actv01Stop01OutO00Dlay1:Seconds
+Outgoing0=AcApA001CAbleton Live 11 Standard.app
+Outgoing1=KAM10100KSQ1000615B01005325335B210
+PresetSwitchIgnore=0
+
+[Preset.2]
+Active=1
+Comments=
 Incoming0=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x42"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
-Incoming1=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x42"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x42"/><Value2 num="0x7F"/></Simple></Incoming>
 Name=F13
 Name0=Focus Ableton Live
 Name1=Save Set
 Options0=Actv01Stop00OutO00
-Options1=Actv01Stop00OutO00
+Options1=Actv01Stop01OutO00Dlay1:Seconds
 Outgoing0=AcApA001CAbleton Live 11 Standard.app
-Outgoing1=ApSc<Outgoing Action="AppleScript"><Script>tell application &quot;System Events&quot;&#10;        keystroke &quot;s&quot; using {command down}&#10;end tell</Script></Outgoing>
+Outgoing1=KAM10100KSQ1000415B05325335B
 PresetSwitchIgnore=0
 
-[Preset.1]
+[Preset.3]
 Active=1
 Comments=
 Incoming0=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x43"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
@@ -25,12 +53,12 @@ Name=F14
 Name0=Focus Ableton Live
 Name1=Click EXT
 Options0=Actv01Stop00OutO00
-Options1=Actv01Stop00OutO00Dlay1:Seconds
+Options1=Actv01Stop01OutO00Dlay1:Seconds
 Outgoing0=AcApA001CAbleton Live 11 Standard.app
 Outgoing1=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="17"/><Y num="72"/></Outgoing>
 PresetSwitchIgnore=0
 
-[Preset.2]
+[Preset.4]
 Active=1
 Comments=
 Incoming0=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x44"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
@@ -38,13 +66,13 @@ Incoming1=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><V
 Name=F15
 Name0=Launch Traktor Fullscreen
 Name1=Focus Traktor (Redundant)
-Options0=Actv01Stop00OutO00
+Options0=Actv01Stop01OutO00
 Options1=Actv00Stop00OutO00
 Outgoing0=ApSc<Outgoing Action="AppleScript"><Script>tell application &quot;Traktor.app&quot; to activate&#10;# delay 1&#10;# tell application &quot;System Events&quot; to set value of attribute &quot;AXFullScreen&quot; of front window of (first process whose frontmost is true) to true</Script><Description>Fullscreen not working</Description></Outgoing>
 Outgoing1=AcApA000BTraktor.app
 PresetSwitchIgnore=0
 
-[Preset.3]
+[Preset.5]
 Active=1
 Comments=
 Incoming0=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x45"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
@@ -52,7 +80,7 @@ Incoming1=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><V
 Name=F16
 Name0=Launch Ableton Live
 Name1=Focus Ableton Live (Redundant)
-Options0=Actv01Stop00OutO00
+Options0=Actv01Stop01OutO00
 Options1=Actv00Stop00OutO00
 Outgoing0=ApSc<Outgoing Action="AppleScript"><Script>tell application &quot;Ableton Live 11 Standard.app&quot; to activate</Script></Outgoing>
 Outgoing1=AcApA001CAbleton Live 11 Standard.app
@@ -65,6 +93,6 @@ Version=2
 
 [Signatures]
 SigName-1=[Midi Translator Pro Internal]
-Signature-1=OKGaXFnP6ZuMuyobXQbdsfvZKS2FR7H4vqbCMZQ7FLq0ARP9Ho2xnASZRfpk0uOiLgVENGS1zR1z5tTS+jbLlHG9OK7sKQmD4AsYLYbNJlH5aNN7LrZRwVrJ5dGBFDXDDCS3Ku5pSgogFI5mSm7vxwGEFi3da2G4Jrxw++mIq+g=
+Signature-1=N/Mww2DU90Z1HOgFQP96xR1mlFMx+zIYh4rjL+V3vBUyXVY3p5Y8yerex5bV/og+SKhzKtArq6JvSQnwQ6Cyufyhrmbh2NfBFM7u0POF62ErRSdtkyJqiuNOEGTAEe1NQBegt/BXKJkbW4GJcecORsGAgL102I712e749S8cDWA=
 SignedBy-1=Dan Smith
 
