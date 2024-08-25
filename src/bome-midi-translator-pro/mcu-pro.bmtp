@@ -88,11 +88,11 @@ PresetSwitchIgnore=0
 
 [Project]
 DefaultInPorts=MIDA00010017MCU Pro USB v3.1 Port 1
-DefaultOutPorts=MIDA00010017MCU Pro USB v3.1 Port 1
+DefaultOutPorts=MIDA00020017MCU Pro USB v3.1 Port 10018Ableton Push 2 Live Port
 Version=2
 
 [Signatures]
 SigName-1=[Midi Translator Pro Internal]
-Signature-1=N/Mww2DU90Z1HOgFQP96xR1mlFMx+zIYh4rjL+V3vBUyXVY3p5Y8yerex5bV/og+SKhzKtArq6JvSQnwQ6Cyufyhrmbh2NfBFM7u0POF62ErRSdtkyJqiuNOEGTAEe1NQBegt/BXKJkbW4GJcecORsGAgL102I712e749S8cDWA=
+Signature-1=bVyGiTQrBvXbxpTPVmlJSAEyPHQRAFSNL+JRTI4MXMwY7l9XXceYGu0v5ZpO2WmLNQAVanWxbfAF3C7Tu+afwmaq7fL/JNA/7l6+909FtCHRScdR10smSzAeTnvBV88WTICHtdJYLkNnN0ptGbGslDKZAsiiKDIEGU8Nj+yBjSw=
 SignedBy-1=Dan Smith
 
