@@ -150,6 +150,10 @@ Unsure of exact steps, but these two actions seem to prompt Traktor to update th
 
 If a MIDI clip in Ableton drifts out of phase sync with Traktor, an alternative to pressing *Clock Sync* is to adjust the clip's *Start Offset* on Push2.
 
+## CT6 update
+
+1. `npm run build` now copies `./src/streamdeck-midi-plugin/cycle-files` into `~/Library/Application\ Support/control-traktor/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files`
+
 ## Control Traktor v4 update (2024.01.05)
 
 ### Description

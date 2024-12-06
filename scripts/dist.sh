@@ -22,6 +22,10 @@ cd "$INIT_CWD" \
 && cp ./src/clyphx-pro/* ~/nativeKONTROL/ClyphX_Pro \
 && echo "Installing configuration files for Loopback" \
 && cp ./src/loopback/*.plist ~/Library/Application\ Support/Loopback \
+&& echo "Copying files from ./src to ~/Library/Application Support/control-traktor/" \
+&& rm -rf ~/Library/Application\ Support/control-traktor/ || true
+&& mkdir -p ~/Library/Application\ Support/control-traktor/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files
+&& cp ./src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/*.xml ~/Library/Application\ Support/control-traktor/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files \
 && echo "Copying files from ./src to ./dist" \
 && cp ./src/patches/*.amxd ./dist \
 && cp ./src/presets/*.adg ./dist \
