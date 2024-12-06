@@ -1,11 +1,11 @@
 {
   "name": "control-traktor",
-  "version": "1.2.1",
+  "version": "6.0.0",
   "description": "A collection of settings and Max4Live devices for improved control over Traktor Pro.",
   "main": "README.md",
   "engines": {
-    "node": "18.7.0",
-    "npm": "8.15.0"
+    "node": "22.11.0",
+    "npm": "10.9.0"
   },
   "person": {
     "name": "Dan Smith",
@@ -47,7 +47,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-compat": "^4.0.2",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jsdoc": "^39.3.6",
+    "eslint-plugin-jsdoc": "^50.6.0",
     "husky": "^8.0.1",
     "nodemon": "^2.0.20"
   },
