@@ -28,6 +28,28 @@ This repo uses a build script so that I can write JavaScript in ES6 rather than 
 
 ---
 
+## Control Traktor v6 ("CT6") update (2024.12.08)
+
+### Description
+
+* Streamdeck XL (`CT6.streamDeckProfile`):
+  * `build` script now copies Streamdeck XML files into *Library/Application Support/control-traktor/*
+  * A - Decks/Rec
+    * added `PUSH PAD MODE`
+    * added `FREEZE`
+    * added `FREEZE SLICE COUNT`
+    * added `FREEZE SLICE SIZE`
+    * added `LIVE TEMPO PHASE NUDGE`
+    * added `LIVE CLEAR CLIP`
+  * D - Settings
+    * consolidated Live launch buttons into 1 which launches the CT6 set
+    * added `MIDI` button to access *Audio MIDI Setup* which is where the IAC Driver is configured, for the *Daw2StreamDeck* and *StreamDeck2Daw* connectors
+    * added `Supreme MOD` - launches *Patreon page* to check for updates
+* Ableton Live
+  * 
+* Traktor screen
+  * Replaced custom hacks with [Supreme Edition Mod](https://www.patreon.com/c/supremeedition/posts)
+
 ## Control Traktor v5 (2024.01.08)
 
 ### Description
@@ -149,10 +171,6 @@ Unsure of exact steps, but these two actions seem to prompt Traktor to update th
 #### MIDI Sync
 
 If a MIDI clip in Ableton drifts out of phase sync with Traktor, an alternative to pressing *Clock Sync* is to adjust the clip's *Start Offset* on Push2.
-
-## CT6 update
-
-1. `npm run build` now copies `./src/streamdeck-midi-plugin/cycle-files` into `~/Library/Application\ Support/control-traktor/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files`
 
 ## Control Traktor v4 update (2024.01.05)
 
