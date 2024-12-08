@@ -33,22 +33,14 @@ This repo uses a build script so that I can write JavaScript in ES6 rather than 
 ### Description
 
 * Streamdeck XL (`CT6.streamDeckProfile`):
+  * added Streamdeck mappings to document new (CT Version 6) and existing (CT Version 5) buttons - [view Streamdeck mappings on Github](src/streamdeck-xl/profiles/CT6.streamDeckProfile.mappings.csv) or [view Streamdeck mappings in nakamura196's CSV Viewer](https://nakamura196.github.io/csv_viewer/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fdotherightthing%2Fcontrol-traktor%2Frefs%2Fheads%2Fmain%2Fsrc%2Fstreamdeck-xl%2Fprofiles%2FCT6.streamDeckProfile.mappings.csv)
   * `build` script now copies Streamdeck XML files into *Library/Application Support/control-traktor/*
-  * A - Decks/Rec
-    * added `PUSH PAD MODE`
-    * added `FREEZE`
-    * added `FREEZE SLICE COUNT`
-    * added `FREEZE SLICE SIZE`
-    * added `LIVE TEMPO PHASE NUDGE`
-    * added `LIVE CLEAR CLIP`
-  * D - Settings
-    * consolidated Live launch buttons into 1 which launches the CT6 set
-    * added `MIDI` button to access *Audio MIDI Setup* which is where the IAC Driver is configured, for the *Daw2StreamDeck* and *StreamDeck2Daw* connectors
-    * added `Supreme MOD` - launches *Patreon page* to check for updates
-* Ableton Live
-  * 
 * Traktor screen
   * Replaced custom hacks with [Supreme Edition Mod](https://www.patreon.com/c/supremeedition/posts)
+
+### Tips
+
+* If Push pads aren't triggerings hotcues/slices use the up and down arrows on Push to move the mapped notes into view
 
 ## Control Traktor v5 (2024.01.08)
 
