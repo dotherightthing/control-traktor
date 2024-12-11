@@ -44,7 +44,7 @@ src/traktor/CT6 - Streamdeck XL.tsi"
 A - Decks/Rec,Row 1 Col 6,BPM,x2,5,Double the deck BPM,-,10,59,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,"Sets Traktor's 'BPM Lock On' to 'off',
 Calls Traktor's 'BPM x2'","src/streamdeck-xl/icons/button-creator/bpm.png,
 src/traktor/CT6 - Streamdeck XL.tsi"
-A - Decks/Rec,Row 1 Col 7,-,-,-,-,-,-,-,-,-,-,-,-,src/streamdeck-xl/icons/button-creator/square.dashed-grey-333.png
+A - Decks/Rec,Row 1 Col 7,-,-,-,-,-,-,-,-,-,-,-,-,-
 A - Decks/Rec,Row 2 Col 1,Right Arrow Vertical Line,A to B,5,Copy source of Deck A to Deck B,-,10,11,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Calls Traktor's 'Duplicate Track Deck A',src/traktor/CT6 - Streamdeck XL.tsi
 A - Decks/Rec,Row 2 Col 2,Left Arrow Vertical Line,B to A,5,Copy source of Deck B to Deck A,-,10,12,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Calls Traktor's 'Duplicate Track Deck B',src/traktor/CT6 - Streamdeck XL.tsi
 A - Decks/Rec,Row 2 Col 3,Left Arrow Circle,Back,5,"Move loop back, or beatjump back by the specified 'Size Selector'",-,10,28,Hold,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Calls Traktor's 'Move',"src/streamdeck-xl/icons/button-creator/gobackward.png,
@@ -204,70 +204,71 @@ Keyboard A-Z,
 Keyboard 0-9",Row 4 Col 8,D,Settings,5,Sync state of all buttons with Traktor,2,10,36,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Calls Traktor's 'Send Monitor State',src/traktor/CT6 - Streamdeck XL.tsi
 "A - Decks/Rec,
 C - Browser,
-D - Settings",Row 4 Col 1,Right Arrow,Shift,5,"Provide SHIFTed functions, I denote these with underlined text",-,10,4,Hold,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Sets Traktor's 'Modifier 1' (for CT6 - Streamdeck XL) to '1',src/traktor/CT6 - Streamdeck XL.tsi
+D - Settings",Row 4 Col 1,Right Arrow,Shift,5,"Provide SHIFTed functions, I denote these with underlined text",-,10,4,Hold,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Sets Traktor's 'Modifier 1' (for CT6 - Stream Deck XL) to '1',src/traktor/CT6 - Streamdeck XL.tsi
 B - Rmx Deck,Row 1 Col 1,Select,Slot 1-1,5,Optimise layout for mixing,1,10,31,Push,"0 (On), 127 (Off)",Traktor Virtual Input,Traktor Virtual Output,Sets Traktor's 'Layout Selector' to configured 'Decks' view,"src/traktor/CT6 - App Export.tsi,
 src/traktor/CT6 - Streamdeck XL.tsi"
-B - Rmx Deck,Row 1 Col 1,Select,Slot 1-1,5,Set the remix slot target for operations 'Slot Size /2' and 'Slot Size x2',2,10,50,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,"Sets Traktor's 'Modifier 2' (for CT6 - Streamdeck XL) to '0' ('0' = Slot 1-1, '1' = Slot 1-2, '2' = Slot 1-3, '3' = Slot 1-4)",src/traktor/CT6 - Streamdeck XL.tsi
+B - Rmx Deck,Row 1 Col 1,Select,Slot 1-1,5,Set the remix slot target for operations 'Slot Size /2' and 'Slot Size x2',2,10,50,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,"Sets Traktor's 'Modifier 2' (for CT6 - Stream Deck XL) to '0' ('0' = Slot 1-1, '1' = Slot 1-2, '2' = Slot 1-3, '3' = Slot 1-4)",src/traktor/CT6 - Streamdeck XL.tsi
 B - Rmx Deck,Row 1 Col 1,Select,Slot 1-1,5,Click the remix slot to select it,3,-,-,-,-,-,-,"Calls my Streamdeck Clicker plugin, performing a mouse click on 'Remix Deck C Row 1 Slot 1' on a 1366x1024 display",https://github.com/dotherightthing/streamdeck-clicker
 B - Rmx Deck,Row 1 Col 2,Select,Slot 1-2,5,Optimise layout for mixing,1,10,31,Push,"0 (On), 127 (Off)",Traktor Virtual Input,Traktor Virtual Output,Sets Traktor's 'Layout Selector' to configured 'Decks' view,"src/traktor/CT6 - App Export.tsi,
 src/traktor/CT6 - Streamdeck XL.tsi"
-B - Rmx Deck,Row 1 Col 2,Select,Slot 1-2,5,Set the remix slot target for operations 'Slot Size /2' and 'Slot Size x2',2,10,51,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,"Sets Traktor's 'Modifier 2' (for CT6 - Streamdeck XL) to '1' ('0' = Slot 1-1, '1' = Slot 1-2, '2' = Slot 1-3, '3' = Slot 1-4)",src/traktor/CT6 - Streamdeck XL.tsi
-B - Rmx Deck,Row 1 Col 2,Select,Slot 1-2,5,Click the remix slot to select it,3,-,-,-,-,-,-,"Calls my Streamdeck Clicker plugin, performing a mouse click on 'Remix Deck C Row 1 Slot 2' on a 1366x1024 display",https://github.com/dotherightthing/streamdeck-clicker
+B - Rmx Deck,Row 1 Col 2,Select,Slot 1-2,5,Set the remix slot target for operations 'Slot Size /2' and 'Slot Size x2',2,10,51,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,"Sets Traktor's 'Modifier 2' (for CT6 - Stream Deck XL) to '1' ('0' = Slot 1-1, '1' = Slot 1-2, '2' = Slot 1-3, '3' = Slot 1-4)",src/traktor/CT6 - Streamdeck XL.tsi
+B - Rmx Deck,Row 1 Col 2,Select,Slot 1-2,5,Click the remix slot to select it,3,-,-,-,-,-,-,"Calls my Stream Deck Clicker plugin, performing a mouse click on 'Remix Deck C Row 1 Slot 2' on a 1366x1024 display",https://github.com/dotherightthing/streamdeck-clicker
 B - Rmx Deck,Row 1 Col 3,Select,Slot 1-3,5,Optimise layout for mixing,1,10,31,Push,"0 (On), 127 (Off)",Traktor Virtual Input,Traktor Virtual Output,Sets Traktor's 'Layout Selector' to configured 'Decks' view,"src/traktor/CT6 - App Export.tsi,
 src/traktor/CT6 - Streamdeck XL.tsi"
-B - Rmx Deck,Row 1 Col 3,Select,Slot 1-3,5,Set the remix slot target for operations 'Slot Size /2' and 'Slot Size x2',2,10,52,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,"Sets Traktor's 'Modifier 2' (for CT6 - Streamdeck XL) to '2' ('0' = Slot 1-1, '1' = Slot 1-2, '2' = Slot 1-3, '3' = Slot 1-4)",src/traktor/CT6 - Streamdeck XL.tsi
-B - Rmx Deck,Row 1 Col 3,Select,Slot 1-3,5,Click the remix slot to select it,3,-,-,-,-,-,-,"Calls my Streamdeck Clicker plugin, performing a mouse click on 'Remix Deck C Row 1 Slot 3' on a 1366x1024 display",https://github.com/dotherightthing/streamdeck-clicker
+B - Rmx Deck,Row 1 Col 3,Select,Slot 1-3,5,Set the remix slot target for operations 'Slot Size /2' and 'Slot Size x2',2,10,52,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,"Sets Traktor's 'Modifier 2' (for CT6 - Stream Deck XL) to '2' ('0' = Slot 1-1, '1' = Slot 1-2, '2' = Slot 1-3, '3' = Slot 1-4)",src/traktor/CT6 - Streamdeck XL.tsi
+B - Rmx Deck,Row 1 Col 3,Select,Slot 1-3,5,Click the remix slot to select it,3,-,-,-,-,-,-,"Calls my Stream Deck Clicker plugin, performing a mouse click on 'Remix Deck C Row 1 Slot 3' on a 1366x1024 display",https://github.com/dotherightthing/streamdeck-clicker
 B - Rmx Deck,Row 1 Col 4,Select,Slot 1-4,5,Optimise layout for mixing,1,10,31,Push,"0 (On), 127 (Off)",Traktor Virtual Input,Traktor Virtual Output,Sets Traktor's 'Layout Selector' to configured 'Decks' view,"src/traktor/CT6 - App Export.tsi,
 src/traktor/CT6 - Streamdeck XL.tsi"
-B - Rmx Deck,Row 1 Col 4,Select,Slot 1-4,5,Set the remix slot target for operations 'Slot Size /2' and 'Slot Size x2',2,10,53,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,"Sets Traktor's 'Modifier 2' (for CT6 - Streamdeck XL) to '3' ('0' = Slot 1-1, '1' = Slot 1-2, '2' = Slot 1-3, '3' = Slot 1-4)",src/traktor/CT6 - Streamdeck XL.tsi
-B - Rmx Deck,Row 1 Col 4,Select,Slot 1-4,5,Click the remix slot to select it,3,-,-,-,-,-,-,"Calls my Streamdeck Clicker plugin, performing a mouse click on 'Remix Deck C Row 1 Slot 4' on a 1366x1024 display",https://github.com/dotherightthing/streamdeck-clicker
+B - Rmx Deck,Row 1 Col 4,Select,Slot 1-4,5,Set the remix slot target for operations 'Slot Size /2' and 'Slot Size x2',2,10,53,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,"Sets Traktor's 'Modifier 2' (for CT6 - Stream Deck XL) to '3' ('0' = Slot 1-1, '1' = Slot 1-2, '2' = Slot 1-3, '3' = Slot 1-4)",src/traktor/CT6 - Streamdeck XL.tsi
+B - Rmx Deck,Row 1 Col 4,Select,Slot 1-4,5,Click the remix slot to select it,3,-,-,-,-,-,-,"Calls my Stream Deck Clicker plugin, performing a mouse click on 'Remix Deck C Row 1 Slot 4' on a 1366x1024 display",https://github.com/dotherightthing/streamdeck-clicker
 B - Rmx Deck,Row 1 Col 5,Ruler,/2,5,"Halve the length of the selected slot, cropping the loaded slot sample",-,10,39,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Halves the size of sample in the selected slot. Uses the value of Traktor's 'Modifier 2' to determine which slot to act upon.,src/traktor/CT6 - Streamdeck XL.tsi
 B - Rmx Deck,Row 1 Col 6,Ruler,x2,5,"Double the length of the selected slot, exposing more of the loaded slot sample or adding silence after it",-,10,40,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Doubles the size of sample in the selected slot. Uses the value of Traktor's 'Modifier 2' to determine which slot to act upon.,src/traktor/CT6 - Streamdeck XL.tsi
 B - Rmx Deck,Row 1 Col 7,-,-,-,-,-,-,-,-,-,-,-,-,-
 B - Rmx Deck,Row 2 Col 1,Select,Slot 2-1,5,Optimise layout for mixing,1,10,31,Push,"0 (On), 127 (Off)",Traktor Virtual Input,Traktor Virtual Output,Sets Traktor's 'Layout Selector' to configured 'Decks' view,"src/traktor/CT6 - App Export.tsi,
 src/traktor/CT6 - Streamdeck XL.tsi"
-B - Rmx Deck,Row 2 Col 1,Select,Slot 2-1,5,Set the remix slot target for operations 'Slot Size /2' and 'Slot Size x2',2,10,54,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,"Sets Traktor's 'Modifier 2' (for CT6 - Streamdeck XL) to '4' ('4' = Slot 2-1, '5' = Slot 2-2, '6' = Slot 2-3, '7' = Slot 2-4)",src/traktor/CT6 - Streamdeck XL.tsi
-B - Rmx Deck,Row 2 Col 1,Select,Slot 2-1,5,Click the remix slot to select it,3,-,-,-,-,-,-,"Calls my Streamdeck Clicker plugin, performing a mouse click on 'Remix Deck C Row 2 Slot 1' on a 1366x1024 display",https://github.com/dotherightthing/streamdeck-clicker
+B - Rmx Deck,Row 2 Col 1,Select,Slot 2-1,5,Set the remix slot target for operations 'Slot Size /2' and 'Slot Size x2',2,10,54,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,"Sets Traktor's 'Modifier 2' (for CT6 - Stream Deck XL) to '4' ('4' = Slot 2-1, '5' = Slot 2-2, '6' = Slot 2-3, '7' = Slot 2-4)",src/traktor/CT6 - Streamdeck XL.tsi
+B - Rmx Deck,Row 2 Col 1,Select,Slot 2-1,5,Click the remix slot to select it,3,-,-,-,-,-,-,"Calls my Stream Deck Clicker plugin, performing a mouse click on 'Remix Deck C Row 2 Slot 1' on a 1366x1024 display",https://github.com/dotherightthing/streamdeck-clicker
 B - Rmx Deck,Row 2 Col 2,Select,Slot 2-2,5,Optimise layout for mixing,1,10,31,Push,"0 (On), 127 (Off)",Traktor Virtual Input,Traktor Virtual Output,Sets Traktor's 'Layout Selector' to configured 'Decks' view,"src/traktor/CT6 - App Export.tsi,
 src/traktor/CT6 - Streamdeck XL.tsi"
-B - Rmx Deck,Row 2 Col 2,Select,Slot 2-2,5,Set the remix slot target for operations 'Slot Size /2' and 'Slot Size x2',2,10,55,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,"Sets Traktor's 'Modifier 2' (for CT6 - Streamdeck XL) to '5' ('4' = Slot 2-1, '5' = Slot 2-2, '6' = Slot 2-3, '7' = Slot 2-4)",src/traktor/CT6 - Streamdeck XL.tsi
-B - Rmx Deck,Row 2 Col 2,Select,Slot 2-2,5,Click the remix slot to select it,3,-,-,-,-,-,-,"Calls my Streamdeck Clicker plugin, performing a mouse click on 'Remix Deck C Row 2 Slot 2' on a 1366x1024 display",https://github.com/dotherightthing/streamdeck-clicker
+B - Rmx Deck,Row 2 Col 2,Select,Slot 2-2,5,Set the remix slot target for operations 'Slot Size /2' and 'Slot Size x2',2,10,55,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,"Sets Traktor's 'Modifier 2' (for CT6 - Stream Deck XL) to '5' ('4' = Slot 2-1, '5' = Slot 2-2, '6' = Slot 2-3, '7' = Slot 2-4)",src/traktor/CT6 - Streamdeck XL.tsi
+B - Rmx Deck,Row 2 Col 2,Select,Slot 2-2,5,Click the remix slot to select it,3,-,-,-,-,-,-,"Calls my Stream Deck Clicker plugin, performing a mouse click on 'Remix Deck C Row 2 Slot 2' on a 1366x1024 display",https://github.com/dotherightthing/streamdeck-clicker
 B - Rmx Deck,Row 2 Col 3,Select,Slot 2-3,5,Optimise layout for mixing,1,10,31,Push,"0 (On), 127 (Off)",Traktor Virtual Input,Traktor Virtual Output,Sets Traktor's 'Layout Selector' to configured 'Decks' view,"src/traktor/CT6 - App Export.tsi,
 src/traktor/CT6 - Streamdeck XL.tsi"
-B - Rmx Deck,Row 2 Col 3,Select,Slot 2-3,5,Set the remix slot target for operations 'Slot Size /2' and 'Slot Size x2',2,10,56,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,"Sets Traktor's 'Modifier 2' (for CT6 - Streamdeck XL) to '6' ('4' = Slot 2-1, '5' = Slot 2-2, '6' = Slot 2-3, '7' = Slot 2-4)",src/traktor/CT6 - Streamdeck XL.tsi
-B - Rmx Deck,Row 2 Col 3,Select,Slot 2-3,5,Click the remix slot to select it,3,-,-,-,-,-,-,"Calls my Streamdeck Clicker plugin, performing a mouse click on 'Remix Deck C Row 2 Slot 3' on a 1366x1024 display",https://github.com/dotherightthing/streamdeck-clicker
+B - Rmx Deck,Row 2 Col 3,Select,Slot 2-3,5,Set the remix slot target for operations 'Slot Size /2' and 'Slot Size x2',2,10,56,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,"Sets Traktor's 'Modifier 2' (for CT6 - Stream Deck XL) to '6' ('4' = Slot 2-1, '5' = Slot 2-2, '6' = Slot 2-3, '7' = Slot 2-4)",src/traktor/CT6 - Streamdeck XL.tsi
+B - Rmx Deck,Row 2 Col 3,Select,Slot 2-3,5,Click the remix slot to select it,3,-,-,-,-,-,-,"Calls my Stream Deck Clicker plugin, performing a mouse click on 'Remix Deck C Row 2 Slot 3' on a 1366x1024 display",https://github.com/dotherightthing/streamdeck-clicker
 B - Rmx Deck,Row 2 Col 4,Select,Slot 2-4,5,Optimise layout for mixing,1,10,31,Push,"0 (On), 127 (Off)",Traktor Virtual Input,Traktor Virtual Output,Sets Traktor's 'Layout Selector' to configured 'Decks' view,"src/traktor/CT6 - App Export.tsi,
 src/traktor/CT6 - Streamdeck XL.tsi"
-B - Rmx Deck,Row 2 Col 4,Select,Slot 2-4,5,Set the remix slot target for operations 'Slot Size /2' and 'Slot Size x2',2,10,57,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,"Sets Traktor's 'Modifier 2' (for CT6 - Streamdeck XL) to '7' ('4' = Slot 2-1, '5' = Slot 2-2, '6' = Slot 2-3, '7' = Slot 2-4)",src/traktor/CT6 - Streamdeck XL.tsi
-B - Rmx Deck,Row 2 Col 4,Select,Slot 2-4,5,Click the remix slot to select it,3,-,-,-,-,-,-,"Calls my Streamdeck Clicker plugin, performing a mouse click on 'Remix Deck C Row 2 Slot 4' on a 1366x1024 display",https://github.com/dotherightthing/streamdeck-clicker
-B - Rmx Deck,Row 2 Col 5,BPM,Slot /2,5,Halve the BPM/tempo of the selected slot sample,-,-,-,-,-,-,-,"Calls my Streamdeck Clicker plugin, performing a mouse click on the Remix Deck control '/2' on a 1366x1024 display",
-B - Rmx Deck,Row 2 Col 6,BPM,Slot x2,5,Double the BPM/tempo of the selected slot sample,-,-,-,-,-,-,-,"Calls my Streamdeck Clicker plugin, performing a mouse click on the Remix Deck control 'x2' on a 1366x1024 display",
+B - Rmx Deck,Row 2 Col 4,Select,Slot 2-4,5,Set the remix slot target for operations 'Slot Size /2' and 'Slot Size x2',2,10,57,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,"Sets Traktor's 'Modifier 2' (for CT6 - Stream Deck XL) to '7' ('4' = Slot 2-1, '5' = Slot 2-2, '6' = Slot 2-3, '7' = Slot 2-4)",src/traktor/CT6 - Streamdeck XL.tsi
+B - Rmx Deck,Row 2 Col 4,Select,Slot 2-4,5,Click the remix slot to select it,3,-,-,-,-,-,-,"Calls my Stream Deck Clicker plugin, performing a mouse click on 'Remix Deck C Row 2 Slot 4' on a 1366x1024 display",https://github.com/dotherightthing/streamdeck-clicker
+B - Rmx Deck,Row 2 Col 5,BPM,Slot /2,5,Halve the BPM/tempo of the selected slot sample,-,-,-,-,-,-,-,"Calls my Stream Deck Clicker plugin, performing a mouse click on the Remix Deck control '/2' on a 1366x1024 display",-
+B - Rmx Deck,Row 2 Col 6,BPM,Slot x2,5,Double the BPM/tempo of the selected slot sample,-,-,-,-,-,-,-,"Calls my Stream Deck Clicker plugin, performing a mouse click on the Remix Deck control 'x2' on a 1366x1024 display",-
 B - Rmx Deck,Row 2 Col 7,-,-,-,-,-,-,-,-,-,-,-,-,-
-B - Rmx Deck,Row 3 Col 1,Trigger,From S8,5,Just a reminder to trigger samples from the S8 rather than the Streamdeck,-,-,-,-,-,-,-,-,-
-B - Rmx Deck,Row 3 Col 2,Floppy Disk,Rmx Deck,5,Save the current Remix Deck (in Deck C),-,10,25,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Saves the current Remix Deck,src/traktor/CT6 - Streamdeck XL.tsi
+B - Rmx Deck,Row 3 Col 1,Trigger,From S8,5,Just a reminder to trigger samples from the S8 rather than the Stream Deck,-,-,-,-,-,-,-,-,-
+B - Rmx Deck,Row 3 Col 2,Floppy Disk,Rmx Deck,5,Save the current Remix Deck (in Deck C),-,10,25,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Calls Traktor's 'Save Remix Set ',src/traktor/CT6 - Streamdeck XL.tsi
 B - Rmx Deck,Row 3 Col 3,-,-,-,-,-,-,-,-,-,-,-,-,-
 B - Rmx Deck,Row 3 Col 4,-,-,-,-,-,-,-,-,-,-,-,-,-
 B - Rmx Deck,Row 3 Col 5,-,-,-,-,-,-,-,-,-,-,-,-,-
 B - Rmx Deck,Row 3 Col 6,-,-,-,-,-,-,-,-,-,-,-,-,-
-B - Rmx Deck,Row 4 Col 1,-,-,-,,,,,,,,,,
-B - Rmx Deck,Row 4 Col 2,-,-,-,,,,,,,,,,
-B - Rmx Deck,Row 4 Col 3,-,-,-,,,,,,,,,,
-B - Rmx Deck,Row 4 Col 4,-,-,-,,,,,,,,,,
-B - Rmx Deck,Row 4 Col 5,-,-,-,,,,,,,,,,
-B - Rmx Deck,Row 4 Col 6,Arrow With Lines,Global settings,5,,,,,,,,,,
-C - Browser,Row 1 Col 1,Up Arrow,Top,5,,,,,,,,,,
-C - Browser,Row 1 Col 2,-,-,-,,,,,,,,,,
-C - Browser,Row 1 Col 3,-,-,-,,,,,,,,,,
-C - Browser,Row 1 Col 4,-,-,-,,,,,,,,,,
-C - Browser,Row 1 Col 5,-,-,-,,,,,,,,,,
-C - Browser,Row 1 Col 6,-,-,-,,,,,,,,,,
-C - Browser,Row 1 Col 7,-,-,-,,,,,,,,,,
-C - Browser,Row 2 Col 1,Play Arrow,Preview,5,,,,,,,,,,
-C - Browser,Row 2 Col 2,Plus Sign,Prep List,5,,,,,,,,,,
-C - Browser,Row 2 Col 3,Down Arrow Horizontal Line,To C,5,,,,,,,,,,
-C - Browser,Row 2 Col 4,Left Arrow Vertical Line,To A,5,,,,,,,,,,
-C - Browser,Row 2 Col 5,Right Arrow Vertical Line,To B,5,,,,,,,,,,
-C - Browser,Row 2 Col 6,-,-,-,,,,,,,,,,
+B - Rmx Deck,Row 4 Col 1,-,-,-,-,-,-,-,-,-,-,-,-,-
+B - Rmx Deck,Row 4 Col 2,-,-,-,-,-,-,-,-,-,-,-,-,-
+B - Rmx Deck,Row 4 Col 3,-,-,-,-,-,-,-,-,-,-,-,-,-
+B - Rmx Deck,Row 4 Col 4,-,-,-,-,-,-,-,-,-,-,-,-,-
+B - Rmx Deck,Row 4 Col 5,-,-,-,-,-,-,-,-,-,-,-,-,-
+B - Rmx Deck,Row 4 Col 6,Arrow With Lines,Global settings,5,Open shared settings for my Stream Deck Clicker plugin,-,-,-,-,-,-,-,-,-
+C - Browser,Row 1 Col 1,Up Arrow,Top,5,Move up one row (hold to repeat action),-,10,8,Hold,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Calls Traktor's 'Selected Up/Down (Browser.List)' (Up),src/traktor/CT6 - Streamdeck XL.tsi
+C - Browser,Row 1 Col 1,Up Arrow,Top,5,Move to top row (SHIFTed function),-,10,8,Hold,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Calls Traktor's 'Select Top/Bottom' (Top),src/traktor/CT6 - Streamdeck XL.tsi
+C - Browser,Row 1 Col 2,-,-,-,-,-,-,-,-,-,-,-,-,-
+C - Browser,Row 1 Col 3,-,-,-,-,-,-,-,-,-,-,-,-,-
+C - Browser,Row 1 Col 4,-,-,-,-,-,-,-,-,-,-,-,-,-
+C - Browser,Row 1 Col 5,-,-,-,-,-,-,-,-,-,-,-,-,-
+C - Browser,Row 1 Col 6,-,-,-,-,-,-,-,-,-,-,-,-,-
+C - Browser,Row 1 Col 7,-,-,-,-,-,-,-,-,-,-,-,-,-
+C - Browser,Row 2 Col 1,Play Arrow,Preview,5,Preview the selected track,-,10,33,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Calls Traktor's 'Load Selected (Preview Player)',src/traktor/CT6 - Streamdeck XL.tsi
+C - Browser,Row 2 Col 2,Plus Sign,Prep List,5,Add selected track to Preparation List,-,10,34,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Calls Traktor's 'Append to Preparation List',src/traktor/CT6 - Streamdeck XL.tsi
+C - Browser,Row 2 Col 3,Down Arrow Horizontal Line,To C,5,Load selected track (Remix Set) into Deck C (Remix Deck),-,10,47,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Calls Traktor's 'Load Selected (Deck Common)' (Deck C),src/traktor/CT6 - Streamdeck XL.tsi
+C - Browser,Row 2 Col 4,Left Arrow Vertical Line,To A,5,Load selected track into Deck A,-,10,10,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Calls Traktor's 'Load Selected (Deck Common)' (Deck A),src/traktor/CT6 - Streamdeck XL.tsi
+C - Browser,Row 2 Col 5,Right Arrow Vertical Line,To B,5,Load selected track into Deck B,-,10,20,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Calls Traktor's 'Load Selected (Deck Common)' (Deck B),src/traktor/CT6 - Streamdeck XL.tsi
+C - Browser,Row 2 Col 6,-,-,-,-,-,-,-,-,-,-,-,-,-
 C - Browser,Row 2 Col 7,Folder,"-,
 Prep List,
 Playlists
@@ -276,40 +277,47 @@ All Tracks,
 History,
 Rmx Sets,
 Mix Recs,
-Loop Recs",5,,,,,,,,,,
-C - Browser,Row 3 Col 1,Down Arrow,Bottom,5,,,,,,,,,,
-C - Browser,Row 3 Col 2,-,-,-,,,,,,,,,,
-C - Browser,Row 3 Col 3,-,-,-,,,,,,,,,,
-C - Browser,Row 3 Col 4,-,-,-,,,,,,,,,,
-C - Browser,Row 3 Col 5,-,-,-,,,,,,,,,,
-C - Browser,Row 3 Col 6,-,-,-,,,,,,,,,,
-C - Browser,Row 4 Col 2,-,-,-,,,,,,,,,,
-C - Browser,Row 4 Col 3,-,-,-,,,,,,,,,,
-C - Browser,Row 4 Col 4,-,-,-,,,,,,,,,,
-C - Browser,Row 4 Col 5,-,-,-,,,,,,,,,,
-C - Browser,Row 4 Col 6,-,-,-,,,,,,,,,,
-D - Settings,Row 1 Col 1,TR,Open,5,,,,,,,,,,
-D - Settings,Row 1 Col 2,TR,Settings,5,,,,,,,,,,
-D - Settings,Row 1 Col 3,Tooltip,Hide,5,,,,,,,,,,
-D - Settings,Row 1 Col 4,Play Pause,Sync,5,,,,,,,,,,
+Loop Recs",5,Select a browser folder,-,10,35,Cycle,Various (XML Cycle file),Traktor Virtual Input,Traktor Virtual Output,Sets/Displays Traktor's 'Selector',"src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/favourites.xml,
+src/traktor/CT6 - Streamdeck XL.tsi"
+C - Browser,Row 3 Col 1,Down Arrow,Bottom,5,Move down one row (hold to repeat action),-,10,9,Hold,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Calls Traktor's 'Selected Up/Down (Browser.List)' (Down),src/traktor/CT6 - Streamdeck XL.tsi
+C - Browser,Row 3 Col 1,Down Arrow,Bottom,5,Move to bottom row (SHIFTed function),-,10,9,Hold,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Calls Traktor's 'Select Top/Bottom' (Bottom),src/traktor/CT6 - Streamdeck XL.tsi
+C - Browser,Row 3 Col 2,-,-,-,-,-,-,-,-,-,-,-,-,-
+C - Browser,Row 3 Col 3,-,-,-,-,-,-,-,-,-,-,-,-,-
+C - Browser,Row 3 Col 4,-,-,-,-,-,-,-,-,-,-,-,-,-
+C - Browser,Row 3 Col 5,-,-,-,-,-,-,-,-,-,-,-,-,-
+C - Browser,Row 3 Col 6,-,-,-,-,-,-,-,-,-,-,-,-,-
+C - Browser,Row 4 Col 2,-,-,-,-,-,-,-,-,-,-,-,-,-
+C - Browser,Row 4 Col 3,-,-,-,-,-,-,-,-,-,-,-,-,-
+C - Browser,Row 4 Col 4,-,-,-,-,-,-,-,-,-,-,-,-,-
+C - Browser,Row 4 Col 5,-,-,-,-,-,-,-,-,-,-,-,-,-
+C - Browser,Row 4 Col 6,-,-,-,-,-,-,-,-,-,-,-,-,-
+D - Settings,Row 1 Col 1,TR,Open,5,TODO,,,,,,,,,
+D - Settings,Row 1 Col 2,TR,Settings,5,TODO,,,,,,,,,
+D - Settings,Row 1 Col 3,Tooltip,Hide,5,TODO,,,,,,,,,
+D - Settings,Row 1 Col 4,Play Pause,Sync,5,TODO,,,,,,,,,
 D - Settings,Row 1 Col 5,-,-,-,-,-,-,-,-,-,-,-,-,-
 D - Settings,Row 1 Col 6,-,-,-,-,-,-,-,-,-,-,-,-,-
 D - Settings,Row 1 Col 7,-,-,-,-,-,-,-,-,-,-,-,-,-
-D - Settings,Row 2 Col 1,Live,CT6,6,Launch the CT6 set,,,,,,,,,
-D - Settings,Row 2 Col 2,Streamdeck Grid,Config,5,,,,,,,,,,
-D - Settings,Row 2 Col 3,Code Brackets,Edit,5,,,,,,,,,,
+D - Settings,Row 2 Col 1,Live,CT6,6,Launch CT6 set,-,-,-,-,-,-,-,-,-
+D - Settings,Row 2 Col 2,Stream Deck Grid,Config,5,Open Stream Deck app,-,-,-,-,-,-,-,-,-
+D - Settings,Row 2 Col 3,Code Brackets,Edit,5,Open Terminal app,1,-,-,-,-,-,-,-,-
+D - Settings,Row 2 Col 3,Code Brackets,Edit,5,Change into repo directory,2,-,-,-,-,-,-,-,-
+D - Settings,Row 2 Col 3,Code Brackets,Edit,5,Open VS Code,3,-,-,-,-,-,-,-,-
+D - Settings,Row 2 Col 3,Code Brackets,Edit,5,Quit Terminal app,4,-,-,-,-,-,-,-,-
 D - Settings,Row 2 Col 4,-,-,-,-,-,-,-,-,-,-,-,-,-
 D - Settings,Row 2 Col 5,-,-,-,-,-,-,-,-,-,-,-,-,-
 D - Settings,Row 2 Col 6,-,-,-,-,-,-,-,-,-,-,-,-,-
 D - Settings,Row 2 Col 7,-,-,-,-,-,-,-,-,-,-,-,-,-
-D - Settings,Row 3 Col 1,Music Keyboard,MIDI,6,"Access 'Audio MIDI Setup' which is where the IAC Driver is configured, for the 'Daw2StreamDeck' and 'StreamDeck2Daw' connectors",,,,,,,,,
-D - Settings,Row 3 Col 2,Button Creator,Buttons,5?,,,,,,,,,,
-D - Settings,Row 3 Col 3,Sun,Displays,5?,,,,,,,,,,
-D - Settings,Row 3 Col 4,Speaker,Loopback,5,,,,,,,,,,
-D - Settings,Row 3 Col 5,Speaker,Kontrol S8,5,,,,,,,,,,
+D - Settings,Row 3 Col 1,Music Keyboard,MIDI,6,"Access 'Audio MIDI Setup' which is where the IAC Driver is configured, for the 'Daw2StreamDeck' and 'StreamDeck2Daw' connectors",-,-,-,-,-,-,-,-,-
+D - Settings,Row 3 Col 2,Button Creator,Buttons,5?,Open Button Creator app,-,-,-,-,-,-,-,-,-
+D - Settings,Row 3 Col 3,Sun,Displays,5?,Open Terminal app,1,-,-,-,-,-,-,-,-
+D - Settings,Row 3 Col 3,Sun,Displays,5?,Toggle brightness of external monitor using betterdisplaycli,2,-,-,-,"0, 75%",-,-,-,-
+D - Settings,Row 3 Col 3,Sun,Displays,5?,Toggle brightness of built-in display using betterdisplaycli,3,-,-,-,"20%, 75%",-,-,-,-
+D - Settings,Row 3 Col 4,Speaker,Loopback,5,Set audio output to S8 Loopback,-,-,-,-,-,-,-,-,src/loopback/Devices.plist
+D - Settings,Row 3 Col 5,Speaker,Kontrol S8,5,Set audio output to Traktor Kontrol S8,-,-,-,-,-,-,-,-,-
 D - Settings,Row 3 Col 6,-,-,-,-,-,-,-,-,-,-,-,-,-
-D - Settings,Row 4 Col 2,Firefox,Browser,5,,,,,,,,,,
-D - Settings,Row 4 Col 3,Globe,Supreme MOD,6,Launch Patreon page to manually check for updates,,,,,,,,,
+D - Settings,Row 4 Col 2,Firefox,Browser,5,Open Firefox Developer Edition,-,-,-,-,-,-,-,-,-
+D - Settings,Row 4 Col 3,Globe,Supreme MOD,6,Open Patreon page to manually check for updates,-,-,-,-,-,-,-,-,-
 D - Settings,Row 4 Col 4,-,-,-,-,-,-,-,-,-,-,-,-,-
 D - Settings,Row 4 Col 5,-,-,-,-,-,-,-,-,-,-,-,-,-
 D - Settings,Row 4 Col 6,-,-,-,-,-,-,-,-,-,-,-,-,-
@@ -333,11 +341,11 @@ Keyboard 0-9,Row 3 Col 3,’,-,5,Enter text (into the browser's search field),-,
 Keyboard 0-9,Row 3 Col 4,-,-,-,-,-,-,-,-,-,-,-,-,-
 Keyboard 0-9,Row 3 Col 5,-,-,-,-,-,-,-,-,-,-,-,-,-
 Keyboard 0-9,Row 3 Col 6,-,-,-,-,-,-,-,-,-,-,-,-,-
-Keyboard 0-9,Row 4 Col 1,delete,-,5,,,,,,,,,,
-Keyboard 0-9,Row 4 Col 2,delete all,-,5,,,,,,,,,,
+Keyboard 0-9,Row 4 Col 1,delete,-,5,TODO,,,,,,,,,
+Keyboard 0-9,Row 4 Col 2,delete all,-,5,TODO,,,,,,,,,
 Keyboard 0-9,Row 4 Col 3,-,-,-,-,-,-,-,-,-,-,-,-,-
-Keyboard 0-9,Row 4 Col 4,space,-,5,,,,,,,,,,
-Keyboard 0-9,Row 4 Col 5,enter,-,5,,,,,,,,,,
+Keyboard 0-9,Row 4 Col 4,space,-,5,TODO,,,,,,,,,
+Keyboard 0-9,Row 4 Col 5,enter,-,5,TODO,,,,,,,,,
 Keyboard 0-9,Row 4 Col 6,-,-,-,-,-,-,-,-,-,-,-,-,-
 Keyboard A-Z,Row 1 Col 1,A,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type 'a',-
 Keyboard A-Z,Row 1 Col 2,B,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type 'b',-
