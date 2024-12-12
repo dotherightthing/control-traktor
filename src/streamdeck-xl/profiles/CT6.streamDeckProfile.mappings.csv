@@ -1,10 +1,11 @@
 Page,Button Position,Button Icon,Button States,CT Version,Purpose,Multi Action #,Channel,CC,Button Type,Value,Midi Out Port,Midi In Port,Result,Additional Files
-A - Decks/Rec,Row 1 Col 1,Pointer,"Deck A,
+A - Decks/Rec,Row 1 Col 1,Arrow pointer,"Deck A,
 Deck B,
 Deck C,
-Deck D",5,"Move the deck focus, for mappings that affect 'Device Target: Focus'",-,10,23,Cycle,Various (XML Cycle file),Traktor Virtual Input,Traktor Virtual Output,Sets/Displays Traktor's 'Deck Focus Selector',"src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/focus-deck.xml,
+Deck D",5,"Move the deck focus, for mappings that affect 'Device Target: Focus'",-,10,23,Cycle,Various (XML Cycle file),Traktor Virtual Input,Traktor Virtual Output,Sets/Displays Traktor's 'Deck Focus Selector',"Font Awesome Solid Icons pack,
+src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/focus-deck.xml,
 src/traktor/CT6 - Streamdeck XL.tsi"
-A - Decks/Rec,Row 1 Col 2,Right Arrow,"Loop,
+A - Decks/Rec,Row 1 Col 2,Arrow Turn Up Right,"Loop,
 BeatJump,
 Loop Out,
 Loop In",5,Set the move mode,-,10,26,Cycle,Various (XML Cycle file),Traktor Virtual Input,Traktor Virtual Output,Sets/Displays Traktor's 'Mode Selector',"src/streamdeck-xl/icons/button-creator/arrow.turn.up.right.png,
@@ -23,7 +24,7 @@ A - Decks/Rec,Row 1 Col 3,Ruler,"1/32 bar,
 32 bars",5,Set the size of the loop,-,10,60,Cycle,Various (XML Cycle file),Traktor Virtual Input,Traktor Virtual Output,Sets/Displays Traktor's 'Loop Size Selector',"src/streamdeck-xl/icons/button-creator/ruler.png,
 src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/loop-size.xml,
 src/traktor/CT6 - Streamdeck XL.tsi"
-A - Decks/Rec,Row 1 Col 4,Left/Right Columns,"xFine,
+A - Decks/Rec,Row 1 Col 4,Arrow Left and Right Text Vertical,"xFine,
 Fine,
 1/16 bar,
 1/8 bar,
@@ -291,10 +292,10 @@ C - Browser,Row 4 Col 3,-,-,-,-,-,-,-,-,-,-,-,-,-
 C - Browser,Row 4 Col 4,-,-,-,-,-,-,-,-,-,-,-,-,-
 C - Browser,Row 4 Col 5,-,-,-,-,-,-,-,-,-,-,-,-,-
 C - Browser,Row 4 Col 6,-,-,-,-,-,-,-,-,-,-,-,-,-
-D - Settings,Row 1 Col 1,TR,Open,5,TODO,,,,,,,,,
-D - Settings,Row 1 Col 2,TR,Settings,5,TODO,,,,,,,,,
-D - Settings,Row 1 Col 3,Tooltip,Hide,5,TODO,,,,,,,,,
-D - Settings,Row 1 Col 4,Play Pause,Sync,5,TODO,,,,,,,,,
+D - Settings,Row 1 Col 1,TR,Open,5,Open Traktor app,-,-,-,-,-,-,-,Opens Traktor app,-
+D - Settings,Row 1 Col 2,TR,Settings,5,Open Traktor’s preferences,-,-,-,-,-,-,-,Opens Traktor’s preferences,-
+D - Settings,Row 1 Col 3,Tooltip,Hide,5,Toggle Traktor’s Tool Tips (SHIFTable),-,10,37,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Calls Traktor's ‘Tool Tips On’ (show / + SHIFT = hide),src/traktor/CT6 - Streamdeck XL.tsi
+D - Settings,Row 1 Col 4,Play Pause,Sync,5,Sync external app with Traktor,-,10,24,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Calls Traktor's ‘Clock Trigger MIDI Sync’,src/traktor/CT6 - Streamdeck XL.tsi
 D - Settings,Row 1 Col 5,-,-,-,-,-,-,-,-,-,-,-,-,-
 D - Settings,Row 1 Col 6,-,-,-,-,-,-,-,-,-,-,-,-,-
 D - Settings,Row 1 Col 7,-,-,-,-,-,-,-,-,-,-,-,-,-
@@ -321,55 +322,55 @@ D - Settings,Row 4 Col 3,Globe,Supreme MOD,6,Open Patreon page to manually check
 D - Settings,Row 4 Col 4,-,-,-,-,-,-,-,-,-,-,-,-,-
 D - Settings,Row 4 Col 5,-,-,-,-,-,-,-,-,-,-,-,-,-
 D - Settings,Row 4 Col 6,-,-,-,-,-,-,-,-,-,-,-,-,-
-Keyboard 0-9,Row 1 Col 1,1,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type '1',-
-Keyboard 0-9,Row 1 Col 2,2,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type '2',-
-Keyboard 0-9,Row 1 Col 3,3,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type '3',-
-Keyboard 0-9,Row 1 Col 4,4,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type '4',-
+Keyboard 0-9,Row 1 Col 1,1,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types '1',-
+Keyboard 0-9,Row 1 Col 2,2,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types '2',-
+Keyboard 0-9,Row 1 Col 3,3,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types '3',-
+Keyboard 0-9,Row 1 Col 4,4,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types '4',-
 Keyboard 0-9,Row 1 Col 5,-,-,-,-,-,-,-,-,-,-,-,-,-
 Keyboard 0-9,Row 1 Col 6,-,-,-,-,-,-,-,-,-,-,-,-,-
 Keyboard 0-9,Row 1 Col 7,-,-,-,-,-,-,-,-,-,-,-,-,-
-Keyboard 0-9,Row 2 Col 1,5,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type '5',-
-Keyboard 0-9,Row 2 Col 2,6,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type '6',-
-Keyboard 0-9,Row 2 Col 3,7,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type '7',-
-Keyboard 0-9,Row 2 Col 4,8,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type '8',-
+Keyboard 0-9,Row 2 Col 1,5,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types '5',-
+Keyboard 0-9,Row 2 Col 2,6,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types '6',-
+Keyboard 0-9,Row 2 Col 3,7,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types '7',-
+Keyboard 0-9,Row 2 Col 4,8,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types '8',-
 Keyboard 0-9,Row 2 Col 5,-,-,-,-,-,-,-,-,-,-,-,-,-
 Keyboard 0-9,Row 2 Col 6,-,-,-,-,-,-,-,-,-,-,-,-,-
 Keyboard 0-9,Row 2 Col 7,-,-,-,-,-,-,-,-,-,-,-,-,-
-Keyboard 0-9,Row 3 Col 1,9,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type '9',-
-Keyboard 0-9,Row 3 Col 2,0,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type '0',-
-Keyboard 0-9,Row 3 Col 3,’,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type '’',-
+Keyboard 0-9,Row 3 Col 1,9,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types '9',-
+Keyboard 0-9,Row 3 Col 2,0,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types '0',-
+Keyboard 0-9,Row 3 Col 3,’,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types '’',-
 Keyboard 0-9,Row 3 Col 4,-,-,-,-,-,-,-,-,-,-,-,-,-
 Keyboard 0-9,Row 3 Col 5,-,-,-,-,-,-,-,-,-,-,-,-,-
 Keyboard 0-9,Row 3 Col 6,-,-,-,-,-,-,-,-,-,-,-,-,-
-Keyboard 0-9,Row 4 Col 1,delete,-,5,TODO,,,,,,,,,
-Keyboard 0-9,Row 4 Col 2,delete all,-,5,TODO,,,,,,,,,
+Keyboard 0-9,Row 4 Col 1,delete,-,5,Delete one character of text (in the browser's search field),-,-,-,-,-,-,-,Presses DELETE key once,-
+Keyboard 0-9,Row 4 Col 2,delete all,-,5,Select all text (in the browser's search field) and delete,-,-,-,-,-,-,-,Selects all text and presses DELETE,-
 Keyboard 0-9,Row 4 Col 3,-,-,-,-,-,-,-,-,-,-,-,-,-
-Keyboard 0-9,Row 4 Col 4,space,-,5,TODO,,,,,,,,,
-Keyboard 0-9,Row 4 Col 5,enter,-,5,TODO,,,,,,,,,
+Keyboard 0-9,Row 4 Col 4,space,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types SPACE,-
+Keyboard 0-9,Row 4 Col 5,enter,-,5,Press ENTER (in the browser's search field),,,,,,,,Presses ENTER,
 Keyboard 0-9,Row 4 Col 6,-,-,-,-,-,-,-,-,-,-,-,-,-
-Keyboard A-Z,Row 1 Col 1,A,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type 'a',-
-Keyboard A-Z,Row 1 Col 2,B,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type 'b',-
-Keyboard A-Z,Row 1 Col 3,C,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type 'c',-
-Keyboard A-Z,Row 1 Col 4,D,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type 'd',-
-Keyboard A-Z,Row 1 Col 5,E,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type 'e',-
-Keyboard A-Z,Row 1 Col 6,F,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type 'f',-
-Keyboard A-Z,Row 1 Col 7,G,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type 'g',-
-Keyboard A-Z,Row 2 Col 1,H,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type 'h',-
-Keyboard A-Z,Row 2 Col 2,I,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type 'i',-
-Keyboard A-Z,Row 2 Col 3,J,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type 'j',-
-Keyboard A-Z,Row 2 Col 4,K,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type 'k',-
-Keyboard A-Z,Row 2 Col 5,L,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type 'l',-
-Keyboard A-Z,Row 2 Col 6,M,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type 'm',-
-Keyboard A-Z,Row 2 Col 7,N,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type 'n',-
-Keyboard A-Z,Row 3 Col 1,O,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type 'o',-
-Keyboard A-Z,Row 3 Col 2,P,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type 'p',-
-Keyboard A-Z,Row 3 Col 3,Q,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type 'q',-
-Keyboard A-Z,Row 3 Col 4,R,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type 'r',-
-Keyboard A-Z,Row 3 Col 5,S,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type 's',-
-Keyboard A-Z,Row 3 Col 6,T,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type 't',-
-Keyboard A-Z,Row 4 Col 1,U,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type 'u',-
-Keyboard A-Z,Row 4 Col 2,V,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type 'v',-
-Keyboard A-Z,Row 4 Col 3,W,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type 'w',-
-Keyboard A-Z,Row 4 Col 4,X,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type 'x',-
-Keyboard A-Z,Row 4 Col 5,Y,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type 'y',-
-Keyboard A-Z,Row 4 Col 6,Z,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Type 'z',-
+Keyboard A-Z,Row 1 Col 1,A,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types 'a',-
+Keyboard A-Z,Row 1 Col 2,B,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types 'b',-
+Keyboard A-Z,Row 1 Col 3,C,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types 'c',-
+Keyboard A-Z,Row 1 Col 4,D,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types 'd',-
+Keyboard A-Z,Row 1 Col 5,E,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types 'e',-
+Keyboard A-Z,Row 1 Col 6,F,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types 'f',-
+Keyboard A-Z,Row 1 Col 7,G,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types 'g',-
+Keyboard A-Z,Row 2 Col 1,H,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types 'h',-
+Keyboard A-Z,Row 2 Col 2,I,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types 'i',-
+Keyboard A-Z,Row 2 Col 3,J,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types 'j',-
+Keyboard A-Z,Row 2 Col 4,K,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types 'k',-
+Keyboard A-Z,Row 2 Col 5,L,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types 'l',-
+Keyboard A-Z,Row 2 Col 6,M,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types 'm',-
+Keyboard A-Z,Row 2 Col 7,N,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types 'n',-
+Keyboard A-Z,Row 3 Col 1,O,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types 'o',-
+Keyboard A-Z,Row 3 Col 2,P,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types 'p',-
+Keyboard A-Z,Row 3 Col 3,Q,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types 'q',-
+Keyboard A-Z,Row 3 Col 4,R,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types 'r',-
+Keyboard A-Z,Row 3 Col 5,S,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types 's',-
+Keyboard A-Z,Row 3 Col 6,T,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types 't',-
+Keyboard A-Z,Row 4 Col 1,U,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types 'u',-
+Keyboard A-Z,Row 4 Col 2,V,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types 'v',-
+Keyboard A-Z,Row 4 Col 3,W,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types 'w',-
+Keyboard A-Z,Row 4 Col 4,X,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types 'x',-
+Keyboard A-Z,Row 4 Col 5,Y,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types 'y',-
+Keyboard A-Z,Row 4 Col 6,Z,-,5,Enter text (into the browser's search field),-,-,-,-,-,-,-,Types 'z',-
