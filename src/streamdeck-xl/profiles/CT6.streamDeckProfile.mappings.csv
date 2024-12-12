@@ -53,15 +53,15 @@ A - Decks/Rec,Row 2 Col 4,Right Arrow Circle,Forward,5,"Move loop forward, or be
 src/traktor/CT6 - Streamdeck XL.tsi"
 A - Decks/Rec,Row 2 Col 5,Tempo MASTER,Set,5,Make the focussed deck the tempo master,-,10,32,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Calls Traktor's 'Set as Tempo Master',"src/streamdeck-xl/icons/button-creator/tempo-master.png,
 src/traktor/CT6 - Streamdeck XL.tsi"
-A - Decks/Rec,Row 2 Col 6,LIVE TEMPO PHASE NUDGE,Down,6,Nudge Live's audio output into time with Traktor's by decreasing Live's tempo for as long as the button is held down. The M4L device facilitates mapping the CCs to Live's API (the LOM) to avoid having to MIDI map these controls on a per-set basis,-,10,66,Hold,"127 (On), 0 (Off)",IAC Drive StreamDeck2Daw,IAC Driver Daw2StreamDeck,Calls Live's 'Phase Nudge Down' button via M4L device 'CT6 Params',"src/presets/live/CT6 Params.adv,
-src/presets/live/CT6 Params.amxd,
-src/presets/live/CT6 Rack.adg,
-src/sets/CT6.als,
+A - Decks/Rec,Row 2 Col 6,LIVE TEMPO PHASE NUDGE,Down,6,Nudge Live's audio output into time with Traktor's by decreasing Live's tempo for as long as the button is held down. The M4L device facilitates mapping the CCs to Live's API (the LOM) to avoid having to MIDI map these controls on a per-set basis,-,10,66,Hold,"127 (On), 0 (Off)",IAC Drive StreamDeck2Daw,IAC Driver Daw2StreamDeck,Calls Live's 'Phase Nudge Down' button via M4L device 'CT6 Params',"src/live/CT6 Params.adv,
+src/live/CT6 Params.amxd,
+src/live/CT6 Rack.adg,
+src/live/CT6.als,
 src/streamdeck-xl/icons/button-creator/live-tempo-phase-nudge.png"
-A - Decks/Rec,Row 2 Col 7,LIVE TEMPO PHASE NUDGE,Up,6,Nudge Live's audio output into time with Traktor's by increasing Live's tempo for as long as the button is held down. The M4L device facilitates mapping the CCs to Live's API (the LOM) to avoid having to MIDI map these controls on a per-set basis,-,10,68,Hold,"127 (On), 0 (Off)",IAC Drive StreamDeck2Daw,IAC Driver Daw2StreamDeck,Calls Live's 'Phase Nudge Up' button via M4L device 'CT6 Params',"src/presets/live/CT6 Params.adv,
-src/presets/live/CT6 Params.amxd,
-src/presets/live/CT6 Rack.adg,
-src/sets/CT6.als,
+A - Decks/Rec,Row 2 Col 7,LIVE TEMPO PHASE NUDGE,Up,6,Nudge Live's audio output into time with Traktor's by increasing Live's tempo for as long as the button is held down. The M4L device facilitates mapping the CCs to Live's API (the LOM) to avoid having to MIDI map these controls on a per-set basis,-,10,68,Hold,"127 (On), 0 (Off)",IAC Drive StreamDeck2Daw,IAC Driver Daw2StreamDeck,Calls Live's 'Phase Nudge Up' button via M4L device 'CT6 Params',"src/live/CT6 Params.adv,
+src/live/CT6 Params.amxd,
+src/live/CT6 Rack.adg,
+src/live/CT6.als,
 src/streamdeck-xl/icons/button-creator/live-tempo-phase-nudge.png"
 A - Decks/Rec,Row 3 Col 1,Speaker,"Dry,
 Wet",5,Toggle between 100% Dry (loop recorder recording not heard) and 100% Wet (only loop recorder recording heard),-,10,21,Cycle,Various (XML Cycle file),Traktor Virtual Input,Traktor Virtual Output,Calls Traktor's 'Dry/Wet Adjust',"src/streamdeck-xl/icons/button-creator/speaker.slash.fill.png,

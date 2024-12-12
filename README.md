@@ -17,7 +17,7 @@ This repo uses a build script so that I can write JavaScript in ES6 rather than 
 3. Run `npm install` to install dependencies, run the build
 4. Run `npm run watch` to lint and build as you save file changes
    * Edit `src/js/m4l-*.js` - the Max-friendly (ES5) version of this file is updated in the `dist` folder
-   * Edit `dist/*.amxd` in Max - this file is copied back to the `src/patches` folder
+   * Edit `dist/*.amxd` in Max - this file is copied back to the `src/live` folder
 5. Run `npm run reinstall` to recreate `dist` folder
 
 ## Release
@@ -626,7 +626,7 @@ It would be better if I could either
 ### Files
 
 * `src/js/m4l-presample-selected-track.js`
-* `src/patches/Presample Selected Track.amxd`
+* `src/live/Presample Selected Track.amxd`
 
 ### Description
 
@@ -675,7 +675,7 @@ See <https://github.com/dotherightthing/control-traktor/labels/Presample%20Selec
 ### Files
 
 * `src/js/m4l-rename-selected-track.js`
-* `src/patches/Rename Selected Track.amxd`
+* `src/live/Rename Selected Track.amxd`
 
 ### Description
 

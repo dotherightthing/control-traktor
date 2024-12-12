@@ -46,16 +46,20 @@ jobs:
 
     # https://help.github.com/en/actions/configuring-and-managing-workflows/persisting-workflow-data-using-artifacts
     - name: Archive release folder
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v4
       with:
         name: release
         path: release
+        overwrite: true
+        include-hidden-files: false
 
     - name: Archive changelog
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v4
       with:
         name: changelog
         path: CHANGELOG.md
+        overwrite: true
+        include-hidden-files: false
 
   # The 'release' job starts with a clean directory,
   # we don't check out the repo again
@@ -82,14 +86,14 @@ jobs:
     # (as of download-artifact@v2)
     - name: Download release folder from Build
       if: steps.check-tag.outputs.match == 'true'
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         name: release
         path: release
 
     - name: Download changelog from Build
       if: steps.check-tag.outputs.match == 'true'
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         name: changelog
         path: changelog

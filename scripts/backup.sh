@@ -16,9 +16,15 @@
 # suppress both error message and exit code: 2>/dev/null || :
 set -e
 
-cd "$INIT_CWD" \
-&& echo "Backing up Ableton patch files" \
-&& cp ./dist/*.amxd ./src/patches 2>/dev/null || : \
-&& echo "Backing up Loopback configuration files" \
-&& cp ~/Library/Application\ Support/Loopback/*.plist ./src/loopback \
-&& echo "Backup tasks complete"
+# if $GITHUB_ACTIONS does not exist 'then' script is being run locally
+if [ -z "$GITHUB_ACTIONS" ]
+then
+  cd "$INIT_CWD" \
+  && echo "Backing up Ableton patch files" \
+  && cp ./dist/*.amxd ./src/patches 2>/dev/null || : \
+  && echo "Backing up Loopback configuration files" \
+  && cp ~/Library/Application\ Support/Loopback/*.plist ./src/loopback \
+  && echo "Backup tasks complete"
+else
+  echo "CI, exiting"
+fi
