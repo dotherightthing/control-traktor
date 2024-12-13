@@ -21,9 +21,13 @@ if [ -z "$GITHUB_ACTIONS" ]
 then
   cd "$INIT_CWD" \
   && echo "Backing up Ableton patch files" \
-  && cp ./dist/*.amxd ./src/patches 2>/dev/null || : \
+  && cp ~/"Music/Ableton/User Library/Presets/Instruments/Drum Rack/CT6 Seq Pads.adg"       "./src/live/Instruments/Drum Rack" 2>/dev/null || : \
+  && cp ~/"Music/Ableton/User Library/Presets/Instruments/Instrument Rack/CT6 Rack.adg"     "./src/live/Instruments/Instrument Rack" 2>/dev/null || : \
+  && cp ~/"Music/Ableton/User Library/Presets/MIDI Effects/Max MIDI Effect/CT6 Params.adv"  "./src/live/MIDI Effects/Max MIDI Effect" 2>/dev/null || : \
+  && cp ~/"Music/Ableton/User Library/Presets/MIDI Effects/Max MIDI Effect/CT6 Params.amxd" "./src/live/MIDI Effects/Max MIDI Effect" 2>/dev/null || : \
+  && cp ~/"Music/Ableton/User Library/Presets/MIDI Effects/Pitch/CT6 Live to Traktor.ad"v   "./src/live/MIDI Effects/Pitch" 2>/dev/null || : \
   && echo "Backing up Loopback configuration files" \
-  && cp ~/Library/Application\ Support/Loopback/*.plist ./src/loopback \
+  && cp ~/"Library/Application Support/Loopback/"*.plist                                    "./src/loopback" \
   && echo "Backup tasks complete"
 else
   echo "CI, exiting"

@@ -13,12 +13,10 @@
   },
   "scripts": {
     "backup": "./scripts/backup.sh",
-    "build": "npm run backup && npm run lint && rm -r dist && mkdir dist && ./scripts/dist.sh",
+    "build": "npm run backup && rm -rf dist && mkdir dist && ./scripts/dist.sh",
     "changelog": "git log --pretty='* [%h] %s' --no-merges $(git describe --tags --abbrev=0 @^)..@ > CHANGELOG.md",
-    "postinstall": "chmod a+x scripts/*sh && mkdir dist && npm run build",
-    "reinstall": "rm -r dist && mkdir dist && npm run build",
-    "lint": "eslint './src/js/*.js'",
-    "prepare": "husky install",
+    "postinstall": "chmod a+x scripts/*sh && rm -rf dist && mkdir dist && npm run build",
+    "reinstall": "rm -r dist && rm -rf dist && mkdir dist && npm run build",
     "release": "npm run build && npm run changelog && cp ./dist/* ./release",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "nodemon"
@@ -38,25 +36,13 @@
   },
   "homepage": "https://github.com/dotherightthing/control-traktor#readme",
   "devDependencies": {
-    "@babel/cli": "^7.18.10",
-    "@babel/core": "^7.19.1",
-    "@babel/eslint-parser": "^7.19.1",
-    "@babel/eslint-plugin": "^7.19.1",
-    "@babel/preset-env": "^7.19.1",
-    "eslint": "^8.23.1",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-compat": "^4.0.2",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jsdoc": "^50.6.0",
-    "husky": "^8.0.1",
     "nodemon": "^2.0.20"
   },
   "nodemonConfig": {
     "ext": "js,amxd,txt",
     "exec": "npm run build",
     "watch": [
-      "src/clyphx-pro",
-      "src/js"
+      "src/clyphx-pro"
     ]
   }
 }

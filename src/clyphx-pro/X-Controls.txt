@@ -73,19 +73,6 @@
 
 # --------------------------------------------------------------------------------------
 
-# Controls for Mackie MCU Pro
-#
-# Live > Settings > MIDI
-# - Control Surface: ClyphX Pro
-# - Input: MCU Pro USB v3.1 (Port 1) (Only 'Remote' checked)
-# - Output: MCU Pro USB v3.1 (Port 1) (Only 'Remote' checked)
-#
-# For note numbers, see https://computermusicresource.com/midikeys.html
-
-AUTOMATION_ARM = NOTE, 1, 54, 127, 0, SATM
-AUTOMATION_REENABLE = NOTE, 1, 55, 127, 0, SATMR
-SESSION_REC = NOTE, 1, 56, 127, 0, SREC
-
 # Controls for Streamdeck XL
 # Using IAC Driver StreamdeckToDaw
 
