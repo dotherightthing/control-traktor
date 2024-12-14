@@ -135,7 +135,7 @@ B - Rmx Deck,
 C - Browser,
 D - Settings,
 Keyboard A-Z,
-Keyboard 0-9",Row 3 Col 7,Keyboard,A-Z,5,View page 'Keyboard A-Z',-,-,-,-,-,-,-,Switches profile page,UNKNOWN - TODO,-
+Keyboard 0-9",Row 3 Col 7,Font Awesome Keyboard Solid,A-Z,5,View page 'Keyboard A-Z',-,-,-,-,-,-,-,Switches profile page,src/streamdeck-xl/icons/button-creator/fa-keyboard-solid.png,-
 "A - Decks/Rec,
 B - Rmx Deck,
 C - Browser,
@@ -172,7 +172,7 @@ B - Rmx Deck,
 C - Browser,
 D - Settings,
 Keyboard A-Z,
-Keyboard 0-9",Row 4 Col 7,Keyboard,0-9`,5,View page 'Keyboard 0-9',-,-,-,-,-,-,-,Switches profile page,UNKNOWN - TODO,-
+Keyboard 0-9",Row 4 Col 7,Font Awesome Keyboard Solid,0-9`,5,View page 'Keyboard 0-9',-,-,-,-,-,-,-,Switches profile page,src/streamdeck-xl/icons/button-creator/fa-keyboard-solid.png,-
 "A - Decks/Rec,
 B - Rmx Deck,
 C - Browser,
