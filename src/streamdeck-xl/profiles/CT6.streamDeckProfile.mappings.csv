@@ -39,7 +39,7 @@ A - Decks/Rec,Row 1 Col 5,BPM,/2,5,Halve the deck BPM,-,10,58,Push,"127 (On), 0 
 Calls Traktor's 'BPM /2'",src/streamdeck-xl/icons/button-creator/bpm.png,src/traktor/CT6 - Streamdeck XL.tsi
 A - Decks/Rec,Row 1 Col 6,BPM,x2,5,Double the deck BPM,-,10,59,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,"Sets Traktor's 'BPM Lock On' to 'off',
 Calls Traktor's 'BPM x2'",src/streamdeck-xl/icons/button-creator/bpm.png,src/traktor/CT6 - Streamdeck XL.tsi
-A - Decks/Rec,Row 1 Col 7,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+A - Decks/Rec,Row 1 Col 7,Arrow Triangle Backward Fill,Flux,6,Play Deck in Reverse (SHIFTable),-,10,69,Hold,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Calls Traktor's ‘Reverse Playback On’ (+ SHIFT = Flux mode),src/streamdeck-xl/icons/button-creator/arrowtriangle.backward.fill.png,src/traktor/CT6 - Streamdeck XL.tsi
 A - Decks/Rec,Row 2 Col 1,Right Arrow Vertical Line,A to B,5,Copy source of Deck A to Deck B,-,10,11,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Calls Traktor's 'Duplicate Track Deck A',UNKNOWN - TODO,src/traktor/CT6 - Streamdeck XL.tsi
 A - Decks/Rec,Row 2 Col 2,Left Arrow Vertical Line,B to A,5,Copy source of Deck B to Deck A,-,10,12,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Calls Traktor's 'Duplicate Track Deck B',UNKNOWN - TODO,src/traktor/CT6 - Streamdeck XL.tsi
 A - Decks/Rec,Row 2 Col 3,Go Backward,Back,5,"Move loop back, or beatjump back by the specified 'Size Selector'",-,10,28,Hold,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Calls Traktor's 'Move',src/streamdeck-xl/icons/button-creator/gobackward.png,src/traktor/CT6 - Streamdeck XL.tsi
@@ -85,7 +85,7 @@ A - Decks/Rec,Row 4 Col 5,FREEZE SLICE SIZE,"1/4 beat,
 2 beats,
 4 beats",6,Useful for isolating stabs and drum hits,-,10,63,Cycle,Various (XML Cycle file),Traktor Virtual Input,Traktor Virtual Output,Sets/Displays Traktor's 'Freeze Slice Size Adjust',src/streamdeck-xl/icons/button-creator/freeze-slice-size.png,"src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/freeze-slice-size.xml,
 src/traktor/CT6 - Streamdeck XL.tsi"
-A - Decks/Rec,Row 4 Col 6,Stop Hand,Pause,6,Toggle playback of the focussed deck. This is required to stop playback after exiting freeze mode.,-,10,65,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Calls Traktor's 'Play/Pause (Deck Common)',UNKNOWN - TODO,src/traktor/CT6 - Streamdeck XL.tsi
+A - Decks/Rec,Row 4 Col 6,Stop Fill,Stop,6,Stop playback of the focussed deck. Use after exiting freeze mode.,-,10,65,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Sets Traktor's 'Play/Pause (Deck Common)’ to 0 (‘Pause’),src/streamdeck-xl/icons/button-creator/stop.fill.png,src/traktor/CT6 - Streamdeck XL.tsi
 "A - Decks/Rec,
 B - Rmx Deck,
 C - Browser,
