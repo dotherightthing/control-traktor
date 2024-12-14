@@ -286,8 +286,8 @@ D - Settings,Row 2 Col 2,Stream Deck Grid,Config,5,Open Stream Deck app,-,-,-,-,
 D - Settings,Row 2 Col 3,Code Brackets,Edit,5,Open Terminal app,1,-,-,-,-,-,-,-,UNKNOWN - TODO,-
 D - Settings,Row 2 Col 3,Code Brackets,Edit,5,Change into repo directory,2,-,-,-,-,-,-,-,UNKNOWN - TODO,-
 D - Settings,Row 2 Col 3,Code Brackets,Edit,5,Open VS Code,3,-,-,-,-,-,-,-,UNKNOWN - TODO,-
-D - Settings,Row 2 Col 3,Code Brackets,Edit,5,Quit Terminal app,4,-,-,-,-,-,-,-,UNKNOWN - TODO,-
-D - Settings,Row 2 Col 4,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+D - Settings,Row 2 Col 3,Elgato Camera,Screenshots,6,Take a screenshot of each of the Stream Deck pages,19 in total,-,-,-,-,-,-,"Opens Stream Deck config (on external display), navigates to each page in turn and runs the macOS screencapture script in Terminal (19 actions in total)",src/streamdeck-xl/icons/button-creator/elgato-camera.png,src/screenshots/
+D - Settings,Row 2 Col 4,Code Brackets,Edit,5,Quit Terminal app,4,-,-,-,-,-,-,-,UNKNOWN - TODO,-
 D - Settings,Row 2 Col 5,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 D - Settings,Row 2 Col 6,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 D - Settings,Row 2 Col 7,-,-,-,-,-,-,-,-,-,-,-,-,-,-

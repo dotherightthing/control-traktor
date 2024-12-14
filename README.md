@@ -40,6 +40,15 @@ This repo uses a build script so that I can write JavaScript in ES6 rather than 
 * Traktor screen
   * Replaced custom hacks with [Supreme Edition Mod](https://www.patreon.com/c/supremeedition/posts)
 
+### Screenshots
+
+![Screenshot of Stream Deck - Page 1.](./screenshots/stream-deck-page-1.png)
+![Screenshot of Stream Deck - Page 2.](./screenshots/stream-deck-page-2.png)
+![Screenshot of Stream Deck - Page 3.](./screenshots/stream-deck-page-3.png)
+![Screenshot of Stream Deck - Page 4.](./screenshots/stream-deck-page-4.png)
+![Screenshot of Stream Deck - Page 5.](./screenshots/stream-deck-page-5.png)
+![Screenshot of Stream Deck - Page 6.](./screenshots/stream-deck-page-6.png)
+
 ### Tips
 
 * If Push pads aren't triggerings hotcues/slices use the up and down arrows on Push to move the mapped notes into view
