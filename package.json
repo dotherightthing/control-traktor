@@ -13,11 +13,12 @@
   },
   "scripts": {
     "backup": "./scripts/backup.sh",
-    "build": "npm run backup && rm -rf dist && mkdir dist && ./scripts/dist.sh",
+    "build": "npm run backup && npm run dist",
     "changelog": "git log --pretty='* [%h] %s' --no-merges $(git describe --tags --abbrev=0 @^)..@ > CHANGELOG.md",
-    "postinstall": "chmod a+x scripts/*sh && rm -rf dist && mkdir dist && npm run build",
-    "reinstall": "rm -r dist && rm -rf dist && mkdir dist && npm run build",
-    "release": "npm run build && npm run changelog && cp ./dist/* ./release",
+    "dist": "./scripts/dist.sh && cd ./dist && ./install.sh 3.11.1 && cd ../",
+    "postinstall": "chmod a+x scripts/*sh && npm run build",
+    "reinstall": "npm run build",
+    "release": "npm run build && npm run changelog && cp -r ./dist ./release",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "nodemon"
   },
@@ -26,8 +27,9 @@
     "url": "git+https://github.com/dotherightthing/control-traktor.git"
   },
   "keywords": [
-    "m4l",
-    "max4live"
+    "max4live",
+    "streamdeck",
+    "traktor-pro"
   ],
   "author": "",
   "license": "ISC",
