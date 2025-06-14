@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<MidiSteps version="1.1">
-  <Default send="yes" receive="yes" display="" image="" displayonsend="yes" useclosestvalueonreceive="yes"/>
-  <StepValues>
-    <Step value="59" display="8"/>
-    <Step value="127" display="16"/>
-  </StepValues>
-</MidiSteps>

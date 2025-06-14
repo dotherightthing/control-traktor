@@ -13,3 +13,6 @@
 [submodule "submodules/traktor-live-v1"]
 	path = submodules/traktor-live-v1
 	url = git@github.com:dotherightthing/traktor-live-v1.git
+[submodule "submodules/streamdeck-xl"]
+	path = submodules/streamdeck-xl
+	url = https://github.com/dotherightthing/streamdeck-xl
