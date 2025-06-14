@@ -25,12 +25,12 @@ cd "$INIT_CWD" \
 && mkdir -p "dist/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files" \
 && mkdir -p "dist/streamdeck-xl/profiles" \
 && mkdir "dist/traktor" \
-&& cp "./scripts/install.sh"*                                            "./dist" \
-&& cp "./src/clyphx-pro/"*                                               "./dist/clyphx-pro" \
-&& cp -r "./src/live/"*                                                  "./dist/live" \
-&& cp "./src/loopback/"*.plist                                           "./dist/loopback" \
-&& cp "./src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/"* "./dist/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files" \
-&& cp "./src/streamdeck-xl/profiles/CT6.streamDeckProfile"               "./dist/streamdeck-xl/profiles" \
-&& cp "./src/traktor/"*                                                  "./dist/traktor" \
+&& cp "./scripts/install.sh"*                                                                                                "./dist" \
+&& cp "./src/clyphx-pro/"*                                                                                                   "./dist/clyphx-pro" \
+&& cp -r "./src/live/"*                                                                                                      "./dist/live" \
+&& cp "./src/loopback/"*.plist                                                                                               "./dist/loopback" \
+&& cp "./submodules/streamdeck-xl/profiles/traktor/plugins/streamdeck-midi-plugin/cycle-files/"*                             "./dist/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files" \
+&& cp "./submodules/streamdeck-xl/profiles/traktor/Traktor (CT6).streamDeckProfile"                                          "./dist/streamdeck-xl/profiles" \
+&& cp "./src/traktor/"*                                                                                                      "./dist/traktor" \
 && echo "Please read installation instructions at https://github.com/dotherightthing/control-traktor/blob/main/INSTALL.md." > ./dist/README.txt \
 && echo "Dist tasks complete"
