@@ -74,6 +74,47 @@
 # --------------------------------------------------------------------------------------
 
 # Controls for Streamdeck XL
-# Using IAC Driver StreamdeckToDaw
+#
+# Live > Settings > MIDI
+# - Control Surface: ClyphX Pro
+# - Input: IAC Driver (StreamDeck2Daw) - Track, Remote (for MIDI Mappable toggle)
+# - Output: IAC Driver (Daw2StreamDeck)
+#
+# NAME = TYPE, CHANNEL, NOTE_OR_CC, OFF_LED, ON_LED, ON_ACTION_LIST
+# CC 16 4 is a freely mappable button
+#
+# ********** AFTER UPDATING RUN: NPM RUN BUILD **********
+#
+# TODO investigate "Button Bindings.txt" for LED feedback
 
-DECK_A_NUDGE_CLIP_NOTES_DEL = CC, 10, 67, 127, 0, SEL/CLIP NOTES DEL ; SEL/CLIP ENVCLR ; SEL/DEV VAR 1 ; SEL/DEV VARRECALL ; MSG "EMPTIED CLIP" ; PUSH MSG "EMPTIED CLIP"
+# Replaced with SD Toggle Audio Device + Soundsource
+# MAIN_OUT_ROUTING_1 =  CC, 16, 1,  127, 0, "MAIN OUT ROUTING"/DEV(0) B1 P1 0
+# MAIN_OUT_ROUTING_2 =  CC, 16, 2,  127, 0, "MAIN OUT ROUTING"/DEV(0) B1 P1 63
+# MAIN_OUT_ROUTING_3 =  CC, 16, 3,  127, 0, "MAIN OUT ROUTING"/DEV(0) B1 P1 127
+
+# Use Push2 as no LED feedback on SD
+# AUTOMATION_ARM =      CC, 16, 11, 127, 0, SATM
+# AUTOMATION_REENABLE = CC, 16, 12, 127, 0, SATMR
+# SESSION_REC =         CC, 16, 13, 127, 0, SREC
+
+# Experimental
+# MIDI_BUTTON_BIDIRECTIONAL_TEST = CC, 16, 14, 127, 0, DEV(0)
+
+# MIDI Mappable toggle ("Map me to A-B")
+# CC, 16, 4
+
+# SD Master Effects Rack
+MASTER_L_ON =     CC, 16, 5,  127, 0, MST/DEV("SD Master") B1 P1 127
+MASTER_L_OFF =    CC, 16, 6,  127, 0, MST/DEV("SD Master") B1 P1 0
+MASTER_M_ON =     CC, 16, 7,  127, 0, MST/DEV("SD Master") B1 P2 127
+MASTER_M_OFF =    CC, 16, 8,  127, 0, MST/DEV("SD Master") B1 P2 0
+MASTER_H_ON =     CC, 16, 9,  127, 0, MST/DEV("SD Master") B1 P3 127
+MASTER_H_OFF =    CC, 16, 10, 127, 0, MST/DEV("SD Master") B1 P3 0
+MASTER_MONO_ON =  CC, 16, 11, 127, 0, MST/DEV("SD Master") B1 P6 127
+MASTER_MONO_OFF = CC, 16, 12, 127, 0, MST/DEV("SD Master") B1 P6 0
+
+# Crossfader
+XFADER_A =        CC, 16, 20, 127, 0, MST/XFADER 0
+XFADER_OFF =      CC, 16, 21, 127, 0, MST/XFADER 63
+XFADER_B =        CC, 16, 22, 127, 0, MST/XFADER 127
+
