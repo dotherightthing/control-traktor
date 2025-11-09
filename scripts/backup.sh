@@ -34,12 +34,12 @@ then
   && echo "Backing up Stream Deck support files" \
   && cp ~/"Library/Application Support/control-traktor/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/"*.xml "./src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files" \
   && echo "Backing up Traktor support files" \
-  && cp ~/"Documents/Native Instruments/Traktor 3.11.1/CT6 - App Export.tsi"                    "./src/traktor/" \
-  && cp ~/"Documents/Native Instruments/Traktor 3.11.1/CT6 - Deck A.tsi"                        "./src/traktor/" \
-  && cp ~/"Documents/Native Instruments/Traktor 3.11.1/CT6 - Deck B.tsi"                        "./src/traktor/" \
-  && cp ~/"Documents/Native Instruments/Traktor 3.11.1/CT6 - Global.tsi"                        "./src/traktor/" \
-  && cp ~/"Documents/Native Instruments/Traktor 3.11.1/CT6 - Korg nanoKEY2.tsi"                 "./src/traktor/" \
-  && cp ~/"Documents/Native Instruments/Traktor 3.11.1/CT6 - S8.tsi"                            "./src/traktor/" \
-  && cp ~/"Documents/Native Instruments/Traktor 3.11.1/CT6 - Streamdeck XL.tsi"                 "./src/traktor/" \
+  && cp ~/"Documents/Native Instruments/Traktor 3.11.17/CT6 - App Export.tsi"                    "./src/traktor/" \
+  && cp ~/"Documents/Native Instruments/Traktor 3.11.17/CT6 - Deck A.tsi"                        "./src/traktor/" \
+  && cp ~/"Documents/Native Instruments/Traktor 3.11.17/CT6 - Deck B.tsi"                        "./src/traktor/" \
+  && cp ~/"Documents/Native Instruments/Traktor 3.11.17/CT6 - Global.tsi"                        "./src/traktor/" \
+  && cp ~/"Documents/Native Instruments/Traktor 3.11.17/CT6 - Korg nanoKEY2.tsi"                 "./src/traktor/" \
+  && cp ~/"Documents/Native Instruments/Traktor 3.11.17/CT6 - S8.tsi"                            "./src/traktor/" \
+  && cp ~/"Documents/Native Instruments/Traktor 3.11.17/CT6 - Streamdeck XL.tsi"                 "./src/traktor/" \
   && echo "Backup tasks complete"
 fi
