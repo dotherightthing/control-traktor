@@ -37,14 +37,14 @@
 3. Open Terminal.app
 4. Type `cd `, drag the extracted zip folder into Terminal, then press ENTER, to set the release folder as the root directory
 5. Type `chmod a+x install.sh` followed by ENTER, to make the installation script executable
-6. Type `./install.sh 3.11.17` followed by ENTER, to run the installation script (note: this library has only been tested with Traktor `3.11.17`)
+6. Type `./install.sh 3.11.1` followed by ENTER, to run the installation script (note: this library has only been tested with Traktor `3.11.1`)
 7. Open *live/CT6.als* to view the Live set
 
 The following files will automatically be installed:
 
 * `Macintosh HD/Users/USERNAME/nativeKONTROL/ClyphX_Pro`
   * `X-Controls.txt`
-* `Macintosh HD/Users/USERNAME/Documents/Native Instruments/Traktor 3.11.17`
+* `Macintosh HD/Users/USERNAME/Documents/Native Instruments/Traktor 3.11.1`
   * `CT6 - App Export.tsi`
   * `CT6 - Deck A.tsi`
   * `CT6 - Deck B.tsi`
