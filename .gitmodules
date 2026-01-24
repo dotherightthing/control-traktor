@@ -1,6 +1,3 @@
-[submodule "submodules/streamdeck-clicker"]
-	path = submodules/streamdeck-clicker
-	url = git@github.com:dotherightthing/streamdeck-clicker.git
 [submodule "submodules/streamdeck-xl"]
 	path = submodules/streamdeck-xl
 	url = https://github.com/dotherightthing/streamdeck-xl
