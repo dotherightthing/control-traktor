@@ -1,0 +1,128 @@
+; ------- Bome MIDI Translator: signed project file
+; ------- You can modify this file as you like, but that will invalidate the
+; ------- signature so that it cannot be opened in the BomeBox or MT Player anymore.
+;
+[Preset.0]
+Active=0
+Comments=Traktor running on MBP Built-in Display when used as Extended display. Dell U2518D is 2560x1440. Built-in Display is 1536x960.
+Incoming0=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x32"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming1=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x33"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming2=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x34"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming3=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x35"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming4=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming5=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x37"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming6=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x38"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming7=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x39"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming8=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x56"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming9=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x57"/><Value2 num="0x7F"/></Simple></Incoming>
+Name=Click Traktor - MBP EXT
+Name0=Click Remix Deck C Row 1 Column 1
+Name1=Click Remix Deck C Row 1 Column 2
+Name2=Click Remix Deck C Row 1 Column 3
+Name3=Click Remix Deck C Row 1 Column 4
+Name4=Click Remix Deck C Row 2 Column 1
+Name5=Click Remix Deck C Row 2 Column 2
+Name6=Click Remix Deck C Row 2 Column 3
+Name7=Click Remix Deck C Row 2 Column 4
+Name8=Click Remix Deck C BPM x2
+Name9=Click Remix Deck C BPM /2
+Options0=Actv01Stop00OutO00Dlay50:Millis
+Options1=Actv01Stop00OutO00Dlay50:Millis
+Options2=Actv01Stop00OutO00Dlay50:Millis
+Options3=Actv01Stop00OutO00Dlay50:Millis
+Options4=Actv01Stop00OutO00Dlay50:Millis
+Options5=Actv01Stop00OutO00Dlay50:Millis
+Options6=Actv01Stop00OutO00Dlay50:Millis
+Options7=Actv01Stop00OutO00Dlay50:Millis
+Options8=Actv01Stop00OutO00Dlay50:Millis
+Options9=Actv01Stop00OutO00Dlay50:Millis
+Outgoing0=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2634"/><Y num="656"/></Outgoing>
+Outgoing1=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2781"/><Y num="657"/></Outgoing>
+Outgoing2=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2920"/><Y num="656"/></Outgoing>
+Outgoing3=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="3065"/><Y num="657"/></Outgoing>
+Outgoing4=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2635"/><Y num="677"/></Outgoing>
+Outgoing5=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2778"/><Y num="675"/></Outgoing>
+Outgoing6=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2924"/><Y num="677"/></Outgoing>
+Outgoing7=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="3061"/><Y num="677"/></Outgoing>
+Outgoing8=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2681"/><Y num="790"/></Outgoing>
+Outgoing9=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2682"/><Y num="809"/></Outgoing>
+PresetSwitchIgnore=0
+
+[Preset.1]
+Active=1
+Comments=Traktor running on MBP Built-in Display when used as Main display. Dell U2518D is 2560x1440. Built-in Display is 1536x960.
+Incoming0=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x32"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming1=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x33"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming2=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x34"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming3=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x35"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming4=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming5=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x37"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming6=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x38"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming7=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x39"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming8=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x56"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming9=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x57"/><Value2 num="0x7F"/></Simple></Incoming>
+Name=Click Traktor - MBP MAIN
+Name0=Click Remix Deck C Row 1 Column 1
+Name1=Click Remix Deck C Row 1 Column 2
+Name2=Click Remix Deck C Row 1 Column 3
+Name3=Click Remix Deck C Row 1 Column 4
+Name4=Click Remix Deck C Row 2 Column 1
+Name5=Click Remix Deck C Row 2 Column 2
+Name6=Click Remix Deck C Row 2 Column 3
+Name7=Click Remix Deck C Row 2 Column 4
+Name8=Click Remix Deck C BPM x2
+Name9=Click Remix Deck C BPM /2
+Options0=Actv01Stop00OutO01Dlay50:Millis
+Options1=Actv01Stop00OutO01Dlay50:Millis
+Options2=Actv01Stop00OutO01Dlay50:Millis
+Options3=Actv01Stop00OutO01Dlay50:Millis
+Options4=Actv01Stop00OutO01Dlay50:Millis
+Options5=Actv01Stop00OutO01Dlay50:Millis
+Options6=Actv01Stop00OutO01Dlay50:Millis
+Options7=Actv01Stop00OutO01Dlay50:Millis
+Options8=Actv01Stop00OutO00Dlay50:Millis
+Options9=Actv01Stop00OutO00Dlay50:Millis
+Outgoing0=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="74"/><Y num="655"/></Outgoing>
+Outgoing1=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="220"/><Y num="652"/></Outgoing>
+Outgoing2=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="364"/><Y num="654"/></Outgoing>
+Outgoing3=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="514"/><Y num="658"/></Outgoing>
+Outgoing4=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="79"/><Y num="677"/></Outgoing>
+Outgoing5=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="217"/><Y num="675"/></Outgoing>
+Outgoing6=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="359"/><Y num="676"/></Outgoing>
+Outgoing7=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="509"/><Y num="677"/></Outgoing>
+Outgoing8=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="122"/><Y num="792"/></Outgoing>
+Outgoing9=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="123"/><Y num="809"/></Outgoing>
+PresetSwitchIgnore=0
+
+[Preset.2]
+Active=1
+Comments=
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x4C"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x4C"/><Value2 num="0x00"/></Simple></Incoming>
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x4C"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x4C"/><Value2 num="0x00"/></Simple></Incoming>
+Name=Click Traktor - Toggle click offset mode
+Name0=CLICK OFFSET - MBP EXT
+Name1=CLICK OFFSET - MBP MAIN
+Name2=CLICK OFFSET - MBP EXT
+Name3=CLICK OFFSET - MBP MAIN
+Options0=Actv01Stop00OutO01StMa00000001label0006__cmt>
+Options1=Actv01Stop00OutO01StMa00000001label0006__cmt>
+Options2=Actv01Stop00OutO01StMa00000001label0006__cmt>
+Options3=Actv01Stop00OutO01StMa00000001label0006__cmt>
+Outgoing0=Pres040017Click Traktor - MBP EXT
+Outgoing1=Pres040018Click Traktor - MBP MAIN
+Outgoing2=Pres060018Click Traktor - MBP MAIN
+Outgoing3=Pres060017Click Traktor - MBP EXT
+PresetSwitchIgnore=0
+
+[Project]
+DefaultInPorts=MIDA00010021Bome MIDI Translator 1 Virtual In
+DefaultOutPorts=MIDA00010015Traktor Virtual Input
+Version=2
+
+[Signatures]
+SigName-1=[Midi Translator Pro Internal]
+Signature-1=xfqEV9pZSdKd+uAyLr7y+9XreCVJCRhqt5jBG6rLBvy7jrcvzcg/Nb6HwCqPaY9rRdMCNi5HCNMwndllyuh4fYRgyADSQwCq58TGMLkW1Z1WLRj8f17+hik1tKG5zWLOipoPghnuoITap0v4EdIv6cH/wWgrV2slGbU/ag4XbbY=
+SignedBy-1=Dan Smith
+
