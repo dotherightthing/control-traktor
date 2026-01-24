@@ -22,6 +22,13 @@ A collection of settings and Max4Live devices for improved control over Traktor 
 
 ---
 
+## Control Traktor v6 ("CT6") update (2026.01.25)
+
+### Description
+
+* Streamdeck XL (`CT6.streamDeckProfile`):
+  * `dist` script now copies Streamdeck XML files into *Documents/control-traktor/*
+
 ## Control Traktor v6 ("CT6") update (2024.12.08)
 
 ### Description

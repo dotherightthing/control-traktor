@@ -22,13 +22,13 @@ fi
 # if $GITHUB_ACTIONS does not exist 'then' script is being run locally rather than on CI
 if [ -n "$1" ] && [ -z "$GITHUB_ACTIONS" ]
 then
-  rm -rf ~/"Library/Application Support/control-traktor/" || true \
-  && mkdir -p ~/"Library/Application Support/control-traktor/live" \
-  && mkdir -p ~/"Library/Application Support/control-traktor/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files" \
+  rm -rf ~/"Documents/control-traktor/" || true \
+  && mkdir -p ~/"Documents/control-traktor/live" \
+  && mkdir -p ~/"Documents/control-traktor/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files" \
   && echo "Installing ClyphX Pro support files" \
   && cp "./clyphx-pro/X-Controls.txt"                                      ~/"nativeKONTROL/ClyphX_Pro" \
   && echo "Installing Live support files" \
-  && cp "./live/"*.als                                                     ~/"Library/Application Support/control-traktor/live" \
+  && cp "./live/"*.als                                                     ~/"Documents/control-traktor/live" \
   && cp "./live/Instruments/Drum Rack/CT6 Seq Pads.adg"                    ~/"Music/Ableton/User Library/Presets/Instruments/Drum Rack" \
   && cp "./live/Instruments/Instrument Rack/CT6 Rack.adg"                  ~/"Music/Ableton/User Library/Presets/Instruments/Instrument Rack" \
   && cp "./live/MIDI Effects/Max MIDI Effect/CT6 Params.adv"               ~/"Music/Ableton/User Library/Presets/MIDI Effects/Max MIDI Effect" \
@@ -37,7 +37,7 @@ then
   && echo "Installing Loopback support files" \
   && cp "./loopback/"*.plist                                               ~/"Library/Application Support/Loopback" \
   && echo "Installing Stream Deck support files" \
-  && cp "./streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/"*.xml ~/"Library/Application Support/control-traktor/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files" \
+  && cp "./streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/"*.xml ~/"Documents/control-traktor/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files" \
   && echo "Installing Traktor support files" \
   && cp "./traktor/"*                                                      ~/"Documents/Native Instruments/Traktor $1" \
   && open "./traktor/" \

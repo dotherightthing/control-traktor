@@ -52,11 +52,11 @@ The following files will automatically be installed:
   * `CT6 - Korg nanoKEY2.tsi`
   * `CT6 - S8.tsi`
   * `CT6 - Streamdeck XL.tsi`
-* `Macintosh HD/Users/USERNAME/Library/Application Support/control-traktor/live`
+* `Macintosh HD/Users/USERNAME/Documents/control-traktor/live`
   * `CT6.als`
-* `Macintosh HD/Users/USERNAME/Library/Application Support/control-traktor/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files`
+* `Macintosh HD/Users/USERNAME/Documents/control-traktor/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files`
   * various XML files
-* `Macintosh HD/Users/USERNAME/Library/Application Support/Loopback`
+* `Macintosh HD/Users/USERNAME/Documents/Loopback`
   * `Devices.plist`
   * `RecentApps.plist`
 * `Macintosh HD/Users/USERNAME/Music/Ableton/User Library/Presets`
