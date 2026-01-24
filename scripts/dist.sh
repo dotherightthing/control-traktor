@@ -15,6 +15,8 @@
 # v: print shell input lines as they are read (including all comments!)
 set -e
 
+# note that the sed command causes cycle file image paths to reference the dist folder
+# but install.sh does not repeat this for the Application Support folder (due to the syntax being complex)
 cd "$INIT_CWD" \
 && echo "Recreating dist folder" \
 && rm -rf dist && mkdir dist \
@@ -22,6 +24,7 @@ cd "$INIT_CWD" \
 && mkdir "dist/clyphx-pro" \
 && mkdir "dist/live" \
 && mkdir "dist/loopback" \
+&& mkdir -p "dist/streamdeck-xl/icons" \
 && mkdir -p "dist/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files" \
 && mkdir -p "dist/streamdeck-xl/profiles" \
 && mkdir "dist/traktor" \
@@ -29,7 +32,9 @@ cd "$INIT_CWD" \
 && cp "./src/clyphx-pro/"*                                                                                                   "./dist/clyphx-pro" \
 && cp -r "./src/live/"*                                                                                                      "./dist/live" \
 && cp "./src/loopback/"*.plist                                                                                               "./dist/loopback" \
+&& cp -r "./submodules/streamdeck-xl/icons/"*                                                                                "./dist/streamdeck-xl/icons" \
 && cp "./submodules/streamdeck-xl/profiles/traktor/plugins/streamdeck-midi-plugin/cycle-files/"*                             "./dist/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files" \
+&& sed -i '.bak' 's/submodules/dist/g'                                                                                       "./dist/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files"/* \
 && cp "./submodules/streamdeck-xl/profiles/traktor/Traktor (CT6).streamDeckProfile"                                          "./dist/streamdeck-xl/profiles" \
 && cp "./src/traktor/"*                                                                                                      "./dist/traktor" \
 && echo "Please read installation instructions at https://github.com/dotherightthing/control-traktor/blob/main/INSTALL.md." > ./dist/README.txt \
