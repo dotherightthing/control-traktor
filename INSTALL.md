@@ -54,9 +54,11 @@ The following files will automatically be installed:
   * `CT6 - Streamdeck XL.tsi`
 * `Macintosh HD/Users/USERNAME/Documents/control-traktor/live`
   * `CT6.als`
+* `Macintosh HD/Users/USERNAME/Documents/control-traktor/streamdeck-xl/icons`
+  * various icons
 * `Macintosh HD/Users/USERNAME/Documents/control-traktor/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files`
   * various XML files
-* `Macintosh HD/Users/USERNAME/Documents/Loopback`
+* `Macintosh HD/Users/USERNAME/Library/Application Support/Loopback`
   * `Devices.plist`
   * `RecentApps.plist`
 * `Macintosh HD/Users/USERNAME/Music/Ableton/User Library/Presets`
