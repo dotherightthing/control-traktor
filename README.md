@@ -28,8 +28,8 @@ A collection of settings and Max4Live devices for improved control over Traktor 
 
 * Streamdeck XL (`CT6.streamDeckProfile`):
   * added Streamdeck mappings to document new (CT Version 6) and existing (CT Version 5) buttons
-    * [view Streamdeck mappings in nakamura196's CSV Viewer](https://nakamura196.github.io/csv_viewer/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fdotherightthing%2Fcontrol-traktor%2Frefs%2Fheads%2Fmain%2Fsrc%2Fstreamdeck-xl%2Fprofiles%2FCT6.streamDeckProfile.mappings.csv), or
-    * download [the Streamdeck mappings on Github](src/streamdeck-xl/profiles/CT6.streamDeckProfile.mappings.csv) and open in the [free *Numbers* app for macOS](https://apps.apple.com/nz/app/numbers/id409203825?mt=12)
+    * [view Streamdeck mappings in nakamura196's CSV Viewer](https://nakamura196.github.io/csv_viewer/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fdotherightthing%2Fstreamdeck-xl%2Frefs%2Fheads%2Fmaster%2Fprofiles%2Ftraktor%2FCT6.streamDeckProfile.mappings.csv), or
+    * download [the Streamdeck mappings on Github](https://github.com/dotherightthing/streamdeck-xl/blob/master/profiles/traktor/CT6.streamDeckProfile.mappings.csv) and open in the [free *Numbers* app for macOS](https://apps.apple.com/nz/app/numbers/id409203825?mt=12)
   * `build` script now copies Streamdeck XML files into *Library/Application Support/control-traktor/*
 * Traktor screen
   * Replaced custom hacks with [Supreme Edition Mod](https://www.patreon.com/c/supremeedition/posts)
