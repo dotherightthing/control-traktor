@@ -20,6 +20,15 @@ A collection of settings and Max4Live devices for improved control over Traktor 
 2. Tag the latest commit with the message `Bump version`
 3. Push to Github and an action will run to generate a new *Release*
 
+## Screenshots
+
+![Screenshot of Stream Deck - Page 1.](./screenshots/stream-deck-page-1.png)
+![Screenshot of Stream Deck - Page 2.](./screenshots/stream-deck-page-2.png)
+![Screenshot of Stream Deck - Page 3.](./screenshots/stream-deck-page-3.png)
+![Screenshot of Stream Deck - Page 4.](./screenshots/stream-deck-page-4.png)
+![Screenshot of Stream Deck - Page 5.](./screenshots/stream-deck-page-5.png)
+![Screenshot of Stream Deck - Page 6.](./screenshots/stream-deck-page-6.png)
+
 ---
 
 ## Control Traktor v6 ("CT6") update (2026.01.25)
@@ -41,15 +50,6 @@ A collection of settings and Max4Live devices for improved control over Traktor 
 * Traktor screen
   * Replaced custom hacks with [Supreme Edition Mod](https://www.patreon.com/c/supremeedition/posts)
 * Refine installation
-
-### Screenshots
-
-![Screenshot of Stream Deck - Page 1.](./screenshots/stream-deck-page-1.png)
-![Screenshot of Stream Deck - Page 2.](./screenshots/stream-deck-page-2.png)
-![Screenshot of Stream Deck - Page 3.](./screenshots/stream-deck-page-3.png)
-![Screenshot of Stream Deck - Page 4.](./screenshots/stream-deck-page-4.png)
-![Screenshot of Stream Deck - Page 5.](./screenshots/stream-deck-page-5.png)
-![Screenshot of Stream Deck - Page 6.](./screenshots/stream-deck-page-6.png)
 
 ### Tips
 
