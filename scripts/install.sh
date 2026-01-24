@@ -24,6 +24,7 @@ if [ -n "$1" ] && [ -z "$GITHUB_ACTIONS" ]
 then
   rm -rf ~/"Documents/control-traktor/" || true \
   && mkdir -p ~/"Documents/control-traktor/live" \
+  && mkdir -p ~/"Documents/control-traktor/streamdeck-xl/icons" \
   && mkdir -p ~/"Documents/control-traktor/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files" \
   && echo "Installing ClyphX Pro support files" \
   && cp "./clyphx-pro/X-Controls.txt"                                      ~/"nativeKONTROL/ClyphX_Pro" \
@@ -37,6 +38,7 @@ then
   && echo "Installing Loopback support files" \
   && cp "./loopback/"*.plist                                               ~/"Library/Application Support/Loopback" \
   && echo "Installing Stream Deck support files" \
+  && cp -r "./streamdeck-xl/icons"/*                                       ~/"Documents/control-traktor/streamdeck-xl/icons" \
   && cp "./streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/"*.xml ~/"Documents/control-traktor/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files" \
   && echo "Installing Traktor support files" \
   && cp "./traktor/"*                                                      ~/"Documents/Native Instruments/Traktor $1" \
