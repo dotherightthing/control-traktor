@@ -27,7 +27,6 @@ A collection of settings and Max4Live devices for improved control over Traktor 
 ![Screenshot of Stream Deck - Page 3.](./screenshots/stream-deck-page-3.png)
 ![Screenshot of Stream Deck - Page 4.](./screenshots/stream-deck-page-4.png)
 ![Screenshot of Stream Deck - Page 5.](./screenshots/stream-deck-page-5.png)
-![Screenshot of Stream Deck - Page 6.](./screenshots/stream-deck-page-6.png)
 
 ---
 
