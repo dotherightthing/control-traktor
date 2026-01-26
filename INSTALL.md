@@ -37,7 +37,7 @@
 3. Open Terminal.app
 4. Type `cd `, drag the extracted zip folder into Terminal, then press ENTER, to set the release folder as the root directory
 5. Type `chmod a+x install.sh` followed by ENTER, to make the installation script executable
-6. Type `./install.sh 3.11.1` followed by ENTER, to run the installation script (note: this library has only been tested with Traktor `3.11.1`)
+6. Type `./install.sh 3.11.1` followed by ENTER, to run the installation script (note: this refers to the folder title at `~/Documents/Native Instruments/Traktor X.XX.X`, NOT the *Version* shown in *Traktor > About Traktor*)
 7. Open *live/CT6.als* to view the Live set
 
 The following files will automatically be installed:
