@@ -27,10 +27,8 @@ then
   && mkdir -p ~/"Documents/control-traktor/streamdeck-xl/icons" \
   && mkdir -p ~/"Documents/control-traktor/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files" \
   && mkdir -p ~/"nativeKONTROL/ClyphX_Pro" \
-  && mkdir -p ~/"Music/Ableton/User Library/Presets/Instruments/Drum Rack" \
-  && mkdir -p ~/"Music/Ableton/User Library/Presets/Instruments/Instrument Rack" \
-  && mkdir -p ~/"Music/Ableton/User Library/Presets/MIDI Effects/Max MIDI Effect" \
-  && mkdir -p ~/"Music/Ableton/User Library/Presets/MIDI Effects/Pitch" \
+  && mkdir -p ~/"Music/Ableton/User Library" ~/"Music/Ableton/User Library/Presets" ~/"Music/Ableton/User Library/Presets/Instruments" ~/"Music/Ableton/User Library/Presets/Instruments/Drum Rack" ~/"Music/Ableton/User Library/Presets/Instruments/Instrument Rack" \
+  && mkdir -p ~/"Music/Ableton/User Library" ~/"Music/Ableton/User Library/Presets" ~/"Music/Ableton/User Library/Presets/MIDI Effects" ~/"Music/Ableton/User Library/Presets/MIDI Effects/Max MIDI Effect" ~/"Music/Ableton/User Library/Presets/MIDI Effects/Pitch" \
   && mkdir -p ~/"Library/Application Support/Loopback" \
   && echo "Installing ClyphX Pro support files" \
   && cp "./clyphx-pro/X-Controls.txt"                                      ~/"nativeKONTROL/ClyphX_Pro" \
