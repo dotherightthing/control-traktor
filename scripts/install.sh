@@ -31,6 +31,7 @@ then
   && mkdir -p ~/"Music/Ableton/User Library/Presets/Instruments/Instrument Rack" \
   && mkdir -p ~/"Music/Ableton/User Library/Presets/MIDI Effects/Max MIDI Effect" \
   && mkdir -p ~/"Music/Ableton/User Library/Presets/MIDI Effects/Pitch" \
+  && mkdir -p ~/"Library/Application Support/Loopback" \
   && echo "Installing ClyphX Pro support files" \
   && cp "./clyphx-pro/X-Controls.txt"                                      ~/"nativeKONTROL/ClyphX_Pro" \
   && echo "Installing Live support files" \
