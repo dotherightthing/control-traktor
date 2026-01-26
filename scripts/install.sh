@@ -26,6 +26,7 @@ then
   && mkdir -p ~/"Documents/control-traktor/live" \
   && mkdir -p ~/"Documents/control-traktor/streamdeck-xl/icons" \
   && mkdir -p ~/"Documents/control-traktor/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files" \
+  && mkdir -p ~/"nativeKONTROL/ClyphX_Pro" \
   && echo "Installing ClyphX Pro support files" \
   && cp "./clyphx-pro/X-Controls.txt"                                      ~/"nativeKONTROL/ClyphX_Pro" \
   && echo "Installing Live support files" \
