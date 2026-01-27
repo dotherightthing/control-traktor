@@ -45,6 +45,15 @@ then
   && cp -r "./streamdeck-xl"                                               ~/"Documents/control-traktor" \
   && echo "Installing Traktor support files" \
   && cp "./traktor/"*                                                      ~/"Documents/Native Instruments/Traktor $1" \
-  && open "./traktor/" \
+  && cd ~/"Documents/control-traktor" \
+  && ln -s ~/"Documents/Native Instruments/Traktor $1" \
+  && ln -s ~/"Library/Application Support/Loopback" \
+  && ln -s ~/"nativeKONTROL/ClyphX_Pro" "ClyphX Pro" \
+  && cd ~/"Documents/control-traktor/live" \
+  && ln -s ~/"Music/Ableton/User Library/Presets/Instruments/Drum Rack" "Live Presets - Drum Rack" \
+  && ln -s ~/"Music/Ableton/User Library/Presets/Instruments/Instrument Rack" "Live Presets - Instrument Rack" \
+  && ln -s ~/"Music/Ableton/User Library/Presets/MIDI Effects/Max MIDI Effect" "Live Presets - Max MIDI Effect" \
+  && ln -s ~/"Music/Ableton/User Library/Presets/MIDI Effects/Pitch" "Live Presets - Pitch" \
+  && open ~/"Documents/control-traktor" \
   && echo "Automatic install tasks complete."
 fi

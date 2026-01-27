@@ -32,55 +32,64 @@
 
 ## Installation script
 
+Note: *~* (tilde) means *Macintosh HD/Users/USERNAME*.
+
 1. Download the latest release zip from <https://github.com/dotherightthing/control-traktor/releases>
 2. Extract the zip folder
 3. Open Terminal.app
 4. Type `cd `, drag the extracted zip folder into Terminal, then press ENTER, to set the release folder as the root directory
-5. Type `chmod a+x install.sh` followed by ENTER, to make the installation script executable
-6. Type `./install.sh 3.11.1` followed by ENTER, to run the installation script (note: this refers to the folder title at `~/Documents/Native Instruments/Traktor X.XX.X`, NOT the *Version* shown in *Traktor > About Traktor*)
-7. Open *live/CT6.als* to view the Live set
-
-The following files will automatically be installed:
-
-* `Macintosh HD/Users/USERNAME/nativeKONTROL/ClyphX_Pro`
-  * `X-Controls.txt`
-* `Macintosh HD/Users/USERNAME/Documents/Native Instruments/Traktor 3.11.1`
-  * `CT6 - App Export.tsi`
-  * `CT6 - Deck A.tsi`
-  * `CT6 - Deck B.tsi`
-  * `CT6 - Global.tsi`
-  * `CT6 - Korg nanoKEY2.tsi`
-  * `CT6 - S8.tsi`
-  * `CT6 - Streamdeck XL.tsi`
-* `Macintosh HD/Users/USERNAME/Documents/control-traktor/live`
-  * `CT6.als`
-* `Macintosh HD/Users/USERNAME/Documents/control-traktor/streamdeck-xl/icons`
-  * various icons
-* `Macintosh HD/Users/USERNAME/Documents/control-traktor/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files`
-  * various XML files
-* `Macintosh HD/Users/USERNAME/Library/Application Support/Loopback`
-  * `Devices.plist`
-  * `RecentApps.plist`
-* `Macintosh HD/Users/USERNAME/Music/Ableton/User Library/Presets`
-  * `Instruments/Drum Rack`
-    * `CT6 SeqPads.adg`
-  * `Instruments/Instrument Rack`
-    * `CT6 Rack.adg`
-  * `MIDI Effects/Max MIDI Effect`
-    * `CT6 Params.adv`
-    * `CT6 Params.amxd`
-  * `MIDI Effects/Pitch`
-    * `CT6 Liveto Traktor.adv`
+5. Type `chmod a+x install.sh*` followed by ENTER, to make the installation script executable
+6. Type `./install.sh 3.11.1` followed by ENTER, to run the installation script (note: this refers to the folder title at *~/Documents/Native Instruments/Traktor X.XX.X*, NOT the *Version* shown in *Traktor > About Traktor*)
+7. The installer will open the output folder, **~/Documents/control-traktor**, which contains the following:
+   * **ClyphX Pro** - shortcut to *~/nativeKONTROL/ClyphX_Pro*, containing *X-Controls.txt*
+   * **live**
+     * *CT6.als* - a Live set
+     * *Live Presets - Drum Rack* - shortcut to *~/Music/Ableton/User Library/Presets/Instruments/Drum Rack*, containing:
+        * *CT6 SeqPads.adg*
+     * *Live Presets - Instrument Rack* - shortcut to *~/Music/Ableton/User Library/Presets/Instruments/Instrument Rack*, containing:
+        * *CT6 Rack.adg*
+     * *Live Presets - Max MIDI Effect* - shortcut to *~/Music/Ableton/User Library/Presets/MIDI Effects/Max MIDI Effect*, containing:
+        * *CT6 Params.adv*
+        * *CT6 Params.amxd*
+     * *Live Presets - Pitch* - shortcut to *~/Music/Ableton/User Library/Presets/MIDI Effects/Pitch*, containing:
+        * *CT6 Liveto Traktor.adv*
+   * **Loopback** - shortcut to *~/Library/Application Support/Loopback*, containing:
+        * *Devices.plist*
+        * *RecentApps.plist*
+   * **streamdeck-xl**
+     * *actions*, containing:
+        * select individual actions required for fixing issues in *Traktor (CT6).streamDeckProfile*
+     * *icons*, containing:
+        * various icons used by *Traktor (CT6).streamDeckProfile*
+     * *plugins*, containing:
+        * configuration files used by Stream Deck plugins
+   * **Traktor 3.11.1** - shortcut to *~/Documents/Native Instruments/Traktor 3.11.1*, containing:
+     * *CT6 - App Export.tsi*
+     * *CT6 - Deck A.tsi*
+     * *CT6 - Deck B.tsi*
+     * *CT6 - Global.tsi*
+     * *CT6 - Korg nanoKEY2.tsi*
+     * *CT6 - S8.tsi*
+     * *CT6 - Streamdeck XL.tsi*
 
 ## Manually install the copied controller mappings
 
-1. Traktor > Settings > Add > Import TSI > Import Other... > `CT6 - App Export.tsi`
-2. Traktor > Settings > Add > Import TSI > Import Other... > `CT6 - Deck A.tsi`
-3. Traktor > Settings > Add > Import TSI > Import Other... > `CT6 - Deck B.tsi`
-4. Traktor > Settings > Add > Import TSI > Import Other... > `CT6 - Global.tsi`
-5. Traktor > Settings > Add > Import TSI > Import Other... > `CT6 - Korg nanoKEY2.tsi`
-6. Traktor > Settings > Add > Import TSI > Import Other... > `CT6 - S8.tsi`
-7. Traktor > Settings > Add > Import TSI > Import Other... > `CT6 - Streamdeck XL.tsi`
+### Traktor
+
+Note: *Import Other* always opens in *~/Documents/Native Instruments/Traktor X.XX.X* (which is why *.tsi* files are copied here).
+
+1. Traktor > Settings > Controller Manager > Add > Import TSI > Import Other... > *CT6 - Deck A.tsi*
+2. Traktor > Settings > Controller Manager > Add > Import TSI > Import Other... > *CT6 - Deck B.tsi*
+3. Traktor > Settings > Controller Manager > Add > Import TSI > Import Other... > *CT6 - Global.tsi*
+4. Traktor > Settings > Controller Manager > Add > Import TSI > Import Other... > *CT6 - Korg nanoKEY2.tsi*
+5. Traktor > Settings > Controller Manager > Add > Import TSI > Import Other... > *CT6 - S8.tsi*
+6. Traktor > Settings > Controller Manager > Add > Import TSI > Import Other... > *CT6 - Streamdeck XL.tsi*
+7. Traktor > Settings > Controller Manager > Import > *CT6 - App Export.tsi* - OPTIONAL - this overwrites Traktor configuration settings; select the desired properties to overwrite, I choose all except *Controller Mappings*
+
+### Stream Deck XL
+
+1. *~/Documents/control-traktor/streamdeck-xl/profiles/Traktor (CT6).streamDeckProfile* > double-click > *Install*
+2. Traktor (CT6) profile will be loaded and selected
 
 ## Ableton Live
 
@@ -90,10 +99,10 @@ These allow the Stream Deck XL and Ableton Live to communicate.
 
 1. Open macOS *Audio MIDI Setup*
 2. Double-click *IAC Driver* (in red)
-3. Click `+` to add a *Bus*
-4. Double-click the bus name and rename to `StreamDeck2Daw`
-5. Click `+` to add a second *Bus*
-6. Double-click the second bus name and rename to `Daw2StreamDeck`
+3. Click *+* to add a *Bus*
+4. Double-click the bus name and rename to *StreamDeck2Daw*
+5. Click *+* to add a second *Bus*
+6. Double-click the second bus name and rename to *Daw2StreamDeck*
 7. Ensure that *Device is online* is checked
 8. Click *Apply*
 
