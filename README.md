@@ -10,9 +10,10 @@ A collection of settings and Max4Live devices for improved control over Traktor 
 
 1. [Install Node and NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 2. `git clone` this repo
-3. Run `npm install` to install dependencies, run the build
-4. Run `npm run watch` to build as you save file changes
+3. Run `npm install` to install dependencies, run the build which outputs to `dist`
+4. Run `npm run backup` to overwrite local files with deployed files
 5. Run `npm run reinstall` to recreate `dist` folder
+6. Run `npm run watch` to build as you save file changes
 
 ## Release
 
@@ -30,12 +31,12 @@ A collection of settings and Max4Live devices for improved control over Traktor 
 
 ---
 
-## Control Traktor v6 ("CT6") update (2026.01.25)
+## Control Traktor v6 ("CT6") update (2026.01.27)
 
 ### Description
 
 * Streamdeck XL (`CT6.streamDeckProfile`):
-  * `dist` script now copies Streamdeck XML files into *Documents/control-traktor/*
+  * install script now outputs files and shortcuts into *~/Documents/control-traktor/*
 
 ## Control Traktor v6 ("CT6") update (2024.12.08)
 
