@@ -90,6 +90,32 @@ Note: *Import Other* always opens in *~/Documents/Native Instruments/Traktor X.X
 
 1. *~/Documents/control-traktor/streamdeck-xl/profiles/Traktor (CT6).streamDeckProfile* > double-click > *Install*
 2. Traktor (CT6) profile will be loaded and selected
+3. Fix corrupted profile page navigation
+   1. Click *Pinned actions* (icon to left of page buttons *1 2 3 4 5*)
+   2. *A Decks/Rec*
+      1. Click *A Decks/Rec*
+      2. Click arrow to the right of *3 actions*
+      3. Click *Navigation: Switch Profile* (first action)
+      4. Change *Profile* from *Home* to *Traktor (CT6*)
+      5. Leave *Page* as *A - Decks/Rec*
+   3. *B Rmx Deck*
+      1. Click *B Rmx Deck*
+      2. Click arrow to the right of *3 actions*
+      3. Click *Navigation: Switch Profile* (first action)
+      4. Change *Profile* from *Home* to *Traktor (CT6*)
+      5. Change *Page* to *B - Rmx Deck*
+   4. *C Browser*
+      1. Click *C Browser*
+      2. Click arrow to the right of *3 actions*
+      3. Click *Navigation: Switch Profile* (first action)
+      4. Change *Profile* from *Home* to *Traktor (CT6*)
+      5. Change *Page* to *C - Browser*
+   5. *D Settings*
+      1. Click *D Settings*
+      2. Click arrow to the right of *3 actions*
+      3. Click *Navigation: Switch Profile* (first action)
+      4. Change *Profile* from *Home* to *Traktor (CT6*)
+      5. Change *Page* to *D - Settings*
 
 ## Ableton Live
 
