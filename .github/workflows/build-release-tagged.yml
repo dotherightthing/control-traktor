@@ -55,14 +55,6 @@ jobs:
         overwrite: true
         include-hidden-files: false
 
-    - name: Archive changelog
-      uses: actions/upload-artifact@v4
-      with:
-        name: changelog
-        path: CHANGELOG.md
-        overwrite: true
-        include-hidden-files: false
-
   # The 'release' job starts with a clean directory,
   # we don't check out the repo again
   # instead we download and work with
@@ -93,12 +85,6 @@ jobs:
         name: release
         path: release
 
-    - name: Download changelog from Build
-      if: steps.check-tag.outputs.match == 'true'
-      uses: actions/download-artifact@v4
-      with:
-        name: changelog
-
     - name: Check that artifacts were downloaded as expected
       run: ls -R
 
@@ -113,6 +99,5 @@ jobs:
       uses: yakuhzi/action-release@v1
       with:
         file: release.zip
-        changelog: CHANGELOG.md
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

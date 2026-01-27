@@ -17,9 +17,9 @@ A collection of settings and Max4Live devices for improved control over Traktor 
 
 ## Release
 
-1. Run `npm run changelog`
-2. Tag the latest commit with the message `Bump version`
-3. Push to Github and an action will run to generate a new *Release*
+1. Tag the latest commit with the message `Bump version`
+2. Push to Github and an action will run to generate a new *Release*
+3. Open [the Releases page](https://github.com/dotherightthing/control-traktor/releases) > select the release > edit > Select Previous tag > Generate release notes
 
 ## Screenshots
 
