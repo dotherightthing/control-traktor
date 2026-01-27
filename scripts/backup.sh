@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # File: ./scripts/backup.sh
-# Description: Backup files that are created and managed externally
+# Description: Backup files that are created and managed externall
 #
 # Note:
 # chmod a+x = Change access permissions of this file, to 'e[x]ecutable' for '[a]ll users'
@@ -32,7 +32,10 @@ then
   && echo "Backing up Loopback support files" \
   && cp ~/"Library/Application Support/Loopback/"*.plist                                              "./src/loopback" \
   && echo "Backing up Stream Deck support files" \
-  && cp ~/"Documents/control-traktor/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/"*.xml  "./src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files" \
+  && cp ~/"Documents/control-traktor/streamdeck-xl/icons/app/"*                                       "./submodules/streamdeck-xl/icons/app" \
+  && cp ~/"Documents/control-traktor/streamdeck-xl/icons/button-creator/"*                            "./submodules/streamdeck-xl/icons/button-creator" \
+  && cp ~/"Documents/control-traktor/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/"*.xml  "./submodules/streamdeck-xl/profiles/traktor/plugins/streamdeck-midi-plugin/cycle-files"  \
+  && cp ~/"Documents/control-traktor/streamdeck-xl/profiles/Traktor (CT6).streamDeckProfile"          "./submodules/streamdeck-xl/profiles/traktor" \
   && echo "Backing up Traktor support files" \
   && cp ~/"Documents/Native Instruments/Traktor 3.11.1/CT6 - App Export.tsi"                          "./src/traktor/" \
   && cp ~/"Documents/Native Instruments/Traktor 3.11.1/CT6 - Deck A.tsi"                              "./src/traktor/" \
