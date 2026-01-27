@@ -16,7 +16,7 @@
 set -e
 
 if [ -z "$1" ]; then
-  echo "Please call this script with 'install.sh 3.11.1', where 3.11.1 is the Traktor version"
+  echo "Please call this script with 'install.sh 3.11.1', where 3.11.1 is the folder title at ~/Documents/Native Instruments/Traktor X.XX.X, NOT the Version shown in Traktor > About Traktor"
 fi
 
 # if $GITHUB_ACTIONS does not exist 'then' script is being run locally rather than on CI
