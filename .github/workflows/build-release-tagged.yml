@@ -98,7 +98,7 @@ jobs:
       uses: actions/download-artifact@v4
       with:
         name: changelog
-        path: changelog
+        path: CHANGELOG.md
 
     - name: Check that artifacts were downloaded as expected
       run: ls -R
@@ -114,6 +114,6 @@ jobs:
       uses: yakuhzi/action-release@v1
       with:
         file: release.zip
-        changelog: changelog/CHANGELOG.md
+        changelog: CHANGELOG.md
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
