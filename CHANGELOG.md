@@ -1,4 +1,46 @@
-* [6d7071f] Add link to install script to 'dist' folder
+* [0db6fe3] Fix icon deployment paths
+* [4245e01] Improve backup script
+* [7867bf4] Simplify and document npm scripts
+* [c9ecffd] Document manual fix for corrupted profile page navigation (dotherightthing/streamdeck-xl#1)
+* [6e49fce] In Documents/control-traktor, include shortcuts to other installed files, document
+* [a105a95] Exclude 'source' icons from dist
+* [0f8d888] Document required Traktor version number
+* [33be913] Update submodules
+* [13267f0] Fix creation of Ableton directories
+* [6fa4311] Update submodules
+* [5a23a87] Beautify file
+* [60dff1e] Create ~/"Library/Application Support/Loopback" directory if it doesn't exist
+* [74e081e] Create ~/"Music/Ableton/User Library/Presets/XXX" directories if they don't exist
+* [9934ce5] Document required Traktor version number
+* [7351e01] Create ~/"nativeKONTROL/ClyphX_Pro" directory if it doesn't exist
+* [6748a88] Improve label for X-Control
+* [aacabe0] Reinstate X-Controls from 4602d40, remove X-Controls which are in control-live repository
+* [e9a6fb5] Bome template managed by streamdeck-xl repository
+* [9e1ec0b] Update submodules
+* [6f0cbf5] Add hot cue renaming, slot renaming, master clock tick; Remove pan knob
+* [edc43b0] Documentation
+* [8ea84a9] Move screenshots out of update section
+* [e829864] Export Traktor TSI files
+* [24d693c] Copy icons to Documents folder
+* [ccfa22f] Update submodule from remote
+* [7eb5656] Update streamdeck-xl screenshots
+* [273dc6b] Ignore VS Code file
+* [00eae3b] Add Bome Midi Translator file for Traktor mouse clicks
+* [73ba66e] streamdeck-clicker replaced by Bome
+* [3e86782] Install to ~/Documents rather than ~/Library/Application Support, as only the former is compatible with Stream Deck Midi plugin placeholders
+* [98f135d] Update submodules
+* [469e2b8] streamdeck-clicker replaced by Bome
+* [c491752] Copy icons to dist folder; update submodule paths in cycle files to point to dist folder
+* [275f1a8] Fix link to streamdeck-xl mappings
+* [7dd5744] Update submodules
+* [6fc0aef] Revert target Traktor version from 3.11.17 (app version) to 3.11.1 (app folder name)
+* [d80fdb6] Update X-Controls
+* [ff01f20] Update target Traktor version from 3.11.1 to 3.11.17
+* [bfbbda6] Update submodules
+* [241bc15] Remove traktor-live submodules as v1 buggy and it's just bloating the repo
+* [01d5ed7] Update submodules, update dist paths
+* [abeaab8] Migrate Stream Deck settings to submodule
+* [5609e0c] Add link to install script to 'dist' folder
 * [44716a9] Stream Deck - Replace keyboard icon with download from Font Awesome
 * [11facd1] Stream Deck - Change Select and Save icons in Remix Deck; remove Trigger button
 * [ba166fb] Stream Deck - Add button to generate screenshots of Stream Deck pages
