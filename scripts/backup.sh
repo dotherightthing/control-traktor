@@ -32,8 +32,8 @@ then
   && echo "Backing up Loopback support files" \
   && cp ~/"Library/Application Support/Loopback/"*.plist                                              "./src/loopback" \
   && echo "Backing up Stream Deck support files" \
-  && cp ~/"Documents/control-traktor/streamdeck-xl/icons/app/"*                                       "./submodules/streamdeck-xl/icons/app" \
-  && cp ~/"Documents/control-traktor/streamdeck-xl/icons/button-creator/"*                            "./submodules/streamdeck-xl/icons/button-creator" \
+  && cp -r ~/"Documents/control-traktor/streamdeck-xl/icons/app"                                      "./submodules/streamdeck-xl/icons" \
+  && cp -r ~/"Documents/control-traktor/streamdeck-xl/icons/button-creator"                           "./submodules/streamdeck-xl/icons" \
   && cp ~/"Documents/control-traktor/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/"*.xml  "./submodules/streamdeck-xl/profiles/traktor/plugins/streamdeck-midi-plugin/cycle-files"  \
   && cp ~/"Documents/control-traktor/streamdeck-xl/profiles/Traktor (CT6).streamDeckProfile"          "./submodules/streamdeck-xl/profiles/traktor" \
   && echo "Backing up Traktor support files" \

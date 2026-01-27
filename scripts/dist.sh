@@ -31,8 +31,8 @@ cd "$INIT_CWD" \
 && cp "./src/clyphx-pro/"*                                                                                                   "./dist/clyphx-pro" \
 && cp -r "./src/live/"*                                                                                                      "./dist/live" \
 && cp "./src/loopback/"*.plist                                                                                               "./dist/loopback" \
-&& cp -r "./submodules/streamdeck-xl/icons/app"*                                                                             "./dist/streamdeck-xl/icons/app" \
-&& cp -r "./submodules/streamdeck-xl/icons/button-creator"*                                                                  "./dist/streamdeck-xl/icons/button-creator" \
+&& cp -r "./submodules/streamdeck-xl/icons/app"                                                                              "./dist/streamdeck-xl/icons" \
+&& cp -r "./submodules/streamdeck-xl/icons/button-creator"                                                                   "./dist/streamdeck-xl/icons" \
 && cp "./submodules/streamdeck-xl/profiles/traktor/plugins/streamdeck-midi-plugin/cycle-files/"*                             "./dist/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files" \
 && cp "./submodules/streamdeck-xl/profiles/traktor/Traktor (CT6).streamDeckProfile"                                          "./dist/streamdeck-xl/profiles" \
 && cp "./src/traktor/"*                                                                                                      "./dist/traktor" \
