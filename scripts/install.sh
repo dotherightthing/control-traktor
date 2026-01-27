@@ -42,8 +42,7 @@ then
   && echo "Installing Loopback support files" \
   && cp "./loopback/"*.plist                                               ~/"Library/Application Support/Loopback" \
   && echo "Installing Stream Deck support files" \
-  && cp -r "./streamdeck-xl/icons"/*                                       ~/"Documents/control-traktor/streamdeck-xl/icons" \
-  && cp "./streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/"*.xml ~/"Documents/control-traktor/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files" \
+  && cp -r "./streamdeck-xl"                                               ~/"Documents/control-traktor" \
   && echo "Installing Traktor support files" \
   && cp "./traktor/"*                                                      ~/"Documents/Native Instruments/Traktor $1" \
   && open "./traktor/" \
