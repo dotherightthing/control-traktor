@@ -20,6 +20,8 @@ set -e
 if [ -z "$GITHUB_ACTIONS" ]
 then
   cd "$INIT_CWD" \
+  && echo "Backing up Bome support files" \
+  && cp ~/"Documents/control-traktor/bome-midi-translator-pro"/*                                      "./submodules/streamdeck-xl/profiles/traktor/bome-midi-translator-pro" \
   && echo "Backing up ClyphX Pro support files" \
   && cp ~/"nativeKONTROL/ClyphX_Pro/X-Controls.txt"                                                   "./src/clyphx-pro" \
   && echo "Backing up Live support files" \
