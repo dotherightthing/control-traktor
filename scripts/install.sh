@@ -23,6 +23,7 @@ fi
 if [ -n "$1" ] && [ -z "$GITHUB_ACTIONS" ]
 then
   rm -rf ~/"Documents/control-traktor/" || true \
+  && mkdir -p ~/"Documents/control-traktor/bome-midi-translator-pro" \
   && mkdir -p ~/"Documents/control-traktor/live" \
   && mkdir -p ~/"Documents/control-traktor/streamdeck-xl/icons" \
   && mkdir -p ~/"Documents/control-traktor/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files" \
@@ -30,6 +31,8 @@ then
   && mkdir -p ~/"Music/Ableton/User Library" ~/"Music/Ableton/User Library/Presets" ~/"Music/Ableton/User Library/Presets/Instruments" ~/"Music/Ableton/User Library/Presets/Instruments/Drum Rack" ~/"Music/Ableton/User Library/Presets/Instruments/Instrument Rack" \
   && mkdir -p ~/"Music/Ableton/User Library" ~/"Music/Ableton/User Library/Presets" ~/"Music/Ableton/User Library/Presets/MIDI Effects" ~/"Music/Ableton/User Library/Presets/MIDI Effects/Max MIDI Effect" ~/"Music/Ableton/User Library/Presets/MIDI Effects/Pitch" \
   && mkdir -p ~/"Library/Application Support/Loopback" \
+  && echo "Installing Bome support files" \
+  && cp "./bome-midi-translator-pro/"*.bmtp                                ~/"Documents/control-traktor/bome-midi-translator-pro" \
   && echo "Installing ClyphX Pro support files" \
   && cp "./clyphx-pro/X-Controls.txt"                                      ~/"nativeKONTROL/ClyphX_Pro" \
   && echo "Installing Live support files" \

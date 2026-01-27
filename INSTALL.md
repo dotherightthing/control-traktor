@@ -41,6 +41,8 @@ Note: *~* (tilde) means *Macintosh HD/Users/USERNAME*.
 5. Type `chmod a+x install.sh*` followed by ENTER, to make the installation script executable
 6. Type `./install.sh 3.11.1` followed by ENTER, to run the installation script (note: this refers to the folder title at *~/Documents/Native Instruments/Traktor X.XX.X*, NOT the *Version* shown in *Traktor > About Traktor*)
 7. The installer will open the output folder, **~/Documents/control-traktor**, which contains the following:
+   * **bome-midi-translator-pro**, containing:
+     * *stream-deck-traktor.bmtp* - preset for Bome
    * **ClyphX Pro** - shortcut to *~/nativeKONTROL/ClyphX_Pro*, containing *X-Controls.txt*
    * **live**
      * *CT6.als* - a Live set
@@ -74,17 +76,9 @@ Note: *~* (tilde) means *Macintosh HD/Users/USERNAME*.
 
 ## Manually install the copied controller mappings
 
-### Traktor
+### Bome
 
-Note: *Import Other* always opens in *~/Documents/Native Instruments/Traktor X.XX.X* (which is why *.tsi* files are copied here).
-
-1. Traktor > Settings > Controller Manager > Add > Import TSI > Import Other... > *CT6 - Deck A.tsi*
-2. Traktor > Settings > Controller Manager > Add > Import TSI > Import Other... > *CT6 - Deck B.tsi*
-3. Traktor > Settings > Controller Manager > Add > Import TSI > Import Other... > *CT6 - Global.tsi*
-4. Traktor > Settings > Controller Manager > Add > Import TSI > Import Other... > *CT6 - Korg nanoKEY2.tsi*
-5. Traktor > Settings > Controller Manager > Add > Import TSI > Import Other... > *CT6 - S8.tsi*
-6. Traktor > Settings > Controller Manager > Add > Import TSI > Import Other... > *CT6 - Streamdeck XL.tsi*
-7. Traktor > Settings > Controller Manager > Import > *CT6 - App Export.tsi* - OPTIONAL - this overwrites Traktor configuration settings; select the desired properties to overwrite, I choose all except *Controller Mappings*
+1. *~/Documents/control-traktor/bome-midi-translator-pro/stream-deck-traktor.bmtp* > double-click (to open)
 
 ### Stream Deck XL
 
@@ -116,6 +110,18 @@ Note: *Import Other* always opens in *~/Documents/Native Instruments/Traktor X.X
       3. Click *Navigation: Switch Profile* (first action)
       4. Change *Profile* from *Home* to *Traktor (CT6*)
       5. Change *Page* to *D - Settings*
+
+### Traktor
+
+Note: *Import Other* always opens in *~/Documents/Native Instruments/Traktor X.XX.X* (which is why *.tsi* files are copied here).
+
+1. Traktor > Settings > Controller Manager > Add > Import TSI > Import Other... > *CT6 - Deck A.tsi*
+2. Traktor > Settings > Controller Manager > Add > Import TSI > Import Other... > *CT6 - Deck B.tsi*
+3. Traktor > Settings > Controller Manager > Add > Import TSI > Import Other... > *CT6 - Global.tsi*
+4. Traktor > Settings > Controller Manager > Add > Import TSI > Import Other... > *CT6 - Korg nanoKEY2.tsi*
+5. Traktor > Settings > Controller Manager > Add > Import TSI > Import Other... > *CT6 - S8.tsi*
+6. Traktor > Settings > Controller Manager > Add > Import TSI > Import Other... > *CT6 - Streamdeck XL.tsi*
+7. Traktor > Settings > Controller Manager > Import > *CT6 - App Export.tsi* - OPTIONAL - this overwrites Traktor configuration settings; select the desired properties to overwrite, I choose all except *Controller Mappings*
 
 ## Ableton Live
 
