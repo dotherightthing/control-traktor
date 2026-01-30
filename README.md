@@ -10,10 +10,11 @@ A collection of settings and Max4Live devices for improved control over Traktor 
 
 1. [Install Node and NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 2. `git clone` this repo
-3. Run `npm install` to install dependencies, run the build which outputs to `dist`
+3. Run `npm install` to install dependencies, run the build which outputs to `release`
 4. Run `npm run backup` to overwrite local files with deployed files
-5. Run `npm run reinstall` to recreate `dist` folder
-6. Run `npm run watch` to build as you save file changes
+5. Run `npm run watch` to build and update the release folder as you save file changes
+6. Run `npm run installrelease` to copy the release files to system folders
+7. Run `npm run release:shared` to copy the release to `/Users/Shared/control-traktor/release` for sharing with other users on the same machine
 
 ## Release
 

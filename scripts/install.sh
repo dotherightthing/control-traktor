@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # File: ./scripts/install.sh
-# Description: Copy files from dist folder or downloaded release folder to system folders
+# Description: Copy files from generated or downloaded release folder to system folders
 #
 # Note:
 # chmod a+x = Change access permissions of this file, to 'e[x]ecutable' for '[a]ll users'
