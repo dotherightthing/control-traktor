@@ -20,4 +20,5 @@ cd "$INIT_CWD" \
 && mkdir -p /Users/Shared/control-traktor \
 && rm -rf /Users/Shared/control-traktor/release || true \
 && cp -r ./release /Users/Shared/control-traktor/release \
+&& open "/Users/Shared/control-traktor/release" \
 && echo "Copy complete."
