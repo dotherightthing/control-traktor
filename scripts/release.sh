@@ -30,7 +30,6 @@ cd "$INIT_CWD" \
 && mkdir -p "release/streamdeck-xl/profiles" \
 && mkdir "release/traktor" \
 && cp "./scripts/install.sh"*                                                                                                "./release" \
-&& chmod a+x "./release/install.sh" \
 && cp -r "./src/automator/Launch Traktor.app"                                                                                "./release/automator" \
 && cp "./src/clyphx-pro/"*                                                                                                   "./release/clyphx-pro" \
 && cp -r "./src/live/"*                                                                                                      "./release/live" \
