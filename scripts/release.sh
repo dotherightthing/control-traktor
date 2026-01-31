@@ -31,7 +31,7 @@ cd "$INIT_CWD" \
 && mkdir "release/traktor" \
 && cp "./scripts/install.sh"*                                                                                                "./release" \
 && chmod a+x "./release/install.sh" \
-&& cp "./src/automator/"*                                                                                                    "./release/automator" \
+&& cp -r "./src/automator/Launch Traktor.app"                                                                                "./release/automator" \
 && cp "./src/clyphx-pro/"*                                                                                                   "./release/clyphx-pro" \
 && cp -r "./src/live/"*                                                                                                      "./release/live" \
 && cp "./src/loopback/"*.plist                                                                                               "./release/loopback" \
