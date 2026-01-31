@@ -18,5 +18,6 @@ set -e
 cd "$INIT_CWD" \
 && echo "Copying ./release to /Users/Shared/control-traktor/release" \
 && mkdir -p /Users/Shared/control-traktor \
+&& rm -rf /Users/Shared/control-traktor/release || true \
 && cp -r ./release /Users/Shared/control-traktor/release \
 && echo "Copy complete."
