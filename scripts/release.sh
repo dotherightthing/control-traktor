@@ -40,4 +40,6 @@ cd "$INIT_CWD" \
 && cp "./submodules/streamdeck-xl/profiles/traktor/bome-midi-translator-pro/stream-deck-traktor.bmtp"                        "./release/bome-midi-translator-pro" \
 && cp "./submodules/streamdeck-xl/profiles/traktor/Traktor (CT6).streamDeckProfile"                                          "./release/streamdeck-xl/profiles" \
 && cp "./src/traktor/"*                                                                                                      "./release/traktor" \
-&& echo "Please read installation instructions at https://github.com/dotherightthing/control-traktor/blob/main/INSTALL.md." > ./release/README.txt
+&& cd "./release" \
+&& touch .gitkeep \
+&& echo "Thanks for using Control Traktor! Please read the installation instructions at https://github.com/dotherightthing/control-traktor/blob/main/INSTALL.md" > ./README.txt

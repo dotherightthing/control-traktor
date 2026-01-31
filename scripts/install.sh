@@ -46,6 +46,8 @@ then
   && cp "./live/MIDI Effects/Pitch/CT6 Live to Traktor.adv"                ~/"Music/Ableton/User Library/Presets/MIDI Effects/Pitch" \
   && echo "Installing Loopback support files" \
   && cp "./loopback/"*.plist                                               ~/"Library/Application Support/Loopback" \
+  && echo "Installing README file" \
+  && cp -r "./README.txt"                                                  ~/"Documents/control-traktor" \
   && echo "Installing Stream Deck support files" \
   && cp -r "./streamdeck-xl"                                               ~/"Documents/control-traktor" \
   && echo "Installing Traktor support files" \
