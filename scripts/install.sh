@@ -23,6 +23,7 @@ fi
 if [ -n "$1" ] && [ -z "$GITHUB_ACTIONS" ]
 then
   rm -rf ~/"Documents/control-traktor/" || true \
+  && mkdir -p ~/"Documents/control-traktor/automator" \
   && mkdir -p ~/"Documents/control-traktor/bome-midi-translator-pro" \
   && mkdir -p ~/"Documents/control-traktor/live" \
   && mkdir -p ~/"Documents/control-traktor/streamdeck-xl/icons" \
@@ -32,7 +33,7 @@ then
   && mkdir -p ~/"Music/Ableton/User Library" ~/"Music/Ableton/User Library/Presets" ~/"Music/Ableton/User Library/Presets/MIDI Effects" ~/"Music/Ableton/User Library/Presets/MIDI Effects/Max MIDI Effect" ~/"Music/Ableton/User Library/Presets/MIDI Effects/Pitch" \
   && mkdir -p ~/"Library/Application Support/Loopback" \
   && echo "Installing Automator app" \
-  && cp -r "./automator/Launch Traktor.app"                                "/Applications" \
+  && cp -r "./automator/Launch Traktor.app"                                ~/"Documents/control-traktor/automator" \
   && echo "Installing Bome support files" \
   && cp "./bome-midi-translator-pro/"*.bmtp                                ~/"Documents/control-traktor/bome-midi-translator-pro" \
   && echo "Installing ClyphX Pro support files" \
@@ -53,7 +54,6 @@ then
   && echo "Installing Traktor support files" \
   && cp "./traktor/"*                                                      ~/"Documents/Native Instruments/Traktor $1" \
   && cd ~/"Documents/control-traktor" \
-  && ln -s "/Applications/Launch Traktor.app"                              "Launch Traktor.app" \
   && ln -s ~/"Documents/Native Instruments/Traktor $1" \
   && ln -s ~/"Library/Application Support/Loopback" \
   && ln -s ~/"nativeKONTROL/ClyphX_Pro"                                    "ClyphX Pro" \

@@ -22,7 +22,7 @@ I run two user accounts on my MacBook Pro - a developer user and a creative user
 
 When fast-switching between these users, [NIHardwareAgent doesn't activate the S8's screens when it was already started by another user on the same machine](https://github.com/dotherightthing/control-traktor/issues/69).
 
-To resolve this, use *Launch Traktor.app* to launch Traktor Pro. This is installed into */Applications* via `npm run release:install`.
+To resolve this, use *automator/Launch Traktor.app* to launch Traktor Pro.
 
 ## Release
 
