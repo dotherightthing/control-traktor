@@ -52,7 +52,6 @@ then
   && cp "./traktor/"*                                                      ~/"Documents/Native Instruments/Traktor $1" \
   && ln -s "/Applications/Launch Traktor.app"                              "Launch Traktor.app" \
   && ln -s ~/"Documents/Native Instruments/Traktor $1" \
-  && ln -s ~/"Documents/Native Instruments/Traktor $1" \
   && ln -s ~/"Library/Application Support/Loopback" \
   && ln -s ~/"nativeKONTROL/ClyphX_Pro"                                    "ClyphX Pro" \
   && cd ~/"Documents/control-traktor/live" \
