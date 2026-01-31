@@ -21,4 +21,4 @@ cd "$INIT_CWD" \
 && rm -rf /Users/Shared/control-traktor/release || true \
 && cp -r ./release /Users/Shared/control-traktor/release \
 && open "/Users/Shared/control-traktor/release" \
-&& echo "Copy complete."
+&& echo "Copy complete. Please ask other users to install from /Users/Shared/control-traktor/release"
