@@ -50,6 +50,8 @@ then
   && cp -r "./streamdeck-xl"                                               ~/"Documents/control-traktor" \
   && echo "Installing Traktor support files" \
   && cp "./traktor/"*                                                      ~/"Documents/Native Instruments/Traktor $1" \
+  && ls -l \
+  && cd ~/"Documents/control-traktor" \
   && ln -s "/Applications/Launch Traktor.app"                              "Launch Traktor.app" \
   && ln -s ~/"Documents/Native Instruments/Traktor $1" \
   && ln -s ~/"Library/Application Support/Loopback" \
