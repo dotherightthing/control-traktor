@@ -28,9 +28,7 @@ To resolve this issue, **for each user** create an Automator app to run instead 
 1. New document > Application > Choose
 1. Search for 'Run Applescript' in Actions > Double-click / Drag to right-hand pane
 1. Replace `(* Your script goes here *)` with the following:
-   * `if length of (do shell script "pgrep NIHardwareAgent") > 0 then`
-   * `do shell script "sudo killall NIHardwareAgent" with administrator privileges`
-   * `end if`
+   * TODO - see [Create an Automator app to kill any NIHardwareAgents that are running before starting Traktor](https://github.com/dotherightthing/control-traktor/issues/70)
 1. Search for 'Launch Application' in Actions > Double-click / Drag to right-hand pane
 1. Choose Other, then browse to Traktor.app
 1. File > Save > /User/Applications > Launch Traktor.app
