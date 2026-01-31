@@ -13,8 +13,8 @@ A collection of settings and Max4Live devices for improved control over Traktor 
 3. Run `npm install` to install dependencies, run the build which outputs to `release`
 4. Run `npm run backup` to overwrite local files with deployed files
 5. Run `npm run watch` to build and update the release folder as you save file changes
-6. Run `npm run installrelease` to copy the release files to system folders
-7. Run `npm run release:shared` to copy the release to `/Users/Shared/control-traktor/release` for sharing with other users on the same machine
+6. Run `npm run release:install` to generate the release folder and copy the contents to system folders
+7. Run `npm run release:share` to generate the release folder and copy it to `/Users/Shared/control-traktor/release` for sharing with other users on the same machine
 
 ### Supporting several macOS users
 
@@ -22,7 +22,7 @@ I run two user accounts on my MacBook Pro - a developer user and a creative user
 
 When fast-switching between these users, [NIHardwareAgent doesn't activate the S8's screens when it was already started by another user on the same machine](https://github.com/dotherightthing/control-traktor/issues/69).
 
-To resolve this, use *Launch Traktor.app* to launch Traktor Pro. This is installed into */Applications* via `npm run installrelease`.
+To resolve this, use *Launch Traktor.app* to launch Traktor Pro. This is installed into */Applications* via `npm run release:install`.
 
 ## Release
 
