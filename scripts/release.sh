@@ -19,6 +19,7 @@ cd "$INIT_CWD" \
 && echo "Recreating release folder" \
 && rm -rf release && mkdir release \
 && echo "Copying files from ./src to ./release" \
+&& mkdir "release/automator" \
 && mkdir "release/clyphx-pro" \
 && mkdir "release/bome-midi-translator-pro" \
 && mkdir "release/live" \
@@ -30,6 +31,7 @@ cd "$INIT_CWD" \
 && mkdir "release/traktor" \
 && cp "./scripts/install.sh"*                                                                                                "./release" \
 && chmod a+x "./release/install.sh" \
+&& cp "./src/automator/"*                                                                                                    "./release/automator" \
 && cp "./src/clyphx-pro/"*                                                                                                   "./release/clyphx-pro" \
 && cp -r "./src/live/"*                                                                                                      "./release/live" \
 && cp "./src/loopback/"*.plist                                                                                               "./release/loopback" \

@@ -22,38 +22,7 @@ I run two user accounts on my MacBook Pro - a developer user and a creative user
 
 When fast-switching between these users, [NIHardwareAgent doesn't activate the S8's screens when it was already started by another user on the same machine](https://github.com/dotherightthing/control-traktor/issues/69).
 
-To resolve this issue, **for each user** create an Automator app to run instead of *Traktor.app*.
-
-1. Open Automator
-1. New document > Application > Choose
-1. Search for 'Run Applescript' in Actions > Double-click / Drag to right-hand pane
-1. Replace `(* Your script goes here *)` with the *NIHardwareAgents detection script* below
-1. Search for 'Launch Application' in Actions > Double-click / Drag to right-hand pane
-1. Choose Other, then browse to Traktor.app
-1. File > Save > /User/Applications > Launch Traktor.app
-
-```applescript
--- NIHardwareAgents detection script
-on run {input, parameters}
-
-   try
-      set NIHardwareAgents to do shell script "pgrep NIHardwareAgent"
-   on error errMsg number errNum
-      set NIHardwareAgents to {}
-   end try
-
-   if length of NIHardwareAgents > 0 then
-      do shell script "sudo killall NIHardwareAgent" with administrator privileges
-   end if
-
-end run
-```
-
-In future, launch Traktor via *Launch Traktor.app* rather than *Traktor.app*.
-
-This app will quit any existing *NIHardwareAgent*s before starting *Traktor Pro* as normal.
-
-You will be prompted for your user password. This is required to run the `killall` command as a superuser (`sudo`) in order to kill processes running under both this user and any other users.
+To resolve this, use *Launch Traktor.app* to launch Traktor Pro. This is installed into */Applications* via `npm run installrelease`.
 
 ## Release
 

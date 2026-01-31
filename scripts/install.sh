@@ -31,6 +31,8 @@ then
   && mkdir -p ~/"Music/Ableton/User Library" ~/"Music/Ableton/User Library/Presets" ~/"Music/Ableton/User Library/Presets/Instruments" ~/"Music/Ableton/User Library/Presets/Instruments/Drum Rack" ~/"Music/Ableton/User Library/Presets/Instruments/Instrument Rack" \
   && mkdir -p ~/"Music/Ableton/User Library" ~/"Music/Ableton/User Library/Presets" ~/"Music/Ableton/User Library/Presets/MIDI Effects" ~/"Music/Ableton/User Library/Presets/MIDI Effects/Max MIDI Effect" ~/"Music/Ableton/User Library/Presets/MIDI Effects/Pitch" \
   && mkdir -p ~/"Library/Application Support/Loopback" \
+  && echo "Installing Automator app" \
+  && cp -r "./automator/Launch Traktor.app"                                "/Applications" \
   && echo "Installing Bome support files" \
   && cp "./bome-midi-translator-pro/"*.bmtp                                ~/"Documents/control-traktor/bome-midi-translator-pro" \
   && echo "Installing ClyphX Pro support files" \
@@ -48,10 +50,11 @@ then
   && cp -r "./streamdeck-xl"                                               ~/"Documents/control-traktor" \
   && echo "Installing Traktor support files" \
   && cp "./traktor/"*                                                      ~/"Documents/Native Instruments/Traktor $1" \
-  && cd ~/"Documents/control-traktor" \
+  && ln -s "/Applications/Launch Traktor.app"                              "Launch Traktor.app" \
+  && ln -s ~/"Documents/Native Instruments/Traktor $1" \
   && ln -s ~/"Documents/Native Instruments/Traktor $1" \
   && ln -s ~/"Library/Application Support/Loopback" \
-  && ln -s ~/"nativeKONTROL/ClyphX_Pro" "ClyphX Pro" \
+  && ln -s ~/"nativeKONTROL/ClyphX_Pro"                                    "ClyphX Pro" \
   && cd ~/"Documents/control-traktor/live" \
   && ln -s ~/"Music/Ableton/User Library/Presets/Instruments/Drum Rack" "Live Presets - Drum Rack" \
   && ln -s ~/"Music/Ableton/User Library/Presets/Instruments/Instrument Rack" "Live Presets - Instrument Rack" \

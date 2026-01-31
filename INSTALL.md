@@ -43,6 +43,7 @@ Note: *~* (tilde) means *Macintosh HD/Users/USERNAME*.
    * **bome-midi-translator-pro**, containing:
      * *stream-deck-traktor.bmtp* - preset for Bome
    * **ClyphX Pro** - shortcut to *~/nativeKONTROL/ClyphX_Pro*, containing *X-Controls.txt*
+   * **Launch Traktor.app** - kills any *NIHardwareAgent* processes before launching Traktor as usual (see [#69](https://github.com/dotherightthing/control-traktor/issues/69)). Note that you will be prompted for your user password. This is required to run the `killall` command as a superuser (`sudo`) in order to kill processes running under both this user and any other users.
    * **live**
      * *CT6.als* - a Live set
      * *Live Presets - Drum Rack* - shortcut to *~/Music/Ableton/User Library/Presets/Instruments/Drum Rack*, containing:
