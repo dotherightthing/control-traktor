@@ -16,6 +16,32 @@ A collection of settings and Max4Live devices for improved control over Traktor 
 6. Run `npm run installrelease` to copy the release files to system folders
 7. Run `npm run release:shared` to copy the release to `/Users/Shared/control-traktor/release` for sharing with other users on the same machine
 
+### Supporting several macOS users
+
+I run two user accounts on my MacBook Pro - a developer user and a creative user.
+
+When fast-switching between these users, [NIHardwareAgent doesn't activate the S8's screens when it was already started by another user on the same machine](https://github.com/dotherightthing/control-traktor/issues/69).
+
+To resolve this issue, **for each user** create an Automator app to run instead of *Traktor.app*.
+
+1. Open Automator
+1. New document > Application > Choose
+1. Search for 'Run Applescript' in Actions > Double-click / Drag to right-hand pane
+1. Replace `(* Your script goes here *)` with the following:
+   * `if length of (do shell script "pgrep NIHardwareAgent") > 0 then`
+   * `do shell script "sudo killall NIHardwareAgent" with administrator privileges`
+   * `end if`
+1. Search for 'Launch Application' in Actions > Double-click / Drag to right-hand pane
+1. Choose Other, then browse to Traktor.app
+1. File > Save > /User/Applications > Launch Traktor.app
+1. Right-click Traktor launcher.app > 
+
+In future, launch Traktor via *Traktor launcher.app* rather than *Traktor.app*.
+
+This app will quit any existing *NIHardwareAgent*s before starting *Traktor Pro* as normal.
+
+You will be prompted for your user password. This is required to run the embedded `sudo` command, in order to kill processes running under other users.
+
 ## Release
 
 1. Update the `version` in package.json
