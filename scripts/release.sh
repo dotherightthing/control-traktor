@@ -20,7 +20,7 @@ cd "$INIT_CWD" \
 && rm -rf release && mkdir release \
 && echo "Copying files from ./src to ./release" \
 && mkdir "release/automator" \
-&& mkdir "release/clyphx-pro" \
+&& mkdir -p "release/clyphx-pro/XTB" \
 && mkdir "release/bome-midi-translator-pro" \
 && mkdir "release/live" \
 && mkdir "release/loopback" \
@@ -31,8 +31,8 @@ cd "$INIT_CWD" \
 && mkdir "release/traktor" \
 && cp "./scripts/install.sh"*                                                                                                "./release" \
 && cp -r "./src/automator/Launch Traktor.app"                                                                                "./release/automator" \
-&& cp "./src/clyphx-pro/"*                                                                                                   "./release/clyphx-pro" \
 && cp       "./src/bome-midi-translator-pro/stream-deck-traktor.bmtp"          "./release/bome-midi-translator-pro" \
+&& cp       "./src/clyphx-pro/XTB/"*                                           "./release/clyphx-pro/XTB" \
 && cp -r "./src/live/"*                                                                                                      "./release/live" \
 && cp "./src/loopback/"*.plist                                                                                               "./release/loopback" \
 && cp       "./src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/"* "./release/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files" \

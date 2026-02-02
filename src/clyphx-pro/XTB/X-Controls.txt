@@ -73,7 +73,7 @@
 
 # --------------------------------------------------------------------------------------
 
-# Controls for Streamdeck XL
+# XTB - Stream Deck XL for control-traktor (MIDI Channel 10, IAC Driver StreamdeckToDaw)
 #
 # Live > Settings > MIDI
 # - Control Surface: ClyphX Pro
@@ -83,9 +83,12 @@
 # NAME = TYPE, CHANNEL, NOTE_OR_CC, OFF_LED, ON_LED, ON_ACTION_LIST
 # CC 16 4 is a freely mappable button
 #
-# ********** AFTER UPDATING RUN: NPM RUN BUILD **********
+# ********* ONLY EDIT THIS FILE VIA THE CONTROL-TRAKTOR REPOSITORY **********
 
-# Controls for Streamdeck XL
-# Using IAC Driver StreamdeckToDaw
-
-DELETE_NOTES_IN_SELECTED_CLIP = CC, 10, 67, 127, 0, SEL/CLIP NOTES DEL ; SEL/CLIP ENVCLR ; SEL/DEV VAR 1 ; SEL/DEV VARRECALL ; MSG "EMPTIED CLIP" ; PUSH MSG "EMPTIED CLIP"
+DELETE_NOTES_IN_SELECTED_CLIP = CC, 10, 67, 127, 0,
+ SEL/CLIP NOTES DEL;
+ SEL/CLIP ENVCLR;
+ SEL/DEV VAR 1;
+ SEL/DEV VARRECALL;
+ MSG "EMPTIED CLIP";
+ PUSH MSG "EMPTIED CLIP"
