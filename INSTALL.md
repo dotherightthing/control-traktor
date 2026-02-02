@@ -60,8 +60,6 @@ Note: *~* (tilde) means *Macintosh HD/Users/USERNAME*.
         * *Devices.plist*
         * *RecentApps.plist*
    * **streamdeck-xl**
-     * *actions*, containing:
-        * select individual actions required for fixing issues in *Traktor (CT6).streamDeckProfile*
      * *icons*, containing:
         * various icons used by *Traktor (CT6).streamDeckProfile*
      * *plugins*, containing:
