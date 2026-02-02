@@ -3,8 +3,8 @@
 ## System requirements
 
 * macOS (tested on *Sonoma 14.7.1*)
-* Traktor Pro (tested on *Traktor 3.11*)
 * Terminal (to run installation script)
+* Traktor Pro (tested on *Traktor 3.11*)
 
 ### For S8 controls
 
