@@ -15,8 +15,8 @@
 # v: print shell input lines as they are read (including all comments!)
 set -e
 
-cd "$INIT_CWD" \
-&& echo "Recreating release folder" \
+cd          "$INIT_CWD" \
+&& echo     "Recreating release folder" \
 && rm -rf    release && mkdir release \
 && echo     "Copying files from ./src to ./release" \
 && mkdir    "release/automator" \

@@ -19,32 +19,32 @@ set -e
 # if $GITHUB_ACTIONS does not exist 'then' script is being run locally rather than on CI
 if [ -z "$GITHUB_ACTIONS" ]
 then
-  cd "$INIT_CWD" \
-  && echo "Backing up Bome support files" \
+  cd       "$INIT_CWD" \
+  && echo  "Backing up Bome support files" \
   && cp    ~/"Documents/control-traktor/bome-midi-translator-pro"/*                                      "./src/bome-midi-translator-pro" \
-  && echo "Backing up ClyphX Pro support files" \
-  && cp ~/"nativeKONTROL/ClyphX_Pro/X-Controls.txt"                                                   "./src/clyphx-pro" \
-  && echo "Backing up Live support files" \
-  && cp ~/"Documents/control-traktor/live/CT6.als"                                                    "./src/live" \
-  && cp ~/"Music/Ableton/User Library/Presets/Instruments/Drum Rack/CT6 Seq Pads.adg"                 "./src/live/Instruments/Drum Rack" 2>/dev/null || : \
-  && cp ~/"Music/Ableton/User Library/Presets/Instruments/Instrument Rack/CT6 Rack.adg"               "./src/live/Instruments/Instrument Rack" 2>/dev/null || : \
-  && cp ~/"Music/Ableton/User Library/Presets/MIDI Effects/Max MIDI Effect/CT6 Params.adv"            "./src/live/MIDI Effects/Max MIDI Effect" 2>/dev/null || : \
-  && cp ~/"Music/Ableton/User Library/Presets/MIDI Effects/Max MIDI Effect/CT6 Params.amxd"           "./src/live/MIDI Effects/Max MIDI Effect" 2>/dev/null || : \
-  && cp ~/"Music/Ableton/User Library/Presets/MIDI Effects/Pitch/CT6 Live to Traktor.adv"             "./src/live/MIDI Effects/Pitch" 2>/dev/null || : \
-  && echo "Backing up Loopback support files" \
-  && cp ~/"Library/Application Support/Loopback/"*.plist                                              "./src/loopback" \
-  && echo "Backing up Stream Deck support files" \
+  && echo  "Backing up ClyphX Pro support files" \
+  && cp    ~/"nativeKONTROL/ClyphX_Pro/X-Controls.txt"                                                   "./src/clyphx-pro" \
+  && echo  "Backing up Live support files" \
+  && cp    ~/"Documents/control-traktor/live/CT6.als"                                                    "./src/live" \
+  && cp    ~/"Music/Ableton/User Library/Presets/Instruments/Drum Rack/CT6 Seq Pads.adg"                 "./src/live/Instruments/Drum Rack" 2>/dev/null || : \
+  && cp    ~/"Music/Ableton/User Library/Presets/Instruments/Instrument Rack/CT6 Rack.adg"               "./src/live/Instruments/Instrument Rack" 2>/dev/null || : \
+  && cp    ~/"Music/Ableton/User Library/Presets/MIDI Effects/Max MIDI Effect/CT6 Params.adv"            "./src/live/MIDI Effects/Max MIDI Effect" 2>/dev/null || : \
+  && cp    ~/"Music/Ableton/User Library/Presets/MIDI Effects/Max MIDI Effect/CT6 Params.amxd"           "./src/live/MIDI Effects/Max MIDI Effect" 2>/dev/null || : \
+  && cp    ~/"Music/Ableton/User Library/Presets/MIDI Effects/Pitch/CT6 Live to Traktor.adv"             "./src/live/MIDI Effects/Pitch" 2>/dev/null || : \
+  && echo  "Backing up Loopback support files" \
+  && cp    ~/"Library/Application Support/Loopback/"*.plist                                              "./src/loopback" \
+  && echo  "Backing up Stream Deck support files" \
   && cp -r ~/"Documents/control-traktor/streamdeck-xl/icons/app"                                      "./submodules/streamdeck-xl/icons" \
   && cp -r ~/"Documents/control-traktor/streamdeck-xl/icons/button-creator"                           "./submodules/streamdeck-xl/icons" \
   && cp    ~/"Documents/control-traktor/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/"*.xml  "./src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files"  \
   && cp    ~/"Documents/control-traktor/streamdeck-xl/profiles/Traktor (CT6).streamDeckProfile"          "./src/streamdeck-xl/profiles/traktor" \
-  && echo "Backing up Traktor support files" \
-  && cp ~/"Documents/Native Instruments/Traktor 3.11.1/CT6 - App Export.tsi"                          "./src/traktor/" \
-  && cp ~/"Documents/Native Instruments/Traktor 3.11.1/CT6 - Deck A.tsi"                              "./src/traktor/" \
-  && cp ~/"Documents/Native Instruments/Traktor 3.11.1/CT6 - Deck B.tsi"                              "./src/traktor/" \
-  && cp ~/"Documents/Native Instruments/Traktor 3.11.1/CT6 - Global.tsi"                              "./src/traktor/" \
-  && cp ~/"Documents/Native Instruments/Traktor 3.11.1/CT6 - Korg nanoKEY2.tsi"                       "./src/traktor/" \
-  && cp ~/"Documents/Native Instruments/Traktor 3.11.1/CT6 - S8.tsi"                                  "./src/traktor/" \
-  && cp ~/"Documents/Native Instruments/Traktor 3.11.1/CT6 - Streamdeck XL.tsi"                       "./src/traktor/" \
-  && echo "Backup tasks complete"
+  && echo  "Backing up Traktor support files" \
+  && cp    ~/"Documents/Native Instruments/Traktor 3.11.1/CT6 - App Export.tsi"                          "./src/traktor/" \
+  && cp    ~/"Documents/Native Instruments/Traktor 3.11.1/CT6 - Deck A.tsi"                              "./src/traktor/" \
+  && cp    ~/"Documents/Native Instruments/Traktor 3.11.1/CT6 - Deck B.tsi"                              "./src/traktor/" \
+  && cp    ~/"Documents/Native Instruments/Traktor 3.11.1/CT6 - Global.tsi"                              "./src/traktor/" \
+  && cp    ~/"Documents/Native Instruments/Traktor 3.11.1/CT6 - Korg nanoKEY2.tsi"                       "./src/traktor/" \
+  && cp    ~/"Documents/Native Instruments/Traktor 3.11.1/CT6 - S8.tsi"                                  "./src/traktor/" \
+  && cp    ~/"Documents/Native Instruments/Traktor 3.11.1/CT6 - Streamdeck XL.tsi"                       "./src/traktor/" \
+  && echo  "Backup tasks complete"
 fi
