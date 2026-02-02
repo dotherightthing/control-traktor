@@ -38,8 +38,8 @@ cd          "$INIT_CWD" \
 && cp       "./src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/"* "./release/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files" \
 && cp       "./src/streamdeck-xl/profiles/"*                                   "./release/streamdeck-xl/profiles" \
 && cp       "./src/traktor/"*                                                  "./release/traktor" \
-&& cp -r    "./submodules/streamdeck-xl/icons/app"                             "./release/streamdeck-xl/icons" \
-&& cp -r    "./submodules/streamdeck-xl/icons/button-creator"                  "./release/streamdeck-xl/icons" \
+&& cp -r    "./src/streamdeck-xl/icons/app"                                    "./release/streamdeck-xl/icons" \
+&& cp -r    "./src/streamdeck-xl/icons/button-creator"                         "./release/streamdeck-xl/icons" \
 && cd       "./release" \
 && touch     .gitkeep \
 && echo     "Thanks for using Control Traktor! Please read the installation instructions at https://github.com/dotherightthing/control-traktor/blob/main/INSTALL.md" > ./README.txt
