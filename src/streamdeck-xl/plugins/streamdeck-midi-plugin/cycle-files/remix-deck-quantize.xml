@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MidiSteps version="1.1">
+  <Default send="yes" receive="yes" display="" image="" displayonsend="yes" useclosestvalueonreceive="yes"/>
+  <StepValues>
+    <Step value="0" display="1/4 beat"/>
+    <Step value="18" display="1/2 beat"/>
+    <Step value="36" display="1 beat"/>
+    <Step value="54" display="2 beats"/>
+    <Step value="72" display="4 beats"/>
+    <Step value="90" display="8 beats"/>
+    <Step value="108" display="16 beats"/>
+    <Step value="127" display="32 beats"/>
+  </StepValues>
+</MidiSteps>

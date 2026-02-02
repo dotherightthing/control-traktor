@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MidiSteps version="1.1">
+  <Default send="no" receive="yes" display="" image="" displayonsend="yes" useclosestvalueonreceive="yes"/>
+  <StepValues>
+    <Step value="0" display="Deck A"/>
+    <Step value="42" display="Deck B"/>
+    <Step value="84" display="Deck D"/>
+    <Step value="127" display="Loop Rec"/>
+  </StepValues>
+</MidiSteps>

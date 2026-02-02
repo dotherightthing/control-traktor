@@ -21,7 +21,7 @@ if [ -z "$GITHUB_ACTIONS" ]
 then
   cd "$INIT_CWD" \
   && echo "Backing up Bome support files" \
-  && cp ~/"Documents/control-traktor/bome-midi-translator-pro"/*                                      "./submodules/streamdeck-xl/profiles/traktor/bome-midi-translator-pro" \
+  && cp    ~/"Documents/control-traktor/bome-midi-translator-pro"/*                                      "./src/bome-midi-translator-pro" \
   && echo "Backing up ClyphX Pro support files" \
   && cp ~/"nativeKONTROL/ClyphX_Pro/X-Controls.txt"                                                   "./src/clyphx-pro" \
   && echo "Backing up Live support files" \
@@ -36,8 +36,8 @@ then
   && echo "Backing up Stream Deck support files" \
   && cp -r ~/"Documents/control-traktor/streamdeck-xl/icons/app"                                      "./submodules/streamdeck-xl/icons" \
   && cp -r ~/"Documents/control-traktor/streamdeck-xl/icons/button-creator"                           "./submodules/streamdeck-xl/icons" \
-  && cp ~/"Documents/control-traktor/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/"*.xml  "./submodules/streamdeck-xl/profiles/traktor/plugins/streamdeck-midi-plugin/cycle-files"  \
-  && cp ~/"Documents/control-traktor/streamdeck-xl/profiles/Traktor (CT6).streamDeckProfile"          "./submodules/streamdeck-xl/profiles/traktor" \
+  && cp    ~/"Documents/control-traktor/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/"*.xml  "./src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files"  \
+  && cp    ~/"Documents/control-traktor/streamdeck-xl/profiles/Traktor (CT6).streamDeckProfile"          "./src/streamdeck-xl/profiles/traktor" \
   && echo "Backing up Traktor support files" \
   && cp ~/"Documents/Native Instruments/Traktor 3.11.1/CT6 - App Export.tsi"                          "./src/traktor/" \
   && cp ~/"Documents/Native Instruments/Traktor 3.11.1/CT6 - Deck A.tsi"                              "./src/traktor/" \
