@@ -42,7 +42,7 @@
     "ext": "js,amxd,txt",
     "exec": "npm run release",
     "watch": [
-      "src/clyphx-pro"
+      "src"
     ]
   }
 }
