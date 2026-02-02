@@ -26,8 +26,7 @@ then
   && mkdir -p ~/"Documents/control-traktor/automator" \
   && mkdir -p ~/"Documents/control-traktor/bome-midi-translator-pro" \
   && mkdir -p ~/"Documents/control-traktor/live" \
-  && mkdir -p ~/"Documents/control-traktor/streamdeck-xl/icons" \
-  && mkdir -p ~/"Documents/control-traktor/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files" \
+  && mkdir -p ~/"Documents/control-traktor/streamdeck-xl" \
   && mkdir -p ~/"Library/Application Support/Loopback" \
   && mkdir -p ~/"Music/Ableton/User Library/Presets/Instruments/Drum Rack" \
   && mkdir -p ~/"Music/Ableton/User Library/Presets/Instruments/Instrument Rack" \
