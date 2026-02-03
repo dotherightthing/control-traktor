@@ -22,7 +22,7 @@ A - Decks/Rec - Row 1 Col 3,Ruler,"src/streamdeck-xl/icons/button-creator/ruler.
 4 beats,
 8 beats,
 16 beats,
-32 beats",5,Set the size of the loop,10,60,Cycle,-,Various (XML Cycle file),Traktor Virtual Input,Traktor Virtual Output,Sets/Displays Traktor's 'Loop Size Selector',"src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/loop-size.xml,
+32 beats",5,Set the size of the loop,10,30,Cycle,-,Various (XML Cycle file),Traktor Virtual Input,Traktor Virtual Output,Sets/Displays Traktor's 'Loop Size Selector',"src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/loop-size.xml,
 src/traktor/CT6 - Streamdeck XL.tsi"
 A - Decks/Rec - Row 1 Col 4,Arrow Left and Right Text Vertical,src/streamdeck-xl/icons/button-creator/arrow.left.and.right.text.vertical.png,"xFine,
 Fine,
