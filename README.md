@@ -39,7 +39,7 @@ See <https://github.com/dotherightthing/control-traktor/releases>.
 
 Screenshots are of the Stream Deck XL templates.
 
-Mappings are documented in [CT6.streamDeckProfile.mappings.csv](./src/streamdeck-xl/profiles/CT6.streamDeckProfile.mappings.csv).
+Mappings are documented in [CT6.streamDeckProfile.mappings.csv](./src/streamdeck-xl/profiles/Traktor%20(CT6)%2EstreamDeckProfile.mappings.csv).
 
 ![Screenshot of Stream Deck - Page 1.](./screenshots/stream-deck-page-1.png)
 ![Screenshot of Stream Deck - Page 2.](./screenshots/stream-deck-page-2.png)
