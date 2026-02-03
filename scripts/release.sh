@@ -33,7 +33,7 @@ cd          "$INIT_CWD" \
 && cp -r    "./src/automator/Launch Traktor.app"                               "./release/automator" \
 && cp       "./src/bome-midi-translator-pro/stream-deck-traktor.bmtp"          "./release/bome-midi-translator-pro" \
 && cp       "./src/clyphx-pro/XTB/"*                                           "./release/clyphx-pro/XTB" \
-&& cp -r    "./src/live/"*                                                     "./release/live" \
+&& cp -r    "./src/live"                                                       "./release" \
 && cp       "./src/loopback/"*.plist                                           "./release/loopback" \
 && cp       "./src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/"* "./release/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files" \
 && cp       "./src/streamdeck-xl/profiles/"*                                   "./release/streamdeck-xl/profiles" \

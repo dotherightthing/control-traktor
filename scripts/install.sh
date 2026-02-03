@@ -40,7 +40,7 @@ then
   && echo     "Installing ClyphX Pro support files" \
   && cp       "./clyphx-pro/XTB/X-Controls.txt"                     ~/"nativeKONTROL/ClyphX_Pro/XTB" \
   && echo     "Installing Live support files" \
-  && cp       "./live/"*.als                                        ~/"Documents/control-traktor/live" \
+  && cp -r    "./live/CT6 Project"                                  ~/"Documents/control-traktor/live" \
   && cp       "./live/Instruments/Drum Rack/CT6 Seq Pads.adg"       ~/"Music/Ableton/User Library/Presets/Instruments/Drum Rack" \
   && cp       "./live/Instruments/Instrument Rack/CT6 Rack.adg"     ~/"Music/Ableton/User Library/Presets/Instruments/Instrument Rack" \
   && cp       "./live/MIDI Effects/Max MIDI Effect/CT6 Params.adv"  ~/"Music/Ableton/User Library/Presets/MIDI Effects/Max MIDI Effect" \

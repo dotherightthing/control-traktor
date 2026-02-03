@@ -46,7 +46,8 @@ Note: *~* (tilde) means *Macintosh HD/Users/USERNAME*.
      * *stream-deck-traktor.bmtp* - preset for Bome
    * **ClyphX Pro - XTB** - shortcut to *~/nativeKONTROL/ClyphX_Pro/XTB*, containing *X-Controls.txt*
    * **live**
-     * *CT6.als* - a Live set
+     * *CT6 Project* - a Live project
+        * *CT6.als* - a Live set
      * *Live Presets - Drum Rack* - shortcut to *~/Music/Ableton/User Library/Presets/Instruments/Drum Rack*, containing:
         * *CT6 SeqPads.adg*
      * *Live Presets - Instrument Rack* - shortcut to *~/Music/Ableton/User Library/Presets/Instruments/Instrument Rack*, containing:
