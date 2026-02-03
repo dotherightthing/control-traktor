@@ -1,6 +1,6 @@
 {
   "name": "control-traktor",
-  "version": "6.2.0",
+  "version": "6.3.0",
   "description": "A collection of settings and Max4Live devices for improved control over Traktor Pro.",
   "main": "README.md",
   "engines": {
