@@ -86,30 +86,30 @@ Note: *~* (tilde) means *Macintosh HD/Users/USERNAME*.
 2. Traktor (CT6) profile will be loaded and selected
 3. Fix corrupted profile page navigation
    1. Click *Pinned actions* (icon to left of page buttons *1 2 3 4 5*)
-   2. *A Decks/Rec*
-      1. Click *A Decks/Rec*
+   2. *A Decks Record*
+      1. Click *A Decks Record*
       2. Click arrow to the right of *3 actions*
       3. Click *Navigation: Switch Profile* (first action)
       4. Change *Profile* from *Home* to *Traktor (CT6*)
-      5. Leave *Page* as *A - Decks/Rec*
-   3. *B Rmx Deck*
-      1. Click *B Rmx Deck*
+      5. Leave *Page* as *A - Decks / Record*
+   3. *B Remix*
+      1. Click *B Remix*
       2. Click arrow to the right of *3 actions*
       3. Click *Navigation: Switch Profile* (first action)
       4. Change *Profile* from *Home* to *Traktor (CT6*)
-      5. Change *Page* to *B - Rmx Deck*
-   4. *C Browser*
-      1. Click *C Browser*
+      5. Change *Page* to *B - Remix*
+   4. *C Browse Rename*
+      1. Click *C Browse Rename*
       2. Click arrow to the right of *3 actions*
       3. Click *Navigation: Switch Profile* (first action)
       4. Change *Profile* from *Home* to *Traktor (CT6*)
-      5. Change *Page* to *C - Browser*
-   5. *D Settings*
-      1. Click *D Settings*
+      5. Change *Page* to *C - Browse / Rename*
+   5. *D Mix Configure*
+      1. Click *D Mix Configure*
       2. Click arrow to the right of *3 actions*
       3. Click *Navigation: Switch Profile* (first action)
       4. Change *Profile* from *Home* to *Traktor (CT6*)
-      5. Change *Page* to *D - Settings*
+      5. Change *Page* to *D - Mix / Configure*
 
 ### Traktor
 
