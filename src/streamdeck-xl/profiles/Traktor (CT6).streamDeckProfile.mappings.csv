@@ -201,10 +201,7 @@ Semi-Dry,
 Semi-Wet,
 Wet",5,Toggle between 100% Dry (loop recorder recording not heard) and 100% Wet (only loop recorder recording heard),10,21,Cycle,,Various (XML Cycle file),Traktor Virtual Input,Traktor Virtual Output,Calls Traktor's 'Dry/Wet Adjust',"src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/loop-recorder-dry-wet.xml,
 src/traktor/CT6 - Streamdeck XL.tsi"
-Mixer - Row 2 Col 3,RESET PAN,src/streamdeck-xl/icons/button-creator/reset-pan-22.png,,6,Reset Deck Pan to center,10,99,Push,,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,,
-Mixer - Row 2 Col 4,RESET PAN,src/streamdeck-xl/icons/button-creator/reset-pan-22.png,,6,Reset Deck Pan to center,,,,,,,,,
-Mixer - Row 2 Col 5,RESET PAN,src/streamdeck-xl/icons/button-creator/reset-pan-22.png,,6,Reset Deck Pan to center,,,,,,,,,
-Mixer - Row 2 Col 6,RESET PAN,src/streamdeck-xl/icons/button-creator/reset-pan-22.png,,6,Reset Deck Pan to center,,,,,,,,,
+Mixer - Row 2 Col 3,RESET PANS,src/streamdeck-xl/icons/button-creator/reset-pans-22.png,,6,Reset all Deck balance knobs to center,10,99,Push,,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,,src/traktor/CT6 - Streamdeck XL.tsi
 Pinned - Row 1 Col 8,A,src/streamdeck-xl/icons/button-creator/a.png,Decks/Rec,5,"View page 'A Decks/Rec'",-,-,-,1,"-",-,-,Switches profile page,"-"
 Pinned - Row 1 Col 8,A,src/streamdeck-xl/icons/button-creator/a.png,"Decks/Rec",5,Optimise layout for mixing,10,31,Push,2,"0 (On), 127 (Off)",Traktor Virtual Input,Traktor Virtual Output,Sets Traktor's 'Layout Selector' to configured 'Decks' view,"src/traktor/CT6 - App Export.tsi,
 src/traktor/CT6 - Streamdeck XL.tsi"
