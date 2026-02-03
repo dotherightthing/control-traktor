@@ -45,8 +45,6 @@ Mappings are documented in [CT6.streamDeckProfile.mappings.csv](./src/streamdeck
 ![Screenshot of Stream Deck - Page 2.](./screenshots/stream-deck-page-2.png)
 ![Screenshot of Stream Deck - Page 3.](./screenshots/stream-deck-page-3.png)
 ![Screenshot of Stream Deck - Page 4.](./screenshots/stream-deck-page-4.png)
-![Screenshot of Stream Deck - Page 5.](./screenshots/stream-deck-page-5.png)
-![Screenshot of Stream Deck - Page 6.](./screenshots/stream-deck-page-6.png)
 
 ---
 
