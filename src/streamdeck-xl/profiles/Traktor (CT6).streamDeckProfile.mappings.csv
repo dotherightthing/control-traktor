@@ -38,7 +38,7 @@ Fine,
 32 beats,
 Loop",5,"Set the amount that the loop will be moved, or that the play head will beatjump by",10,27,Cycle,-,Various (XML Cycle file),Traktor Virtual Input,Traktor Virtual Output,Sets/Displays Traktor's 'Size Selector',"src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/loop-move-size.xml,
 src/traktor/CT6 - Streamdeck XL.tsi"
-A - Decks/Rec - Row 1 Col 5,BPM ⨉2 ÷2,src/streamdeck-xl/icons/button-creator/bpm-double-half-30-23.png,x2,6,"Double the BPM/tempo of the track.
+A - Decks/Rec - Row 1 Col 5,BPM ⨉2 ÷2,src/streamdeck-xl/icons/button-creator/bpm-half-double-30-23.png,x2,6,"Double the BPM/tempo of the track.
 Shifted: Halve the BPM/tempo of the track.",10,59,Push,-,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,"Sets Traktor's 'BPM Lock On' to 'off',
 Calls Traktor's 'BPM x2'
 Shifted: Calls Traktor's 'BPM /2'",src/traktor/CT6 - Streamdeck XL.tsi
@@ -143,18 +143,17 @@ B - Rmx Deck - Row 2 Col 5,SLOT SELECT (BOME),src/streamdeck-xl/icons/button-cre
 src/traktor/CT6 - Streamdeck XL.tsi"
 B - Rmx Deck - Row 2 Col 6,SLOT PUNCH (LEGATO),src/streamdeck-xl/icons/button-creator/slot-punch-legato.png,"Off,
 On",6,"Slot Punch Off/On. Slot is determined by slot modifier value.",10,80,Push,-,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,,src/traktor/CT6 - Streamdeck XL.tsi
-B - Rmx Deck - Row 2 Col 7,,,"x2",5,Doubles BPM of selected slot. Slot is determined by slot modifier value.,10,86,Push,2 (1 = Select Decks layout),"127 (On), 0 (Off)",Bome MIDI Translator 1,Traktor Virtual Output,,"src/bome-midi-translator-pro/stream-deck-traktor.bmtp"
+B - Rmx Deck - Row 2 Col 7,SLOT BPM (BOME),src/streamdeck-xl/icons/button-creator/slot-bpm-bome-22.png,"⨉2",5,Doubles BPM of selected slot. Slot is determined by slot modifier value.,10,86,Push,2 (1 = Select Decks layout),"127 (On), 0 (Off)",Bome MIDI Translator 1,Traktor Virtual Output,,"src/bome-midi-translator-pro/stream-deck-traktor.bmtp"
 B - Rmx Deck - Row 3 Col 2,LAUNCH QUANTISE,src/streamdeck-xl/icons/button-creator/launch-quantise.png,"Off,
 On",6,"Remix deck launch quantise toggle",10,71,Push,-,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,,"src/traktor/CT6 - Streamdeck XL.tsi"
 B - Rmx Deck - Row 3 Col 6,SLOT PLAY MODE,src/streamdeck-xl/icons/button-creator/remix-deck-slot-play-mode-22.png,"One-Shot,
 Looped",6,,10,93,Cycle,,"Various (XML Cycle file)",Traktor Virtual Input,Traktor Virtual Output,,"src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/remix-deck-slot-play-mode.xml,
 src/traktor/CT6 - Streamdeck XL.tsi"
-B - Rmx Deck - Row 3 Col 7,SLOT BPM (BOME),src/streamdeck-xl/icons/button-creator/slot-bpm-bome-22.png,"x2 /2",6,"Double BPM of selected slot. Slot is determined by slot modifier value.
-Shifted: Halves BPM of selected slot. Slot is determined by slot modifier value.",10,87,Push,2 (1 = Select Decks layout),"127 (On), 0 (Off)",Bome MIDI Translator 1,Traktor Virtual Output,,"src/bome-midi-translator-pro/stream-deck-traktor.bmtp"
+B - Rmx Deck - Row 3 Col 7,SLOT BPM (BOME),src/streamdeck-xl/icons/button-creator/slot-bpm-bome-22.png,"÷2",5,"Halves BPM of selected slot. Slot is determined by slot modifier value.",10,87,Push,2 (1 = Select Decks layout),"127 (On), 0 (Off)",Bome MIDI Translator 1,Traktor Virtual Output,,"src/bome-midi-translator-pro/stream-deck-traktor.bmtp"
 B - Rmx Deck - Row 4 Col 6,SLOT TRIGGER TYPE,src/streamdeck-xl/icons/button-creator/remix-deck-slot-trigger-type-22.png,"Latched,
 Gated",6,,10,94,Cycle,,"Various (XML Cycle file)",Traktor Virtual Input,Traktor Virtual Output,,"src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/remix-deck-slot-trigger-type.xml,
 src/traktor/CT6 - Streamdeck XL.tsi"
-B - Rmx Deck - Row 4 Col 7,SLOT SIZE ⨉2 ÷2,src/streamdeck-xl/icons/button-creator/slot-size-double-half-22.png,,5,"Double the length of the (a) selected sample in the (b) selected slot, exposing more of the loaded slot sample or adding silence after it.
+B - Rmx Deck - Row 4 Col 7,SLOT SIZE ÷2 ⨉2,src/streamdeck-xl/icons/button-creator/slot-size-half-double-22-23.png,÷2 ⨉2,5,"Double the length of the (a) selected sample in the (b) selected slot, exposing more of the loaded slot sample or adding silence after it.
 SHIFTed: Halve the length of the (a) selected sample in the (b) selected slot, cropping the loaded slot sample.",10,39,Push,,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Halves the size of sample in the selected slot. Uses the value of Traktor's 'Modifier 2' to determine which slot to act upon.,src/traktor/CT6 - Streamdeck XL.tsi
 C - Browser - Row 1 Col 1,Up Arrow,src/streamdeck-xl/icons/button-creator/arrowshape.up.fill.png,Top,5,Move up one row (hold to repeat action),10,8,Hold,-,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Calls Traktor's 'Selected Up/Down (Browser.List)' (Up),src/traktor/CT6 - Streamdeck XL.tsi
 C - Browser - Row 1 Col 1,Up Arrow,src/streamdeck-xl/icons/button-creator/arrowshape.up.fill.png,"Top",5,"Move to top row (SHIFTed function)",10,8,Hold,-,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Calls Traktor's 'Select Top/Bottom' (Top),"src/traktor/CT6 - Streamdeck XL.tsi"
