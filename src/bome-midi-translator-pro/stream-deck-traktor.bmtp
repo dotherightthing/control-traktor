@@ -7,97 +7,93 @@ In0=Bome MIDI Translator 1 Virtual In
 Out0=Traktor Virtual Input
 
 [Preset.0]
-Active=0
-Comments=Traktor running on MBP Built-in Display when used as Extended display. Dell U2518D is 2560x1440. Built-in Display is 1536x960.
-Incoming0=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x01"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
-Incoming1=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x02"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
-Incoming10=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x0B"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
-Incoming11=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x0C"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
-Incoming12=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x0D"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
-Incoming13=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x0E"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
-Incoming14=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x0F"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
-Incoming15=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x10"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
-Incoming16=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x56"/><Value2 num="0x7F"/></Simple></Incoming>
-Incoming17=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x57"/><Value2 num="0x7F"/></Simple></Incoming>
-Incoming18=MID3<Incoming Action="MIDI"><Description>Click name field, Stream Deck does the rest</Description><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x58"/><Value2 num="0x7F"/></Simple></Incoming>
-Incoming19=MID3<Incoming Action="MIDI"><Description>Click name field, Stream Deck does the rest</Description><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x59"/><Value2 num="0x7F"/></Simple></Incoming>
-Incoming2=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x03"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
-Incoming20=MID3<Incoming Action="MIDI"><Description>Click name field, Stream Deck does the rest</Description><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x5A"/><Value2 num="0x7F"/></Simple></Incoming>
-Incoming3=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x04"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
-Incoming4=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x05"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
-Incoming5=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x06"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
-Incoming6=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x07"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
-Incoming7=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x08"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
-Incoming8=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x09"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
-Incoming9=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x0A"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
-Name=Click Traktor - MBP EXT
-Name0=Remix Deck C Row 1 Column 1 - Click
-Name1=Remix Deck C Row 1 Column 2 - Click
-Name10=Remix Deck C Row 3 Column 3 - Click
-Name11=Remix Deck C Row 3 Column 4 - Click
-Name12=Remix Deck C Row 4 Column 1 - Click
-Name13=Remix Deck C Row 4 Column 2 - Click
-Name14=Remix Deck C Row 4 Column 3 - Click
-Name15=Remix Deck C Row 4 Column 4 - Click
-Name16=Remix Deck C - Click BPM x2
-Name17=Remix Deck C - Click BPM /2
-Name18=Deck A - Click Hot Cue Name
-Name19=Deck B - Click Hot Cue Name
-Name2=Remix Deck C Row 1 Column 3 - Click
-Name20=Deck D - Click Hot Cue Name
-Name3=Remix Deck C Row 1 Column 4 - Click
-Name4=Remix Deck C Row 2 Column 1 - Click
-Name5=Remix Deck C Row 2 Column 2 - Click
-Name6=Remix Deck C Row 2 Column 3 - Click
-Name7=Remix Deck C Row 2 Column 4 - Click
-Name8=Remix Deck C Row 3 Column 1 - Click
-Name9=Remix Deck C Row 3 Column 2 - Click
-Options0=Actv01Stop00OutO00Dlay50:Millis
-Options1=Actv01Stop00OutO00Dlay50:Millis
-Options10=Actv01Stop00OutO00Dlay50:Millis
-Options11=Actv01Stop00OutO00Dlay50:Millis
-Options12=Actv01Stop00OutO00Dlay50:Millis
-Options13=Actv01Stop00OutO00Dlay50:Millis
-Options14=Actv01Stop00OutO00Dlay50:Millis
-Options15=Actv01Stop00OutO00Dlay50:Millis
-Options16=Actv01Stop00OutO00Dlay50:Millis
-Options17=Actv01Stop00OutO00Dlay50:Millis
-Options18=Actv01Stop00OutO01
-Options19=Actv01Stop00OutO01
-Options2=Actv01Stop00OutO00Dlay50:Millis
-Options20=Actv01Stop00OutO01
-Options3=Actv01Stop00OutO00Dlay50:Millis
-Options4=Actv01Stop00OutO00Dlay50:Millis
-Options5=Actv01Stop00OutO00Dlay50:Millis
-Options6=Actv01Stop00OutO00Dlay50:Millis
-Options7=Actv01Stop00OutO00Dlay50:Millis
-Options8=Actv01Stop00OutO00Dlay50:Millis
-Options9=Actv01Stop00OutO00Dlay50:Millis
-Outgoing0=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2634"/><Y num="656"/></Outgoing>
-Outgoing1=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2781"/><Y num="657"/></Outgoing>
-Outgoing10=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2927"/><Y num="698"/></Outgoing>
-Outgoing11=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="3072"/><Y num="694"/></Outgoing>
-Outgoing12=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2633"/><Y num="714"/></Outgoing>
-Outgoing13=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2784"/><Y num="714"/></Outgoing>
-Outgoing14=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2921"/><Y num="713"/></Outgoing>
-Outgoing15=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="3067"/><Y num="714"/></Outgoing>
-Outgoing16=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2681"/><Y num="790"/></Outgoing>
-Outgoing17=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2682"/><Y num="809"/></Outgoing>
-Outgoing18=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="2798"/><Y num="485"/></Outgoing>
-Outgoing19=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="3688"/><Y num="485"/></Outgoing>
-Outgoing2=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2920"/><Y num="656"/></Outgoing>
-Outgoing20=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="3699"/><Y num="811"/></Outgoing>
-Outgoing3=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="3065"/><Y num="657"/></Outgoing>
-Outgoing4=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2635"/><Y num="677"/></Outgoing>
-Outgoing5=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2778"/><Y num="675"/></Outgoing>
-Outgoing6=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2924"/><Y num="677"/></Outgoing>
-Outgoing7=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="3061"/><Y num="677"/></Outgoing>
-Outgoing8=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2639"/><Y num="697"/></Outgoing>
-Outgoing9=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2784"/><Y num="695"/></Outgoing>
-PresetSwitchIgnore=0
+Active=1
+Comments=
+Incoming0=EnDi02
+Incoming1=EnDi01
+Name=Init
+Name0=Initialise Global Vars
+Name1=Initialise Global Vars
+Options0=Actv01Stop00OutO00
+Options1=Actv01Stop00OutO00
+Outgoing0=Tim0TimS0009Init vars1:500:1
+Outgoing1=Tim0TimS0009Init vars1:500:1
+PresetSwitchIgnore=1
 
 [Preset.1]
 Active=1
+Comments=Traktor running on MBP Built-in Display when used as Main display. Dell U2518D is 2560x1440. Built-in Display is 1536x960.
+DefaultInPorts=MIDA00010021Bome MIDI Translator 1 Virtual In
+DefaultOutPorts=MIDA00010015Traktor Virtual Input
+Incoming0=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="1" setvar="ga" Type="New Version Required"/></Simple></Incoming>
+Incoming1=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="2" setvar="ga" Type="New Version Required"/></Simple></Incoming>
+Incoming10=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="11" setvar="ga" Type="New Version Required"/></Simple></Incoming>
+Incoming11=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="12" setvar="ga" Type="New Version Required"/></Simple></Incoming>
+Incoming12=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="13" setvar="ga" Type="New Version Required"/></Simple></Incoming>
+Incoming13=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="14" setvar="ga" Type="New Version Required"/></Simple></Incoming>
+Incoming14=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="15" setvar="ga" Type="New Version Required"/></Simple></Incoming>
+Incoming15=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="16" setvar="ga" Type="New Version Required"/></Simple></Incoming>
+Incoming2=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="3" setvar="ga" Type="New Version Required"/></Simple></Incoming>
+Incoming3=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="4" setvar="ga" Type="New Version Required"/></Simple></Incoming>
+Incoming4=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="5" setvar="ga" Type="New Version Required"/></Simple></Incoming>
+Incoming5=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="6" setvar="ga" Type="New Version Required"/></Simple></Incoming>
+Incoming6=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="7" setvar="ga" Type="New Version Required"/></Simple></Incoming>
+Incoming7=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="8" setvar="ga" Type="New Version Required"/></Simple></Incoming>
+Incoming8=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="9" setvar="ga" Type="New Version Required"/></Simple></Incoming>
+Incoming9=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="10" setvar="ga" Type="New Version Required"/></Simple></Incoming>
+Name=P1 - Traktor - Holds
+Name0=Remix Deck C Row 1 Column 1 - Hold
+Name1=Remix Deck C Row 1 Column 2 - Hold
+Name10=Remix Deck C Row 3 Column 3 - Hold
+Name11=Remix Deck C Row 3 Column 4 - Hold
+Name12=Remix Deck C Row 4 Column 1 - Hold
+Name13=Remix Deck C Row 4 Column 2 - Hold
+Name14=Remix Deck C Row 4 Column 3 - Hold
+Name15=Remix Deck C Row 4 Column 4 - Hold
+Name2=Remix Deck C Row 1 Column 3 - Hold
+Name3=Remix Deck C Row 1 Column 4 - Hold
+Name4=Remix Deck C Row 2 Column 1 - Hold
+Name5=Remix Deck C Row 2 Column 2 - Hold
+Name6=Remix Deck C Row 2 Column 3 - Hold
+Name7=Remix Deck C Row 2 Column 4 - Hold
+Name8=Remix Deck C Row 3 Column 1 - Hold
+Name9=Remix Deck C Row 3 Column 2 - Hold
+Options0=Actv01Stop00OutO00Dlay0:Millis
+Options1=Actv01Stop00OutO00Dlay0:Millis
+Options10=Actv01Stop00OutO00Dlay0:Millis
+Options11=Actv01Stop00OutO00Dlay0:Millis
+Options12=Actv01Stop00OutO00Dlay0:Millis
+Options13=Actv01Stop00OutO00Dlay0:Millis
+Options14=Actv01Stop00OutO00Dlay0:Millis
+Options15=Actv01Stop00OutO00Dlay0:Millis
+Options2=Actv01Stop00OutO00Dlay0:Millis
+Options3=Actv01Stop00OutO00Dlay0:Millis
+Options4=Actv01Stop00OutO00Dlay0:Millis
+Options5=Actv01Stop00OutO00Dlay0:Millis
+Options6=Actv01Stop00OutO00Dlay0:Millis
+Options7=Actv01Stop00OutO00Dlay0:Millis
+Options8=Actv01Stop00OutO00Dlay0:Millis
+Options9=Actv01Stop00OutO00Dlay0:Millis
+Outgoing0=Tim0TimS0004Hold1:500:1
+Outgoing1=Tim0TimS0004Hold1:500:1
+Outgoing10=Tim0TimS0004Hold1:500:1
+Outgoing11=Tim0TimS0004Hold1:500:1
+Outgoing12=Tim0TimS0004Hold1:500:1
+Outgoing13=Tim0TimS0004Hold1:500:1
+Outgoing14=Tim0TimS0004Hold1:500:1
+Outgoing15=Tim0TimS0004Hold1:500:1
+Outgoing2=Tim0TimS0004Hold1:500:1
+Outgoing3=Tim0TimS0004Hold1:500:1
+Outgoing4=Tim0TimS0004Hold1:500:1
+Outgoing5=Tim0TimS0004Hold1:500:1
+Outgoing6=Tim0TimS0004Hold1:500:1
+Outgoing7=Tim0TimS0004Hold1:500:1
+Outgoing8=Tim0TimS0004Hold1:500:1
+Outgoing9=Tim0TimS0004Hold1:500:1
+PresetSwitchIgnore=0
+
+[Preset.2]
+Active=0
 Comments=Traktor running on MBP Built-in Display when used as Main display. Dell U2518D is 2560x1440. Built-in Display is 1536x960.
 Incoming0=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x01"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
 Incoming1=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x02"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
@@ -120,7 +116,7 @@ Incoming6=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtua
 Incoming7=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x08"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
 Incoming8=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x09"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
 Incoming9=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x0A"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
-Name=Click Traktor - MBP MAIN
+Name=P2 - Traktor - Mouse Clicks - MBP MAIN
 Name0=Remix Deck C Row 1 Column 1 - Click
 Name1=Remix Deck C Row 1 Column 2 - Click
 Name10=Remix Deck C Row 3 Column 3 - Click
@@ -186,130 +182,129 @@ Outgoing8=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num
 Outgoing9=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="224"/><Y num="694"/></Outgoing>
 PresetSwitchIgnore=0
 
-[Preset.2]
-Active=1
-Comments=Traktor running on MBP Built-in Display when used as Main display. Dell U2518D is 2560x1440. Built-in Display is 1536x960.
-DefaultInPorts=MIDA00010021Bome MIDI Translator 1 Virtual In
-DefaultOutPorts=MIDA00010015Traktor Virtual Input
-Incoming0=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="1" setvar="ga" Type="New Version Required"/></Simple></Incoming>
-Incoming1=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="2" setvar="ga" Type="New Version Required"/></Simple></Incoming>
-Incoming10=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="11" setvar="ga" Type="New Version Required"/></Simple></Incoming>
-Incoming11=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="12" setvar="ga" Type="New Version Required"/></Simple></Incoming>
-Incoming12=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="13" setvar="ga" Type="New Version Required"/></Simple></Incoming>
-Incoming13=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="14" setvar="ga" Type="New Version Required"/></Simple></Incoming>
-Incoming14=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="15" setvar="ga" Type="New Version Required"/></Simple></Incoming>
-Incoming15=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="16" setvar="ga" Type="New Version Required"/></Simple></Incoming>
-Incoming2=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="3" setvar="ga" Type="New Version Required"/></Simple></Incoming>
-Incoming3=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="4" setvar="ga" Type="New Version Required"/></Simple></Incoming>
-Incoming4=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="5" setvar="ga" Type="New Version Required"/></Simple></Incoming>
-Incoming5=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="6" setvar="ga" Type="New Version Required"/></Simple></Incoming>
-Incoming6=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="7" setvar="ga" Type="New Version Required"/></Simple></Incoming>
-Incoming7=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="8" setvar="ga" Type="New Version Required"/></Simple></Incoming>
-Incoming8=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="9" setvar="ga" Type="New Version Required"/></Simple></Incoming>
-Incoming9=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="10" setvar="ga" Type="New Version Required"/></Simple></Incoming>
-Name=Hold Traktor
-Name0=Remix Deck C Row 1 Column 1 - Hold
-Name1=Remix Deck C Row 1 Column 2 - Hold
-Name10=Remix Deck C Row 3 Column 3 - Hold
-Name11=Remix Deck C Row 3 Column 4 - Hold
-Name12=Remix Deck C Row 4 Column 1 - Hold
-Name13=Remix Deck C Row 4 Column 2 - Hold
-Name14=Remix Deck C Row 4 Column 3 - Hold
-Name15=Remix Deck C Row 4 Column 4 - Hold
-Name2=Remix Deck C Row 1 Column 3 - Hold
-Name3=Remix Deck C Row 1 Column 4 - Hold
-Name4=Remix Deck C Row 2 Column 1 - Hold
-Name5=Remix Deck C Row 2 Column 2 - Hold
-Name6=Remix Deck C Row 2 Column 3 - Hold
-Name7=Remix Deck C Row 2 Column 4 - Hold
-Name8=Remix Deck C Row 3 Column 1 - Hold
-Name9=Remix Deck C Row 3 Column 2 - Hold
-Options0=Actv01Stop00OutO00Dlay0:Millis
-Options1=Actv01Stop00OutO00Dlay0:Millis
-Options10=Actv01Stop00OutO00Dlay0:Millis
-Options11=Actv01Stop00OutO00Dlay0:Millis
-Options12=Actv01Stop00OutO00Dlay0:Millis
-Options13=Actv01Stop00OutO00Dlay0:Millis
-Options14=Actv01Stop00OutO00Dlay0:Millis
-Options15=Actv01Stop00OutO00Dlay0:Millis
-Options2=Actv01Stop00OutO00Dlay0:Millis
-Options3=Actv01Stop00OutO00Dlay0:Millis
-Options4=Actv01Stop00OutO00Dlay0:Millis
-Options5=Actv01Stop00OutO00Dlay0:Millis
-Options6=Actv01Stop00OutO00Dlay0:Millis
-Options7=Actv01Stop00OutO00Dlay0:Millis
-Options8=Actv01Stop00OutO00Dlay0:Millis
-Options9=Actv01Stop00OutO00Dlay0:Millis
-Outgoing0=Tim0TimS0004Hold1:500:1
-Outgoing1=Tim0TimS0004Hold1:500:1
-Outgoing10=Tim0TimS0004Hold1:500:1
-Outgoing11=Tim0TimS0004Hold1:500:1
-Outgoing12=Tim0TimS0004Hold1:500:1
-Outgoing13=Tim0TimS0004Hold1:500:1
-Outgoing14=Tim0TimS0004Hold1:500:1
-Outgoing15=Tim0TimS0004Hold1:500:1
-Outgoing2=Tim0TimS0004Hold1:500:1
-Outgoing3=Tim0TimS0004Hold1:500:1
-Outgoing4=Tim0TimS0004Hold1:500:1
-Outgoing5=Tim0TimS0004Hold1:500:1
-Outgoing6=Tim0TimS0004Hold1:500:1
-Outgoing7=Tim0TimS0004Hold1:500:1
-Outgoing8=Tim0TimS0004Hold1:500:1
-Outgoing9=Tim0TimS0004Hold1:500:1
-PresetSwitchIgnore=0
-
 [Preset.3]
-Active=1
-Comments=
-DefaultOutPorts=MIDA00010015Traktor Virtual Input
-Incoming0=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x26"/><Value2 num="0x7F"/></Simple></Incoming>
-Incoming1=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x26"/><Value2 num="0x00"/></Simple></Incoming>
-Incoming2=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x26"/><Value2 num="0x7F"/></Simple></Incoming>
-Incoming3=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x26"/><Value2 num="0x00"/></Simple></Incoming>
-Incoming4=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x40"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
-Name=Click Traktor - Toggle click offset mode
-Name0=CLICK OFFSET - MBP EXT
-Name1=CLICK OFFSET - MBP MAIN
-Name2=CLICK OFFSET - MBP EXT
-Name3=CLICK OFFSET - MBP MAIN
-Name4=TEST
-Options0=Actv01Stop00OutO01StMa00000001label0006__cmt>
-Options1=Actv01Stop00OutO01StMa00000001label0006__cmt>
-Options2=Actv01Stop00OutO01StMa00000001label0006__cmt>
-Options3=Actv01Stop00OutO01StMa00000001label0006__cmt>
-Options4=Actv01Stop00OutO00
-Outgoing0=Pres040017Click Traktor - MBP EXT
-Outgoing1=Pres040018Click Traktor - MBP MAIN
-Outgoing2=Pres060018Click Traktor - MBP MAIN
-Outgoing3=Pres060017Click Traktor - MBP EXT
-Outgoing4=None
+Active=0
+Comments=Traktor running on MBP Built-in Display when used as Extended display. Dell U2518D is 2560x1440. Built-in Display is 1536x960.
+Incoming0=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x01"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Incoming1=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x02"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Incoming10=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x0B"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Incoming11=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x0C"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Incoming12=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x0D"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Incoming13=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x0E"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Incoming14=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x0F"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Incoming15=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x10"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Incoming16=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x56"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming17=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x57"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming18=MID3<Incoming Action="MIDI"><Description>Click name field, Stream Deck does the rest</Description><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x58"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming19=MID3<Incoming Action="MIDI"><Description>Click name field, Stream Deck does the rest</Description><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x59"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming2=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x03"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Incoming20=MID3<Incoming Action="MIDI"><Description>Click name field, Stream Deck does the rest</Description><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x5A"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming3=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x04"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Incoming4=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x05"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Incoming5=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x06"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Incoming6=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x07"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Incoming7=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x08"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Incoming8=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x09"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Incoming9=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x0A"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Name=P3 - Traktor - Mouse Clicks - MBP EXT
+Name0=Remix Deck C Row 1 Column 1 - Click
+Name1=Remix Deck C Row 1 Column 2 - Click
+Name10=Remix Deck C Row 3 Column 3 - Click
+Name11=Remix Deck C Row 3 Column 4 - Click
+Name12=Remix Deck C Row 4 Column 1 - Click
+Name13=Remix Deck C Row 4 Column 2 - Click
+Name14=Remix Deck C Row 4 Column 3 - Click
+Name15=Remix Deck C Row 4 Column 4 - Click
+Name16=Remix Deck C - Click BPM x2
+Name17=Remix Deck C - Click BPM /2
+Name18=Deck A - Click Hot Cue Name
+Name19=Deck B - Click Hot Cue Name
+Name2=Remix Deck C Row 1 Column 3 - Click
+Name20=Deck D - Click Hot Cue Name
+Name3=Remix Deck C Row 1 Column 4 - Click
+Name4=Remix Deck C Row 2 Column 1 - Click
+Name5=Remix Deck C Row 2 Column 2 - Click
+Name6=Remix Deck C Row 2 Column 3 - Click
+Name7=Remix Deck C Row 2 Column 4 - Click
+Name8=Remix Deck C Row 3 Column 1 - Click
+Name9=Remix Deck C Row 3 Column 2 - Click
+Options0=Actv01Stop00OutO00Dlay50:Millis
+Options1=Actv01Stop00OutO00Dlay50:Millis
+Options10=Actv01Stop00OutO00Dlay50:Millis
+Options11=Actv01Stop00OutO00Dlay50:Millis
+Options12=Actv01Stop00OutO00Dlay50:Millis
+Options13=Actv01Stop00OutO00Dlay50:Millis
+Options14=Actv01Stop00OutO00Dlay50:Millis
+Options15=Actv01Stop00OutO00Dlay50:Millis
+Options16=Actv01Stop00OutO00Dlay50:Millis
+Options17=Actv01Stop00OutO00Dlay50:Millis
+Options18=Actv01Stop00OutO01
+Options19=Actv01Stop00OutO01
+Options2=Actv01Stop00OutO00Dlay50:Millis
+Options20=Actv01Stop00OutO01
+Options3=Actv01Stop00OutO00Dlay50:Millis
+Options4=Actv01Stop00OutO00Dlay50:Millis
+Options5=Actv01Stop00OutO00Dlay50:Millis
+Options6=Actv01Stop00OutO00Dlay50:Millis
+Options7=Actv01Stop00OutO00Dlay50:Millis
+Options8=Actv01Stop00OutO00Dlay50:Millis
+Options9=Actv01Stop00OutO00Dlay50:Millis
+Outgoing0=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2634"/><Y num="656"/></Outgoing>
+Outgoing1=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2781"/><Y num="657"/></Outgoing>
+Outgoing10=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2927"/><Y num="698"/></Outgoing>
+Outgoing11=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="3072"/><Y num="694"/></Outgoing>
+Outgoing12=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2633"/><Y num="714"/></Outgoing>
+Outgoing13=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2784"/><Y num="714"/></Outgoing>
+Outgoing14=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2921"/><Y num="713"/></Outgoing>
+Outgoing15=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="3067"/><Y num="714"/></Outgoing>
+Outgoing16=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2681"/><Y num="790"/></Outgoing>
+Outgoing17=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2682"/><Y num="809"/></Outgoing>
+Outgoing18=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="2798"/><Y num="485"/></Outgoing>
+Outgoing19=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="3688"/><Y num="485"/></Outgoing>
+Outgoing2=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2920"/><Y num="656"/></Outgoing>
+Outgoing20=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="3699"/><Y num="811"/></Outgoing>
+Outgoing3=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="3065"/><Y num="657"/></Outgoing>
+Outgoing4=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2635"/><Y num="677"/></Outgoing>
+Outgoing5=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2778"/><Y num="675"/></Outgoing>
+Outgoing6=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2924"/><Y num="677"/></Outgoing>
+Outgoing7=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="3061"/><Y num="677"/></Outgoing>
+Outgoing8=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2639"/><Y num="697"/></Outgoing>
+Outgoing9=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2784"/><Y num="695"/></Outgoing>
 PresetSwitchIgnore=0
 
 [Preset.4]
 Active=1
-Comments=Use a timer to perform a double-click.
-Incoming0=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x5C"/><Value2 num="0x7F"/></Simple></Incoming>
-Incoming1=Tim0TimT000CDouble Click
-Name=Double Click
-Name0=MIDI to Double Click
-Name1=Timer to Double Click
-Options0=Actv01Stop00OutO00
-Options1=Actv01Stop00OutO00
-Outgoing0=Tim0TimS000CDouble Click2:10:10
-Outgoing1=Mse10200
-PresetSwitchIgnore=0
+Comments=
+DefaultInPorts=MIDA00010021Bome MIDI Translator 1 Virtual In
+DefaultOutPorts=MIDA00010015Traktor Virtual Input
+Incoming0=Tim0TimT0009Init vars
+Incoming1=Tim0TimT000EToggle presets
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x5C"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming3=Tim0TimT000CDouble Click
+Incoming4=Tim0TimT0004Hold
+Name=Bome Timers
+Name0=Init vars
+Name1=Toggle presets
+Name2=MIDI to Double Click
+Name3=Timer to Double Click
+Name4=Hold Timer (ga)
+Options0=Actv01Stop00OutO00StMa0000001Clabel0024__cmt>// Log "Processing enabled!!!"label0006__cmt>label0010__cmt>// Flow islabel0078__cmt>// Stream Deck button push -> Bome translation -> Traktor action or update of modifier, out -> Stream Deck displaylabel0006__cmt>label0033__cmt>// bome m1 = SHIFT state (traktor modifier 1)label001E__cmt>// m1=0 == SHIFT defaultlabel0023__cmt>// m1=1 == SHIFT pressed downlabel000F__cmt>// UNUSEDlabel0006__cmt>label0033__cmt>// bome m2 = slot select (traktor modifier 2)label0020__cmt>// m2=0 == slot 1 selectedlabel0020__cmt>// m2=1 == slot 2 selectedlabel0020__cmt>// m2=2 == slot 3 selectedlabel0020__cmt>// m2=3 == slot 4 selectedlabel000F__cmt>// UNUSEDlabel0006__cmt>label0037__cmt>// bome 3 = cell select mode (traktor modifier 3)label0030__cmt>// m3=0 == preset [1] P1 - Traktor - Holdslabel0032__cmt>// m3=1 == preset [2] or [3] depending on m4label0042__cmt>//         preset [2] P2 - Traktor - Mouse Clicks - MBP MAINlabel0041__cmt>//         preset [3] P3 - Traktor - Mouse Clicks - MBP EXTm3=0label0006__cmt>label0040__cmt>// bome m4 = bome mouse clicks offset (traktor modifier 4)label0042__cmt>// m4=0 == preset [2] P2 - Traktor - Mouse Clicks - MBP MAINlabel0041__cmt>// m4=1 == preset [3] P3 - Traktor - Mouse Clicks - MBP EXTm4=0
+Options1=Actv01Stop00OutO00StMa00000010label0046__cmt>// if "Traktor - Modifier 3 - Cell Select Mode" is "Trigger" (0)label002B__cmt>// then preset == [1] Traktor - Holdsif(m3==0)pp=1if(m3==0)executelabel0006__cmt>label0072__cmt>// if "Traktor - Modifier 3 - Cell Select Mode" is "Mouse" (1) then preset depends on "Mouse clicks" settinglabel0006__cmt>label0043__cmt>// if "Traktor - Modifier 4 - Mouse clicks" is "MBP Main" (0)label003D__cmt>// then preset == [2] Traktor - Mouse Clicks - MBP MAINif(m4==0)pp=2if(m4==0)executelabel0006__cmt>label0042__cmt>// if "Traktor - Modifier 4 - Mouse clicks" is "MBP Ext" (1)label003C__cmt>// then preset == [3] Traktor - Mouse Clicks - MBP EXTif(m4==1)pp=3if(m4==1)execute
+Options2=Actv01Stop00OutO00
+Options3=Actv01Stop00OutO00
+Options4=Actv01Stop00OutO00
+Outgoing0=Tim0TimS000EToggle presets1:500:1
+Outgoing1=Pres03pp
+Outgoing2=Tim0TimS000CDouble Click2:10:10
+Outgoing3=Mse10200
+Outgoing4=MID3<Outgoing Action="MIDI"><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 var="ga"/><Value2 num="0x7F"/></Simple></Outgoing>
+PresetSwitchIgnore=1
 
 [Preset.5]
 Active=1
 Comments=
-DefaultInPorts=MIDA00010021Bome MIDI Translator 1 Virtual In
-DefaultOutPorts=MIDA00010015Traktor Virtual Input
-Incoming0=Tim0TimT0004Hold
-Name=Hold
-Name0=Hold Timer
-Options0=Actv01Stop00OutO00
-Outgoing0=MID3<Outgoing Action="MIDI"><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 var="ga"/><Value2 num="0x7F"/></Simple></Outgoing>
-PresetSwitchIgnore=0
+Name=Traktor - Modifier 1 - Shift TODO
+PresetSwitchIgnore=1
 
 [Preset.6]
 Active=1
@@ -319,45 +314,42 @@ Name=Traktor - Modifier 2 - Slot Select
 Name0=CH.11.CC.20 value to dedicated CC with value 127
 Options0=Actv01Stop00OutO00StMa00000002label0038__cmt>// convert CC 20's 0/1/2/3 value to CC 21/22/23/24pp=oo+21
 Outgoing0=MID3<Outgoing Action="MIDI"><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 var="pp"/><Value2 num="0x7F"/></Simple></Outgoing>
-PresetSwitchIgnore=0
+PresetSwitchIgnore=1
 
 [Preset.7]
 Active=1
 Comments=
 DefaultInPorts=MIDA00010021Bome MIDI Translator 1 Virtual In
 DefaultOutPorts=MIDA00010015Traktor Virtual Input
-Incoming0=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x1E"/><Value2 var="oo" Type="SetVar"/></Simple></Incoming>
-Incoming1=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x1F"/><Value2 num="0x7F"/></Simple></Incoming>
-Incoming2=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x1F"/><Value2 num="0x7F"/></Simple></Incoming>
-Incoming3=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x1F"/><Value2 num="0x7F"/></Simple></Incoming>
-Incoming4=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x20"/><Value2 num="0x7F"/></Simple></Incoming>
-Incoming5=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x20"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming0=MID3<Incoming Action="MIDI"><Description>Value is 0 or 1</Description><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x1E"/><Value2 var="m3" Type="SetVar"/></Simple></Incoming>
 Name=Traktor - Modifier 3 - Cell Select Mode
 Name0=CH.11.CC.30 value to dedicated CC with value 127
-Name1=Cell Select Mode - Hold
-Name2=Cell Select Mode - Hold
-Name3=Cell Select Mode - Hold
-Name4=Cell Select Mode - Click TODO also toggle MBP Main/Ext
-Name5=Cell Select Mode - Click TODO also toggle MBP Main/Ext
-Options0=Actv01Stop00OutO00StMa00000002label002E__cmt>// convert CC 30's 0/1 value to CC 31/32pp=oo+31
+Options0=Actv01Stop00OutO00StMa00000004label001F__cmt>// m3 received from CC 30label003E__cmt>// m3=0 + 31 = CC 31 which sets Traktor Modifier #3 to 0label003E__cmt>// m3=1 + 31 = CC 32 which sets Traktor Modifier #3 to 1rr=m3+31
+Outgoing0=MID3<Outgoing Action="MIDI"><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 var="rr"/><Value2 num="0x7F"/></Simple></Outgoing>
+PresetSwitchIgnore=1
+
+[Preset.8]
+Active=0
+Comments=
+DefaultOutPorts=MIDA00010015Traktor Virtual Input
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x26"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x26"/><Value2 num="0x00"/></Simple></Incoming>
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x26"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x26"/><Value2 num="0x00"/></Simple></Incoming>
+Name=Traktor - Modifier 4 - Mouse Clicks
+Name0=CLICK OFFSET - MBP EXT
+Name1=CLICK OFFSET - MBP MAIN
+Name2=CLICK OFFSET - MBP EXT
+Name3=CLICK OFFSET - MBP MAIN
+Options0=Actv01Stop00OutO01StMa00000001gb=0
 Options1=Actv01Stop00OutO01StMa00000001label0006__cmt>
 Options2=Actv01Stop00OutO01StMa00000001label0006__cmt>
 Options3=Actv01Stop00OutO01StMa00000001label0006__cmt>
-Options4=Actv01Stop00OutO01StMa00000001label0006__cmt>
-Options5=Actv01Stop00OutO01StMa00000001label0006__cmt>
-Outgoing0=MID3<Outgoing Action="MIDI"><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 var="pp"/><Value2 num="0x7F"/></Simple></Outgoing>
-Outgoing1=Pres04000CHold Traktor
-Outgoing2=Pres060017Click Traktor - MBP EXT
-Outgoing3=Pres060018Click Traktor - MBP MAIN
-Outgoing4=Pres040018Click Traktor - MBP MAIN
-Outgoing5=Pres06000CHold Traktor
-PresetSwitchIgnore=0
-
-[Preset.8]
-Active=1
-Comments=
-Name=Traktor - Toggle Click/Hold mode TODO
-PresetSwitchIgnore=0
+Outgoing0=Pres040025P3 - Traktor - Mouse Clicks - MBP EXT
+Outgoing1=Pres040026P2 - Traktor - Mouse Clicks - MBP MAIN
+Outgoing2=Pres060026P2 - Traktor - Mouse Clicks - MBP MAIN
+Outgoing3=Pres060025P3 - Traktor - Mouse Clicks - MBP EXT
+PresetSwitchIgnore=1
 
 [Project]
 Comments=Control Traktor CT6
@@ -367,6 +359,6 @@ Version=2
 
 [Signatures]
 SigName-1=[Midi Translator Pro Internal]
-Signature-1=pVU6FhEyEajPTCt3j568FAOCxaxGpm89LTz3rGtHqCVcGX5BBmw/hR8Ug4LCXEoMwZITlM/XnCAU4RKNlkAEeggAcofmwodCCcyjvFGUAcMlkCkzdYNFLTkU7dWxB1rgfVgQ2tjkqRvRcsqVbVcFw7FIhjZlPvatt5fcrZs0eJI=
+Signature-1=YYddh1kUYZP4CJVnKGuY5D1tVI+nsw2o3vPncBd1N45IVyi97TGi9euOJItXJMAd3kc1Lxe1g7r7MYnqu27lfcrsBAvX32Jew3aSa6RQMPTShOPrfOKRa4ZGn6IhGyVhRAtzl0wOoZ/BgpimW3XuBxLTknotQnHfEci4Dg9WhKI=
 SignedBy-1=Dan Smith
 
