@@ -224,16 +224,22 @@ PresetSwitchIgnore=0
 [Preset.5]
 Active=1
 Comments=
-Name=Traktor - Cell Select Mode TODO
+Incoming0=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x14"/><Value2 var="oo" Type="SetVar"/></Simple></Incoming>
+Name=Traktor - Modifier 2 - Slot Select
+Name0=CH.11.CC.20 value to dedicated CC with value 127
+Options0=Actv01Stop00OutO00StMa00000002label0038__cmt>// convert CC 20's 0/1/2/3 value to CC 21/22/23/24pp=oo+21
+Outgoing0=MID3<Outgoing Action="MIDI"><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 var="pp"/><Value2 num="0x7F"/></Simple></Outgoing>
 PresetSwitchIgnore=0
 
 [Preset.6]
 Active=1
 Comments=
-Incoming0=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x14"/><Value2 var="oo" Type="SetVar"/></Simple></Incoming>
-Name=Traktor - Slot Select (Modifier 2)
-Name0=CH.11.CC.20 value to dedicated CC with value 127
-Options0=Actv01Stop00OutO00StMa00000002label0038__cmt>// convert CC 20's 0/1/2/3 value to CC 21/22/23/24pp=oo+21
+DefaultInPorts=MIDA00010021Bome MIDI Translator 1 Virtual In
+DefaultOutPorts=MIDA00010015Traktor Virtual Input
+Incoming0=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x1E"/><Value2 var="oo" Type="SetVar"/></Simple></Incoming>
+Name=Traktor - Modifier 3 - Cell Select Mode
+Name0=CH.11.CC.30 value to dedicated CC with value 127
+Options0=Actv01Stop00OutO00StMa00000002label002E__cmt>// convert CC 30's 0/1 value to CC 31/32pp=oo+31
 Outgoing0=MID3<Outgoing Action="MIDI"><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 var="pp"/><Value2 num="0x7F"/></Simple></Outgoing>
 PresetSwitchIgnore=0
 
@@ -250,6 +256,6 @@ Version=2
 
 [Signatures]
 SigName-1=[Midi Translator Pro Internal]
-Signature-1=y0o5K8GNNybuVx2SJ56bGJg1xWTA2e7tfQkk7EWf9FswAhk6OmAihUnmw4JldZYl5JCn+DYbgEsOvMkYZnCvPg2G+IWVfp5/lkh8pZR+oMIFumcTbsY0cLYW5UK0nCIQGP6lg0qO4sJYjlBM/4+ZT1zounsGVdm4zIHRPzRGprQ=
+Signature-1=J2Fd8o0o1zYbXR5tt8t+oR4sdXVfycX0h4+GhNiCpW2dVflw1DcEbsmmfVM2EDyHPKeYomTpLuJCS8SqNwwYlYxDlGh5WSdczqOjcHuHp+5licv9pJJTBNwraHiGaIepYysWuiK55uUVMs7dkULwaiOhZbLYOTnAB3pTb4X32c8=
 SignedBy-1=Dan Smith
 
