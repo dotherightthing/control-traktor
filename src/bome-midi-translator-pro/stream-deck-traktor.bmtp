@@ -266,66 +266,74 @@ Incoming0=EnDi02
 Incoming1=EnDi01
 Incoming10=Tim0TimT0009Init vars
 Incoming11=Tim0TimT000EToggle presets
-Incoming12=Tim0TimT001AUpdate Traktor modifier m3
-Incoming13=Tim0TimT001AUpdate Traktor modifier m4
-Incoming14=Tim0TimT000CDouble Click
-Incoming15=Tim0TimT0004Hold
+Incoming12=Tim0TimT001AUpdate Traktor modifier m1
+Incoming13=Tim0TimT001AUpdate Traktor modifier m2
+Incoming14=Tim0TimT001AUpdate Traktor modifier m3
+Incoming15=Tim0TimT001AUpdate Traktor modifier m4
+Incoming16=Tim0TimT000CDouble Click
+Incoming17=Tim0TimT0004Hold
 Incoming2=MID3<Incoming Action="MIDI"><Description>Value is 0 or 1</Description><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x26"/><Value2 var="ss" Type="SetVar"/></Simple></Incoming>
 Incoming3=MID3<Incoming Action="MIDI"><Description>Value is 0 or 1</Description><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x26"/><Value2 var="ss" Type="SetVar"/></Simple></Incoming>
 Incoming4=MID3<Incoming Action="MIDI"><Description>Value is 0 or 1</Description><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x26"/><Value2 var="ss" Type="SetVar"/></Simple></Incoming>
 Incoming5=MID3<Incoming Action="MIDI"><Description>Value is 0 or 1</Description><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x1E"/><Value2 var="m3" Type="SetVar"/></Simple></Incoming>
 Incoming6=MID3<Incoming Action="MIDI"><Description>Value is 0 or 1</Description><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x1E"/><Value2 var="m3" Type="SetVar"/></Simple></Incoming>
-Incoming7=MID3<Incoming Action="MIDI"><Simple Type="NoteOn"><Channel num="0"/><Value1 num="0x40"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
-Incoming8=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x14"/><Value2 var="oo" Type="SetVar"/></Simple></Incoming>
+Incoming7=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x04"/><Value2 var="m1" Type="SetVar"/></Simple></Incoming>
+Incoming8=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x14"/><Value2 var="m2" Type="SetVar"/></Simple></Incoming>
 Incoming9=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x5C"/><Value2 num="0x7F"/></Simple></Incoming>
 Name=Always active
 Name0=BOME - Initialise Global Vars
 Name1=BOME - Initialise Global Vars
 Name10=TIMER - Init vars (g2, m3, m4)
 Name11=TIMER - Toggle presets (m3, m4)
-Name12=TIMER - Update Traktor modifier m3 (Cell Select Mode)
-Name13=TIMER - Update Traktor modifier m4 (Bome clicks)
-Name14=TIMER - Double Click
-Name15=TIMER - Hold (ga)
+Name12=TIMER - Update Traktor modifier m1 (Shift)
+Name13=TIMER - Update Traktor modifier m2 (Slot)
+Name14=TIMER - Update Traktor modifier m3 (Cell Select Mode)
+Name15=TIMER - Update Traktor modifier m4 (Bome clicks)
+Name16=TIMER - Double Click
+Name17=TIMER - Hold (ga)
 Name2=STREAM DECK - Bome Clicks
 Name3=STREAM DECK - Bome Clicks
 Name4=STREAM DECK - Bome Clicks
 Name5=STREAM DECK - CELL SELECT MODE
 Name6=STREAM DECK - CELL SELECT MODE
-Name7=STREAM DECK - Shift - TODO
+Name7=STREAM DECK - Shift
 Name8=STREAM DECK - Slot
 Name9=STREAM DECK - SLOT RENAME (BOME)
 Options0=Actv01Stop00OutO00
 Options1=Actv01Stop00OutO00
-Options10=Actv01Stop00OutO00StMa00000021label0024__cmt>// Log "Processing enabled!!!"label0006__cmt>label0052__cmt>// bome ga = CC of pressed slot button which is then triggered by Hold timerlabel0006__cmt>label0021__cmt>// bome g2 = timer durationg2=100label0006__cmt>label0010__cmt>// Flow islabel0078__cmt>// Stream Deck button push -> Bome translation -> Traktor action or update of modifier, out -> Stream Deck displaylabel0006__cmt>label0033__cmt>// bome m1 = SHIFT state (traktor modifier 1)label001E__cmt>// m1=0 == SHIFT defaultlabel0023__cmt>// m1=1 == SHIFT pressed downlabel000F__cmt>// UNUSEDlabel0006__cmt>label0033__cmt>// bome m2 = slot select (traktor modifier 2)label0020__cmt>// m2=0 == slot 1 selectedlabel0020__cmt>// m2=1 == slot 2 selectedlabel0020__cmt>// m2=2 == slot 3 selectedlabel0020__cmt>// m2=3 == slot 4 selectedlabel000F__cmt>// UNUSEDlabel0006__cmt>label0037__cmt>// bome 3 = cell select mode (traktor modifier 3)label0030__cmt>// m3=0 == preset [1] P1 - Traktor - Holdslabel0032__cmt>// m3=1 == preset [2] or [3] depending on m4label0042__cmt>//         preset [2] P2 - Traktor - Mouse Clicks - MBP MAINlabel0041__cmt>//         preset [3] P3 - Traktor - Mouse Clicks - MBP EXTm3=0label0006__cmt>label0040__cmt>// bome m4 = bome mouse clicks offset (traktor modifier 4)label0042__cmt>// m4=0 == preset [2] P2 - Traktor - Mouse Clicks - MBP MAINlabel0041__cmt>// m4=1 == preset [3] P3 - Traktor - Mouse Clicks - MBP EXTm4=0
+Options10=Actv01Stop00OutO00StMa00000021label0024__cmt>// Log "Processing enabled!!!"label0006__cmt>label0052__cmt>// bome ga = CC of pressed slot button which is then triggered by Hold timerlabel0006__cmt>label0021__cmt>// bome g2 = timer durationg2=100label0006__cmt>label0010__cmt>// Flow islabel0078__cmt>// Stream Deck button push -> Bome translation -> Traktor action or update of modifier, out -> Stream Deck displaylabel0006__cmt>label0033__cmt>// bome m1 = SHIFT state (traktor modifier 1)label001E__cmt>// m1=0 == SHIFT defaultlabel0023__cmt>// m1=1 == SHIFT pressed downm1=0label0006__cmt>label0033__cmt>// bome m2 = slot select (traktor modifier 2)label0020__cmt>// m2=0 == slot 1 selectedlabel0020__cmt>// m2=1 == slot 2 selectedlabel0020__cmt>// m2=2 == slot 3 selectedlabel0020__cmt>// m2=3 == slot 4 selectedm2=0label0006__cmt>label0037__cmt>// bome 3 = cell select mode (traktor modifier 3)label0030__cmt>// m3=0 == preset [1] P1 - Traktor - Holdslabel0032__cmt>// m3=1 == preset [2] or [3] depending on m4label0042__cmt>//         preset [2] P2 - Traktor - Mouse Clicks - MBP MAINlabel0041__cmt>//         preset [3] P3 - Traktor - Mouse Clicks - MBP EXTm3=0label0006__cmt>label0040__cmt>// bome m4 = bome mouse clicks offset (traktor modifier 4)label0042__cmt>// m4=0 == preset [2] P2 - Traktor - Mouse Clicks - MBP MAINlabel0041__cmt>// m4=1 == preset [3] P3 - Traktor - Mouse Clicks - MBP EXTm4=0
 Options11=Actv01Stop00OutO00StMa00000010label0046__cmt>// if "Traktor - Modifier 3 - Cell Select Mode" is "Trigger" (0)label002B__cmt>// then preset == [1] Traktor - Holdsif(m3==0)pp=0if(m3==0)executelabel0006__cmt>label0072__cmt>// if "Traktor - Modifier 3 - Cell Select Mode" is "Mouse" (1) then preset depends on "Mouse clicks" settinglabel0006__cmt>label0043__cmt>// if "Traktor - Modifier 4 - Mouse clicks" is "MBP Main" (0)label003D__cmt>// then preset == [2] Traktor - Mouse Clicks - MBP MAINif(m4==0)pp=1if(m4==0)executelabel0006__cmt>label0042__cmt>// if "Traktor - Modifier 4 - Mouse clicks" is "MBP Ext" (1)label003C__cmt>// then preset == [3] Traktor - Mouse Clicks - MBP EXTif(m4==1)pp=2if(m4==1)execute
-Options12=Actv01Stop00OutO00StMa00000004label001F__cmt>// m3 received from CC 30label003E__cmt>// m3=0 + 31 = CC 31 which sets Traktor Modifier #3 to 0label003E__cmt>// m3=1 + 31 = CC 32 which sets Traktor Modifier #3 to 1rr=m3+31
-Options13=Actv01Stop00OutO00StMa00000004label001F__cmt>// m4 received from CC 38label003E__cmt>// m4=0 + 40 = CC 40 which sets Traktor Modifier #3 to 0label003E__cmt>// m4=1 + 40 = CC 41 which sets Traktor Modifier #3 to 1rr=m4+40
-Options14=Actv01Stop00OutO00
-Options15=Actv01Stop00OutO00Dlay50:Millis
+Options12=Actv01Stop00OutO00StMa00000004label0010__cmt>// if m1=0pp=m1label0006__cmt>if(m1==1)pp=127
+Options13=Actv01Stop00OutO00StMa00000002label0038__cmt>// convert CC 20's 0/1/2/3 value to CC 21/22/23/24rr=m2+21
+Options14=Actv01Stop00OutO00StMa00000004label001F__cmt>// m3 received from CC 30label003E__cmt>// m3=0 + 31 = CC 31 which sets Traktor Modifier #3 to 0label003E__cmt>// m3=1 + 31 = CC 32 which sets Traktor Modifier #3 to 1rr=m3+31
+Options15=Actv01Stop00OutO00StMa00000004label001F__cmt>// m4 received from CC 38label003E__cmt>// m4=0 + 40 = CC 40 which sets Traktor Modifier #3 to 0label003E__cmt>// m4=1 + 40 = CC 41 which sets Traktor Modifier #3 to 1rr=m4+40
+Options16=Actv01Stop00OutO00
+Options17=Actv01Stop00OutO00Dlay50:Millis
 Options2=Actv01Stop00OutO00StMa00000005label0029__cmt>// change cell select mode to clickm3=1label0006__cmt>label0030__cmt>// setting this directly above didn't workm4=ss
 Options3=Actv01Stop00OutO00
 Options4=Actv01Stop00OutO00StMa00000002label0024__cmt>// m4=anything == m3=1 (mouse)m3=1
 Options5=Actv01Stop00OutO00
 Options6=Actv01Stop00OutO00
-Options7=Actv00Stop00OutO00
-Options8=Actv01Stop00OutO00StMa00000002label0038__cmt>// convert CC 20's 0/1/2/3 value to CC 21/22/23/24pp=oo+21
+Options7=Actv01Stop00OutO00
+Options8=Actv01Stop00OutO00
 Options9=Actv01Stop00OutO00
 Outgoing0=Tim0TimS0009Init vars1:100:1
 Outgoing1=Tim0TimS0009Init vars1:100:1
 Outgoing10=Tim0TimS000EToggle presets1:g2:1
 Outgoing11=Pres03pp
-Outgoing12=MID3<Outgoing Action="MIDI"><Description>Cycle CC to dedicated CC</Description><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 var="rr"/><Value2 num="0x7F"/></Simple></Outgoing>
-Outgoing13=MID3<Outgoing Action="MIDI"><Description>Cycle CC to dedicated CC</Description><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 var="rr"/><Value2 num="0x7F"/></Simple></Outgoing>
-Outgoing14=Mse10200
-Outgoing15=MID3<Outgoing Action="MIDI"><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 var="ga"/><Value2 num="0x7F"/></Simple></Outgoing>
+Outgoing12=MID3<Outgoing Action="MIDI"><Description>Out same as in</Description><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x04"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing13=MID3<Outgoing Action="MIDI"><Description>Cycle CC to dedicated CC</Description><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 var="rr"/><Value2 num="0x7F"/></Simple></Outgoing>
+Outgoing14=MID3<Outgoing Action="MIDI"><Description>Cycle CC to dedicated CC</Description><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 var="rr"/><Value2 num="0x7F"/></Simple></Outgoing>
+Outgoing15=MID3<Outgoing Action="MIDI"><Description>Cycle CC to dedicated CC</Description><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 var="rr"/><Value2 num="0x7F"/></Simple></Outgoing>
+Outgoing16=Mse10200
+Outgoing17=MID3<Outgoing Action="MIDI"><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 var="ga"/><Value2 num="0x7F"/></Simple></Outgoing>
 Outgoing2=Tim0TimS000EToggle presets1:g2:1
 Outgoing3=Tim0TimS001AUpdate Traktor modifier m41:g2:1
 Outgoing4=Tim0TimS001AUpdate Traktor modifier m31:g2:1
 Outgoing5=Tim0TimS000EToggle presets1:g2:1
 Outgoing6=Tim0TimS001AUpdate Traktor modifier m31:g2:1
-Outgoing7=None
-Outgoing8=MID3<Outgoing Action="MIDI"><Description>Cycle CC to dedicated CC</Description><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 var="pp"/><Value2 num="0x7F"/></Simple></Outgoing>
+Outgoing7=Tim0TimS001AUpdate Traktor modifier m11:g2:1
+Outgoing8=Tim0TimS001AUpdate Traktor modifier m21:g2:1
 Outgoing9=Tim0TimS000CDouble Click2:10:10
 PresetSwitchIgnore=1
 
@@ -337,6 +345,6 @@ Version=2
 
 [Signatures]
 SigName-1=[Midi Translator Pro Internal]
-Signature-1=p+u4BN01DgyCDkEL5mgD0HlOnnK0FG4Oj3MExK2LUvLgZy9r2dbKiR+yJjTuIsoltfxUxf5OjxuUe0btQbJw3pjYRD/UhhL6YEAs0NIY/4/fosAqGC2GUfa6+ymcWl9oIaaobmO1NVxleVSbeqC34qDi+423QAaDnhIVI1/V7ec=
+Signature-1=bS9F9vfZbtoQ9r/roa/LJMc998WAi/zioTqKWMqwrakjwTIDFuYy3PU8o5GCinomDs2iuOPy+ljSLqZsUyTQvlsvU9iJBfaaFiy11s0tLEZAanLnz+okXLfFcqWvrrAjXlFhjXQneSMOgaeN9hwSVywzEi8HxSY4HZTCHqAI16E=
 SignedBy-1=Dan Smith
 
