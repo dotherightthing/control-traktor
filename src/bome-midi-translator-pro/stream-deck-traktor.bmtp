@@ -159,21 +159,69 @@ Active=1
 Comments=Traktor running on MBP Built-in Display when used as Main display. Dell U2518D is 2560x1440. Built-in Display is 1536x960.
 Incoming0=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="1" setvar="ga" Type="New Version Required"/><Value2 num="127" Type="New Version Required"/></Simple></Incoming>
 Incoming1=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="2" setvar="ga" Type="New Version Required"/><Value2 num="127" Type="New Version Required"/></Simple></Incoming>
+Incoming10=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="11" setvar="ga" Type="New Version Required"/><Value2 num="127" Type="New Version Required"/></Simple></Incoming>
+Incoming11=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="12" setvar="ga" Type="New Version Required"/><Value2 num="127" Type="New Version Required"/></Simple></Incoming>
+Incoming12=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="13" setvar="ga" Type="New Version Required"/><Value2 num="127" Type="New Version Required"/></Simple></Incoming>
+Incoming13=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="14" setvar="ga" Type="New Version Required"/><Value2 num="127" Type="New Version Required"/></Simple></Incoming>
+Incoming14=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="15" setvar="ga" Type="New Version Required"/><Value2 num="127" Type="New Version Required"/></Simple></Incoming>
+Incoming15=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="16" setvar="ga" Type="New Version Required"/><Value2 num="127" Type="New Version Required"/></Simple></Incoming>
 Incoming2=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="3" setvar="ga" Type="New Version Required"/><Value2 num="127" Type="New Version Required"/></Simple></Incoming>
 Incoming3=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="4" setvar="ga" Type="New Version Required"/><Value2 num="127" Type="New Version Required"/></Simple></Incoming>
+Incoming4=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="5" setvar="ga" Type="New Version Required"/><Value2 num="127" Type="New Version Required"/></Simple></Incoming>
+Incoming5=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="6" setvar="ga" Type="New Version Required"/><Value2 num="127" Type="New Version Required"/></Simple></Incoming>
+Incoming6=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="7" setvar="ga" Type="New Version Required"/><Value2 num="127" Type="New Version Required"/></Simple></Incoming>
+Incoming7=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="8" setvar="ga" Type="New Version Required"/><Value2 num="127" Type="New Version Required"/></Simple></Incoming>
+Incoming8=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="9" setvar="ga" Type="New Version Required"/><Value2 num="127" Type="New Version Required"/></Simple></Incoming>
+Incoming9=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="10" setvar="ga" Type="New Version Required"/><Value2 num="127" Type="New Version Required"/></Simple></Incoming>
 Name=Hold Traktor
 Name0=Remix Deck C Row 1 Column 1 - Hold
 Name1=Remix Deck C Row 1 Column 2 - Hold
+Name10=Remix Deck C Row 3 Column 3 - Hold
+Name11=Remix Deck C Row 3 Column 4 - Hold
+Name12=Remix Deck C Row 4 Column 1 - Hold
+Name13=Remix Deck C Row 4 Column 2 - Hold
+Name14=Remix Deck C Row 4 Column 3 - Hold
+Name15=Remix Deck C Row 4 Column 4 - Hold
 Name2=Remix Deck C Row 1 Column 3 - Hold
 Name3=Remix Deck C Row 1 Column 4 - Hold
+Name4=Remix Deck C Row 2 Column 1 - Hold
+Name5=Remix Deck C Row 2 Column 2 - Hold
+Name6=Remix Deck C Row 2 Column 3 - Hold
+Name7=Remix Deck C Row 2 Column 4 - Hold
+Name8=Remix Deck C Row 3 Column 1 - Hold
+Name9=Remix Deck C Row 3 Column 2 - Hold
 Options0=Actv01Stop00OutO00Dlay0:Millis
 Options1=Actv01Stop00OutO00Dlay0:Millis
+Options10=Actv01Stop00OutO00Dlay0:Millis
+Options11=Actv01Stop00OutO00Dlay0:Millis
+Options12=Actv01Stop00OutO00Dlay0:Millis
+Options13=Actv01Stop00OutO00Dlay0:Millis
+Options14=Actv01Stop00OutO00Dlay0:Millis
+Options15=Actv01Stop00OutO00Dlay0:Millis
 Options2=Actv01Stop00OutO00Dlay0:Millis
 Options3=Actv01Stop00OutO00Dlay0:Millis
+Options4=Actv01Stop00OutO00Dlay0:Millis
+Options5=Actv01Stop00OutO00Dlay0:Millis
+Options6=Actv01Stop00OutO00Dlay0:Millis
+Options7=Actv01Stop00OutO00Dlay0:Millis
+Options8=Actv01Stop00OutO00Dlay0:Millis
+Options9=Actv01Stop00OutO00Dlay0:Millis
 Outgoing0=Tim0TimS0004Hold1:500:1
 Outgoing1=Tim0TimS0004Hold1:500:1
+Outgoing10=Tim0TimS0004Hold1:500:1
+Outgoing11=Tim0TimS0004Hold1:500:1
+Outgoing12=Tim0TimS0004Hold1:500:1
+Outgoing13=Tim0TimS0004Hold1:500:1
+Outgoing14=Tim0TimS0004Hold1:500:1
+Outgoing15=Tim0TimS0004Hold1:500:1
 Outgoing2=Tim0TimS0004Hold1:500:1
 Outgoing3=Tim0TimS0004Hold1:500:1
+Outgoing4=Tim0TimS0004Hold1:500:1
+Outgoing5=Tim0TimS0004Hold1:500:1
+Outgoing6=Tim0TimS0004Hold1:500:1
+Outgoing7=Tim0TimS0004Hold1:500:1
+Outgoing8=Tim0TimS0004Hold1:500:1
+Outgoing9=Tim0TimS0004Hold1:500:1
 PresetSwitchIgnore=0
 
 [Preset.3]
@@ -262,6 +310,6 @@ Version=2
 
 [Signatures]
 SigName-1=[Midi Translator Pro Internal]
-Signature-1=Gwn0rVxHk/csVltVtV0f/Np5ahmHY/PipWwEi5EeDAWO85neF3BUeNafPYZerK7aoATF6EFutolhPqw7fzjeBq4fA7DfcDWd3pV9Kzeu5qVCc/6h5tss1STcZJ6C6mGlcIaQTLntwfWW9745wb+y1DsSQIKamT2ciEGOqAwhw88=
+Signature-1=Vjh776Rre4ycvGrf2vnL+EPYiKQDMveZyG//VphBSccO2enuI1GzfjDbEh2MlG8gXq3v38SfYAi/ZCe+rIwe7iL/YFc+5EBNDgF2aPBDzX1gD4OW+Z3Pj71RN4NadeMztr3xAfwYcELVmJwj5kfW8PKyNzL4UjzDyCqV2QmmFPQ=
 SignedBy-1=Dan Smith
 
