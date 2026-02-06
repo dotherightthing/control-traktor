@@ -3,7 +3,7 @@
   <Default send="yes" receive="yes" display="" image="" displayonsend="yes" useclosestvalueonreceive="yes"/>
   <StepValues>
     <Step value="0" display="Bome clicks&#xA;&#xA;&#xA;&#xA;&#xA;MBP Main"/>
-    <Step value="127" display="Bome clicks&#xA;&#xA;&#xA;&#xA;&#xA;MBP Ext"/>
+    <Step value="1" display="Bome clicks&#xA;&#xA;&#xA;&#xA;&#xA;MBP Ext"/>
   </StepValues>
 </MidiSteps>
 
