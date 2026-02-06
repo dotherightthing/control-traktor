@@ -338,12 +338,13 @@ Name=New Preset
 PresetSwitchIgnore=0
 
 [Project]
+Comments=Control Traktor CT6
 DefaultInPorts=MIDA00010021Bome MIDI Translator 1 Virtual In
 DefaultOutPorts=MIDA00010015Traktor Virtual Input
 Version=2
 
 [Signatures]
 SigName-1=[Midi Translator Pro Internal]
-Signature-1=Z2d/lWHFhKYgfVDRsDvRpjuvB70MlnJ/5DiJ8vx2z7N8Q+9920OR1kZ9//6P5APnlrOgvYHuJAk30AncDzY45E6QVvEBWwsejlx6D0XhYwl5wUCGfZ8a9dGrU2mmBkhNIu78jYkoFZrA0ZmZxpsXfhWYj0hOSYE6NjU678MNkac=
+Signature-1=KBMJnijkShjnH3hJUhP48ZKEvOGBp4mr87kF2W2Ixkpjspp87aNLp6ynX0NXdrrZj9G/Bkh7atffWlERVdtR0TMnd2fGUJeOqzHpWx0r12V4YuhMwKRM17xvCylvbXHWaGb0Xw6S0CISJRGe92RjbuTecVnK3GXiDM3ugWJGCJI=
 SignedBy-1=Dan Smith
 
