@@ -52,7 +52,7 @@ Name6=Remix Deck C Row 2 Column 3 - Click
 Name7=Remix Deck C Row 2 Column 4 - Click
 Name8=Remix Deck C Row 3 Column 1 - Click
 Name9=Remix Deck C Row 3 Column 2 - Click
-Options0=Actv01Stop00OutO01Dlay50:Millis
+Options0=Actv01Stop00OutO00Dlay50:Millis
 Options1=Actv01Stop00OutO00Dlay50:Millis
 Options10=Actv01Stop00OutO00Dlay50:Millis
 Options11=Actv01Stop00OutO00Dlay50:Millis
@@ -189,6 +189,8 @@ PresetSwitchIgnore=0
 [Preset.2]
 Active=1
 Comments=Traktor running on MBP Built-in Display when used as Main display. Dell U2518D is 2560x1440. Built-in Display is 1536x960.
+DefaultInPorts=MIDA00010021Bome MIDI Translator 1 Virtual In
+DefaultOutPorts=MIDA00010015Traktor Virtual Input
 Incoming0=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="1" setvar="ga" Type="New Version Required"/></Simple></Incoming>
 Incoming1=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="2" setvar="ga" Type="New Version Required"/></Simple></Incoming>
 Incoming10=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="11" setvar="ga" Type="New Version Required"/></Simple></Incoming>
@@ -325,16 +327,36 @@ Comments=
 DefaultInPorts=MIDA00010021Bome MIDI Translator 1 Virtual In
 DefaultOutPorts=MIDA00010015Traktor Virtual Input
 Incoming0=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x1E"/><Value2 var="oo" Type="SetVar"/></Simple></Incoming>
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x1F"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x1F"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x1F"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming4=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x20"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming5=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x20"/><Value2 num="0x7F"/></Simple></Incoming>
 Name=Traktor - Modifier 3 - Cell Select Mode
 Name0=CH.11.CC.30 value to dedicated CC with value 127
+Name1=Cell Select Mode - Hold
+Name2=Cell Select Mode - Hold
+Name3=Cell Select Mode - Hold
+Name4=Cell Select Mode - Click TODO also toggle MBP Main/Ext
+Name5=Cell Select Mode - Click TODO also toggle MBP Main/Ext
 Options0=Actv01Stop00OutO00StMa00000002label002E__cmt>// convert CC 30's 0/1 value to CC 31/32pp=oo+31
+Options1=Actv01Stop00OutO01StMa00000001label0006__cmt>
+Options2=Actv01Stop00OutO01StMa00000001label0006__cmt>
+Options3=Actv01Stop00OutO01StMa00000001label0006__cmt>
+Options4=Actv01Stop00OutO01StMa00000001label0006__cmt>
+Options5=Actv01Stop00OutO01StMa00000001label0006__cmt>
 Outgoing0=MID3<Outgoing Action="MIDI"><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 var="pp"/><Value2 num="0x7F"/></Simple></Outgoing>
+Outgoing1=Pres04000CHold Traktor
+Outgoing2=Pres060017Click Traktor - MBP EXT
+Outgoing3=Pres060018Click Traktor - MBP MAIN
+Outgoing4=Pres040018Click Traktor - MBP MAIN
+Outgoing5=Pres06000CHold Traktor
 PresetSwitchIgnore=0
 
 [Preset.8]
 Active=1
 Comments=
-Name=New Preset
+Name=Traktor - Toggle Click/Hold mode TODO
 PresetSwitchIgnore=0
 
 [Project]
@@ -345,6 +367,6 @@ Version=2
 
 [Signatures]
 SigName-1=[Midi Translator Pro Internal]
-Signature-1=ulipC9fY5Wa5p9LxlswMGht2/OfhPPlg134Qfp3Fz5SLwxjeL2KDOIGuu/DNJt66L5VEyFz8i3pXpnvevFdYIF4zAIuAXItPA+CbK8FNDX3HS/lUxiL4TlPPdhBbicWf99j92aidRb4DcVC/6bw5XUj1OPSpwNaGBtCYbWdNHjA=
+Signature-1=pVU6FhEyEajPTCt3j568FAOCxaxGpm89LTz3rGtHqCVcGX5BBmw/hR8Ug4LCXEoMwZITlM/XnCAU4RKNlkAEeggAcofmwodCCcyjvFGUAcMlkCkzdYNFLTkU7dWxB1rgfVgQ2tjkqRvRcsqVbVcFw7FIhjZlPvatt5fcrZs0eJI=
 SignedBy-1=Dan Smith
 
