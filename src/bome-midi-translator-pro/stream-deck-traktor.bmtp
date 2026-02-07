@@ -372,7 +372,7 @@ Options13=Actv01Stop00OutO00StMa00000002label0038__cmt>// convert CC 20's 0/1/2/
 Options14=Actv01Stop00OutO00StMa00000004label001F__cmt>// m3 received from CC 30label003E__cmt>// m3=0 + 31 = CC 31 which sets Traktor Modifier #3 to 0label003E__cmt>// m3=1 + 31 = CC 32 which sets Traktor Modifier #3 to 1rr=m3+31
 Options15=Actv01Stop00OutO00StMa00000004label001F__cmt>// m4 received from CC 38label003E__cmt>// m4=0 + 40 = CC 40 which sets Traktor Modifier #3 to 0label003E__cmt>// m4=1 + 40 = CC 41 which sets Traktor Modifier #3 to 1rr=m4+40
 Options16=Actv01Stop00OutO00
-Options17=Actv01Stop00OutO00Dlay50:MillisStMa00000001label0017__log>Hold Ch11.CC.%ga%
+Options17=Actv01Stop00OutO00StMa00000001label0017__log>Hold Ch11.CC.%ga%
 Options2=Actv01Stop00OutO01StMa00000005label0029__cmt>// change cell select mode to clickm3=1label0006__cmt>label0030__cmt>// setting this directly above didn't workm4=ss
 Options3=Actv01Stop00OutO01
 Options4=Actv01Stop00OutO01StMa00000002label0024__cmt>// m4=anything == m3=1 (mouse)m3=1
@@ -409,6 +409,6 @@ Version=2
 
 [Signatures]
 SigName-1=[Midi Translator Pro Internal]
-Signature-1=dVJoDqrb9E5m3VrS9t+TNHOm3j/H3aPI4IR4ysNWXQKx9pfqYB4N+pNx/KhJc4EJMWzBRoVeyltN7RBxiskWNdScIMugx+j6siybrthopS7/smdDeTBxqXn+SO884kNf+/yaGA3wwEcJgXW0MBVQfsJlcMCH5qs0jGAdIGSqPAk=
+Signature-1=GI/t1VLR1iIRrZfEQg/KNZnpkjiwjSRBZVgNob/pEQrJM+6/fbvAm4nN1BWLz7HIgnvKEHNN1eZyUz2/u6oQPy+Tg1RFLoFMZJaGr++ijYdgJ9VGa42bWOAZdJu1R4z1vjCr8KEV35UOgGCwFFn4+8URkwDnBOzkw706lkkHRTw=
 SignedBy-1=Dan Smith
 
