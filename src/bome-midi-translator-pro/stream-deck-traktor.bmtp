@@ -74,7 +74,7 @@ Name4=Remix Deck C Row 1 Column 3 - Hold Kill
 Name5=Remix Deck C Row 1 Column 3 - Hold
 Name6=Remix Deck C Row 1 Column 4 - Hold Kill
 Name7=Remix Deck C Row 1 Column 4 - Hold
-Name8=Remix Deck C Row 2 Column 1 - Hold
+Name8=Remix Deck C Row 2 Column 1 - Hold Kill
 Name9=Remix Deck C Row 2 Column 1 - Hold
 Options0=Actv01Stop00OutO01
 Options1=Actv01Stop00OutO01
@@ -138,7 +138,7 @@ Outgoing4=Tim0TimK0004Hold
 Outgoing5=Tim0TimS0004Hold1:g3:1
 Outgoing6=Tim0TimK0004Hold
 Outgoing7=Tim0TimS0004Hold1:g3:1
-Outgoing8=Tim0TimS0004Hold1:g3:1
+Outgoing8=Tim0TimK0004Hold
 Outgoing9=Tim0TimS0004Hold1:g3:1
 PresetSwitchIgnore=0
 
@@ -409,6 +409,6 @@ Version=2
 
 [Signatures]
 SigName-1=[Midi Translator Pro Internal]
-Signature-1=S8HYT6z9kmbtcxIYhBzDGuj0HHNfCNyDwRPLcSz1jq87PqbfyUUYLE/1qr70sD9uuy8jVCjsLenfzwnhtgu9IPlkHDWsPeAKHcxQ+FlNY1uoL9Fpdk0KFMErIaoiJN8XQ6TauOTUkR/1v6IhKLEto4uAmyHCKzOFAt2z391M1Pg=
+Signature-1=dVJoDqrb9E5m3VrS9t+TNHOm3j/H3aPI4IR4ysNWXQKx9pfqYB4N+pNx/KhJc4EJMWzBRoVeyltN7RBxiskWNdScIMugx+j6siybrthopS7/smdDeTBxqXn+SO884kNf+/yaGA3wwEcJgXW0MBVQfsJlcMCH5qs0jGAdIGSqPAk=
 SignedBy-1=Dan Smith
 
