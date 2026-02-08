@@ -7,7 +7,7 @@ In0=Bome MIDI Translator 1 Virtual In
 Out0=Traktor Virtual Input
 
 [Preset.0]
-Active=0
+Active=1
 Comments=Traktor running on MBP Built-in Display when used as Main display. Dell U2518D is 2560x1440. Built-in Display is 1536x960.
 DefaultInPorts=MIDA00010021Bome MIDI Translator 1 Virtual In
 DefaultOutPorts=MIDA00010015Traktor Virtual Input
@@ -79,7 +79,7 @@ Outgoing9=Prfm<Outgoing Action="Perform"><Name>Hold</Name><Params>ga</Params></O
 PresetSwitchIgnore=0
 
 [Preset.1]
-Active=1
+Active=0
 Comments=Traktor running on MBP Built-in Display when used as Main display. Dell U2518D is 2560x1440. Built-in Display is 1536x960.
 Incoming0=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x01"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
 Incoming1=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x02"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
@@ -308,7 +308,7 @@ Name9=STREAM DECK - Shift mode
 Options0=Actv01Stop00OutO00
 Options1=Actv01Stop00OutO00
 Options10=Actv01Stop00OutO01
-Options11=Actv01Stop00OutO00StMa0000002Clabel0017__log>Vars initialised!label0006__cmt>label0052__cmt>// bome ga = CC of pressed slot button which is then triggered by Hold timerlabel0006__cmt>label0021__cmt>// bome g2 = timer durationg2=300label0006__cmt>label0026__cmt>// bome g3 = hold timer durationg3=500label0006__cmt>label0006__cmt>label0010__cmt>// Flow islabel0078__cmt>// Stream Deck button push -> Bome translation -> Traktor action or update of modifier, out -> Stream Deck displaylabel0006__cmt>label0033__cmt>// bome m1 = SHIFT state (traktor modifier 1)label001E__cmt>// m1=0 == SHIFT defaultlabel0023__cmt>// m1=1 == SHIFT pressed downm1=0label0006__cmt>label0033__cmt>// bome m2 = slot select (traktor modifier 2)label0020__cmt>// m2=0 == slot 1 selectedlabel0020__cmt>// m2=1 == slot 2 selectedlabel0020__cmt>// m2=2 == slot 3 selectedlabel0020__cmt>// m2=3 == slot 4 selectedm2=0label0006__cmt>label0037__cmt>// bome 3 = cell select mode (traktor modifier 3)label0030__cmt>// m3=0 == preset [1] P1 - Traktor - Holdslabel0032__cmt>// m3=1 == preset [2] or [3] depending on m4label0042__cmt>//         preset [2] P2 - Traktor - Mouse Clicks - MBP MAINlabel0041__cmt>//         preset [3] P3 - Traktor - Mouse Clicks - MBP EXTm3=0label0006__cmt>label0040__cmt>// bome m4 = bome mouse clicks offset (traktor modifier 4)label0042__cmt>// m4=0 == preset [2] P2 - Traktor - Mouse Clicks - MBP MAINlabel0041__cmt>// m4=1 == preset [3] P3 - Traktor - Mouse Clicks - MBP EXTm4=0label0006__cmt>label0032__cmt>// bome m5 = shift mode (traktor modifier 5)label0015__cmt>// m5=0 == loadlabel0017__cmt>// m5=1 == deletelabel0018__cmt>// m5=2 == reverselabel0018__cmt>// m5=3 == capturem5=0
+Options11=Actv01Stop00OutO00StMa0000002Dlabel0017__log>Vars initialised!label0006__cmt>label0052__cmt>// bome ga = CC of pressed slot button which is then triggered by Hold timerlabel0006__cmt>label0021__cmt>// bome g2 = timer durationg2=300label0006__cmt>label0026__cmt>// bome g3 = hold timer durationg3=500label0006__cmt>label0006__cmt>label0010__cmt>// Flow islabel0078__cmt>// Stream Deck button push -> Bome translation -> Traktor action or update of modifier, out -> Stream Deck displaylabel0006__cmt>label0033__cmt>// bome m1 = SHIFT state (traktor modifier 1)label001E__cmt>// m1=0 == SHIFT defaultlabel0023__cmt>// m1=1 == SHIFT pressed downm1=0label0006__cmt>label0033__cmt>// bome m2 = slot select (traktor modifier 2)label0020__cmt>// m2=0 == slot 1 selectedlabel0020__cmt>// m2=1 == slot 2 selectedlabel0020__cmt>// m2=2 == slot 3 selectedlabel0020__cmt>// m2=3 == slot 4 selectedm2=0label0006__cmt>label0037__cmt>// bome 3 = cell select mode (traktor modifier 3)label0030__cmt>// m3=0 == preset [1] P1 - Traktor - Holdslabel0032__cmt>// m3=1 == preset [2] or [3] depending on m4label0042__cmt>//         preset [2] P2 - Traktor - Mouse Clicks - MBP MAINlabel0041__cmt>//         preset [3] P3 - Traktor - Mouse Clicks - MBP EXTm3=0label0006__cmt>label0040__cmt>// bome m4 = bome mouse clicks offset (traktor modifier 4)label0042__cmt>// m4=0 == preset [2] P2 - Traktor - Mouse Clicks - MBP MAINlabel0041__cmt>// m4=1 == preset [3] P3 - Traktor - Mouse Clicks - MBP EXTm4=0label0006__cmt>label0032__cmt>// bome m5 = shift mode (traktor modifier 5)label0015__cmt>// m5=0 == loadlabel0017__cmt>// m5=1 == deletelabel0018__cmt>// m5=2 == reverselabel0018__cmt>// m5=3 == capturelabel0015__cmt>// m5=4 == mutem5=0
 Options12=Actv01Stop00OutO00StMa00000010label0046__cmt>// if "Traktor - Modifier 3 - Cell Select Mode" is "Trigger" (0)label002B__cmt>// then preset == [1] Traktor - Holdsif(m3==0)pp=0if(m3==0)executelabel0006__cmt>label0072__cmt>// if "Traktor - Modifier 3 - Cell Select Mode" is "Mouse" (1) then preset depends on "Mouse clicks" settinglabel0006__cmt>label0043__cmt>// if "Traktor - Modifier 4 - Mouse clicks" is "MBP Main" (0)label003D__cmt>// then preset == [2] Traktor - Mouse Clicks - MBP MAINif(m4==0)pp=1if(m4==0)executelabel0006__cmt>label0042__cmt>// if "Traktor - Modifier 4 - Mouse clicks" is "MBP Ext" (1)label003C__cmt>// then preset == [3] Traktor - Mouse Clicks - MBP EXTif(m4==1)pp=2if(m4==1)execute
 Options13=Actv01Stop00OutO00StMa00000004label0010__cmt>// if m1=0pp=m1label0006__cmt>if(m1==1)pp=127
 Options14=Actv01Stop00OutO00StMa00000002label0038__cmt>// convert CC 20's 0/1/2/3 value to CC 21/22/23/24rr=m2+21
@@ -357,6 +357,6 @@ Version=2
 
 [Signatures]
 SigName-1=[Midi Translator Pro Internal]
-Signature-1=kXOrD6xCM1aiKeeFA0m3RBqEpujZO2J7SQ5bPDSfZ51lL/GirLXez/+9aYzhMnbSr97TXpHdFXhK/W3swA28hzimBtF/52hupj0KpRjY146/N1/gwITl5skxKjTQy96SazRoGzpTQimzdCtoVlBkbbvcVPXYObeWH94+lwt2psw=
+Signature-1=Q2Gz/V7y+vK6StVAriYjxA5qriDCNJkz58CY8wTCVpTmXEDLYyFTy+MNaQS7eljdTnkpGzSz9mWa/a7Hs7dIMU0pJ8Gok9jbwZMYPQbIhWlf1IkTfXQ60158sCvyj/kWCBCCJ47a4+osy1ci6XNXtp5Meoc4CKgVPTN20ApPmCE=
 SignedBy-1=Dan Smith
 
