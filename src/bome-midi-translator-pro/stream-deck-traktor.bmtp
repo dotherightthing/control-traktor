@@ -124,7 +124,7 @@ Name6=Remix Deck C Row 2 Column 3 - Click
 Name7=Remix Deck C Row 2 Column 4 - Click
 Name8=Remix Deck C Row 3 Column 1 - Click
 Name9=Remix Deck C Row 3 Column 2 - Click
-Options0=Actv01Stop00OutO00Dlay50:Millis
+Options0=Actv01Stop00OutO00Dlay50:MillisStMa00000001label0036__cmt>// TODO update to use m6 to cater to 2-row banks
 Options1=Actv01Stop00OutO00Dlay50:Millis
 Options10=Actv01Stop00OutO00Dlay50:Millis
 Options11=Actv01Stop00OutO00Dlay50:Millis
@@ -357,6 +357,6 @@ Version=2
 
 [Signatures]
 SigName-1=[Midi Translator Pro Internal]
-Signature-1=qQNty66AOYFhFQPKT7mANeHltujmGb5wPdzn92GNFiCBFWkc9iSt8TPw1+ELLHLgAnrOGHg//y4BOCI6pejtdNeFbrgdO5ZR7r7F6XyL/IcXjG+r6w5JvjRmI4P6XW2GBrKywpn90gKu7qkly62C9d/rmpYkJU/RzMwkqzomtDE=
+Signature-1=tvo8Jw8VA25U9Sk/CI/5jSik3W3SyhmOzXCcNYvt3CfyD8OX/uqL2Dd55jc+C6Xtkbv5F8y7nw/BHny99ZCMWyTqkdVFm/U4K7SaIOXRUkAmNmzDZi6gY37dFMjKabxxuPwVmL6+pqCDRM+L+MRGPn+Ti3Q/x/5zyQl+5L6o9Sw=
 SignedBy-1=Dan Smith
 
