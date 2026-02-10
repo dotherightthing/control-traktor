@@ -42,6 +42,7 @@ Note: *~* (tilde) means *Macintosh HD/Users/USERNAME*.
 6. The installer will open the output folder, **~/Documents/control-traktor**, which contains the following:
    * **automator**, containing:
       * **Launch Traktor.app** - kills any *NIHardwareAgent* processes before launching Traktor as usual (see Issue [#69](https://github.com/dotherightthing/control-traktor/issues/69)). Note that you will be prompted for your user password - this is required to run the `killall` command as a superuser (`sudo`) in order to kill processes running under both the current user and any other users on the same machine.
+      * **Wake Stream Deck.app** - opens the Stream Deck menu bar item briefly in order to coax Stream Deck back to life after MIDI events stop sending. Note that this requires access to Assistive Events: *System Settings > Privacy & Security > Accessibility*.
    * **bome-midi-translator-pro**, containing:
      * *stream-deck-traktor.bmtp* - preset for Bome
    * **ClyphX Pro - XTB** - shortcut to *~/nativeKONTROL/ClyphX_Pro/XTB*, containing *X-Controls.txt*

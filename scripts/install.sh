@@ -33,8 +33,9 @@ then
   && mkdir -p ~/"Music/Ableton/User Library/Presets/MIDI Effects/Max MIDI Effect" \
   && mkdir -p ~/"Music/Ableton/User Library/Presets/MIDI Effects/Pitch" \
   && mkdir -p ~/"nativeKONTROL/ClyphX_Pro/XTB" \
-  && echo     "Installing Automator app" \
+  && echo     "Installing Automator apps" \
   && cp -r    "./automator/Launch Traktor.app"                      ~/"Documents/control-traktor/automator" \
+  && cp -r    "./automator/Wake Stream Deck.app"                    ~/"Documents/control-traktor/automator" \
   && echo     "Installing Bome support files" \
   && cp       "./bome-midi-translator-pro/"*.bmtp                   ~/"Documents/control-traktor/bome-midi-translator-pro" \
   && echo     "Installing ClyphX Pro support files" \

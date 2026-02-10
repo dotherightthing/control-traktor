@@ -31,6 +31,7 @@ cd          "$INIT_CWD" \
 && mkdir    "release/traktor" \
 && cp       "./scripts/install.sh"                                             "./release" \
 && cp -r    "./src/automator/Launch Traktor.app"                               "./release/automator" \
+&& cp -r    "./src/automator/Wake Stream Deck.app"                             "./release/automator" \
 && cp       "./src/bome-midi-translator-pro/stream-deck-traktor.bmtp"          "./release/bome-midi-translator-pro" \
 && cp       "./src/clyphx-pro/XTB/"*                                           "./release/clyphx-pro/XTB" \
 && cp -r    "./src/live"                                                       "./release" \
