@@ -7,7 +7,7 @@ In0=Bome MIDI Translator 1 Virtual In
 Out0=Traktor Virtual Input
 
 [Preset.0]
-Active=1
+Active=0
 Comments=Traktor running on MBP Built-in Display when used as Main display. Dell U2518D is 2560x1440. Built-in Display is 1536x960.
 DefaultInPorts=MIDA00010021Bome MIDI Translator 1 Virtual In
 DefaultOutPorts=MIDA00010015Traktor Virtual Input
@@ -142,8 +142,8 @@ Options14=Actv01Stop00OutO00
 Options15=Actv01Stop00OutO00
 Options16=Actv01Stop00OutO00
 Options17=Actv01Stop00OutO00
-Options18=Actv01Stop00OutO00
-Options19=Actv01Stop00OutO00
+Options18=Actv01Stop00OutO00StMa00000002if(m1==0)executeif(m1==1)noexecute
+Options19=Actv01Stop00OutO00StMa00000002if(m1==1)executeif(m1==0)noexecute
 Options2=Actv01Stop00OutO00
 Options20=Actv01Stop00OutO01StMa00000002if(m1==1)executeif(m1==0)noexecute
 Options21=Actv01Stop00OutO01Dlay50:MillisStMa00000002if(m1==1)executeif(m1==0)noexecute
@@ -185,7 +185,7 @@ Outgoing9=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num
 PresetSwitchIgnore=0
 
 [Preset.2]
-Active=0
+Active=1
 Comments=Traktor running on MBP Built-in Display when used as Extended display. Dell U2518D is 2560x1440. Built-in Display is 1536x960.
 Incoming0=Prfm<Incoming Action="Perform"><Name>Deck A - Hot Cue Name</Name></Incoming>
 Incoming1=Prfm<Incoming Action="Perform"><Name>Deck B - Hot Cue Name</Name></Incoming>
@@ -248,8 +248,8 @@ Options14=Actv01Stop00OutO00
 Options15=Actv01Stop00OutO00
 Options16=Actv01Stop00OutO00
 Options17=Actv01Stop00OutO00
-Options18=Actv01Stop00OutO00
-Options19=Actv01Stop00OutO00
+Options18=Actv01Stop00OutO00StMa00000002if(m1==0)executeif(m1==1)noexecute
+Options19=Actv01Stop00OutO00StMa00000002if(m1==1)executeif(m1==0)noexecute
 Options2=Actv01Stop00OutO00
 Options20=Actv01Stop00OutO01StMa00000002if(m1==1)executeif(m1==0)noexecute
 Options21=Actv01Stop00OutO01Dlay50:MillisStMa00000002if(m1==1)executeif(m1==0)noexecute
@@ -305,7 +305,7 @@ Incoming15=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtu
 Incoming16=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="8" setvar="ga" Type="New Version Required"/></Simple></Incoming>
 Incoming17=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="8" setvar="ga" Type="New Version Required"/></Simple></Incoming>
 Incoming18=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x56"/><Value2 num="0x7F"/></Simple></Incoming>
-Incoming19=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x57"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming19=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x56"/><Value2 num="0x7F"/></Simple></Incoming>
 Incoming2=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="1" setvar="ga" Type="New Version Required"/></Simple></Incoming>
 Incoming20=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x46"/><Value2 num="0x7F"/></Simple></Incoming>
 Incoming21=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x46"/><Value2 num="0x7F"/></Simple></Incoming>
@@ -485,6 +485,6 @@ Version=2
 
 [Signatures]
 SigName-1=[Midi Translator Pro Internal]
-Signature-1=Px2T52hunwTMZGivvB4eEtTm352zM0xg5+UcGzgzAdMcg5mKPYR+/gnebSz+L7FDq73ujWl7DXEkdreTai582nHdbRBVpX/iKGzgAn3k3qSVg3iSn8U4q/TVJ2+7b3Tu6d+xWIpl8OF/lSJlS+7NjoxQc52C4gweG+jo1AnLGQY=
+Signature-1=QcY0hLnMkd68mt1vEYdY0/s680OZ1n8n+Odsb7RwxccvovLGkIa5qXsr7BVVy3d1vFJ7CJ87FWUFKBiaRFsdWWlNWC9JVnTMUUsEBz5HCPMxwZQAautPPTixSYL6JF+qaWV0hRDuRUMFckxktp4jSFX5snm8BG7lqCeMUckV+g0=
 SignedBy-1=Dan Smith
 
