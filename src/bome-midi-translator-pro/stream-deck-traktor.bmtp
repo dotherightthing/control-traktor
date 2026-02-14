@@ -7,7 +7,7 @@ In0=Bome MIDI Translator 1 Virtual In
 Out0=Traktor Virtual Input
 
 [Preset.0]
-Active=0
+Active=1
 Comments=Traktor running on MBP Built-in Display when used as Main display. Dell U2518D is 2560x1440. Built-in Display is 1536x960.
 DefaultInPorts=MIDA00010021Bome MIDI Translator 1 Virtual In
 DefaultOutPorts=MIDA00010015Traktor Virtual Input
@@ -79,7 +79,7 @@ Outgoing9=Prfm<Outgoing Action="Perform"><Name>Hold</Name><Params>ga</Params></O
 PresetSwitchIgnore=0
 
 [Preset.1]
-Active=1
+Active=0
 Comments=Traktor running on MBP Built-in Display when used as Main display. Dell U2518D is 2560x1440. Built-in Display is 1536x960.
 Incoming0=Prfm<Incoming Action="Perform"><Name>Deck A - Hot Cue Name</Name></Incoming>
 Incoming1=Prfm<Incoming Action="Perform"><Name>Deck B - Hot Cue Name</Name></Incoming>
@@ -145,10 +145,10 @@ Options17=Actv01Stop00OutO00
 Options18=Actv01Stop00OutO00
 Options19=Actv01Stop00OutO00
 Options2=Actv01Stop00OutO00
-Options20=Actv01Stop00OutO01
-Options21=Actv01Stop00OutO01Dlay50:Millis
-Options22=Actv01Stop00OutO01
-Options23=Actv01Stop00OutO01Dlay50:Millis
+Options20=Actv01Stop00OutO01StMa00000002if(m1==1)executeif(m1==0)noexecute
+Options21=Actv01Stop00OutO01Dlay50:MillisStMa00000002if(m1==1)executeif(m1==0)noexecute
+Options22=Actv01Stop00OutO01StMa00000002if(m1==0)executeif(m1==1)noexecute
+Options23=Actv01Stop00OutO01Dlay50:MillisStMa00000002if(m1==0)executeif(m1==1)noexecute
 Options24=Actv01Stop00OutO01
 Options3=Actv01Stop00OutO00
 Options4=Actv01Stop00OutO00
@@ -251,10 +251,10 @@ Options17=Actv01Stop00OutO00
 Options18=Actv01Stop00OutO00
 Options19=Actv01Stop00OutO00
 Options2=Actv01Stop00OutO00
-Options20=Actv01Stop00OutO01
-Options21=Actv01Stop00OutO01Dlay50:Millis
-Options22=Actv01Stop00OutO01
-Options23=Actv01Stop00OutO01Dlay50:Millis
+Options20=Actv01Stop00OutO01StMa00000002if(m1==1)executeif(m1==0)noexecute
+Options21=Actv01Stop00OutO01Dlay50:MillisStMa00000002if(m1==1)executeif(m1==0)noexecute
+Options22=Actv01Stop00OutO01StMa00000002if(m1==0)executeif(m1==1)noexecute
+Options23=Actv01Stop00OutO01Dlay50:MillisStMa00000002if(m1==0)executeif(m1==1)noexecute
 Options24=Actv01Stop00OutO01
 Options3=Actv01Stop00OutO00
 Options4=Actv01Stop00OutO00
@@ -308,7 +308,7 @@ Incoming18=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num
 Incoming19=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x57"/><Value2 num="0x7F"/></Simple></Incoming>
 Incoming2=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="1" setvar="ga" Type="New Version Required"/></Simple></Incoming>
 Incoming20=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x46"/><Value2 num="0x7F"/></Simple></Incoming>
-Incoming21=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x47"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming21=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x46"/><Value2 num="0x7F"/></Simple></Incoming>
 Incoming22=MID3<Incoming Action="MIDI"><Description>Click name field, Stream Deck does the rest</Description><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x5A"/><Value2 num="0x7F"/></Simple></Incoming>
 Incoming23=EnDi02
 Incoming24=EnDi01
@@ -485,6 +485,6 @@ Version=2
 
 [Signatures]
 SigName-1=[Midi Translator Pro Internal]
-Signature-1=fKPj1LB+EW5HJ2u4Hfe4LigNTIYd2yZr53hKLh7ZQwLtE7zizR62jJZ1JSYit6RTE7LcT8rFUNVtMMvQf/5zn52XgstnxhcS1XA/Y9AhB2Y4CJAvITDndcwMXOX2OcZXUHOTCsuytMdhATf5hQte6JGwoRKOAYpD12zAWo7KSNI=
+Signature-1=Px2T52hunwTMZGivvB4eEtTm352zM0xg5+UcGzgzAdMcg5mKPYR+/gnebSz+L7FDq73ujWl7DXEkdreTai582nHdbRBVpX/iKGzgAn3k3qSVg3iSn8U4q/TVJ2+7b3Tu6d+xWIpl8OF/lSJlS+7NjoxQc52C4gweG+jo1AnLGQY=
 SignedBy-1=Dan Smith
 
