@@ -7,7 +7,7 @@ In0=Bome MIDI Translator 1 Virtual In
 Out0=Traktor Virtual Input
 
 [Preset.0]
-Active=0
+Active=1
 Comments=Traktor running on MBP Built-in Display when used as Main display. Dell U2518D is 2560x1440. Built-in Display is 1536x960.
 DefaultInPorts=MIDA00010021Bome MIDI Translator 1 Virtual In
 DefaultOutPorts=MIDA00010015Traktor Virtual Input
@@ -185,7 +185,7 @@ Outgoing9=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num
 PresetSwitchIgnore=0
 
 [Preset.2]
-Active=1
+Active=0
 Comments=Traktor running on MBP Built-in Display when used as Extended display. Dell U2518D is 2560x1440. Built-in Display is 1536x960.
 Incoming0=Prfm<Incoming Action="Perform"><Name>Deck A - Hot Cue Name</Name></Incoming>
 Incoming1=Prfm<Incoming Action="Perform"><Name>Deck B - Hot Cue Name</Name></Incoming>
@@ -294,8 +294,8 @@ PresetSwitchIgnore=0
 Active=1
 Comments=
 DefaultOutPorts=MIDA00010015Traktor Virtual Input
-Incoming0=MID3<Incoming Action="MIDI"><Description>Click name field, Stream Deck does the rest</Description><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x58"/><Value2 num="0x7F"/></Simple></Incoming>
-Incoming1=MID3<Incoming Action="MIDI"><Description>Click name field, Stream Deck does the rest</Description><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x59"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x58"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x59"/><Value2 num="0x7F"/></Simple></Incoming>
 Incoming10=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="5" setvar="ga" Type="New Version Required"/></Simple></Incoming>
 Incoming11=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="5" setvar="ga" Type="New Version Required"/></Simple></Incoming>
 Incoming12=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="6" setvar="ga" Type="New Version Required"/></Simple></Incoming>
@@ -309,14 +309,14 @@ Incoming19=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num
 Incoming2=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="1" setvar="ga" Type="New Version Required"/></Simple></Incoming>
 Incoming20=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x46"/><Value2 num="0x7F"/></Simple></Incoming>
 Incoming21=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x46"/><Value2 num="0x7F"/></Simple></Incoming>
-Incoming22=MID3<Incoming Action="MIDI"><Description>Click name field, Stream Deck does the rest</Description><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x5A"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming22=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x5A"/><Value2 num="0x7F"/></Simple></Incoming>
 Incoming23=EnDi02
 Incoming24=EnDi01
-Incoming25=MID3<Incoming Action="MIDI"><Description>Value is 0 or 1</Description><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x26"/><Value2 var="ss" Type="SetVar"/></Simple></Incoming>
-Incoming26=MID3<Incoming Action="MIDI"><Description>Value is 0 or 1</Description><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x26"/><Value2 var="ss" Type="SetVar"/></Simple></Incoming>
-Incoming27=MID3<Incoming Action="MIDI"><Description>Value is 0 or 1</Description><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x26"/><Value2 var="ss" Type="SetVar"/></Simple></Incoming>
-Incoming28=MID3<Incoming Action="MIDI"><Description>Value is 0 or 1</Description><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x1E"/><Value2 var="m3" Type="SetVar"/></Simple></Incoming>
-Incoming29=MID3<Incoming Action="MIDI"><Description>Value is 0 or 1</Description><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x1E"/><Value2 var="m3" Type="SetVar"/></Simple></Incoming>
+Incoming25=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x26"/><Value2 var="ss" Type="SetVar"/></Simple></Incoming>
+Incoming26=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x26"/><Value2 var="ss" Type="SetVar"/></Simple></Incoming>
+Incoming27=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x26"/><Value2 var="ss" Type="SetVar"/></Simple></Incoming>
+Incoming28=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x1E"/><Value2 var="m3" Type="SetVar"/></Simple></Incoming>
+Incoming29=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x1E"/><Value2 var="m3" Type="SetVar"/></Simple></Incoming>
 Incoming3=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" Type="New Version Required"/><Value1 num="1" setvar="ga" Type="New Version Required"/></Simple></Incoming>
 Incoming30=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x32"/><Value2 var="m6" Type="SetVar"/></Simple></Incoming>
 Incoming31=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x04"/><Value2 var="m1" Type="SetVar"/></Simple></Incoming>
@@ -485,6 +485,6 @@ Version=2
 
 [Signatures]
 SigName-1=[Midi Translator Pro Internal]
-Signature-1=QcY0hLnMkd68mt1vEYdY0/s680OZ1n8n+Odsb7RwxccvovLGkIa5qXsr7BVVy3d1vFJ7CJ87FWUFKBiaRFsdWWlNWC9JVnTMUUsEBz5HCPMxwZQAautPPTixSYL6JF+qaWV0hRDuRUMFckxktp4jSFX5snm8BG7lqCeMUckV+g0=
+Signature-1=g3B63jmrah5i5TOle4Kwftt6vhQ91lkd66dDG28DbmvOTGiAJzFcHVjbxKP8bXjaN7fj/3Cr1UuIcP/yRdSn7ro8OhFIFWotC+8WEoA+GDkCtLmbj5X4B4AHnwQLN8uOM3pV1mayCXzj92PealczmrsXatJ3qJkyZW39YyjQFow=
 SignedBy-1=Dan Smith
 
