@@ -93,24 +93,36 @@ Note: *~* (tilde) means *Macintosh HD/Users/USERNAME*.
       3. Click *Navigation: Switch Profile* (first action)
       4. Change *Profile* from *Home* to *Traktor (CT6*)
       5. Leave *Page* as *A - Decks / Record*
-   3. *B Remix*
-      1. Click *B Remix*
+   3. *B Rmx Captr*
+      1. Click *B Rmx Captr*
       2. Click arrow to the right of *3 actions*
       3. Click *Navigation: Switch Profile* (first action)
       4. Change *Profile* from *Home* to *Traktor (CT6*)
-      5. Change *Page* to *B - Remix*
-   4. *C Browse Rename*
+      5. Change *Page* to *B - Remix - Capture*
+   4. *B Rmx Perf*
+      1. Click *B Rmx Perf*
+      2. Click arrow to the right of *3 actions*
+      3. Click *Navigation: Switch Profile* (first action)
+      4. Change *Profile* from *Home* to *Traktor (CT6*)
+      5. Change *Page* to *B - Remix - Perform*
+   5. *C Browse Rename*
       1. Click *C Browse Rename*
       2. Click arrow to the right of *3 actions*
       3. Click *Navigation: Switch Profile* (first action)
       4. Change *Profile* from *Home* to *Traktor (CT6*)
       5. Change *Page* to *C - Browse / Rename*
-   5. *D Mix Configure*
+   6. *D Mix Configure*
       1. Click *D Mix Configure*
       2. Click arrow to the right of *3 actions*
       3. Click *Navigation: Switch Profile* (first action)
       4. Change *Profile* from *Home* to *Traktor (CT6*)
       5. Change *Page* to *D - Mix / Configure*
+   7. *Screenshots ADMIN ONLY*
+      1. Click *D - Mix / Configure > Screenshots ADMIN ONLY*
+      2. Click arrow to the right of *11 actions*
+      3. Click each instance of *Navigation: Switch Profile*
+      4. Change *Profile* from *Home* to *Traktor (CT6*)
+      5. Change *Page* as necessary
 
 ### Traktor
 
