@@ -143,13 +143,14 @@ Note: *Import Other* always opens in *~/Documents/Native Instruments/Traktor X.X
 These allow the Stream Deck XL and Ableton Live to communicate.
 
 1. Open macOS *Audio MIDI Setup*
-2. Double-click *IAC Driver* (in red)
-3. Click *+* to add a *Bus*
-4. Double-click the bus name and rename to *StreamDeck2Daw*
-5. Click *+* to add a second *Bus*
-6. Double-click the second bus name and rename to *Daw2StreamDeck*
-7. Ensure that *Device is online* is checked
-8. Click *Apply*
+2. *Window* > *Show MIDI Studio*
+3. Double-click *IAC Driver* (in red)
+4. Click *+* to add a *Bus*
+5. Double-click the bus name and rename to *StreamDeck2Daw*
+6. Click *+* to add a second *Bus*
+7. Double-click the second bus name and rename to *Daw2StreamDeck*
+8. Ensure that *Device is online* is checked
+9. Click *Apply*
 
 ### Enable Virtual MIDI ports
 
