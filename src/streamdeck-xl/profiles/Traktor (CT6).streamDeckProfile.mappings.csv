@@ -52,7 +52,7 @@ src/traktor/CT6 - Streamdeck XL.tsi",5
 A - Decks / Record - Row 1 Col 6,Forward,Go Forward,Ch.10.CC.29,Hold,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,"Calls Traktor's ‘Move’ (move loop forward, or beatjump forward by the specified 'Size Selector’)","src/streamdeck-xl/icons/button-creator/goforward.png,
 
 src/traktor/CT6 - Streamdeck XL.tsi",5
-A - Decks / Record - Row 1 Col 7,,LIVE CLEAR CLIP,Ch.10.CC.67,Push,"127 (On), 0 (Off)",IAC Drive StreamDeck2Daw,IAC Driver Daw2StreamDeck,Calls ClyphX Pro X-Control (remove all clip data - this is much faster than context switching to change Push views to create a new clip and then nudging to get it back in time),"src/clyphx-pro/XTB/X-Controls.txt,
+A - Decks / Record - Row 2 Col 7,,LIVE CLEAR CLIP,Ch.10.CC.67,Push,"127 (On), 0 (Off)",IAC Drive StreamDeck2Daw,IAC Driver Daw2StreamDeck,Calls ClyphX Pro X-Control (remove all clip data - this is much faster than context switching to change Push views to create a new clip and then nudging to get it back in time),"src/clyphx-pro/XTB/X-Controls.txt,
 
 src/streamdeck-xl/icons/button-creator/live-clear-clip.png,
 src/traktor/CT6 - Streamdeck XL.tsi",6
@@ -73,12 +73,16 @@ A - Decks / Record - Row 2 Col 6,Flux,Arrow Triangle Backward Fill,Ch.10.CC.69,H
 Shifted: Play Deck in Reverse with Flux enabled","src/streamdeck-xl/icons/button-creator/arrowtriangle.backward.fill.png,
 
 src/traktor/CT6 - Streamdeck XL.tsi",6
-A - Decks / Record - Row 2 Col 7,Up,LIVE TEMPO PHASE NUDGE,Ch.10.CC.68,Hold,"127 (On), 0 (Off)",IAC Drive StreamDeck2Daw,IAC Driver Daw2StreamDeck,Calls Live's 'Phase Nudge Down' button via M4L device 'CT6 Params' (nudge Live's audio output into time with Traktor's by decreasing Live's tempo for as long as the button is held down. The M4L device facilitates mapping the CCs to Live's API the LOM to avoid having to MIDI map these controls on a per-set basis),"src/live/MIDI Effects/Max MIDI Effect/CT6 Params.adv,
+A - Decks / Record - Row 3 Col 7,Down · Up,LIVE TEMPO PHASE NUDGE,Ch.10.CC.68,Hold,"127 (On), 0 (Off)",Bome MIDI Translator 1,Traktor Virtual Output,"Calls Live's 'Phase Nudge Up' button via M4L device 'CT6 Params' (nudge Live's audio output into time with Traktor's by decreasing Live's tempo for as long as the button is held down. The M4L device facilitates mapping the CCs to Live's API the LOM to avoid having to MIDI map these controls on a per-set basis)
+
+Shifted: calls Live's 'Phase Nudge Down’ ","src/bome-midi-translator-pro/stream-deck-traktor.bmtp,
+
+src/live/MIDI Effects/Max MIDI Effect/CT6 Params.adv,
 src/live/MIDI Effects/Max MIDI Effect/CT6 Params.amxd,
 src/live/Instruments/Instrument Rack/CT6 Rack.adg,
 src/live/CT6.als,
 
-src/streamdeck-xl/icons/button-creator/live-tempo-phase-nudge.png",6
+src/streamdeck-xl/icons/button-creator/live-tempo-phase-nudge-down-up-24.png",6
 A - Decks / Record - Row 3 Col 1,"Track Deck,
 Remix Deck,
 Stem Deck,
