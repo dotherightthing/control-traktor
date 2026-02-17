@@ -176,7 +176,7 @@ src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/slot-level.xml",
 B - Remix - Capture - Row 3 Col 3,,Stack of 4 grey dots,Ch.11.CC.86,Cycle,Display only,Bome MIDI Translator 1,Traktor Virtual Output,Displays a basic VU meter,As above,
 B - Remix - Capture - Row 3 Col 4,,Stack of 4 grey dots,Ch.11.CC.87,Cycle,Display only,Bome MIDI Translator 1,Traktor Virtual Output,Displays a basic VU meter,As above,
 B - Remix - Capture - Row 3 Col 5,,Stack of 4 grey dots,Ch.11.CC.88,Cycle,Display only,Bome MIDI Translator 1,Traktor Virtual Output,Displays a basic VU meter,As above,
-B - Remix - Capture - Row 3 Col 6,,SLOT SIZE ÷2 ⨉2,Ch.10.CC.39,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,"Double the length of the (a) selected sample in the (b) selected slot, exposing more of the loaded slot sample or adding silence after it. Uses the value of Traktor's 'Modifier 2' to determine which slot to act upon.
+B - Remix - Capture - Row 3 Col 6,,SLOT SIZE ÷2 ⨉2,Ch.10.CC.39,Push,"127 (On), 0 (Off)",Bome MIDI Translator 1,Traktor Virtual Output,"Double the length of the (a) selected sample in the (b) selected slot, exposing more of the loaded slot sample or adding silence after it. Uses the value of Traktor's 'Modifier 2' to determine which slot to act upon.
 Shifted: Halve the length of the (a) selected sample in the (b) selected slot, cropping the loaded slot sample. Uses the value of Traktor's 'Modifier 2' to determine which slot to act upon.","src/streamdeck-xl/icons/button-creator/slot-size-half-double-22-23.png,
 
 src/traktor/CT6 - Streamdeck XL.tsi",5
@@ -286,7 +286,7 @@ B - Remix - Perform/Capture - Row 1 Col 3,Slot 2 2-1,As above,Ch.11.CC.02,Cycle,
 B - Remix - Perform/Capture - Row 1 Col 4,Slot 3 3-1,As above,Ch.11.CC.03,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,As above,As above,6
 B - Remix - Perform/Capture - Row 1 Col 5,Slot 4 4-1,As above,Ch.11.CC.04,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,As above,As above,6
 B - Remix - Perform/Capture - Row 1 Col 6,"One-Shot,
-Looped",SLOT CELL PLAY MODE,Ch.10.CC.93,Cycle,Various (XML Cycle file),Traktor Virtual Input,Traktor Virtual Output,,"src/streamdeck-xl/icons/button-creator/slot-cell-play-mode-22.png,
+Looped",SLOT CELL PLAY MODE,Ch.10.CC.93,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,,"src/streamdeck-xl/icons/button-creator/slot-cell-play-mode-22.png,
 
 src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/remix-deck-slot-play-mode.xml,
 src/traktor/CT6 - Streamdeck XL.tsi",6
@@ -330,7 +330,7 @@ B - Remix - Perform/Capture - Row 2 Col 3,2-2,As above,Ch.11.CC.06,Cycle,Various
 B - Remix - Perform/Capture - Row 2 Col 4,3-2,As above,Ch.11.CC.07,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,As above,As above,6
 B - Remix - Perform/Capture - Row 2 Col 5,4-2,As above,Ch.11.CC.08,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,As above,As above,6
 B - Remix - Perform/Capture - Row 2 Col 6,"Off,
-On",SLOT PUNCH (LEGATO),Ch.10.CC.80,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Slot Punch Off/On. Slot is determined by slot modifier value.,"src/streamdeck-xl/icons/button-creator/slot-punch-legato.png,
+On",SLOT PUNCH (LEGATO),Ch.10.CC.80,Push,"127 (On), 0 (Off)",Bome MIDI Translator 1,Traktor Virtual Output,Slot Punch Off/On. Slot is determined by slot modifier value.,"src/streamdeck-xl/icons/button-creator/slot-punch-legato.png,
 
 src/traktor/CT6 - Streamdeck XL.tsi",6
 B - Remix - Perform/Capture - Row 3 Col 1,1/4 beat etc,LAUNCH QUANTISE,Ch.10.CC.70,Cycle,Various (XML Cycle file),Traktor Virtual Input,Traktor Virtual Output,Remix deck launch quantise value,"src/streamdeck-xl/icons/button-creator/launch-quantise-22.png,
