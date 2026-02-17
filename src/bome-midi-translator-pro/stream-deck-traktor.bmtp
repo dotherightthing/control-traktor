@@ -258,7 +258,7 @@ Incoming3=Prfm<Incoming Action="Perform"><Name>Traktor - Set modifier m4</Name><
 Incoming4=Prfm<Incoming Action="Perform"><Name>Traktor - Set modifier m6</Name></Incoming>
 Name=Traktor - Modifiers
 Name0=ACTION - Traktor - Set modifier m1 (Shift)
-Name1=ACTION - Traktor - Set modifier m2 (Slot)
+Name1=ACTION - Traktor - Set modifier m2 (Slot select)
 Name2=ACTION - Traktor - Set modifier m3 (Button mode)
 Name3=ACTION - Traktor - Set modifier m4 (Mouse mode)
 Name4=ACTION - Traktor - Set modifier m6 (Row select)
@@ -910,6 +910,6 @@ Version=2
 
 [Signatures]
 SigName-1=[Midi Translator Pro Internal]
-Signature-1=tWH5Y29e+u6ZVkNmt8KtSKUgD1VRx/UZjqv3s6qk4DFKZapo7gKC5FGzyX/2hnaYo3HPP4CT/SE1Aqs7WaIGu8cyQDj+mqJGwAMm3z7yeSO5JgZ7YTfsaoaXaj+XbXdnXYhJs4dkJzyQnQ6k8sk2MFuQYZ5KIwPuOBVlbLRECms=
+Signature-1=hXcB1+jpHrAMwG1VN6oAxyPb+vDe9d4szVxa398Z//ecCKxhOt9h4iuDXfZqltgqitl8dNa0KUhF8X3VAzXwXa7OlrxijN1jY1Kz6UafEaJ6Asrr/AYmsez3sicDTo4atazY7eoCy5+kxPK4nW2xuhv88lE0y0c8mDZzLSp+Vuw=
 SignedBy-1=Dan Smith
 
