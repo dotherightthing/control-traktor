@@ -152,92 +152,32 @@ Recording",Tape Loop in circle,Ch.10.CC.13,Push,"127 (On), 0 (Off)",Bome MIDI Tr
 src/streamdeck-xl/icons/button-creator/record.circle.fill.png,
 
 src/traktor/CT6 - Streamdeck XL.tsi",5
-B - Remix - Capture - Row 2 Col 6,"Off,
-On",LAUNCH QUANTISE,Ch.10.CC.71,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Remix deck launch quantise toggle,"src/streamdeck-xl/icons/button-creator/launch-quantise-22.png,
-
-src/traktor/CT6 - Streamdeck XL.tsi",6
-B - Remix - Capture - Row 3 Col 2,,Stack of 4 grey dots,Ch.11.CC.85,Cycle,Display only,Bome MIDI Translator 1,Traktor Virtual Output,Displays a basic VU meter,"src/bome-midi-translator-pro/stream-deck-traktor.bmtp,
-
-src/streamdeck-xl/icons/button-creator/circle.grid.1x4-333.png
-
-src/streamdeck-xl/icons/button-creator/circle.grid.1x4-333-1-8-fff.png,
-
-src/streamdeck-xl/icons/button-creator/circle.grid.1x4-333-2-8-fff.png,
-
-src/streamdeck-xl/icons/button-creator/circle.grid.1x4-333-3-8-fff.png,
-
-src/streamdeck-xl/icons/button-creator/circle.grid.1x4-333-4-8-fff.png,
-
-src/streamdeck-xl/icons/button-creator/circle.grid.1x4-333-5-8-fff.png,
-
-src/streamdeck-xl/icons/button-creator/circle.grid.1x4-333-6-8-fff.png,
-
-src/streamdeck-xl/icons/button-creator/circle.grid.1x4-333-7-8-fff.png,
-
-src/streamdeck-xl/icons/button-creator/circle.grid.1x4-fff.png,
-
-src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/slot-level.xml",
-B - Remix - Capture - Row 3 Col 3,,Stack of 4 grey dots,Ch.11.CC.86,Cycle,Display only,Bome MIDI Translator 1,Traktor Virtual Output,Displays a basic VU meter,As above,
-B - Remix - Capture - Row 3 Col 4,,Stack of 4 grey dots,Ch.11.CC.87,Cycle,Display only,Bome MIDI Translator 1,Traktor Virtual Output,Displays a basic VU meter,As above,
-B - Remix - Capture - Row 3 Col 5,,Stack of 4 grey dots,Ch.11.CC.88,Cycle,Display only,Bome MIDI Translator 1,Traktor Virtual Output,Displays a basic VU meter,As above,
-B - Remix - Capture - Row 3 Col 6,,SLOT SIZE ÷2 ⨉2,Ch.10.CC.39,Push,"127 (On), 0 (Off)",Bome MIDI Translator 1,Traktor Virtual Output,"Double the length of the (a) selected sample in the (b) selected slot, exposing more of the loaded slot sample or adding silence after it. Uses the value of Traktor's 'Modifier 2' to determine which slot to act upon.
-Shifted: Halve the length of the (a) selected sample in the (b) selected slot, cropping the loaded slot sample. Uses the value of Traktor's 'Modifier 2' to determine which slot to act upon.","src/streamdeck-xl/icons/button-creator/slot-size-half-double-22-23.png,
-
-src/traktor/CT6 - Streamdeck XL.tsi",5
-B - Remix - Capture - Row 3 Col 7,"Slot 1,
-
-Slot 2,
-
-Slot 3,
-
-Slot 4",4x4 grid of circles with 1 column in white,Ch.11.CC.20,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,Select the slot to apply slot-specific actions to,"src/bome-midi-translator-pro/stream-deck-traktor.bmtp,
-
-src/streamdeck-xl/icons/button-creator/circle.grid.4x4-1-fff.png,
-
-src/streamdeck-xl/icons/button-creator/circle.grid.4x4-2-fff.png,
-
-src/streamdeck-xl/icons/button-creator/circle.grid.4x4-3-fff.png,
-
-src/streamdeck-xl/icons/button-creator/circle.grid.4x4-4-fff.png,
-
-src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/slot-select.xml",6
-B - Remix - Capture - Row 4 Col 2,"Deck A,
-Deck B,
-Deck D,
-Loop Red",CAPTURE SOURCE (S8),Ch.10.CC.75,Cycle,Various (XML Cycle file),Traktor Virtual Input,Traktor Virtual Output,Display only - shows Capture Source selected by S8 (note: only appropriate flavours of decks can be selected and not the remix deck itself),"src/streamdeck-xl/icons/button-creator/capture-source-s8-22.png,
-
-src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/remix-deck-capture-source.xml,
-src/traktor/CT6 - Streamdeck XL.tsi",6
-B - Remix - Capture - Row 4 Col 3,List · Captr To Cell,Depressed button,Ch.11.CC.45,Hold,,Bome MIDI Translator 1,Traktor Virtual Output,,"src/bome-midi-translator-pro/stream-deck-traktor.bmtp,
-
-src/streamdeck-xl/icons/button-creator/button.horizontal.top.press.fill-23-list-captr-to-cell.png",
-B - Remix - Capture - Row 4 Col 4,Delete Cell,Depressed button,Ch.11.CC.43,Hold,,Traktor Virtual Input,Traktor Virtual Output,,,
-B - Remix - Perform - Row 2 Col 6,Flux,Arrow Triangle Backward Fill,Ch.10.CC.69,Hold,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,"Calls Traktor's ‘Reverse Playback On’ (play Deck in reverse)
+B1 - Remix - Perform - Row 2 Col 6,Flux,Arrow Triangle Backward Fill,Ch.10.CC.69,Hold,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,"Calls Traktor's ‘Reverse Playback On’ (play Deck in reverse)
 Shifted: Play Deck in Reverse with Flux enabled","src/streamdeck-xl/icons/button-creator/arrowtriangle.backward.fill.png,
 
 src/traktor/CT6 - Streamdeck XL.tsi",6
-B - Remix - Perform - Row 3 Col 2,,"Mute Stop,
+B1 - Remix - Perform - Row 3 Col 2,,"Mute Stop,
 
 Muted Stop",Ch.11.CC.80,Cycle,Various (XML Cycle file),Traktor Virtual Input,Traktor Virtual Output,"Mute slot (FX tails preserved),
 
 Shifted: Stop playing sample in slot","src/streamdeck-xl/icons/button-creator/circle.grid.1x4-fff-mute-stop.png,
 
 src/streamdeck-xl/icons/button-creator/circle.grid.1x4-333-muted-stop.png,",6
-B - Remix - Perform - Row 3 Col 3,,"Mute Stop,
+B1 - Remix - Perform - Row 3 Col 3,,"Mute Stop,
 
 Muted Stop",Ch.11.CC.81,Cycle,Various (XML Cycle file),Traktor Virtual Input,Traktor Virtual Output,As above,As above,6
-B - Remix - Perform - Row 3 Col 4,,"Mute Stop,
+B1 - Remix - Perform - Row 3 Col 4,,"Mute Stop,
 
 Muted Stop",Ch.11.CC.82,Cycle,Various (XML Cycle file),Traktor Virtual Input,Traktor Virtual Output,As above,As above,6
-B - Remix - Perform - Row 3 Col 5,,"Mute Stop,
+B1 - Remix - Perform - Row 3 Col 5,,"Mute Stop,
 
 Muted Stop",Ch.11.CC.83,Cycle,Various (XML Cycle file),Traktor Virtual Input,Traktor Virtual Output,As above,As above,6
-B - Remix - Perform - Row 4 Col 2,Delete,Cross in Square,Ch.10.CC.15,Push,"127 (On), 0 (Off)",Bome MIDI Translator 1,Traktor Virtual Output,Calls Traktor's 'Delete (Loop Recorder)’ (delete the existing loop recording),"src/bome-midi-translator-pro/stream-deck-traktor.bmtp,
+B1 - Remix - Perform - Row 4 Col 2,Delete,Cross in Square,Ch.10.CC.15,Push,"127 (On), 0 (Off)",Bome MIDI Translator 1,Traktor Virtual Output,Calls Traktor's 'Delete (Loop Recorder)’ (delete the existing loop recording),"src/bome-midi-translator-pro/stream-deck-traktor.bmtp,
 
 src/streamdeck-xl/icons/button-creator/clear.fill.png,
 
 src/traktor/CT6 - Streamdeck XL.tsi",5
-B - Remix - Perform - Row 4 Col 3,"4 beats,
+B1 - Remix - Perform - Row 4 Col 3,"4 beats,
 8 beats,
 16 beats,
 32 beats",Ruler,Ch.10.CC.22,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,Calls Traktor's ‘Size' (set the size for a new loop recording - note: only works if Delete is used to remove the old recording first),"src/bome-midi-translator-pro/stream-deck-traktor.bmtp,
@@ -246,20 +186,20 @@ src/streamdeck-xl/icons/button-creator/ruler.png,
 
 src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/loop-recorder-size.xml,
 src/traktor/CT6 - Streamdeck XL.tsi",5
-B - Remix - Perform - Row 4 Col 4,"Record,
+B1 - Remix - Perform - Row 4 Col 4,"Record,
 Recording",Nested circles,Ch.10.CC.14,Push,"127 (On), 0 (Off)",Bome MIDI Translator 1,Traktor Virtual Output,Calls Traktor's ‘Record' (start recording a loop of the specified size),"src/bome-midi-translator-pro/stream-deck-traktor.bmtp,
 
 src/streamdeck-xl/icons/button-creator/record.circle.png,
 
 src/traktor/CT6 - Streamdeck XL.tsi",5
-B - Remix - Perform/Capture - Row 1 Col 1,,BPM ÷2 ⨉2,Ch.10.CC.86,Push,"127 (On), 0 (Off)",Bome MIDI Translator 1,Traktor Virtual Output,"Previous action: select cell in [ Mouse ] mode.
+B1 - Remix - Perform/Capture - Row 1 Col 1,,BPM ÷2 ⨉2,Ch.10.CC.86,Push,"127 (On), 0 (Off)",Bome MIDI Translator 1,Traktor Virtual Output,"Previous action: select cell in [ Mouse ] mode.
 
 Doubles BPM of selected cell.
 
 Shifted: Halves BPM of selected cell.","src/bome-midi-translator-pro/stream-deck-traktor.bmtp,
 
 src/streamdeck-xl/icons/button-creator/cursorarrow.square.fill-bpm-half-double.png",5
-B - Remix - Perform/Capture - Row 1 Col 2,Slot 1 1-1,"X in circle (empty),
+B1 - Remix - Perform/Capture - Row 1 Col 2,Slot 1 1-1,"X in circle (empty),
 
 Square in circle (stopped),
 
@@ -285,10 +225,10 @@ src/streamdeck-xl/icons/button-creator/play.circle.fill-green-30.png,
 src/streamdeck-xl/icons/button-creator/playpause.circle.fill-orange-30.png,
 
 src/streamdeck-xl/icons/button-creator/stop.circle.fill-red-30.png",6
-B - Remix - Perform/Capture - Row 1 Col 3,Slot 2 2-1,As above,Ch.11.CC.02,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,As above,As above,6
-B - Remix - Perform/Capture - Row 1 Col 4,Slot 3 3-1,As above,Ch.11.CC.03,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,As above,As above,6
-B - Remix - Perform/Capture - Row 1 Col 5,Slot 4 4-1,As above,Ch.11.CC.04,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,As above,As above,6
-B - Remix - Perform/Capture - Row 1 Col 6,"Button,
+B1 - Remix - Perform/Capture - Row 1 Col 3,Slot 2 2-1,As above,Ch.11.CC.02,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,As above,As above,6
+B1 - Remix - Perform/Capture - Row 1 Col 4,Slot 3 3-1,As above,Ch.11.CC.03,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,As above,As above,6
+B1 - Remix - Perform/Capture - Row 1 Col 5,Slot 4 4-1,As above,Ch.11.CC.04,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,As above,As above,6
+B1 - Remix - Perform/Capture - Row 1 Col 6,"Button,
 
 Mouse,
 
@@ -303,17 +243,17 @@ Slot",GRID MODE,Ch.11.CC.30,Cycle,Various (XML Cycle file),Bome MIDI Translator 
 src/streamdeck-xl/icons/button-creator/button.horizontal.top.press.fill-23.png,
 
 src/streamdeck-xl/icons/button-creator/cursorarrow.square.fill-30.png,",6
-B - Remix - Perform/Capture - Row 1 Col 7,1-2 3-4,ROWS,Ch.11.CC.50,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,Changes the subset of Remix Deck cell rows displayed on the Stream Deck,"src/bome-midi-translator-pro/stream-deck-traktor.bmtp,
+B1 - Remix - Perform/Capture - Row 1 Col 7,1-2 3-4,ROWS,Ch.11.CC.50,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,Changes the subset of Remix Deck cell rows displayed on the Stream Deck,"src/bome-midi-translator-pro/stream-deck-traktor.bmtp,
 
 src/streamdeck-xl/icons/button-creator/rows-26.png,",6
-B - Remix - Perform/Capture - Row 2 Col 1,,Offset BWD · FWD,Ch.11.CC.70,Push,"127 (On), 0 (Off)",Bome MIDI Translator 1,Traktor Virtual Output,"Previous action: select cell in [ Mouse ] mode.
+B1 - Remix - Perform/Capture - Row 2 Col 1,,Offset BWD · FWD,Ch.11.CC.70,Push,"127 (On), 0 (Off)",Bome MIDI Translator 1,Traktor Virtual Output,"Previous action: select cell in [ Mouse ] mode.
 
 Moves start offset forward.
 
 Shifted: Moves start offset backwards.","src/bome-midi-translator-pro/stream-deck-traktor.bmtp,
 
 src/streamdeck-xl/icons/button-creator/cursorarrow.square.fill-offset-bwd-fwd.png,",6
-B - Remix - Perform/Capture - Row 2 Col 2,1-2,"X in circle (empty),
+B1 - Remix - Perform/Capture - Row 2 Col 2,1-2,"X in circle (empty),
 
 Square in circle (stopped),
 
@@ -339,24 +279,84 @@ src/streamdeck-xl/icons/button-creator/play.circle.fill-green-30.png,
 src/streamdeck-xl/icons/button-creator/playpause.circle.fill-orange-30.png,
 
 src/streamdeck-xl/icons/button-creator/stop.circle.fill-red-30.png",6
-B - Remix - Perform/Capture - Row 2 Col 3,2-2,As above,Ch.11.CC.06,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,As above,As above,6
-B - Remix - Perform/Capture - Row 2 Col 4,3-2,As above,Ch.11.CC.07,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,As above,As above,6
-B - Remix - Perform/Capture - Row 2 Col 5,4-2,As above,Ch.11.CC.08,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,As above,As above,6
-B - Remix - Perform/Capture - Row 3 Col 1,1/4 beat etc,LAUNCH QUANTISE,Ch.10.CC.70,Cycle,Various (XML Cycle file),Traktor Virtual Input,Traktor Virtual Output,Remix deck launch quantise value,"src/streamdeck-xl/icons/button-creator/launch-quantise-22.png,
+B1 - Remix - Perform/Capture - Row 2 Col 3,2-2,As above,Ch.11.CC.06,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,As above,As above,6
+B1 - Remix - Perform/Capture - Row 2 Col 4,3-2,As above,Ch.11.CC.07,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,As above,As above,6
+B1 - Remix - Perform/Capture - Row 2 Col 5,4-2,As above,Ch.11.CC.08,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,As above,As above,6
+B1 - Remix - Perform/Capture - Row 3 Col 1,1/4 beat etc,LAUNCH QUANTISE,Ch.10.CC.70,Cycle,Various (XML Cycle file),Traktor Virtual Input,Traktor Virtual Output,Remix deck launch quantise value,"src/streamdeck-xl/icons/button-creator/launch-quantise-22.png,
 
 src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/remix-deck-quantise.xml,
 src/traktor/CT6 - Streamdeck XL.tsi",6
-B - Remix - Perform/Capture - Row 4 Col 5,"Off,
+B1 - Remix - Perform/Capture - Row 4 Col 5,"Off,
 On",SLOT PUNCH (LEGATO),Ch.10.CC.80,Push,"127 (On), 0 (Off)",Bome MIDI Translator 1,Traktor Virtual Output,Slot Punch Off/On. Slot is determined by slot modifier value.,"src/streamdeck-xl/icons/button-creator/slot-punch-legato.png,
 
 src/traktor/CT6 - Streamdeck XL.tsi",6
-B - Remix - Perform/Capture - Row 4 Col 6,"Off,
+B1 - Remix - Perform/Capture - Row 4 Col 6,"Off,
 On",SLOT MONITOR (CUE),Ch.10.CC.85,Toggle,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Slot Monitor Off/On. Slot is determined by slot modifier value.,"src/streamdeck-xl/icons/button-creator/slot-monitor-cue-22.png,",6
-B - Remix - Perform/Capture - Row 4 Col 7,"One-Shot,
+B1 - Remix - Perform/Capture - Row 4 Col 7,"One-Shot,
 Looped",SLOT CELL PLAY MODE,Ch.10.CC.93,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,,"src/streamdeck-xl/icons/button-creator/slot-cell-play-mode-22.png,
 
 src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/remix-deck-slot-play-mode.xml,
 src/traktor/CT6 - Streamdeck XL.tsi",6
+B2 - Remix - Capture - Row 2 Col 6,"Off,
+On",LAUNCH QUANTISE,Ch.10.CC.71,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Remix deck launch quantise toggle,"src/streamdeck-xl/icons/button-creator/launch-quantise-22.png,
+
+src/traktor/CT6 - Streamdeck XL.tsi",6
+B2 - Remix - Capture - Row 3 Col 2,,Stack of 4 grey dots,Ch.11.CC.85,Cycle,Display only,Bome MIDI Translator 1,Traktor Virtual Output,Displays a basic VU meter,"src/bome-midi-translator-pro/stream-deck-traktor.bmtp,
+
+src/streamdeck-xl/icons/button-creator/circle.grid.1x4-333.png
+
+src/streamdeck-xl/icons/button-creator/circle.grid.1x4-333-1-8-fff.png,
+
+src/streamdeck-xl/icons/button-creator/circle.grid.1x4-333-2-8-fff.png,
+
+src/streamdeck-xl/icons/button-creator/circle.grid.1x4-333-3-8-fff.png,
+
+src/streamdeck-xl/icons/button-creator/circle.grid.1x4-333-4-8-fff.png,
+
+src/streamdeck-xl/icons/button-creator/circle.grid.1x4-333-5-8-fff.png,
+
+src/streamdeck-xl/icons/button-creator/circle.grid.1x4-333-6-8-fff.png,
+
+src/streamdeck-xl/icons/button-creator/circle.grid.1x4-333-7-8-fff.png,
+
+src/streamdeck-xl/icons/button-creator/circle.grid.1x4-fff.png,
+
+src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/slot-level.xml",
+B2 - Remix - Capture - Row 3 Col 3,,Stack of 4 grey dots,Ch.11.CC.86,Cycle,Display only,Bome MIDI Translator 1,Traktor Virtual Output,Displays a basic VU meter,As above,
+B2 - Remix - Capture - Row 3 Col 4,,Stack of 4 grey dots,Ch.11.CC.87,Cycle,Display only,Bome MIDI Translator 1,Traktor Virtual Output,Displays a basic VU meter,As above,
+B2 - Remix - Capture - Row 3 Col 5,,Stack of 4 grey dots,Ch.11.CC.88,Cycle,Display only,Bome MIDI Translator 1,Traktor Virtual Output,Displays a basic VU meter,As above,
+B2 - Remix - Capture - Row 3 Col 6,,SLOT SIZE ÷2 ⨉2,Ch.10.CC.39,Push,"127 (On), 0 (Off)",Bome MIDI Translator 1,Traktor Virtual Output,"Double the length of the (a) selected sample in the (b) selected slot, exposing more of the loaded slot sample or adding silence after it. Uses the value of Traktor's 'Modifier 2' to determine which slot to act upon.
+Shifted: Halve the length of the (a) selected sample in the (b) selected slot, cropping the loaded slot sample. Uses the value of Traktor's 'Modifier 2' to determine which slot to act upon.","src/streamdeck-xl/icons/button-creator/slot-size-half-double-22-23.png,
+
+src/traktor/CT6 - Streamdeck XL.tsi",5
+B2 - Remix - Capture - Row 3 Col 7,"Slot 1,
+
+Slot 2,
+
+Slot 3,
+
+Slot 4",4x4 grid of circles with 1 column in white,Ch.11.CC.20,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,Select the slot to apply slot-specific actions to,"src/bome-midi-translator-pro/stream-deck-traktor.bmtp,
+
+src/streamdeck-xl/icons/button-creator/circle.grid.4x4-1-fff.png,
+
+src/streamdeck-xl/icons/button-creator/circle.grid.4x4-2-fff.png,
+
+src/streamdeck-xl/icons/button-creator/circle.grid.4x4-3-fff.png,
+
+src/streamdeck-xl/icons/button-creator/circle.grid.4x4-4-fff.png,
+
+src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/slot-select.xml",6
+B2 - Remix - Capture - Row 4 Col 2,"Deck A,
+Deck B,
+Deck D,
+Loop Red",CAPTURE SOURCE (S8),Ch.10.CC.75,Cycle,Various (XML Cycle file),Traktor Virtual Input,Traktor Virtual Output,Display only - shows Capture Source selected by S8 (note: only appropriate flavours of decks can be selected and not the remix deck itself),"src/streamdeck-xl/icons/button-creator/capture-source-s8-22.png,
+
+src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/remix-deck-capture-source.xml,
+src/traktor/CT6 - Streamdeck XL.tsi",6
+B2 - Remix - Capture - Row 4 Col 3,List · Captr To Cell,Depressed button,Ch.11.CC.45,Hold,,Bome MIDI Translator 1,Traktor Virtual Output,,"src/bome-midi-translator-pro/stream-deck-traktor.bmtp,
+
+src/streamdeck-xl/icons/button-creator/button.horizontal.top.press.fill-23-list-captr-to-cell.png",
+B2 - Remix - Capture - Row 4 Col 4,Delete Cell,Depressed button,Ch.11.CC.43,Hold,,Traktor Virtual Input,Traktor Virtual Output,,,
 C - Browse / Rename - Row 1 Col 1,Top,Up Arrow,Ch.10.CC.08,Hold,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,"Calls Traktor's 'Selected Up/Down (Browser.List)' (Up) (move up one row, hold to repeat)
 
 Shifted: Calls Traktor's 'Select Top/Bottom' (Top) (jumps to top of list)","src/streamdeck-xl/icons/button-creator/arrowshape.up.fill.png,
