@@ -7,7 +7,7 @@ In0=Bome MIDI Translator 1 Virtual In
 Out0=Traktor Virtual Input
 
 [Preset.0]
-Active=1
+Active=0
 Comments=Traktor running on MBP Built-in Display when used as Main display. Dell U2518D is 2560x1440. Built-in Display is 1536x960.
 DefaultInPorts=MIDA00010021Bome MIDI Translator 1 Virtual In
 DefaultOutPorts=MIDA00010015Traktor Virtual Input
@@ -44,22 +44,22 @@ Name6=ACTION - Traktor - Remix Deck C - Select Slot 3 Cell 2
 Name7=ACTION - Traktor - Remix Deck C - Select Slot 4 Cell 2
 Name8=ACTION - Traktor - Remix Deck C - Select Slot 1 Cell 3
 Name9=ACTION - Traktor - Remix Deck C - Select Slot 2 Cell 3
-Options0=Actv01Stop00OutO01StMa00000002label0025__cmt>// shifted: button selects slotif(m1==1)noexecute
-Options1=Actv01Stop00OutO01StMa00000002label0025__cmt>// shifted: button selects slotif(m1==1)noexecute
-Options10=Actv01Stop00OutO01StMa00000002label0025__cmt>// shifted: button selects slotif(m1==1)noexecute
-Options11=Actv01Stop00OutO01StMa00000002label0025__cmt>// shifted: button selects slotif(m1==1)noexecute
-Options12=Actv01Stop00OutO01StMa00000002label0025__cmt>// shifted: button selects slotif(m1==1)noexecute
-Options13=Actv01Stop00OutO01StMa00000002label0025__cmt>// shifted: button selects slotif(m1==1)noexecute
-Options14=Actv01Stop00OutO01StMa00000002label0025__cmt>// shifted: button selects slotif(m1==1)noexecute
-Options15=Actv01Stop00OutO01StMa00000002label0025__cmt>// shifted: button selects slotif(m1==1)noexecute
-Options2=Actv01Stop00OutO01StMa00000002label0025__cmt>// shifted: button selects slotif(m1==1)noexecute
-Options3=Actv01Stop00OutO01StMa00000002label0025__cmt>// shifted: button selects slotif(m1==1)noexecute
-Options4=Actv01Stop00OutO01StMa00000002label0025__cmt>// shifted: button selects slotif(m1==1)noexecute
-Options5=Actv01Stop00OutO01StMa00000002label0025__cmt>// shifted: button selects slotif(m1==1)noexecute
-Options6=Actv01Stop00OutO01StMa00000002label0025__cmt>// shifted: button selects slotif(m1==1)noexecute
-Options7=Actv01Stop00OutO01StMa00000002label0025__cmt>// shifted: button selects slotif(m1==1)noexecute
-Options8=Actv01Stop00OutO01StMa00000002label0025__cmt>// shifted: button selects slotif(m1==1)noexecute
-Options9=Actv01Stop00OutO01StMa00000002label0025__cmt>// shifted: button selects slotif(m1==1)noexecute
+Options0=Actv01Stop00OutO01StMa00000002label001B__cmt>// m3=0 - button modeif(m3>0)noexecute
+Options1=Actv01Stop00OutO01StMa00000002label001B__cmt>// m3=0 - button modeif(m3>0)noexecute
+Options10=Actv01Stop00OutO01StMa00000002label001B__cmt>// m3=0 - button modeif(m3>0)noexecute
+Options11=Actv01Stop00OutO01StMa00000002label001B__cmt>// m3=0 - button modeif(m3>0)noexecute
+Options12=Actv01Stop00OutO01StMa00000002label001B__cmt>// m3=0 - button modeif(m3>0)noexecute
+Options13=Actv01Stop00OutO01StMa00000002label001B__cmt>// m3=0 - button modeif(m3>0)noexecute
+Options14=Actv01Stop00OutO01StMa00000002label001B__cmt>// m3=0 - button modeif(m3>0)noexecute
+Options15=Actv01Stop00OutO01StMa00000002label001B__cmt>// m3=0 - button modeif(m3>0)noexecute
+Options2=Actv01Stop00OutO01StMa00000002label001B__cmt>// m3=0 - button modeif(m3>0)noexecute
+Options3=Actv01Stop00OutO01StMa00000002label001B__cmt>// m3=0 - button modeif(m3>0)noexecute
+Options4=Actv01Stop00OutO01StMa00000002label001B__cmt>// m3=0 - button modeif(m3>0)noexecute
+Options5=Actv01Stop00OutO01StMa00000002label001B__cmt>// m3=0 - button modeif(m3>0)noexecute
+Options6=Actv01Stop00OutO01StMa00000002label001B__cmt>// m3=0 - button modeif(m3>0)noexecute
+Options7=Actv01Stop00OutO01StMa00000002label001B__cmt>// m3=0 - button modeif(m3>0)noexecute
+Options8=Actv01Stop00OutO01StMa00000002label001B__cmt>// m3=0 - button modeif(m3>0)noexecute
+Options9=Actv01Stop00OutO01StMa00000002label001B__cmt>// m3=0 - button modeif(m3>0)noexecute
 Outgoing0=Prfm<Outgoing Action="Perform"><Name>Hold</Name><Params>ga</Params></Outgoing>
 Outgoing1=Prfm<Outgoing Action="Perform"><Name>Hold</Name><Params>ga</Params></Outgoing>
 Outgoing10=Prfm<Outgoing Action="Perform"><Name>Hold</Name><Params>ga</Params></Outgoing>
@@ -252,7 +252,7 @@ Name3=ACTION - Traktor - Set modifier m4 (Mouse mode)
 Name4=ACTION - Traktor - Set modifier m6 (Row select)
 Options0=Actv01Stop00OutO00StMa00000004label0010__cmt>// if m1=0pp=m1label0006__cmt>if(m1==1)pp=127
 Options1=Actv01Stop00OutO00StMa00000002label0038__cmt>// convert CC 20's 0/1/2/3 value to CC 21/22/23/24rr=m2+21
-Options2=Actv01Stop00OutO00StMa00000004label001F__cmt>// m3 received from CC 30label003E__cmt>// m3=0 + 31 = CC 31 which sets Traktor Modifier #3 to 0label003E__cmt>// m3=1 + 31 = CC 32 which sets Traktor Modifier #3 to 1rr=m3+31
+Options2=Actv01Stop00OutO00StMa00000005label001F__cmt>// m3 received from CC 30label003E__cmt>// m3=0 + 31 = CC 31 which sets Traktor Modifier #3 to 0label003E__cmt>// m3=1 + 31 = CC 32 which sets Traktor Modifier #3 to 1label003E__cmt>// m3=2 + 31 = CC 33 which sets Traktor Modifier #3 to 2rr=m3+31
 Options3=Actv01Stop00OutO00StMa00000004label001F__cmt>// m4 received from CC 38label003E__cmt>// m4=0 + 40 = CC 40 which sets Traktor Modifier #3 to 0label003E__cmt>// m4=1 + 40 = CC 41 which sets Traktor Modifier #3 to 1rr=m4+40
 Options4=Actv01Stop00OutO00StMa00000002label004C__cmt>// convert CC 50's 0/1/2/3/4/5/6/7 value to CC 51/52/53/54/55/56/57/58rr=m6+51
 Outgoing0=MID3<Outgoing Action="MIDI"><Description>Out same as in</Description><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x04"/><Value2 var="pp"/></Simple></Outgoing>
@@ -267,102 +267,106 @@ Active=1
 Comments=
 Incoming0=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - BPM x2</Name></Incoming>
 Incoming1=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - BPM /2</Name></Incoming>
-Incoming10=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 2 Cell 1</Name></Incoming>
-Incoming11=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 3 Cell 1</Name></Incoming>
-Incoming12=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 4 Cell 1</Name></Incoming>
-Incoming13=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 1 Cell 2</Name></Incoming>
-Incoming14=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 2 Cell 2</Name></Incoming>
-Incoming15=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 3 Cell 2</Name></Incoming>
-Incoming16=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 4 Cell 2</Name></Incoming>
-Incoming17=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 1 Cell 3</Name></Incoming>
-Incoming18=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 2 Cell 3</Name></Incoming>
-Incoming19=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 3 Cell 3</Name></Incoming>
-Incoming2=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Rename Cell</Name></Incoming>
-Incoming20=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 4 Cell 3</Name></Incoming>
-Incoming21=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 1 Cell 4</Name></Incoming>
-Incoming22=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 2 Cell 4</Name></Incoming>
-Incoming23=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 3 Cell 4</Name></Incoming>
-Incoming24=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 4 Cell 4</Name></Incoming>
-Incoming25=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 1 Cell 1</Name></Incoming>
-Incoming26=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 2 Cell 1</Name></Incoming>
-Incoming27=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 3 Cell 1</Name></Incoming>
-Incoming28=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 4 Cell 1</Name></Incoming>
-Incoming29=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 1 Cell 2</Name></Incoming>
-Incoming3=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Rename Cell</Name></Incoming>
-Incoming30=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 2 Cell 2</Name></Incoming>
-Incoming31=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 3 Cell 2</Name></Incoming>
-Incoming32=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 4 Cell 2</Name></Incoming>
-Incoming33=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 1 Cell 3</Name></Incoming>
-Incoming34=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 2 Cell 3</Name></Incoming>
-Incoming35=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 3 Cell 3</Name></Incoming>
-Incoming36=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 4 Cell 3</Name></Incoming>
-Incoming37=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 1 Cell 4</Name></Incoming>
-Incoming38=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 2 Cell 4</Name></Incoming>
-Incoming39=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 3 Cell 4</Name></Incoming>
-Incoming4=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Sample Offset BWD</Name></Incoming>
-Incoming40=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 4 Cell 4</Name></Incoming>
-Incoming41=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Slot Cell Play Mode</Name><Params>pa,pb,pc</Params></Incoming>
-Incoming42=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Slot Punch</Name><Params>pa,pb,pc</Params></Incoming>
-Incoming43=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Slot Size</Name><Params>pa,pb,pc</Params></Incoming>
-Incoming44=None
-Incoming45=None
-Incoming46=Tim0TimT000CDouble Click
-Incoming5=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Sample Offset BWD</Name></Incoming>
-Incoming6=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Sample Offset FWD</Name></Incoming>
-Incoming7=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Sample Offset FWD</Name></Incoming>
-Incoming8=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot</Name><Params>pc</Params></Incoming>
-Incoming9=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 1 Cell 1</Name></Incoming>
+Incoming10=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot</Name><Params>pc</Params></Incoming>
+Incoming11=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 1 Cell 1</Name></Incoming>
+Incoming12=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 2 Cell 1</Name></Incoming>
+Incoming13=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 3 Cell 1</Name></Incoming>
+Incoming14=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 4 Cell 1</Name></Incoming>
+Incoming15=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 1 Cell 2</Name></Incoming>
+Incoming16=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 2 Cell 2</Name></Incoming>
+Incoming17=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 3 Cell 2</Name></Incoming>
+Incoming18=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 4 Cell 2</Name></Incoming>
+Incoming19=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 1 Cell 3</Name></Incoming>
+Incoming2=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Grid Mode</Name></Incoming>
+Incoming20=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 2 Cell 3</Name></Incoming>
+Incoming21=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 3 Cell 3</Name></Incoming>
+Incoming22=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 4 Cell 3</Name></Incoming>
+Incoming23=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 1 Cell 4</Name></Incoming>
+Incoming24=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 2 Cell 4</Name></Incoming>
+Incoming25=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 3 Cell 4</Name></Incoming>
+Incoming26=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 4 Cell 4</Name></Incoming>
+Incoming27=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 1 Cell 1</Name></Incoming>
+Incoming28=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 2 Cell 1</Name></Incoming>
+Incoming29=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 3 Cell 1</Name></Incoming>
+Incoming3=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Grid Mode</Name></Incoming>
+Incoming30=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 4 Cell 1</Name></Incoming>
+Incoming31=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 1 Cell 2</Name></Incoming>
+Incoming32=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 2 Cell 2</Name></Incoming>
+Incoming33=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 3 Cell 2</Name></Incoming>
+Incoming34=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 4 Cell 2</Name></Incoming>
+Incoming35=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 1 Cell 3</Name></Incoming>
+Incoming36=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 2 Cell 3</Name></Incoming>
+Incoming37=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 3 Cell 3</Name></Incoming>
+Incoming38=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 4 Cell 3</Name></Incoming>
+Incoming39=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 1 Cell 4</Name></Incoming>
+Incoming4=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Rename Cell</Name></Incoming>
+Incoming40=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 2 Cell 4</Name></Incoming>
+Incoming41=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 3 Cell 4</Name></Incoming>
+Incoming42=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 4 Cell 4</Name></Incoming>
+Incoming43=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Slot Cell Play Mode</Name><Params>pa,pb,pc</Params></Incoming>
+Incoming44=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Slot Punch</Name><Params>pa,pb,pc</Params></Incoming>
+Incoming45=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Slot Size</Name><Params>pa,pb,pc</Params></Incoming>
+Incoming46=None
+Incoming47=None
+Incoming48=Tim0TimT000CDouble Click
+Incoming5=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Rename Cell</Name></Incoming>
+Incoming6=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Sample Offset BWD</Name></Incoming>
+Incoming7=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Sample Offset BWD</Name></Incoming>
+Incoming8=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Sample Offset FWD</Name></Incoming>
+Incoming9=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Sample Offset FWD</Name></Incoming>
 Name=Traktor - Remix Deck C
 Name0=ACTION - Traktor - Remix Deck C - BPM x2
 Name1=ACTION - Traktor - Remix Deck C - BPM /2
-Name10=ACTION - Traktor - Remix Deck C - Select Slot 2 Cell 1
-Name11=ACTION - Traktor - Remix Deck C - Select Slot 3 Cell 1
-Name12=ACTION - Traktor - Remix Deck C - Select Slot 4 Cell 1
-Name13=ACTION - Traktor - Remix Deck C - Select Slot 1 Cell 2
-Name14=ACTION - Traktor - Remix Deck C - Select Slot 2 Cell 2
-Name15=ACTION - Traktor - Remix Deck C - Select Slot 3 Cell 2
-Name16=ACTION - Traktor - Remix Deck C - Select Slot 4 Cell 2
-Name17=ACTION - Traktor - Remix Deck C - Select Slot 1 Cell 3
-Name18=ACTION - Traktor - Remix Deck C - Select Slot 2 Cell 3
-Name19=ACTION - Traktor - Remix Deck C - Select Slot 3 Cell 3
-Name2=ACTION - Traktor - Remix Deck C - Rename Cell
-Name20=ACTION - Traktor - Remix Deck C - Select Slot 4 Cell 3
-Name21=ACTION - Traktor - Remix Deck C - Select Slot 1 Cell 4
-Name22=ACTION - Traktor - Remix Deck C - Select Slot 2 Cell 4
-Name23=ACTION - Traktor - Remix Deck C - Select Slot 3 Cell 4
-Name24=ACTION - Traktor - Remix Deck C - Select Slot 4 Cell 4
-Name25=ACTION - Traktor - Remix Deck C - Select Slot 1 Cell 1
-Name26=ACTION - Traktor - Remix Deck C - Select Slot 2 Cell 1
-Name27=ACTION - Traktor - Remix Deck C - Select Slot 3 Cell 1
-Name28=ACTION - Traktor - Remix Deck C - Select Slot 4 Cell 1
-Name29=ACTION - Traktor - Remix Deck C - Select Slot 1 Cell 2
-Name3=ACTION - Traktor - Remix Deck C - Rename Cell
-Name30=ACTION - Traktor - Remix Deck C - Select Slot 2 Cell 2
-Name31=ACTION - Traktor - Remix Deck C - Select Slot 3 Cell 2
-Name32=ACTION - Traktor - Remix Deck C - Select Slot 4 Cell 2
-Name33=ACTION - Traktor - Remix Deck C - Select Slot 1 Cell 3
-Name34=ACTION - Traktor - Remix Deck C - Select Slot 2 Cell 3
-Name35=ACTION - Traktor - Remix Deck C - Select Slot 3 Cell 3
-Name36=ACTION - Traktor - Remix Deck C - Select Slot 4 Cell 3
-Name37=ACTION - Traktor - Remix Deck C - Select Slot 1 Cell 4
-Name38=ACTION - Traktor - Remix Deck C - Select Slot 2 Cell 4
-Name39=ACTION - Traktor - Remix Deck C - Select Slot 3 Cell 4
-Name4=ACTION - Traktor - Remix Deck C - Sample Offset BWD press
-Name40=ACTION - Traktor - Remix Deck C - Select Slot 4 Cell 4
-Name41=ACTION - Traktor - Remix Deck C - Slot Cell Play Mode
-Name42=ACTION - Traktor - Remix Deck C - Slot Punch
-Name43=ACTION - Traktor - Remix Deck C - Slot Size
-Name44=PRESET - Traktor - Button mode
-Name45=PRESET - Traktor - Mouse mode
-Name46=TIMER - Double Click
-Name5=ACTION - Traktor - Remix Deck C - Sample Offset BWD release
-Name6=ACTION - Traktor - Remix Deck C - Sample Offset FWD press
-Name7=ACTION - Traktor - Remix Deck C - Sample Offset FWD release
-Name8=ACTION - Traktor - Remix Deck C - Slot Select
-Name9=ACTION - Traktor - Remix Deck C - Select Slot 1 Cell 1
+Name10=ACTION - Traktor - Remix Deck C - Slot Select
+Name11=ACTION - Traktor - Remix Deck C - Select Slot 1 Cell 1
+Name12=ACTION - Traktor - Remix Deck C - Select Slot 2 Cell 1
+Name13=ACTION - Traktor - Remix Deck C - Select Slot 3 Cell 1
+Name14=ACTION - Traktor - Remix Deck C - Select Slot 4 Cell 1
+Name15=ACTION - Traktor - Remix Deck C - Select Slot 1 Cell 2
+Name16=ACTION - Traktor - Remix Deck C - Select Slot 2 Cell 2
+Name17=ACTION - Traktor - Remix Deck C - Select Slot 3 Cell 2
+Name18=ACTION - Traktor - Remix Deck C - Select Slot 4 Cell 2
+Name19=ACTION - Traktor - Remix Deck C - Select Slot 1 Cell 3
+Name2=ACTION - Traktor - Remix Deck C - Grid Mode
+Name20=ACTION - Traktor - Remix Deck C - Select Slot 2 Cell 3
+Name21=ACTION - Traktor - Remix Deck C - Select Slot 3 Cell 3
+Name22=ACTION - Traktor - Remix Deck C - Select Slot 4 Cell 3
+Name23=ACTION - Traktor - Remix Deck C - Select Slot 1 Cell 4
+Name24=ACTION - Traktor - Remix Deck C - Select Slot 2 Cell 4
+Name25=ACTION - Traktor - Remix Deck C - Select Slot 3 Cell 4
+Name26=ACTION - Traktor - Remix Deck C - Select Slot 4 Cell 4
+Name27=ACTION - Traktor - Remix Deck C - Select Slot 1 Cell 1
+Name28=ACTION - Traktor - Remix Deck C - Select Slot 2 Cell 1
+Name29=ACTION - Traktor - Remix Deck C - Select Slot 3 Cell 1
+Name3=ACTION - Traktor - Remix Deck C - Grid Mode
+Name30=ACTION - Traktor - Remix Deck C - Select Slot 4 Cell 1
+Name31=ACTION - Traktor - Remix Deck C - Select Slot 1 Cell 2
+Name32=ACTION - Traktor - Remix Deck C - Select Slot 2 Cell 2
+Name33=ACTION - Traktor - Remix Deck C - Select Slot 3 Cell 2
+Name34=ACTION - Traktor - Remix Deck C - Select Slot 4 Cell 2
+Name35=ACTION - Traktor - Remix Deck C - Select Slot 1 Cell 3
+Name36=ACTION - Traktor - Remix Deck C - Select Slot 2 Cell 3
+Name37=ACTION - Traktor - Remix Deck C - Select Slot 3 Cell 3
+Name38=ACTION - Traktor - Remix Deck C - Select Slot 4 Cell 3
+Name39=ACTION - Traktor - Remix Deck C - Select Slot 1 Cell 4
+Name4=ACTION - Traktor - Remix Deck C - Rename Cell
+Name40=ACTION - Traktor - Remix Deck C - Select Slot 2 Cell 4
+Name41=ACTION - Traktor - Remix Deck C - Select Slot 3 Cell 4
+Name42=ACTION - Traktor - Remix Deck C - Select Slot 4 Cell 4
+Name43=ACTION - Traktor - Remix Deck C - Slot Cell Play Mode
+Name44=ACTION - Traktor - Remix Deck C - Slot Punch
+Name45=ACTION - Traktor - Remix Deck C - Slot Size
+Name46=PRESET - Traktor - Button mode
+Name47=PRESET - Traktor - Mouse mode
+Name48=TIMER - Double Click
+Name5=ACTION - Traktor - Remix Deck C - Rename Cell
+Name6=ACTION - Traktor - Remix Deck C - Sample Offset BWD press
+Name7=ACTION - Traktor - Remix Deck C - Sample Offset BWD release
+Name8=ACTION - Traktor - Remix Deck C - Sample Offset FWD press
+Name9=ACTION - Traktor - Remix Deck C - Sample Offset FWD release
 Options0=Actv01Stop00OutO00StMa00000002if(m1==0)executeif(m1==1)noexecute
 Options1=Actv01Stop00OutO00StMa00000002if(m1==1)executeif(m1==0)noexecute
-Options10=Actv01Stop00OutO00
+Options10=Actv01Stop00OutO00StMa00000007label001F__cmt>// m3=2 - grid mode: slotif(m3!=2)noexecutelabel0006__cmt>label001A__cmt>// update modifier 2m2=pcif(m3==2)executelabel0006__cmt>
 Options11=Actv01Stop00OutO00
 Options12=Actv01Stop00OutO00
 Options13=Actv01Stop00OutO00
@@ -378,38 +382,40 @@ Options21=Actv01Stop00OutO00
 Options22=Actv01Stop00OutO00
 Options23=Actv01Stop00OutO00
 Options24=Actv01Stop00OutO00
-Options25=Actv01Stop00OutO00StMa00000002label002F__cmt>// slot 1=0, slot 2=1, slot 3=2, slot 4=3pc=0
-Options26=Actv01Stop00OutO00StMa00000002label002F__cmt>// slot 1=0, slot 2=1, slot 3=2, slot 4=3pc=1
-Options27=Actv01Stop00OutO00StMa00000002label002F__cmt>// slot 1=0, slot 2=1, slot 3=2, slot 4=3pc=2
-Options28=Actv01Stop00OutO00StMa00000002label002F__cmt>// slot 1=0, slot 2=1, slot 3=2, slot 4=3pc=3
-Options29=Actv01Stop00OutO00StMa00000002label002F__cmt>// slot 1=0, slot 2=1, slot 3=2, slot 4=3pc=0
+Options25=Actv01Stop00OutO00
+Options26=Actv01Stop00OutO00
+Options27=Actv01Stop00OutO00StMa00000002label002F__cmt>// slot 1=0, slot 2=1, slot 3=2, slot 4=3pc=0
+Options28=Actv01Stop00OutO00StMa00000002label002F__cmt>// slot 1=0, slot 2=1, slot 3=2, slot 4=3pc=1
+Options29=Actv01Stop00OutO00StMa00000002label002F__cmt>// slot 1=0, slot 2=1, slot 3=2, slot 4=3pc=2
 Options3=Actv01Stop00OutO00
-Options30=Actv01Stop00OutO00StMa00000002label002F__cmt>// slot 1=0, slot 2=1, slot 3=2, slot 4=3pc=1
-Options31=Actv01Stop00OutO00StMa00000002label002F__cmt>// slot 1=0, slot 2=1, slot 3=2, slot 4=3pc=2
-Options32=Actv01Stop00OutO00StMa00000002label002F__cmt>// slot 1=0, slot 2=1, slot 3=2, slot 4=3pc=3
-Options33=Actv01Stop00OutO00StMa00000002label002F__cmt>// slot 1=0, slot 2=1, slot 3=2, slot 4=3pc=0
-Options34=Actv01Stop00OutO00StMa00000002label002F__cmt>// slot 1=0, slot 2=1, slot 3=2, slot 4=3pc=1
-Options35=Actv01Stop00OutO00StMa00000002label002F__cmt>// slot 1=0, slot 2=1, slot 3=2, slot 4=3pc=2
-Options36=Actv01Stop00OutO00StMa00000002label002F__cmt>// slot 1=0, slot 2=1, slot 3=2, slot 4=3pc=3
-Options37=Actv01Stop00OutO00StMa00000002label002F__cmt>// slot 1=0, slot 2=1, slot 3=2, slot 4=3pc=0
-Options38=Actv01Stop00OutO00StMa00000002label002F__cmt>// slot 1=0, slot 2=1, slot 3=2, slot 4=3pc=1
-Options39=Actv01Stop00OutO00StMa00000002label002F__cmt>// slot 1=0, slot 2=1, slot 3=2, slot 4=3pc=2
-Options4=Actv01Stop00OutO01StMa00000002if(m1==1)executeif(m1==0)noexecute
-Options40=Actv01Stop00OutO00StMa00000002label002F__cmt>// slot 1=0, slot 2=1, slot 3=2, slot 4=3pc=3
-Options41=Actv01Stop00OutO00
-Options42=Actv01Stop00OutO00
+Options30=Actv01Stop00OutO00StMa00000002label002F__cmt>// slot 1=0, slot 2=1, slot 3=2, slot 4=3pc=3
+Options31=Actv01Stop00OutO00StMa00000002label002F__cmt>// slot 1=0, slot 2=1, slot 3=2, slot 4=3pc=0
+Options32=Actv01Stop00OutO00StMa00000002label002F__cmt>// slot 1=0, slot 2=1, slot 3=2, slot 4=3pc=1
+Options33=Actv01Stop00OutO00StMa00000002label002F__cmt>// slot 1=0, slot 2=1, slot 3=2, slot 4=3pc=2
+Options34=Actv01Stop00OutO00StMa00000002label002F__cmt>// slot 1=0, slot 2=1, slot 3=2, slot 4=3pc=3
+Options35=Actv01Stop00OutO00StMa00000002label002F__cmt>// slot 1=0, slot 2=1, slot 3=2, slot 4=3pc=0
+Options36=Actv01Stop00OutO00StMa00000002label002F__cmt>// slot 1=0, slot 2=1, slot 3=2, slot 4=3pc=1
+Options37=Actv01Stop00OutO00StMa00000002label002F__cmt>// slot 1=0, slot 2=1, slot 3=2, slot 4=3pc=2
+Options38=Actv01Stop00OutO00StMa00000002label002F__cmt>// slot 1=0, slot 2=1, slot 3=2, slot 4=3pc=3
+Options39=Actv01Stop00OutO00StMa00000002label002F__cmt>// slot 1=0, slot 2=1, slot 3=2, slot 4=3pc=0
+Options4=Actv01Stop00OutO00
+Options40=Actv01Stop00OutO00StMa00000002label002F__cmt>// slot 1=0, slot 2=1, slot 3=2, slot 4=3pc=1
+Options41=Actv01Stop00OutO00StMa00000002label002F__cmt>// slot 1=0, slot 2=1, slot 3=2, slot 4=3pc=2
+Options42=Actv01Stop00OutO00StMa00000002label002F__cmt>// slot 1=0, slot 2=1, slot 3=2, slot 4=3pc=3
 Options43=Actv01Stop00OutO00
-Options44=Actv00Stop00OutO00
-Options45=Actv00Stop00OutO00
-Options46=Actv01Stop00OutO00
-Options5=Actv01Stop00OutO01Dlay50:MillisStMa00000002if(m1==1)executeif(m1==0)noexecute
-Options6=Actv01Stop00OutO01StMa00000002if(m1==0)executeif(m1==1)noexecute
-Options7=Actv01Stop00OutO01Dlay50:MillisStMa00000002if(m1==0)executeif(m1==1)noexecute
-Options8=Actv01Stop00OutO00StMa00000007label0025__cmt>// shifted: button selects slotif(m1==0)noexecutelabel0006__cmt>label001A__cmt>// update modifier 2m2=pcif(m1==1)executelabel0006__cmt>
-Options9=Actv01Stop00OutO00
+Options44=Actv01Stop00OutO00
+Options45=Actv01Stop00OutO00
+Options46=Actv00Stop00OutO00
+Options47=Actv00Stop00OutO00
+Options48=Actv01Stop00OutO00
+Options5=Actv01Stop00OutO00
+Options6=Actv01Stop00OutO01StMa00000002if(m1==1)executeif(m1==0)noexecute
+Options7=Actv01Stop00OutO01Dlay50:MillisStMa00000002if(m1==1)executeif(m1==0)noexecute
+Options8=Actv01Stop00OutO01StMa00000002if(m1==0)executeif(m1==1)noexecute
+Options9=Actv01Stop00OutO01Dlay50:MillisStMa00000002if(m1==0)executeif(m1==1)noexecute
 Outgoing0=Prfm<Outgoing Action="Perform"><Name>Traktor - Layout - Decks</Name></Outgoing>
 Outgoing1=Prfm<Outgoing Action="Perform"><Name>Traktor - Layout - Decks</Name></Outgoing>
-Outgoing10=Prfm<Outgoing Action="Perform"><Name>Traktor - Layout - Decks</Name></Outgoing>
+Outgoing10=Prfm<Outgoing Action="Perform"><Name>Traktor - Set modifier m2</Name></Outgoing>
 Outgoing11=Prfm<Outgoing Action="Perform"><Name>Traktor - Layout - Decks</Name></Outgoing>
 Outgoing12=Prfm<Outgoing Action="Perform"><Name>Traktor - Layout - Decks</Name></Outgoing>
 Outgoing13=Prfm<Outgoing Action="Perform"><Name>Traktor - Layout - Decks</Name></Outgoing>
@@ -419,18 +425,18 @@ Outgoing16=Prfm<Outgoing Action="Perform"><Name>Traktor - Layout - Decks</Name><
 Outgoing17=Prfm<Outgoing Action="Perform"><Name>Traktor - Layout - Decks</Name></Outgoing>
 Outgoing18=Prfm<Outgoing Action="Perform"><Name>Traktor - Layout - Decks</Name></Outgoing>
 Outgoing19=Prfm<Outgoing Action="Perform"><Name>Traktor - Layout - Decks</Name></Outgoing>
-Outgoing2=Prfm<Outgoing Action="Perform"><Name>Traktor - Layout - Decks</Name></Outgoing>
+Outgoing2=Prfm<Outgoing Action="Perform"><Name>Traktor - Set modifier m3</Name></Outgoing>
 Outgoing20=Prfm<Outgoing Action="Perform"><Name>Traktor - Layout - Decks</Name></Outgoing>
 Outgoing21=Prfm<Outgoing Action="Perform"><Name>Traktor - Layout - Decks</Name></Outgoing>
 Outgoing22=Prfm<Outgoing Action="Perform"><Name>Traktor - Layout - Decks</Name></Outgoing>
 Outgoing23=Prfm<Outgoing Action="Perform"><Name>Traktor - Layout - Decks</Name></Outgoing>
 Outgoing24=Prfm<Outgoing Action="Perform"><Name>Traktor - Layout - Decks</Name></Outgoing>
-Outgoing25=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot</Name><Params>pc</Params></Outgoing>
-Outgoing26=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot</Name><Params>pc</Params></Outgoing>
+Outgoing25=Prfm<Outgoing Action="Perform"><Name>Traktor - Layout - Decks</Name></Outgoing>
+Outgoing26=Prfm<Outgoing Action="Perform"><Name>Traktor - Layout - Decks</Name></Outgoing>
 Outgoing27=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot</Name><Params>pc</Params></Outgoing>
 Outgoing28=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot</Name><Params>pc</Params></Outgoing>
 Outgoing29=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot</Name><Params>pc</Params></Outgoing>
-Outgoing3=Tim0TimS000CDouble Click2:10:10
+Outgoing3=Prfm<Outgoing Action="Perform"><Name>Bome - Toggle Presets</Name></Outgoing>
 Outgoing30=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot</Name><Params>pc</Params></Outgoing>
 Outgoing31=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot</Name><Params>pc</Params></Outgoing>
 Outgoing32=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot</Name><Params>pc</Params></Outgoing>
@@ -443,16 +449,18 @@ Outgoing38=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select 
 Outgoing39=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot</Name><Params>pc</Params></Outgoing>
 Outgoing4=Prfm<Outgoing Action="Perform"><Name>Traktor - Layout - Decks</Name></Outgoing>
 Outgoing40=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot</Name><Params>pc</Params></Outgoing>
-Outgoing41=MID3<Outgoing Action="MIDI"><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel var="pa"/><Value1 var="pb"/><Value2 var="pc"/></Simple></Outgoing>
-Outgoing42=MID3<Outgoing Action="MIDI"><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel var="pa"/><Value1 var="pb"/><Value2 var="pc"/></Simple></Outgoing>
+Outgoing41=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot</Name><Params>pc</Params></Outgoing>
+Outgoing42=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot</Name><Params>pc</Params></Outgoing>
 Outgoing43=MID3<Outgoing Action="MIDI"><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel var="pa"/><Value1 var="pb"/><Value2 var="pc"/></Simple></Outgoing>
-Outgoing44=None
-Outgoing45=None
-Outgoing46=Mse10200
-Outgoing5=Prfm<Outgoing Action="Perform"><Name>Traktor - Layout - Decks</Name></Outgoing>
+Outgoing44=MID3<Outgoing Action="MIDI"><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel var="pa"/><Value1 var="pb"/><Value2 var="pc"/></Simple></Outgoing>
+Outgoing45=MID3<Outgoing Action="MIDI"><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel var="pa"/><Value1 var="pb"/><Value2 var="pc"/></Simple></Outgoing>
+Outgoing46=None
+Outgoing47=None
+Outgoing48=Mse10200
+Outgoing5=Tim0TimS000CDouble Click2:10:10
 Outgoing6=Prfm<Outgoing Action="Perform"><Name>Traktor - Layout - Decks</Name></Outgoing>
 Outgoing7=Prfm<Outgoing Action="Perform"><Name>Traktor - Layout - Decks</Name></Outgoing>
-Outgoing8=Prfm<Outgoing Action="Perform"><Name>Traktor - Set modifier m2</Name></Outgoing>
+Outgoing8=Prfm<Outgoing Action="Perform"><Name>Traktor - Layout - Decks</Name></Outgoing>
 Outgoing9=Prfm<Outgoing Action="Perform"><Name>Traktor - Layout - Decks</Name></Outgoing>
 PresetSwitchIgnore=1
 
@@ -501,7 +509,7 @@ Outgoing2=MID3<Outgoing Action="MIDI"><Ports><Port>Traktor Virtual Input</Port><
 PresetSwitchIgnore=1
 
 [Preset.2]
-Active=0
+Active=1
 Comments=Traktor running on MBP Built-in Display when used as Extended display. Dell U2518D is 2560x1440. Built-in Display is 1536x960.
 Incoming0=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 1 Cell 1</Name></Incoming>
 Incoming1=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 2 Cell 1</Name></Incoming>
@@ -581,7 +589,7 @@ Outgoing0=MID3<Outgoing Action="MIDI"><Ports><Port>Traktor Virtual Input</Port><
 PresetSwitchIgnore=1
 
 [Preset.3]
-Active=1
+Active=0
 Comments=Traktor running on MBP Built-in Display when used as Main display. Dell U2518D is 2560x1440. Built-in Display is 1536x960.
 Incoming0=Prfm<Incoming Action="Perform"><Name>Traktor - Deck A - Rename Hot Cue</Name></Incoming>
 Incoming1=Prfm<Incoming Action="Perform"><Name>Traktor - Deck B - Rename Hot Cue</Name></Incoming>
@@ -623,7 +631,7 @@ Outgoing8=Mse3<Outgoing Action="Mouse"><Type>ButtonUp</Type><Button num="0"/><X 
 PresetSwitchIgnore=0
 
 [Preset.4]
-Active=0
+Active=1
 Comments=Traktor running on MBP Built-in Display when used as Extended display. Dell U2518D is 2560x1440. Built-in Display is 1536x960.
 Incoming0=Prfm<Incoming Action="Perform"><Name>Traktor - Deck A - Rename Hot Cue</Name></Incoming>
 Incoming1=Prfm<Incoming Action="Perform"><Name>Traktor - Deck B - Rename Hot Cue</Name></Incoming>
@@ -669,61 +677,73 @@ Active=1
 Comments=
 Incoming0=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets</Name></Incoming>
 Incoming1=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Button - Grid</Name></Incoming>
-Incoming10=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP MAIN - General</Name></Incoming>
-Incoming11=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP MAIN - General</Name></Incoming>
-Incoming12=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP EXT - General</Name></Incoming>
-Incoming13=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP EXT - General</Name></Incoming>
+Incoming10=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP EXT - Grid</Name></Incoming>
+Incoming11=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP EXT - Grid</Name></Incoming>
+Incoming12=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP EXT - Grid</Name></Incoming>
+Incoming13=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP MAIN - General</Name></Incoming>
+Incoming14=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP MAIN - General</Name></Incoming>
+Incoming15=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP EXT - General</Name></Incoming>
+Incoming16=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP EXT - General</Name></Incoming>
 Incoming2=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Button - Grid</Name></Incoming>
 Incoming3=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Button - Grid</Name></Incoming>
-Incoming4=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP MAIN - Grid</Name></Incoming>
-Incoming5=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP MAIN - Grid</Name></Incoming>
-Incoming6=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP MAIN - Grid</Name></Incoming>
-Incoming7=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP EXT - Grid</Name></Incoming>
-Incoming8=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP EXT - Grid</Name></Incoming>
-Incoming9=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP EXT - Grid</Name></Incoming>
+Incoming4=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Button - Slot</Name></Incoming>
+Incoming5=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Button - Slot</Name></Incoming>
+Incoming6=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Button - Slot</Name></Incoming>
+Incoming7=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP MAIN - Grid</Name></Incoming>
+Incoming8=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP MAIN - Grid</Name></Incoming>
+Incoming9=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP MAIN - Grid</Name></Incoming>
 Name=Bome - Toggle Presets
 Name0=ACTION - Bome - Toggle Presets
 Name1=ACTION - Bome - Toggle Presets - Button - Grid
-Name10=ACTION - Bome - Toggle Presets - Mouse - MBP MAIN - General
-Name11=ACTION - Bome - Toggle Presets - Mouse - MBP MAIN - General
-Name12=ACTION - Bome - Toggle Presets - Mouse - MBP EXT - General
-Name13=ACTION - Bome - Toggle Presets - Mouse - MBP EXT - General
+Name10=ACTION - Bome - Toggle Presets -  Mouse - Grid - MBP EXT
+Name11=ACTION - Bome - Toggle Presets -  Mouse - Grid - MBP EXT
+Name12=ACTION - Bome - Toggle Presets -  Mouse - Grid - MBP EXT
+Name13=ACTION - Bome - Toggle Presets - Mouse - MBP MAIN - General
+Name14=ACTION - Bome - Toggle Presets - Mouse - MBP MAIN - General
+Name15=ACTION - Bome - Toggle Presets - Mouse - MBP EXT - General
+Name16=ACTION - Bome - Toggle Presets - Mouse - MBP EXT - General
 Name2=ACTION - Bome - Toggle Presets - Button - Grid
 Name3=ACTION - Bome - Toggle Presets - Button - Grid
-Name4=ACTION - Bome - Toggle Presets - Mouse - Grid - MBP MAIN
-Name5=ACTION - Bome - Toggle Presets - Mouse - Grid - MBP MAIN
-Name6=ACTION - Bome - Toggle Presets - Mouse - Grid - MBP MAIN
-Name7=ACTION - Bome - Toggle Presets -  Mouse - Grid - MBP EXT
-Name8=ACTION - Bome - Toggle Presets -  Mouse - Grid - MBP EXT
-Name9=ACTION - Bome - Toggle Presets -  Mouse - Grid - MBP EXT
-Options0=Actv01Stop00OutO00StMa00000016label0026__log>===== START TOGGLE PRESETS =====label000F__log>m3 = %m3%label000F__log>m4 = %m4%label0006__cmt>label0042__cmt>// Non-grid mouse actions work independently of Grid settinglabel0025__cmt>// Mouse - MBP Main - m3=1 m4=0label0025__cmt>// Mouse - MBP Ext  - m3=1 m4=1if(m4==0)prfm>0034"Bome - Toggle Presets - Mouse - MBP MAIN - General"if(m4==1)prfm>0033"Bome - Toggle Presets - Mouse - MBP EXT - General"label0006__cmt>label001C__cmt>// Grid button actionslabel0016__cmt>// Button - m3=0if(m3==0)prfm>0027"Bome - Toggle Presets - Button - Grid"if(m3==0)noexecutelabel0006__cmt>label0024__cmt>// Grid mouse actions if m3==1label0025__cmt>// Mouse - MBP Main - m3=1 m4=0label0025__cmt>// Mouse - MBP Ext  - m3=1 m4=1if(m4==0)prfm>0031"Bome - Toggle Presets - Mouse - MBP MAIN - Grid"if(m4==1)prfm>0030"Bome - Toggle Presets - Mouse - MBP EXT - Grid"label0006__cmt>label0024__log>===== END TOGGLE PRESETS =====
+Name4=ACTION - Bome - Toggle Presets - Button - Slot
+Name5=ACTION - Bome - Toggle Presets - Button - Slot
+Name6=ACTION - Bome - Toggle Presets - Button - Slot
+Name7=ACTION - Bome - Toggle Presets - Mouse - Grid - MBP MAIN
+Name8=ACTION - Bome - Toggle Presets - Mouse - Grid - MBP MAIN
+Name9=ACTION - Bome - Toggle Presets - Mouse - Grid - MBP MAIN
+Options0=Actv01Stop00OutO00StMa00000015label0042__cmt>// Non-grid mouse actions work independently of Grid settinglabel0025__cmt>// Mouse - MBP Main - m3=1 m4=0label0025__cmt>// Mouse - MBP Ext  - m3=1 m4=1if(m4==0)prfm>0034"Bome - Toggle Presets - Mouse - MBP MAIN - General"if(m4==1)prfm>0033"Bome - Toggle Presets - Mouse - MBP EXT - General"label0006__cmt>label001C__cmt>// Grid button actionslabel0016__cmt>// Button - m3=0if(m3==0)prfm>0027"Bome - Toggle Presets - Button - Grid"if(m3==0)noexecutelabel0006__cmt>label001A__cmt>// Grid slot actionslabel0014__cmt>// Slot - m3=2if(m3==2)prfm>0027"Bome - Toggle Presets - Button - Slot"if(m3==2)noexecutelabel0006__cmt>label0024__cmt>// Grid mouse actions if m3==1label0025__cmt>// Mouse - MBP Main - m3=1 m4=0label0025__cmt>// Mouse - MBP Ext  - m3=1 m4=1if(m4==0)prfm>0031"Bome - Toggle Presets - Mouse - MBP MAIN - Grid"if(m4==1)prfm>0030"Bome - Toggle Presets - Mouse - MBP EXT - Grid"
 Options1=Actv01Stop00OutO00StMa00000001label0006__cmt>
 Options10=Actv01Stop00OutO00
 Options11=Actv01Stop00OutO00
 Options12=Actv01Stop00OutO00
 Options13=Actv01Stop00OutO00
+Options14=Actv01Stop00OutO00
+Options15=Actv01Stop00OutO00
+Options16=Actv01Stop00OutO00
 Options2=Actv01Stop00OutO00StMa00000001label0006__cmt>
 Options3=Actv01Stop00OutO00StMa00000001label0006__cmt>
-Options4=Actv01Stop00OutO00
-Options5=Actv01Stop00OutO00
-Options6=Actv01Stop00OutO00
+Options4=Actv01Stop00OutO00StMa00000001label0006__cmt>
+Options5=Actv01Stop00OutO00StMa00000001label0006__cmt>
+Options6=Actv01Stop00OutO00StMa00000001label0006__cmt>
 Options7=Actv01Stop00OutO00
 Options8=Actv01Stop00OutO00
 Options9=Actv01Stop00OutO00
 Outgoing0=None
 Outgoing1=Pres040017Traktor - Button - Grid
-Outgoing10=Pres040024Traktor - Mouse - MBP MAIN - General
-Outgoing11=Pres060023Traktor - Mouse - MBP EXT - General
-Outgoing12=Pres040023Traktor - Mouse - MBP EXT - General
-Outgoing13=Pres060024Traktor - Mouse - MBP MAIN - General
+Outgoing10=Pres040020Traktor - Mouse - MBP EXT - Grid
+Outgoing11=Pres060017Traktor - Button - Grid
+Outgoing12=Pres060021Traktor - Mouse - MBP MAIN - Grid
+Outgoing13=Pres040024Traktor - Mouse - MBP MAIN - General
+Outgoing14=Pres060023Traktor - Mouse - MBP EXT - General
+Outgoing15=Pres040023Traktor - Mouse - MBP EXT - General
+Outgoing16=Pres060024Traktor - Mouse - MBP MAIN - General
 Outgoing2=Pres060021Traktor - Mouse - MBP MAIN - Grid
 Outgoing3=Pres060020Traktor - Mouse - MBP EXT - Grid
-Outgoing4=Pres040021Traktor - Mouse - MBP MAIN - Grid
-Outgoing5=Pres060017Traktor - Button - Grid
+Outgoing4=Pres060017Traktor - Button - Grid
+Outgoing5=Pres060021Traktor - Mouse - MBP MAIN - Grid
 Outgoing6=Pres060020Traktor - Mouse - MBP EXT - Grid
-Outgoing7=Pres040020Traktor - Mouse - MBP EXT - Grid
+Outgoing7=Pres040021Traktor - Mouse - MBP MAIN - Grid
 Outgoing8=Pres060017Traktor - Button - Grid
-Outgoing9=Pres060021Traktor - Mouse - MBP MAIN - Grid
+Outgoing9=Pres060020Traktor - Mouse - MBP EXT - Grid
 PresetSwitchIgnore=1
 
 [Preset.6]
@@ -738,7 +758,7 @@ Name1=BOME - Initialise Global Vars
 Name2=TIMER - Init vars (g, m)
 Options0=Actv01Stop00OutO00
 Options1=Actv01Stop00OutO00
-Options2=Actv01Stop00OutO00StMa0000002Dlabel0017__log>Vars initialised!label0006__cmt>label0052__cmt>// bome ga = CC of pressed slot button which is then triggered by Hold timerlabel0006__cmt>label0021__cmt>// bome g2 = timer durationg2=300label0006__cmt>label0026__cmt>// bome g3 = hold timer durationg3=100label0006__cmt>label0010__cmt>// Flow islabel0078__cmt>// Stream Deck button push -> Bome translation -> Traktor action or update of modifier, out -> Stream Deck displaylabel0006__cmt>label0033__cmt>// bome m1 = SHIFT state (traktor modifier 1)label001E__cmt>// m1=0 == SHIFT defaultlabel0023__cmt>// m1=1 == SHIFT pressed downm1=0label0006__cmt>label0033__cmt>// bome m2 = slot select (traktor modifier 2)label0020__cmt>// m2=0 == slot 1 selectedlabel0020__cmt>// m2=1 == slot 2 selectedlabel0020__cmt>// m2=2 == slot 3 selectedlabel0020__cmt>// m2=3 == slot 4 selectedm2=0label0006__cmt>label0037__cmt>// bome 3 = cell select mode (traktor modifier 3)label0016__cmt>// Button - m3=0label0016__cmt>// Mouse  - m3=1m3=0label0006__cmt>label0040__cmt>// bome m4 = bome mouse clicks offset (traktor modifier 4)label0020__cmt>// Mouse - MBP Main - m4=0label0020__cmt>// Mouse - MBP Ext  - m4=1m4=0label0006__cmt>label0033__cmt>// bome m6 = select rows (traktor modifier 6)label0014__cmt>// m6=0 == 1-2label0014__cmt>// m6=1 == 3-4label0014__cmt>// m6=2 == 5-6label0014__cmt>// m6=3 == 7-8label0015__cmt>// m6=4 == 9-10label0016__cmt>// m6=5 == 11-12label0016__cmt>// m6=6 == 13-14label0016__cmt>// m6=7 == 15-16m6=0
+Options2=Actv01Stop00OutO00StMa0000002Elabel0017__log>Vars initialised!label0006__cmt>label0052__cmt>// bome ga = CC of pressed slot button which is then triggered by Hold timerlabel0006__cmt>label0021__cmt>// bome g2 = timer durationg2=300label0006__cmt>label0026__cmt>// bome g3 = hold timer durationg3=100label0006__cmt>label0010__cmt>// Flow islabel0078__cmt>// Stream Deck button push -> Bome translation -> Traktor action or update of modifier, out -> Stream Deck displaylabel0006__cmt>label0033__cmt>// bome m1 = SHIFT state (traktor modifier 1)label001E__cmt>// m1=0 == SHIFT defaultlabel0023__cmt>// m1=1 == SHIFT pressed downm1=0label0006__cmt>label0033__cmt>// bome m2 = slot select (traktor modifier 2)label0020__cmt>// m2=0 == slot 1 selectedlabel0020__cmt>// m2=1 == slot 2 selectedlabel0020__cmt>// m2=2 == slot 3 selectedlabel0020__cmt>// m2=3 == slot 4 selectedm2=0label0006__cmt>label0037__cmt>// bome 3 = cell select mode (traktor modifier 3)label0016__cmt>// Button - m3=0label0016__cmt>// Mouse  - m3=1label0016__cmt>// Slot   - m3=2m3=0label0006__cmt>label0040__cmt>// bome m4 = bome mouse clicks offset (traktor modifier 4)label0020__cmt>// Mouse - MBP Main - m4=0label0020__cmt>// Mouse - MBP Ext  - m4=1m4=0label0006__cmt>label0033__cmt>// bome m6 = select rows (traktor modifier 6)label0014__cmt>// m6=0 == 1-2label0014__cmt>// m6=1 == 3-4label0014__cmt>// m6=2 == 5-6label0014__cmt>// m6=3 == 7-8label0015__cmt>// m6=4 == 9-10label0016__cmt>// m6=5 == 11-12label0016__cmt>// m6=6 == 13-14label0016__cmt>// m6=7 == 15-16m6=0
 Outgoing0=Tim0TimS0009Init vars1:100:1
 Outgoing1=Tim0TimS0009Init vars1:100:1
 Outgoing2=Prfm<Outgoing Action="Perform"><Name>Bome - Toggle Presets</Name></Outgoing>
@@ -798,11 +818,10 @@ Incoming39=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtu
 Incoming4=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="pa" Type="New Version Required"/><Value1 num="14" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
 Incoming40=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x14"/><Value2 var="m2" Type="SetVar"/></Simple></Incoming>
 Incoming41=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x1E"/><Value2 var="m3" Type="SetVar"/></Simple></Incoming>
-Incoming42=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x1E"/><Value2 var="m3" Type="SetVar"/></Simple></Incoming>
-Incoming43=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x32"/><Value2 var="m6" Type="SetVar"/></Simple></Incoming>
+Incoming42=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x32"/><Value2 var="m6" Type="SetVar"/></Simple></Incoming>
+Incoming43=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x46"/><Value2 num="0x7F"/></Simple></Incoming>
 Incoming44=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x46"/><Value2 num="0x7F"/></Simple></Incoming>
-Incoming45=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x46"/><Value2 num="0x7F"/></Simple></Incoming>
-Incoming46=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x5A"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Incoming45=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x5A"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
 Incoming5=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x0F"/><Value2 num="0x7F"/></Simple></Incoming>
 Incoming6=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="pa" Type="New Version Required"/><Value1 num="20" setvar="pb" Type="New Version Required"/><Value2 num="127" setvar="pc" Type="New Version Required"/></Simple></Incoming>
 Incoming7=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="pa" Type="New Version Required"/><Value1 num="22" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
@@ -845,12 +864,11 @@ Name38=STREAM DECK - Traktor - Remix Deck C - Select Slot 4 Cell 2
 Name39=STREAM DECK - Traktor - Remix Deck C - Select Slot 4 Cell 4
 Name4=STREAM DECK - Traktor - Loop Recorder - Record
 Name40=STREAM DECK - Traktor - Remix Deck C - Select Slot
-Name41=STREAM DECK - Button mode
-Name42=STREAM DECK - Button mode
-Name43=STREAM DECK - Traktor - Remix Deck C - Select Rows
-Name44=STREAM DECK - Traktor - Remix Deck C - Sample Offset BWD
-Name45=STREAM DECK - Traktor - Remix Deck C - Sample Offset FWD
-Name46=STREAM DECK - Navigate to Profile / Page
+Name41=STREAM DECK - Traktor - Remix Deck C - Grid mode
+Name42=STREAM DECK - Traktor - Remix Deck C - Select Rows
+Name43=STREAM DECK - Traktor - Remix Deck C - Sample Offset BWD
+Name44=STREAM DECK - Traktor - Remix Deck C - Sample Offset FWD
+Name45=STREAM DECK - Navigate to Profile / Page
 Name5=STREAM DECK - Traktor - Loop Recorder - Delete
 Name6=STREAM DECK - Traktor - Browser - Load Deck B
 Name7=STREAM DECK - Traktor - Loop Recorder - Length
@@ -892,12 +910,11 @@ Options38=Actv01Stop00OutO00StMa00000005label0021__cmt>// button controls rows 1
 Options39=Actv01Stop00OutO00StMa00000005label0021__cmt>// button controls rows 1-2if(m6==0)noexecutelabel0006__cmt>label0021__cmt>// button controls rows 3-4if(m6==1)execute
 Options4=Actv01Stop00OutO00
 Options40=Actv01Stop00OutO00
-Options41=Actv01Stop00OutO00Dlayg2:Millis
+Options41=Actv01Stop00OutO00StMa00000001label0026__log>>>>>>>>>>>>> m3 from CC30 = %m3%
 Options42=Actv01Stop00OutO00
-Options43=Actv01Stop00OutO00
+Options43=Actv01Stop00OutO00Dlay50:Millis
 Options44=Actv01Stop00OutO00Dlay50:Millis
-Options45=Actv01Stop00OutO00Dlay50:Millis
-Options46=Actv01Stop00OutO00
+Options45=Actv01Stop00OutO00
 Options5=Actv01Stop00OutO00
 Options6=Actv01Stop00OutO00
 Options7=Actv01Stop00OutO00
@@ -939,12 +956,11 @@ Outgoing38=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select 
 Outgoing39=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 4 Cell 4</Name><Params>ga</Params></Outgoing>
 Outgoing4=Prfm<Outgoing Action="Perform"><Name>Traktor - Loop Recorder - Record</Name><Params>pa,pb,pc</Params></Outgoing>
 Outgoing40=Prfm<Outgoing Action="Perform"><Name>Traktor - Set modifier m2</Name></Outgoing>
-Outgoing41=Prfm<Outgoing Action="Perform"><Name>Bome - Toggle Presets</Name></Outgoing>
-Outgoing42=Prfm<Outgoing Action="Perform"><Name>Traktor - Set modifier m3</Name></Outgoing>
-Outgoing43=Prfm<Outgoing Action="Perform"><Name>Traktor - Set modifier m6</Name></Outgoing>
-Outgoing44=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Sample Offset BWD</Name><Params>ga</Params></Outgoing>
-Outgoing45=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Sample Offset FWD</Name><Params>ga</Params></Outgoing>
-Outgoing46=Prfm<Outgoing Action="Perform"><Name>Stream Deck - Navigate to Profile / Page</Name></Outgoing>
+Outgoing41=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Grid Mode</Name></Outgoing>
+Outgoing42=Prfm<Outgoing Action="Perform"><Name>Traktor - Set modifier m6</Name></Outgoing>
+Outgoing43=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Sample Offset BWD</Name><Params>ga</Params></Outgoing>
+Outgoing44=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Sample Offset FWD</Name><Params>ga</Params></Outgoing>
+Outgoing45=Prfm<Outgoing Action="Perform"><Name>Stream Deck - Navigate to Profile / Page</Name></Outgoing>
 Outgoing5=Prfm<Outgoing Action="Perform"><Name>Traktor - Loop Recorder - Delete</Name></Outgoing>
 Outgoing6=Prfm<Outgoing Action="Perform"><Name>Traktor - Browser - Load Deck</Name><Params>pa,pb,pc</Params></Outgoing>
 Outgoing7=Prfm<Outgoing Action="Perform"><Name>Traktor - Loop Recorder - Length</Name><Params>pa,pb,pc</Params></Outgoing>
@@ -974,6 +990,6 @@ Version=2
 
 [Signatures]
 SigName-1=[Midi Translator Pro Internal]
-Signature-1=XOg0I5sVOJQ+lzraEa2sHBiPvSLJY60A2nzLVZO5A3u78h/2+5c5/mL6bG53VFT5/pjpvBZGbD1XT6DvgJL+n6qGtV2fWdCBofGHantgScJZqs0hIA644uq30KmvrKGGbR5S3thMx2UzwgRP3U2gshBZwTsoc4SrUDI82uh9xsg=
+Signature-1=eTNSz4ST0WNd6LYHLHmD2wmuE0uaWh2MPERSCUwK3vsRApEJush5+Q2ZyJTYZVYSJOzZQsW8Tsv6Y7nzKuf+SuUAFqAxsDcixHUWk8iyh7/uN1q5OytJv2yoj1JE9IOZulvdY3Pg+W+jhOIRAN/FWhpGXNcNCTI3jaojLRNblZM=
 SignedBy-1=Dan Smith
 
