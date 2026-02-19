@@ -293,16 +293,16 @@ B1 - Remix - Perform/Capture - Row 3 Col 6,1/4 beat etc,LAUNCH QUANTISE,Ch.10.CC
 src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/remix-deck-quantise.xml,
 src/traktor/CT6 - Streamdeck XL.tsi",6
 B1 - Remix - Perform/Capture - Row 3 Col 7,"Play Mode One-Shot,
-Play Mode Looped",Arrow pointer flanked by 2x stack of 4 white dots,Ch.10.CC.93,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,,"src/streamdeck-xl/icons/button-creator/circle.grid.4x4-4-fff-cursorarrow.square.fill-30.png,
+Play Mode Looped",Depressed button flanked by 2x stack of 4 white dots,Ch.10.CC.93,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,,"src/streamdeck-xl/icons/button-creator/circle.grid.4x4-4-fff-button.horizontal.top.press.fill-23.png,
 
 src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/remix-deck-slot-play-mode.xml,
 src/traktor/CT6 - Streamdeck XL.tsi",6
+B1 - Remix - Perform/Capture - Row 4 Col 5,"Monitor Off,
+Monitor On",Stack of 4 white dots,Ch.10.CC.85,Toggle,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Slot Monitor Off/On. Slot is determined by slot modifier value.,src/streamdeck-xl/icons/button-creator/circle.grid.1x4-fff.png,6
 B1 - Remix - Perform/Capture - Row 4 Col 6,"Punch Off,
 Punch On",Stack of 4 white dots,Ch.10.CC.80,Push,"127 (On), 0 (Off)",Bome MIDI Translator 1,Traktor Virtual Output,Slot Punch Off/On. Slot is determined by slot modifier value.,"src/streamdeck-xl/icons/button-creator/circle.grid.1x4-fff.png,
 
 src/traktor/CT6 - Streamdeck XL.tsi",6
-B1 - Remix - Perform/Capture - Row 4 Col 5,"Monitor Off,
-Monitor On",Stack of 4 white dots,Ch.10.CC.85,Toggle,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Slot Monitor Off/On. Slot is determined by slot modifier value.,src/streamdeck-xl/icons/button-creator/circle.grid.1x4-fff.png,6
 B2 - Remix - Capture - Row 2 Col 6,"Off,
 On",LAUNCH QUANTISE,Ch.10.CC.71,Push,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Remix deck launch quantise toggle,"src/streamdeck-xl/icons/button-creator/launch-quantise-26.png,
 
