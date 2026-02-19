@@ -292,14 +292,14 @@ B1 - Remix - Perform/Capture - Row 3 Col 1,1/4 beat etc,LAUNCH QUANTISE,Ch.10.CC
 
 src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/remix-deck-quantise.xml,
 src/traktor/CT6 - Streamdeck XL.tsi",6
-B1 - Remix - Perform/Capture - Row 4 Col 5,"Off,
-On",SLOT PUNCH (LEGATO),Ch.10.CC.80,Push,"127 (On), 0 (Off)",Bome MIDI Translator 1,Traktor Virtual Output,Slot Punch Off/On. Slot is determined by slot modifier value.,"src/streamdeck-xl/icons/button-creator/slot-punch-legato.png,
+B1 - Remix - Perform/Capture - Row 4 Col 5,"Punch Off,
+Punch On",Stack of 4 white dots,Ch.10.CC.80,Push,"127 (On), 0 (Off)",Bome MIDI Translator 1,Traktor Virtual Output,Slot Punch Off/On. Slot is determined by slot modifier value.,"src/streamdeck-xl/icons/button-creator/circle.grid.1x4-fff.png,
 
 src/traktor/CT6 - Streamdeck XL.tsi",6
-B1 - Remix - Perform/Capture - Row 4 Col 6,"Off,
-On",SLOT MONITOR (CUE),Ch.10.CC.85,Toggle,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Slot Monitor Off/On. Slot is determined by slot modifier value.,"src/streamdeck-xl/icons/button-creator/slot-monitor-cue-22.png,",6
-B1 - Remix - Perform/Capture - Row 4 Col 7,"One-Shot,
-Looped",SLOT CELL PLAY MODE,Ch.10.CC.93,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,,"src/streamdeck-xl/icons/button-creator/slot-cell-play-mode-22.png,
+B1 - Remix - Perform/Capture - Row 4 Col 6,"Monitor Off,
+Monitor On",Stack of 4 white dots,Ch.10.CC.85,Toggle,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,Slot Monitor Off/On. Slot is determined by slot modifier value.,src/streamdeck-xl/icons/button-creator/circle.grid.1x4-fff.png,6
+B1 - Remix - Perform/Capture - Row 4 Col 7,"Play Mode One-Shot,
+Play Mode Looped",Arrow pointer flanked by 2x stack of 4 white dots,Ch.10.CC.93,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,,"src/streamdeck-xl/icons/button-creator/circle.grid.4x4-4-fff-cursorarrow.square.fill-30.png,
 
 src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/remix-deck-slot-play-mode.xml,
 src/traktor/CT6 - Streamdeck XL.tsi",6
@@ -331,8 +331,8 @@ src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/slot-level.xml",
 B2 - Remix - Capture - Row 3 Col 3,,Stack of 4 grey dots,Ch.11.CC.86,Cycle,Display only,Bome MIDI Translator 1,Traktor Virtual Output,Displays a basic VU meter,As above,
 B2 - Remix - Capture - Row 3 Col 4,,Stack of 4 grey dots,Ch.11.CC.87,Cycle,Display only,Bome MIDI Translator 1,Traktor Virtual Output,Displays a basic VU meter,As above,
 B2 - Remix - Capture - Row 3 Col 5,,Stack of 4 grey dots,Ch.11.CC.88,Cycle,Display only,Bome MIDI Translator 1,Traktor Virtual Output,Displays a basic VU meter,As above,
-B2 - Remix - Capture - Row 3 Col 6,,SLOT SIZE ÷2 ⨉2,Ch.10.CC.39,Push,"127 (On), 0 (Off)",Bome MIDI Translator 1,Traktor Virtual Output,"Double the length of the (a) selected sample in the (b) selected slot, exposing more of the loaded slot sample or adding silence after it. Uses the value of Traktor's 'Modifier 2' to determine which slot to act upon.
-Shifted: Halve the length of the (a) selected sample in the (b) selected slot, cropping the loaded slot sample. Uses the value of Traktor's 'Modifier 2' to determine which slot to act upon.","src/streamdeck-xl/icons/button-creator/slot-size-half-double-22-23.png,
+B2 - Remix - Capture - Row 3 Col 6,Size,Stack of 4 white dots ÷2 ⨉2,Ch.10.CC.39,Push,"127 (On), 0 (Off)",Bome MIDI Translator 1,Traktor Virtual Output,"Double the length of the (a) selected sample in the (b) selected slot, exposing more of the loaded slot sample or adding silence after it. Uses the value of Traktor's 'Modifier 2' to determine which slot to act upon.
+Shifted: Halve the length of the (a) selected sample in the (b) selected slot, cropping the loaded slot sample. Uses the value of Traktor's 'Modifier 2' to determine which slot to act upon.","src/streamdeck-xl/icons/button-creator/circle.grid.4x4-4-fff-half-double-22-23.png,
 
 src/traktor/CT6 - Streamdeck XL.tsi",5
 B2 - Remix - Capture - Row 3 Col 7,"Slot 1,
