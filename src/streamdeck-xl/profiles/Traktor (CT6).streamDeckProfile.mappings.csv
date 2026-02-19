@@ -152,7 +152,7 @@ Recording",Tape Loop in circle,Ch.10.CC.13,Push,"127 (On), 0 (Off)",Bome MIDI Tr
 src/streamdeck-xl/icons/button-creator/record.circle.fill.png,
 
 src/traktor/CT6 - Streamdeck XL.tsi",5
-B1 - Remix - Perform - Row 2 Col 6,Flux,Arrow Triangle Backward Fill,Ch.10.CC.69,Hold,"127 (On), 0 (Off)",Traktor Virtual Input,Traktor Virtual Output,"Calls Traktor's ‘Reverse Playback On’ (play Deck in reverse)
+B1 - Remix - Perform - Row 2 Col 6,Flux,Arrow Triangle Backward Fill,Ch.10.CC.69,Hold,"127 (On), 0 (Off)",Bome MIDI Translator 1,Traktor Virtual Output,"Calls Traktor’s ‘Deck Focus Selector’ (to deck C) followed by ‘Reverse Playback On’ (play Deck in reverse)
 Shifted: Play Deck in Reverse with Flux enabled","src/streamdeck-xl/icons/button-creator/arrowtriangle.backward.fill.png,
 
 src/traktor/CT6 - Streamdeck XL.tsi",6
