@@ -93,8 +93,8 @@ Note: *~* (tilde) means *Macintosh HD/Users/USERNAME*.
       3. Click *Navigation: Switch Profile* (first action)
       4. Change *Profile* from *Home* to *Traktor (CT6*)
       5. Leave *Page* as *A - Decks / Record*
-   3. *B1 Rmx Perf*
-      1. Click *B1 Rmx Perf*
+   3. *B1 Rmx Perf Record*
+      1. Click *B1 Rmx Perf Record*
       2. Click arrow to the right of *3 actions*
       3. Click *Navigation: Switch Profile* (first action)
       4. Change *Profile* from *Home* to *Traktor (CT6*)
