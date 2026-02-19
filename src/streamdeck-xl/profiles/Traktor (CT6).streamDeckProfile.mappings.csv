@@ -245,9 +245,13 @@ src/streamdeck-xl/icons/button-creator/button.horizontal.top.press.fill-23.png,
 src/streamdeck-xl/icons/button-creator/cursorarrow.square.fill-30.png,
 
 src/streamdeck-xl/icons/button-creator/slot-12x57.png",6
-B1 - Remix - Perform/Capture - Row 1 Col 7,1-2 3-4,ROWS,Ch.11.CC.50,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,Changes the subset of Remix Deck cell rows displayed on the Stream Deck,"src/bome-midi-translator-pro/stream-deck-traktor.bmtp,
+B1 - Remix - Perform/Capture - Row 1 Col 7,"Rows 1-2,
 
-src/streamdeck-xl/icons/button-creator/rows-26.png,",6
+Rows 3-4",Half filled grid,Ch.11.CC.50,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,Changes the subset of Remix Deck cell rows displayed on the Stream Deck,"src/bome-midi-translator-pro/stream-deck-traktor.bmtp,
+
+src/streamdeck-xl/icons/button-creator/circle.grid.4x4-rows-12-fff.png,
+
+src/streamdeck-xl/icons/button-creator/circle.grid.4x4-rows-34-fff.png,",6
 B1 - Remix - Perform/Capture - Row 2 Col 1,,Offset BWD · FWD,Ch.11.CC.70,Push,"127 (On), 0 (Off)",Bome MIDI Translator 1,Traktor Virtual Output,"Previous action: select cell in [ Mouse ] mode.
 
 Moves start offset forward.
