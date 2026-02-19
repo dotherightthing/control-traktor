@@ -2,10 +2,10 @@
 <MidiSteps version="1.1">
   <Default send="yes" receive="yes" display="" image="" displayonsend="yes" useclosestvalueonreceive="yes"/>
   <StepValues>
-    <Step value="0" display="Slot&#xA;&#xA;&#xA;&#xA;1" image="%documents%/control-traktor/streamdeck-xl/icons/button-creator/circle.grid.4x4-1-fff.png"/>
-    <Step value="1" display="Slot&#xA;&#xA;&#xA;&#xA;2" image="%documents%/control-traktor/streamdeck-xl/icons/button-creator/circle.grid.4x4-2-fff.png"/>
-    <Step value="2" display="Slot&#xA;&#xA;&#xA;&#xA;3" image="%documents%/control-traktor/streamdeck-xl/icons/button-creator/circle.grid.4x4-3-fff.png"/>
-    <Step value="3" display="Slot&#xA;&#xA;&#xA;&#xA;4" image="%documents%/control-traktor/streamdeck-xl/icons/button-creator/circle.grid.4x4-4-fff.png"/>
+    <Step value="0" display="Grid Slot&#xA;&#xA;&#xA;&#xA;1" image="%documents%/control-traktor/streamdeck-xl/icons/button-creator/circle.grid.4x4-1-fff.png"/>
+    <Step value="1" display="Grid Slot&#xA;&#xA;&#xA;&#xA;2" image="%documents%/control-traktor/streamdeck-xl/icons/button-creator/circle.grid.4x4-2-fff.png"/>
+    <Step value="2" display="Grid Slot&#xA;&#xA;&#xA;&#xA;3" image="%documents%/control-traktor/streamdeck-xl/icons/button-creator/circle.grid.4x4-3-fff.png"/>
+    <Step value="3" display="Grid Slot&#xA;&#xA;&#xA;&#xA;4" image="%documents%/control-traktor/streamdeck-xl/icons/button-creator/circle.grid.4x4-4-fff.png"/>
     <Step value="4" display="X" image="" send="no"/>
     <Step value="5" display="X" image="" send="no"/>
     <Step value="6" display="X" image="" send="no"/>
