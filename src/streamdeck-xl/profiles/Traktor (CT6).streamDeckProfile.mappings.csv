@@ -466,10 +466,6 @@ D - Mix / Configure - Row 1 Col 4,Pan A,Black V-Pot,Ch.10.CC.95,V-Pot,0-127,Trak
 D - Mix / Configure - Row 1 Col 5,Pan B,Black V-Pot,Ch.10.CC.96,V-Pot,0-127,Traktor Virtual Input,Traktor Virtual Output,Pan Deck B,"Stock icon for Midi > CC/NRPN (Legacy) > V-Pot,",6
 D - Mix / Configure - Row 1 Col 6,Pan C,Black V-Pot,Ch.10.CC.97,V-Pot,0-127,Traktor Virtual Input,Traktor Virtual Output,Pan Deck C,"Stock icon for Midi > CC/NRPN (Legacy) > V-Pot,",6
 D - Mix / Configure - Row 1 Col 7,Pan D,Black V-Pot,Ch.10.CC.98,V-Pot,0-127,Traktor Virtual Input,Traktor Virtual Output,Pan Deck D,"Stock icon for Midi > CC/NRPN (Legacy) > V-Pot,",6
-D - Mix / Configure - Row 2 Col 7,"Bome clicks MBP Main,
-Bome clicks MBP Ext",Laptop with target scope on screen,Ch.10.CC.38,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,"Toggles click offset mode (Bome - Click Traktor - MBP EXT / MBP MAIN), which changes the mouse click positions for UI buttons","src/bome-midi-translator-pro/stream-deck-traktor.bmtp,
-
-src/streamdeck-xl/icons/button-creator/dot.scope.laptopcomputer-30.png,",6
 D - Mix / Configure - Row 3 Col 1,BOME MTP,Bome icon,,Mac Automation: Run Shell Command,,,,Load Bome translator file for mouse clicks,"src/streamdeck-xl/icons/app/bome.png,",6
 D - Mix / Configure - Row 3 Col 2,CT6,Live,,Mac Automation: Run Shell Command,-,-,-,Launch CT6 set,"src/streamdeck-xl/icons/button-creator/live.png,",6
 D - Mix / Configure - Row 3 Col 3,"Off,
@@ -494,7 +490,11 @@ D - Mix / Configure - Row 4 Col 4,Kontrol S8,Speaker,,Audio Devices: Set Audio D
 D - Mix / Configure - Row 4 Col 5,Screenshots,Elgato Camera,,Multi Action,-,-,-,"Opens Stream Deck config (on external display), navigates to each page in turn and runs the macOS screencapture script in Terminal (19 actions in total)","src/streamdeck-xl/icons/button-creator/elgato-camera.png,
 
 src/screenshots/",6
-D - Mix / Configure - Row 4 Col 7,Supreme MOD,Globe,,System: Website,-,-,-,Open Patreon page to manually check for updates,"src/streamdeck-xl/icons/button-creator/globe.png,",6
+D - Mix / Configure - Row 4 Col 6,Supreme MOD,Globe,,System: Website,-,-,-,Open Patreon page to manually check for updates,"src/streamdeck-xl/icons/button-creator/globe.png,",6
+D - Mix / Configure - Row 4 Col 7,"Click MBP Main,
+Click MBP Ext",Arrow pointer,Ch.10.CC.38,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,"Toggles click offset mode (Bome - Click Traktor - MBP EXT / MBP MAIN), which changes the mouse click positions for UI buttons","src/bome-midi-translator-pro/stream-deck-traktor.bmtp,
+
+src/streamdeck-xl/icons/button-creator/cursorarrow.square.fill-30.png",6
 Pinned - Row 1 Col 8,,A Decks Record,-,Multi Action,"127 (On), 0 (Off)",Bome MIDI Translator 1,Traktor Virtual Output,"Multi Action step 1: Switches profile page (view Page A),
 
 Multi Action step 2: Bome - Stream Deck - Navigate to Profile / Page","src/bome-midi-translator-pro/stream-deck-traktor.bmtp,
