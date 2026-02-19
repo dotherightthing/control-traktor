@@ -232,7 +232,7 @@ B1 - Remix - Perform/Capture - Row 1 Col 6,"Button,
 
 Mouse,
 
-Slot",GRID MODE,Ch.11.CC.30,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,"Changes values of Bome m3 (0, 1, 2) and Traktor modifier 3 (0, 1, 2)
+Slot",Grid Mode,Ch.11.CC.30,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,"Changes values of Bome m3 (0, 1, 2) and Traktor modifier 3 (0, 1, 2)
 
 [ Button ]: Action button + Cell button affects cell sample,
 
@@ -242,7 +242,9 @@ Slot",GRID MODE,Ch.11.CC.30,Cycle,Various (XML Cycle file),Bome MIDI Translator 
 
 src/streamdeck-xl/icons/button-creator/button.horizontal.top.press.fill-23.png,
 
-src/streamdeck-xl/icons/button-creator/cursorarrow.square.fill-30.png,",6
+src/streamdeck-xl/icons/button-creator/cursorarrow.square.fill-30.png,
+
+src/streamdeck-xl/icons/button-creator/slot-12x57.png",6
 B1 - Remix - Perform/Capture - Row 1 Col 7,1-2 3-4,ROWS,Ch.11.CC.50,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,Changes the subset of Remix Deck cell rows displayed on the Stream Deck,"src/bome-midi-translator-pro/stream-deck-traktor.bmtp,
 
 src/streamdeck-xl/icons/button-creator/rows-26.png,",6

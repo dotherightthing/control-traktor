@@ -2,8 +2,8 @@
 <MidiSteps version="1.1">
   <Default send="yes" receive="yes" display="" image="" displayonsend="yes" useclosestvalueonreceive="yes"/>
   <StepValues>
-    <Step value="0" display="[ Button ]&#xA;Mouse&#xA;Slot"/>
-    <Step value="1" display="Button&#xA;[ Mouse ]&#xA;Slot"/>
-    <Step value="2" display="Button&#xA;Mouse&#xA;[ Slot ]"/>
+    <Step value="0" display="Grid Mode&#xA;&#xA;&#xA;&#xA;Button" image="%documents%/control-traktor/streamdeck-xl/icons/button-creator/button.horizontal.top.press.fill-23.png"/>
+    <Step value="1" display="Grid Mode&#xA;&#xA;&#xA;&#xA;Mouse" image="%documents%/control-traktor/streamdeck-xl/icons/button-creator/cursorarrow.square.fill-30.png"/>
+    <Step value="2" display="Grid Mode&#xA;&#xA;&#xA;&#xA;Slot" image="%documents%/control-traktor/streamdeck-xl/icons/button-creator/slot-12x57.png"/>
   </StepValues>
 </MidiSteps>
