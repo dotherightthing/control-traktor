@@ -2,8 +2,8 @@
 <MidiSteps version="1.1">
   <Default send="yes" receive="yes" display="" image="" displayonsend="yes" useclosestvalueonreceive="yes"/>
   <StepValues>
-    <Step value="0" display="Rows&#xA;&#xA;&#xA;&#xA;1-2" image="%documents%/control-traktor/streamdeck-xl/icons/button-creator/circle.grid.4x4-rows-12-fff.png"/>
-    <Step value="1" display="Rows&#xA;&#xA;&#xA;&#xA;3-4" image="%documents%/control-traktor/streamdeck-xl/icons/button-creator/circle.grid.4x4-rows-34-fff.png"/>
+    <Step value="0" display="Grid Rows&#xA;&#xA;&#xA;&#xA;1-2" image="%documents%/control-traktor/streamdeck-xl/icons/button-creator/circle.grid.4x4-rows-12-fff.png"/>
+    <Step value="1" display="Grid Rows&#xA;&#xA;&#xA;&#xA;3-4" image="%documents%/control-traktor/streamdeck-xl/icons/button-creator/circle.grid.4x4-rows-34-fff.png"/>
     <Step value="2" display="X" send="no" />
     <Step value="3" display="X" send="no" />
     <Step value="4" display="X" send="no" />
