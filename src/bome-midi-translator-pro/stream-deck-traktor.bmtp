@@ -845,7 +845,7 @@ Incoming43=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtu
 Incoming44=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x32"/><Value2 var="m6" Type="SetVar"/></Simple></Incoming>
 Incoming45=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x46"/><Value2 num="0x7F"/></Simple></Incoming>
 Incoming46=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x46"/><Value2 num="0x7F"/></Simple></Incoming>
-Incoming47=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x5A"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Incoming47=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x5A"/><Value2 var="pd" Type="SetVar"/></Simple></Incoming>
 Incoming5=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x0F"/><Value2 num="0x7F"/></Simple></Incoming>
 Incoming6=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="pa" Type="New Version Required"/><Value1 num="20" setvar="pb" Type="New Version Required"/><Value2 num="127" setvar="pc" Type="New Version Required"/></Simple></Incoming>
 Incoming7=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="pa" Type="New Version Required"/><Value1 num="22" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
@@ -942,11 +942,11 @@ Options43=Actv01Stop00OutO00StMa00000001label0026__log>>>>>>>>>>>>> m3 from CC30
 Options44=Actv01Stop00OutO00
 Options45=Actv01Stop00OutO00Dlay50:Millis
 Options46=Actv01Stop00OutO00Dlay50:Millis
-Options47=Actv01Stop00OutO00
+Options47=Actv01Stop00OutO00StMa00000002label0041__cmt>// This is a generic action, it is not passing *which* pagelabel0010__cmt>// see #85
 Options5=Actv01Stop00OutO00
 Options6=Actv01Stop00OutO00
 Options7=Actv01Stop00OutO00
-Options8=Actv01Stop00OutO00StMa00000001pd=pc
+Options8=Actv01Stop00OutO00StMa00000005label0018__cmt>// pd=0   = Deck Alabel0018__cmt>// pd=42  = Deck Blabel0018__cmt>// pd=84  = Deck Clabel0018__cmt>// pd=127 = Deck Dpd=pc
 Options9=Actv01Stop00OutO00
 Outgoing0=Prfm<Outgoing Action="Perform"><Name>Traktor - Set modifier m1</Name></Outgoing>
 Outgoing1=Prfm<Outgoing Action="Perform"><Name>Traktor - Browser - Search</Name><Params>pa,pb,pc</Params></Outgoing>
@@ -1003,13 +1003,17 @@ Active=1
 Comments=
 Incoming0=Prfm<Incoming Action="Perform"><Name>Stream Deck - Navigate to Profile / Page</Name></Incoming>
 Incoming1=Prfm<Incoming Action="Perform"><Name>Stream Deck - Navigate to Profile / Page</Name></Incoming>
+Incoming2=Prfm<Incoming Action="Perform"><Name>Stream Deck - Navigate to Profile / Page</Name></Incoming>
 Name=Stream Deck - Navigate to Profile / Page
 Name0=ACTION - Stream Deck - Navigate to Profile / Page
 Name1=ACTION - Stream Deck - Navigate to Profile / Page
+Name2=ACTION - Stream Deck - Navigate to Profile / Page
 Options0=Actv01Stop00OutO00
 Options1=Actv01Stop00OutO00
+Options2=Actv00Stop00OutO00StMa00000007label0040__cmt>// TODO pass deck value with page navigation (Ch.11.CC.90)label0047__cmt>// to automatically switch m5 to 2 when remix deck pages are openlabel0018__cmt>// pd=0   = Deck Alabel0018__cmt>// pd=42  = Deck Blabel0018__cmt>// pd=84  = Deck Clabel0018__cmt>// pd=127 = Deck Dlabel0010__cmt>// see #85
 Outgoing0=Prfm<Outgoing Action="Perform"><Name>Traktor - Layout - Decks</Name></Outgoing>
 Outgoing1=Prfm<Outgoing Action="Perform"><Name>Traktor - Sync State</Name></Outgoing>
+Outgoing2=Prfm<Outgoing Action="Perform"><Name>Traktor - Focus Deck</Name></Outgoing>
 PresetSwitchIgnore=1
 
 [Project]
@@ -1020,6 +1024,6 @@ Version=2
 
 [Signatures]
 SigName-1=[Midi Translator Pro Internal]
-Signature-1=LV3e1oI4j6JTVWzr0THhGVBdKtX6/vdo2uUc2Rw9OH7CU+IktBS/pwKsdykkn60ShcczmtgI0sv/7pXE2JGINrR69ldTlKSGm0whms62yc80MzG2+rxps3s6eLdASj9dJYBQoW/zqOjFHcXjm9zJQfa/D8WalwIICqx1hC3qdVU=
+Signature-1=q7UjheF8uA4za8+XxvFi0wpOP3P4e9HALipu6EI4kHU7NskKZFY9PEdHu8SiHwj1born9iG/Ntz4K/PMJDd9fgj8Pohlh3nQCr07Qlq++kK7vvrhLblKO/JCWK3DPJ9h8CVWn/s64qyT3DJU4vBuZJBzpNe2Zx5ddNMzYtHbCfw=
 SignedBy-1=Dan Smith
 
