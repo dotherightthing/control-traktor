@@ -5,7 +5,7 @@ Calls Traktor's 'Send Monitor State’ to sync state of all buttons with Traktor
 A - Decks / Record - Row 1 Col 1,"Deck A,
 Deck B,
 Deck C,
-Deck D",Arrow pointer,Ch.10.CC.23,Cycle,Various (XML Cycle file),Traktor Virtual Input,Traktor Virtual Output,"Sets/Displays Traktor's 'Deck Focus Selector', for mappings that affect 'Device Target: Focus'","Font Awesome Solid Icons pack - Arrow pointer,
+Deck D",Arrow pointer,Ch.10.CC.23,Cycle,Various (XML Cycle file),Bome MIDI Translator 1,Traktor Virtual Output,"Sets/Displays Traktor's 'Deck Focus Selector', for mappings that affect 'Device Target: Focus’. Setting is tracked with modifier 5.","Font Awesome Solid Icons pack - Arrow pointer,
 
 src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/focus-deck.xml,
 src/traktor/CT6 - Streamdeck XL.tsi",5

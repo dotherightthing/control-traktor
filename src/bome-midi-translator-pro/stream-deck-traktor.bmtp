@@ -7,7 +7,7 @@ In0=Bome MIDI Translator 1 Virtual In
 Out0=Traktor Virtual Input
 
 [Preset.0]
-Active=0
+Active=1
 Comments=Traktor running on MBP Built-in Display when used as Main display. Dell U2518D is 2560x1440. Built-in Display is 1536x960.
 DefaultInPorts=MIDA00010021Bome MIDI Translator 1 Virtual In
 DefaultOutPorts=MIDA00010015Traktor Virtual Input
@@ -186,11 +186,15 @@ PresetSwitchIgnore=1
 Active=1
 Comments=
 Incoming0=Prfm<Incoming Action="Perform"><Name>Traktor - Focus Deck</Name><Params>pd</Params></Incoming>
+Incoming1=Prfm<Incoming Action="Perform"><Name>Traktor - Focus Deck</Name><Params>pd</Params></Incoming>
 Name=Traktor - Focus Deck
 Name0=ACTION - Traktor - Focus Deck
+Name1=ACTION - Traktor - Focus Deck
 Options0=Actv01Stop00OutO00StMa00000004label0018__cmt>// pd=0   = Deck Alabel0018__cmt>// pd=42  = Deck Blabel0018__cmt>// pd=84  = Deck Clabel0018__cmt>// pd=127 = Deck D
+Options1=Actv01Stop00OutO00StMa00000002label0006__cmt>label0006__cmt>
 Outgoing0=MID3<Outgoing Action="MIDI"><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x17"/><Value2 var="pd"/></Simple></Outgoing>
-PresetSwitchIgnore=0
+Outgoing1=Prfm<Outgoing Action="Perform"><Name>Traktor - Set modifier m5</Name><Params>pd</Params></Outgoing>
+PresetSwitchIgnore=1
 
 [Preset.14]
 Active=1
@@ -249,23 +253,27 @@ Incoming0=Prfm<Incoming Action="Perform"><Name>Traktor - Set modifier m1</Name><
 Incoming1=Prfm<Incoming Action="Perform"><Name>Traktor - Set modifier m2</Name></Incoming>
 Incoming2=Prfm<Incoming Action="Perform"><Name>Traktor - Set modifier m3</Name></Incoming>
 Incoming3=Prfm<Incoming Action="Perform"><Name>Traktor - Set modifier m4</Name></Incoming>
-Incoming4=Prfm<Incoming Action="Perform"><Name>Traktor - Set modifier m6</Name></Incoming>
+Incoming4=Prfm<Incoming Action="Perform"><Name>Traktor - Set modifier m5</Name><Params>pd</Params></Incoming>
+Incoming5=Prfm<Incoming Action="Perform"><Name>Traktor - Set modifier m6</Name></Incoming>
 Name=Traktor - Modifiers
 Name0=ACTION - Traktor - Set modifier m1 (Shift)
 Name1=ACTION - Traktor - Set modifier m2 (Slot select)
 Name2=ACTION - Traktor - Set modifier m3 (Button mode)
 Name3=ACTION - Traktor - Set modifier m4 (Mouse mode)
-Name4=ACTION - Traktor - Set modifier m6 (Row select)
-Options0=Actv01Stop00OutO00StMa00000004label0010__cmt>// if m1=0pp=m1label0006__cmt>if(m1==1)pp=127
-Options1=Actv01Stop00OutO00StMa00000002label0038__cmt>// convert CC 20's 0/1/2/3 value to CC 21/22/23/24rr=m2+21
-Options2=Actv01Stop00OutO00StMa00000005label001F__cmt>// m3 received from CC 30label003E__cmt>// m3=0 + 31 = CC 31 which sets Traktor Modifier #3 to 0label003E__cmt>// m3=1 + 31 = CC 32 which sets Traktor Modifier #3 to 1label003E__cmt>// m3=2 + 31 = CC 33 which sets Traktor Modifier #3 to 2rr=m3+31
-Options3=Actv01Stop00OutO00StMa00000004label001F__cmt>// m4 received from CC 38label003E__cmt>// m4=0 + 40 = CC 40 which sets Traktor Modifier #3 to 0label003E__cmt>// m4=1 + 40 = CC 41 which sets Traktor Modifier #3 to 1rr=m4+40
-Options4=Actv01Stop00OutO00StMa00000002label004C__cmt>// convert CC 50's 0/1/2/3/4/5/6/7 value to CC 51/52/53/54/55/56/57/58rr=m6+51
-Outgoing0=MID3<Outgoing Action="MIDI"><Description>Out same as in</Description><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x04"/><Value2 var="pp"/></Simple></Outgoing>
-Outgoing1=MID3<Outgoing Action="MIDI"><Description>Cycle CC to dedicated CC</Description><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 var="rr"/><Value2 num="0x7F"/></Simple></Outgoing>
-Outgoing2=MID3<Outgoing Action="MIDI"><Description>Cycle CC to dedicated CC</Description><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 var="rr"/><Value2 num="0x7F"/></Simple></Outgoing>
-Outgoing3=MID3<Outgoing Action="MIDI"><Description>Cycle CC to dedicated CC</Description><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 var="rr"/><Value2 num="0x7F"/></Simple></Outgoing>
-Outgoing4=MID3<Outgoing Action="MIDI"><Description>Cycle CC to dedicated CC</Description><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 var="rr"/><Value2 num="0x7F"/></Simple></Outgoing>
+Name4=ACTION - Traktor - Set modifier m5 (Deck focus)
+Name5=ACTION - Traktor - Set modifier m6 (Row select)
+Options0=Actv01Stop00OutO00StMa00000005label0023__cmt>// Outgoing: same as Incominglabel0010__cmt>// if m1=0pp=m1label0006__cmt>if(m1==1)pp=127
+Options1=Actv01Stop00OutO00StMa00000003label002B__cmt>// Outgoing: Cycle CC to dedicated CClabel0038__cmt>// convert CC 20's 0/1/2/3 value to CC 21/22/23/24rr=m2+21
+Options2=Actv01Stop00OutO00StMa00000006label002B__cmt>// Outgoing: Cycle CC to dedicated CClabel001F__cmt>// m3 received from CC 30label003E__cmt>// m3=0 + 31 = CC 31 which sets Traktor Modifier #3 to 0label003E__cmt>// m3=1 + 31 = CC 32 which sets Traktor Modifier #3 to 1label003E__cmt>// m3=2 + 31 = CC 33 which sets Traktor Modifier #3 to 2rr=m3+31
+Options3=Actv01Stop00OutO00StMa00000006label002B__cmt>// Outgoing: Cycle CC to dedicated CClabel001F__cmt>// m4 received from CC 38label003E__cmt>// m4=0 + 40 = CC 40 which sets Traktor Modifier #4 to 0label003E__cmt>// m4=1 + 40 = CC 41 which sets Traktor Modifier #4 to 1rr=m4+40label0006__cmt>
+Options4=Actv01Stop00OutO00StMa0000001Clabel002B__cmt>// m5 received from Ch.10.CC.23 as pdlabel0018__cmt>// pd=0   = Deck Alabel0018__cmt>// pd=42  = Deck Blabel0018__cmt>// pd=84  = Deck Clabel0018__cmt>// pd=127 = Deck Dlabel0006__cmt>label000F__log>pd = %pd%label0006__cmt>if(pd==0)m5=0if(pd==42)m5=1if(pd==84)m5=2if(pd==127)m5=3label0006__cmt>label002E__cmt>// Can't just output 0-3 as the CC valuelabel0032__cmt>// as Traktor converts it into a long numberlabel002C__cmt>// instead we have to map separate CCslabel0029__cmt>// to directly set different valueslabel0006__cmt>label0033__cmt>// Outgoing: CC with multiple modifier valueslabel002B__cmt>// to dedicated CCs mapped in Traktorlabel0026__cmt>// to directly set single valueslabel001F__cmt>// m5 received from CC 23label003E__cmt>// m5=0 + 90 = CC 90 which sets Traktor Modifier #5 to 0label003E__cmt>// m5=1 + 90 = CC 91 which sets Traktor Modifier #5 to 1label003E__cmt>// m5=2 + 90 = CC 92 which sets Traktor Modifier #5 to 2label003E__cmt>// m5=3 + 90 = CC 93 which sets Traktor Modifier #5 to 3rr=m5+90label0006__cmt>
+Options5=Actv01Stop00OutO00StMa00000003label002B__cmt>// Outgoing: Cycle CC to dedicated CClabel004C__cmt>// convert CC 50's 0/1/2/3/4/5/6/7 value to CC 51/52/53/54/55/56/57/58rr=m6+51
+Outgoing0=MID3<Outgoing Action="MIDI"><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x04"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing1=MID3<Outgoing Action="MIDI"><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 var="rr"/><Value2 num="0x7F"/></Simple></Outgoing>
+Outgoing2=MID3<Outgoing Action="MIDI"><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 var="rr"/><Value2 num="0x7F"/></Simple></Outgoing>
+Outgoing3=MID3<Outgoing Action="MIDI"><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 var="rr"/><Value2 num="0x7F"/></Simple></Outgoing>
+Outgoing4=MID3<Outgoing Action="MIDI"><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 var="rr"/><Value2 num="0x7F"/></Simple></Outgoing>
+Outgoing5=MID3<Outgoing Action="MIDI"><Ports><Port>Traktor Virtual Input</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 var="rr"/><Value2 num="0x7F"/></Simple></Outgoing>
 PresetSwitchIgnore=1
 
 [Preset.18]
@@ -772,7 +780,7 @@ Name1=BOME - Initialise Global Vars
 Name2=TIMER - Init vars (g, m)
 Options0=Actv01Stop00OutO00
 Options1=Actv01Stop00OutO00
-Options2=Actv01Stop00OutO00StMa0000002Elabel0017__log>Vars initialised!label0006__cmt>label0052__cmt>// bome ga = CC of pressed slot button which is then triggered by Hold timerlabel0006__cmt>label0021__cmt>// bome g2 = timer durationg2=300label0006__cmt>label0026__cmt>// bome g3 = hold timer durationg3=100label0006__cmt>label0010__cmt>// Flow islabel0078__cmt>// Stream Deck button push -> Bome translation -> Traktor action or update of modifier, out -> Stream Deck displaylabel0006__cmt>label0033__cmt>// bome m1 = SHIFT state (traktor modifier 1)label001E__cmt>// m1=0 == SHIFT defaultlabel0023__cmt>// m1=1 == SHIFT pressed downm1=0label0006__cmt>label0033__cmt>// bome m2 = slot select (traktor modifier 2)label0020__cmt>// m2=0 == slot 1 selectedlabel0020__cmt>// m2=1 == slot 2 selectedlabel0020__cmt>// m2=2 == slot 3 selectedlabel0020__cmt>// m2=3 == slot 4 selectedm2=0label0006__cmt>label0037__cmt>// bome 3 = cell select mode (traktor modifier 3)label0016__cmt>// Button - m3=0label0016__cmt>// Mouse  - m3=1label0016__cmt>// Slot   - m3=2m3=0label0006__cmt>label0040__cmt>// bome m4 = bome mouse clicks offset (traktor modifier 4)label0020__cmt>// Mouse - MBP Main - m4=0label0020__cmt>// Mouse - MBP Ext  - m4=1m4=0label0006__cmt>label0033__cmt>// bome m6 = select rows (traktor modifier 6)label0014__cmt>// m6=0 == 1-2label0014__cmt>// m6=1 == 3-4label0014__cmt>// m6=2 == 5-6label0014__cmt>// m6=3 == 7-8label0015__cmt>// m6=4 == 9-10label0016__cmt>// m6=5 == 11-12label0016__cmt>// m6=6 == 13-14label0016__cmt>// m6=7 == 15-16m6=0
+Options2=Actv01Stop00OutO00StMa00000036label0017__log>Vars initialised!label0006__cmt>label0052__cmt>// bome ga = CC of pressed slot button which is then triggered by Hold timerlabel0006__cmt>label0021__cmt>// bome g2 = timer durationg2=300label0006__cmt>label0026__cmt>// bome g3 = hold timer durationg3=100label0006__cmt>label0010__cmt>// Flow islabel0078__cmt>// Stream Deck button push -> Bome translation -> Traktor action or update of modifier, out -> Stream Deck displaylabel0006__cmt>label0033__cmt>// bome m1 = SHIFT state (traktor modifier 1)label001E__cmt>// m1=0 == SHIFT defaultlabel0023__cmt>// m1=1 == SHIFT pressed downm1=0label0006__cmt>label0033__cmt>// bome m2 = slot select (traktor modifier 2)label0020__cmt>// m2=0 == slot 1 selectedlabel0020__cmt>// m2=1 == slot 2 selectedlabel0020__cmt>// m2=2 == slot 3 selectedlabel0020__cmt>// m2=3 == slot 4 selectedm2=0label0006__cmt>label0037__cmt>// bome 3 = cell select mode (traktor modifier 3)label0016__cmt>// Button - m3=0label0016__cmt>// Mouse  - m3=1label0016__cmt>// Slot   - m3=2m3=0label0006__cmt>label0040__cmt>// bome m4 = bome mouse clicks offset (traktor modifier 4)label0020__cmt>// Mouse - MBP Main - m4=0label0020__cmt>// Mouse - MBP Ext  - m4=1m4=0label0006__cmt>label0035__cmt>// bome m5 = focussed deck (traktor modifier 5)label0011__cmt>// m5=0 = Alabel0011__cmt>// m5=1 = Blabel0011__cmt>// m5=2 = Clabel0011__cmt>// m5=3 = Dm5=0label0006__cmt>label0033__cmt>// bome m6 = select rows (traktor modifier 6)label0014__cmt>// m6=0 == 1-2label0014__cmt>// m6=1 == 3-4label0014__cmt>// m6=2 == 5-6label0014__cmt>// m6=3 == 7-8label0015__cmt>// m6=4 == 9-10label0016__cmt>// m6=5 == 11-12label0016__cmt>// m6=6 == 13-14label0016__cmt>// m6=7 == 15-16m6=0label0006__cmt>
 Outgoing0=Tim0TimS0009Init vars1:100:1
 Outgoing1=Tim0TimS0009Init vars1:100:1
 Outgoing2=Prfm<Outgoing Action="Perform"><Name>Bome - Toggle Presets</Name></Outgoing>
@@ -797,193 +805,197 @@ Active=1
 Comments=Translators sorted by MIDI Channel and CC.
 Incoming0=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x04"/><Value2 var="m1" Type="SetVar"/></Simple></Incoming>
 Incoming1=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="pa" Type="New Version Required"/><Value1 num="7" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
-Incoming10=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x26"/><Value2 var="ss" Type="SetVar"/></Simple></Incoming>
+Incoming10=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x26"/><Value2 var="m4" Type="SetVar"/></Simple></Incoming>
 Incoming11=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x26"/><Value2 var="ss" Type="SetVar"/></Simple></Incoming>
-Incoming12=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="pa" Type="New Version Required"/><Value1 num="39" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
-Incoming13=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="pa" Type="New Version Required"/><Value1 num="47" setvar="pb" Type="New Version Required"/><Value2 num="127" setvar="pc" Type="New Version Required"/></Simple></Incoming>
-Incoming14=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" Type="New Version Required"/><Value1 num="68" setvar="ga" Type="New Version Required"/><Value2 num="127" Type="New Version Required"/></Simple></Incoming>
-Incoming15=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="pa" Type="New Version Required"/><Value1 num="73" setvar="pb" Type="New Version Required"/><Value2 num="127" setvar="pc" Type="New Version Required"/></Simple></Incoming>
-Incoming16=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="pa" Type="New Version Required"/><Value1 num="80" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
-Incoming17=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x56"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming12=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x26"/><Value2 var="ss" Type="SetVar"/></Simple></Incoming>
+Incoming13=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="pa" Type="New Version Required"/><Value1 num="39" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
+Incoming14=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="pa" Type="New Version Required"/><Value1 num="47" setvar="pb" Type="New Version Required"/><Value2 num="127" setvar="pc" Type="New Version Required"/></Simple></Incoming>
+Incoming15=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" Type="New Version Required"/><Value1 num="68" setvar="ga" Type="New Version Required"/><Value2 num="127" Type="New Version Required"/></Simple></Incoming>
+Incoming16=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="pa" Type="New Version Required"/><Value1 num="73" setvar="pb" Type="New Version Required"/><Value2 num="127" setvar="pc" Type="New Version Required"/></Simple></Incoming>
+Incoming17=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="pa" Type="New Version Required"/><Value1 num="80" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
 Incoming18=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x56"/><Value2 num="0x7F"/></Simple></Incoming>
-Incoming19=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" Type="New Version Required"/><Value1 num="88" setvar="pb" Type="New Version Required"/><Value2 num="127" Type="New Version Required"/></Simple></Incoming>
+Incoming19=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x56"/><Value2 num="0x7F"/></Simple></Incoming>
 Incoming2=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="pa" Type="New Version Required"/><Value1 num="10" setvar="pb" Type="New Version Required"/><Value2 num="127" setvar="pc" Type="New Version Required"/></Simple></Incoming>
-Incoming20=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" Type="New Version Required"/><Value1 num="89" setvar="pb" Type="New Version Required"/><Value2 num="127" Type="New Version Required"/></Simple></Incoming>
-Incoming21=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" Type="New Version Required"/><Value1 num="90" setvar="pb" Type="New Version Required"/><Value2 num="127" Type="New Version Required"/></Simple></Incoming>
-Incoming22=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x5C"/><Value2 num="0x7F"/></Simple></Incoming>
-Incoming23=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="pa" Type="New Version Required"/><Value1 num="69" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
-Incoming24=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="pa" Type="New Version Required"/><Value1 num="93" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
-Incoming25=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" setvar="pa" Type="New Version Required"/><Value1 num="1" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
+Incoming20=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" Type="New Version Required"/><Value1 num="88" setvar="pb" Type="New Version Required"/><Value2 num="127" Type="New Version Required"/></Simple></Incoming>
+Incoming21=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" Type="New Version Required"/><Value1 num="89" setvar="pb" Type="New Version Required"/><Value2 num="127" Type="New Version Required"/></Simple></Incoming>
+Incoming22=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" Type="New Version Required"/><Value1 num="90" setvar="pb" Type="New Version Required"/><Value2 num="127" Type="New Version Required"/></Simple></Incoming>
+Incoming23=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x5C"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming24=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="pa" Type="New Version Required"/><Value1 num="69" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
+Incoming25=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="pa" Type="New Version Required"/><Value1 num="93" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
 Incoming26=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" setvar="pa" Type="New Version Required"/><Value1 num="1" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
-Incoming27=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" setvar="pa" Type="New Version Required"/><Value1 num="2" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
+Incoming27=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" setvar="pa" Type="New Version Required"/><Value1 num="1" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
 Incoming28=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" setvar="pa" Type="New Version Required"/><Value1 num="2" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
-Incoming29=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" setvar="pa" Type="New Version Required"/><Value1 num="3" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
+Incoming29=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" setvar="pa" Type="New Version Required"/><Value1 num="2" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
 Incoming3=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="pa" Type="New Version Required"/><Value1 num="13" setvar="pb" Type="New Version Required"/><Value2 num="127" setvar="pc" Type="New Version Required"/></Simple></Incoming>
 Incoming30=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" setvar="pa" Type="New Version Required"/><Value1 num="3" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
-Incoming31=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" setvar="pa" Type="New Version Required"/><Value1 num="4" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
+Incoming31=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" setvar="pa" Type="New Version Required"/><Value1 num="3" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
 Incoming32=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" setvar="pa" Type="New Version Required"/><Value1 num="4" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
-Incoming33=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" setvar="pa" Type="New Version Required"/><Value1 num="5" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
+Incoming33=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" setvar="pa" Type="New Version Required"/><Value1 num="4" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
 Incoming34=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" setvar="pa" Type="New Version Required"/><Value1 num="5" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
-Incoming35=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" setvar="pa" Type="New Version Required"/><Value1 num="6" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
+Incoming35=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" setvar="pa" Type="New Version Required"/><Value1 num="5" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
 Incoming36=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" setvar="pa" Type="New Version Required"/><Value1 num="6" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
-Incoming37=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" setvar="pa" Type="New Version Required"/><Value1 num="7" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
+Incoming37=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" setvar="pa" Type="New Version Required"/><Value1 num="6" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
 Incoming38=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" setvar="pa" Type="New Version Required"/><Value1 num="7" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
-Incoming39=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" setvar="pa" Type="New Version Required"/><Value1 num="8" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
+Incoming39=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" setvar="pa" Type="New Version Required"/><Value1 num="7" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
 Incoming4=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="pa" Type="New Version Required"/><Value1 num="14" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
 Incoming40=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" setvar="pa" Type="New Version Required"/><Value1 num="8" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
-Incoming41=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x14"/><Value2 var="m2" Type="SetVar"/></Simple></Incoming>
-Incoming42=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x1E"/><Value2 var="m3" Type="SetVar"/></Simple></Incoming>
-Incoming43=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x32"/><Value2 var="m6" Type="SetVar"/></Simple></Incoming>
-Incoming44=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x46"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming41=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10" setvar="pa" Type="New Version Required"/><Value1 num="8" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
+Incoming42=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x14"/><Value2 var="m2" Type="SetVar"/></Simple></Incoming>
+Incoming43=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x1E"/><Value2 var="m3" Type="SetVar"/></Simple></Incoming>
+Incoming44=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x32"/><Value2 var="m6" Type="SetVar"/></Simple></Incoming>
 Incoming45=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x46"/><Value2 num="0x7F"/></Simple></Incoming>
-Incoming46=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x5A"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
+Incoming46=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x46"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming47=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="10"/><Value1 num="0x5A"/><Value2 num="0x00" Type="Any"/></Simple></Incoming>
 Incoming5=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x0F"/><Value2 num="0x7F"/></Simple></Incoming>
 Incoming6=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="pa" Type="New Version Required"/><Value1 num="20" setvar="pb" Type="New Version Required"/><Value2 num="127" setvar="pc" Type="New Version Required"/></Simple></Incoming>
 Incoming7=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="pa" Type="New Version Required"/><Value1 num="22" setvar="pb" Type="New Version Required"/><Value2 setvar="pc" Type="New Version Required"/></Simple></Incoming>
-Incoming8=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="pa" Type="New Version Required"/><Value1 num="31" setvar="pb" Type="New Version Required"/><Value2 num="127" setvar="pc" Type="New Version Required"/></Simple></Incoming>
-Incoming9=MID3<Incoming Action="MIDI"><Ports><Port>Bome MIDI Translator 1 Virtual In</Port></Ports><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x26"/><Value2 var="m4" Type="SetVar"/></Simple></Incoming>
+Incoming8=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9"/><Value1 num="0x17"/><Value2 var="pc" Type="SetVar"/></Simple></Incoming>
+Incoming9=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="9" setvar="pa" Type="New Version Required"/><Value1 num="31" setvar="pb" Type="New Version Required"/><Value2 num="127" setvar="pc" Type="New Version Required"/></Simple></Incoming>
 Name=Stream Deck - Mappings
 Name0=STREAM DECK - Shift
 Name1=STREAM DECK - Traktor - Browser - Search
 Name10=STREAM DECK - Mouse mode
 Name11=STREAM DECK - Mouse mode
-Name12=STREAM DECK - Traktor - Remix Deck C - Slot Size
-Name13=STREAM DECK - Traktor - Browser - Load Deck C
-Name14=STREAM DECK - Live - Tempo Phase Nudge
-Name15=STREAM DECK - Traktor - Browser - Load Deck D
-Name16=STREAM DECK - Traktor - Remix Deck C - Slot Punch
-Name17=STREAM DECK - Traktor - Remix Deck C - BPM x2
-Name18=STREAM DECK - Traktor - Remix Deck C - BPM /2
-Name19=STREAM DECK - Traktor - Deck A - Rename Hot Cue
+Name12=STREAM DECK - Mouse mode
+Name13=STREAM DECK - Traktor - Remix Deck C - Slot Size
+Name14=STREAM DECK - Traktor - Browser - Load Deck C
+Name15=STREAM DECK - Live - Tempo Phase Nudge
+Name16=STREAM DECK - Traktor - Browser - Load Deck D
+Name17=STREAM DECK - Traktor - Remix Deck C - Slot Punch
+Name18=STREAM DECK - Traktor - Remix Deck C - BPM x2
+Name19=STREAM DECK - Traktor - Remix Deck C - BPM /2
 Name2=STREAM DECK - Traktor - Browser - Load Deck A
-Name20=STREAM DECK - Traktor - Deck B - Rename Hot Cue
-Name21=STREAM DECK - Traktor - Deck D - Rename Hot Cue
-Name22=STREAM DECK - Traktor - Remix Deck C - Rename Cell
-Name23=STREAM DECK - Traktor - Remix Deck C - Reverse
-Name24=STREAM DECK - Traktor - Remix Deck C - Slot Cell Play Mode
-Name25=STREAM DECK - Traktor - Remix Deck C - Select Slot 1 Cell 1
-Name26=STREAM DECK - Traktor - Remix Deck C - Select Slot 1 Cell 3
-Name27=STREAM DECK - Traktor - Remix Deck C - Select Slot 2 Cell 1
-Name28=STREAM DECK - Traktor - Remix Deck C - Select Slot 2 Cell 3
-Name29=STREAM DECK - Traktor - Remix Deck C - Select Slot 3 Cell 1
+Name20=STREAM DECK - Traktor - Deck A - Rename Hot Cue
+Name21=STREAM DECK - Traktor - Deck B - Rename Hot Cue
+Name22=STREAM DECK - Traktor - Deck D - Rename Hot Cue
+Name23=STREAM DECK - Traktor - Remix Deck C - Rename Cell
+Name24=STREAM DECK - Traktor - Remix Deck C - Reverse
+Name25=STREAM DECK - Traktor - Remix Deck C - Slot Cell Play Mode
+Name26=STREAM DECK - Traktor - Remix Deck C - Select Slot 1 Cell 1
+Name27=STREAM DECK - Traktor - Remix Deck C - Select Slot 1 Cell 3
+Name28=STREAM DECK - Traktor - Remix Deck C - Select Slot 2 Cell 1
+Name29=STREAM DECK - Traktor - Remix Deck C - Select Slot 2 Cell 3
 Name3=STREAM DECK - Traktor - Audio Recorder - Record
-Name30=STREAM DECK - Traktor - Remix Deck C - Select Slot 3 Cell 3
-Name31=STREAM DECK - Traktor - Remix Deck C - Select Slot 4 Cell 1
-Name32=STREAM DECK - Traktor - Remix Deck C - Select Slot 4 Cell 3
-Name33=STREAM DECK - Traktor - Remix Deck C - Select Slot 1 Cell 2
-Name34=STREAM DECK - Traktor - Remix Deck C - Select Slot 1 Cell 4
-Name35=STREAM DECK - Traktor - Remix Deck C - Select Slot 2 Cell 2
-Name36=STREAM DECK - Traktor - Remix Deck C - Select Slot 2 Cell 4
-Name37=STREAM DECK - Traktor - Remix Deck C - Select Slot 3 Cell 2
-Name38=STREAM DECK - Traktor - Remix Deck C - Select Slot 3 Cell 4
-Name39=STREAM DECK - Traktor - Remix Deck C - Select Slot 4 Cell 2
+Name30=STREAM DECK - Traktor - Remix Deck C - Select Slot 3 Cell 1
+Name31=STREAM DECK - Traktor - Remix Deck C - Select Slot 3 Cell 3
+Name32=STREAM DECK - Traktor - Remix Deck C - Select Slot 4 Cell 1
+Name33=STREAM DECK - Traktor - Remix Deck C - Select Slot 4 Cell 3
+Name34=STREAM DECK - Traktor - Remix Deck C - Select Slot 1 Cell 2
+Name35=STREAM DECK - Traktor - Remix Deck C - Select Slot 1 Cell 4
+Name36=STREAM DECK - Traktor - Remix Deck C - Select Slot 2 Cell 2
+Name37=STREAM DECK - Traktor - Remix Deck C - Select Slot 2 Cell 4
+Name38=STREAM DECK - Traktor - Remix Deck C - Select Slot 3 Cell 2
+Name39=STREAM DECK - Traktor - Remix Deck C - Select Slot 3 Cell 4
 Name4=STREAM DECK - Traktor - Loop Recorder - Record
-Name40=STREAM DECK - Traktor - Remix Deck C - Select Slot 4 Cell 4
-Name41=STREAM DECK - Traktor - Remix Deck C - Select Slot
-Name42=STREAM DECK - Traktor - Remix Deck C - Grid mode
-Name43=STREAM DECK - Traktor - Remix Deck C - Select Rows
-Name44=STREAM DECK - Traktor - Remix Deck C - Sample Offset BWD
-Name45=STREAM DECK - Traktor - Remix Deck C - Sample Offset FWD
-Name46=STREAM DECK - Navigate to Profile / Page
+Name40=STREAM DECK - Traktor - Remix Deck C - Select Slot 4 Cell 2
+Name41=STREAM DECK - Traktor - Remix Deck C - Select Slot 4 Cell 4
+Name42=STREAM DECK - Traktor - Remix Deck C - Select Slot
+Name43=STREAM DECK - Traktor - Remix Deck C - Grid mode
+Name44=STREAM DECK - Traktor - Remix Deck C - Select Rows
+Name45=STREAM DECK - Traktor - Remix Deck C - Sample Offset BWD
+Name46=STREAM DECK - Traktor - Remix Deck C - Sample Offset FWD
+Name47=STREAM DECK - Navigate to Profile / Page
 Name5=STREAM DECK - Traktor - Loop Recorder - Delete
 Name6=STREAM DECK - Traktor - Browser - Load Deck B
 Name7=STREAM DECK - Traktor - Loop Recorder - Length
-Name8=STREAM DECK - Traktor - Layout - Decks
-Name9=STREAM DECK - Mouse mode
+Name8=STREAM DECK - Traktor - Focus Deck
+Name9=STREAM DECK - Traktor - Layout - Decks
 Options0=Actv01Stop00OutO00
 Options1=Actv01Stop00OutO00
-Options10=Actv01Stop00OutO00
+Options10=Actv01Stop00OutO00Dlayg2:Millis
 Options11=Actv01Stop00OutO00
 Options12=Actv01Stop00OutO00
 Options13=Actv01Stop00OutO00
-Options14=Actv01Stop00OutO00StMa00000003label0013__cmt>// up CC - galabel0015__cmt>// down CC - gbgb=66
-Options15=Actv01Stop00OutO00
+Options14=Actv01Stop00OutO00
+Options15=Actv01Stop00OutO00StMa00000003label0013__cmt>// up CC - galabel0015__cmt>// down CC - gbgb=66
 Options16=Actv01Stop00OutO00
-Options17=Actv01Stop00OutO00Dlay50:Millis
+Options17=Actv01Stop00OutO00
 Options18=Actv01Stop00OutO00Dlay50:Millis
-Options19=Actv01Stop00OutO00
+Options19=Actv01Stop00OutO00Dlay50:Millis
 Options2=Actv01Stop00OutO00
 Options20=Actv01Stop00OutO00
 Options21=Actv01Stop00OutO00
 Options22=Actv01Stop00OutO00
 Options23=Actv01Stop00OutO00
 Options24=Actv01Stop00OutO00
-Options25=Actv01Stop00OutO00StMa00000005label0021__cmt>// button controls rows 1-2if(m6==0)executelabel0006__cmt>label0021__cmt>// button controls rows 3-4if(m6==1)noexecute
-Options26=Actv01Stop00OutO00StMa00000005label0021__cmt>// button controls rows 1-2if(m6==0)noexecutelabel0006__cmt>label0021__cmt>// button controls rows 3-4if(m6==1)execute
-Options27=Actv01Stop00OutO00StMa00000005label0021__cmt>// button controls rows 1-2if(m6==0)executelabel0006__cmt>label0021__cmt>// button controls rows 3-4if(m6==1)noexecute
-Options28=Actv01Stop00OutO00StMa00000005label0021__cmt>// button controls rows 1-2if(m6==0)noexecutelabel0006__cmt>label0021__cmt>// button controls rows 3-4if(m6==1)execute
-Options29=Actv01Stop00OutO00StMa00000005label0021__cmt>// button controls rows 1-2if(m6==0)executelabel0006__cmt>label0021__cmt>// button controls rows 3-4if(m6==1)noexecute
+Options25=Actv01Stop00OutO00
+Options26=Actv01Stop00OutO00StMa00000005label0021__cmt>// button controls rows 1-2if(m6==0)executelabel0006__cmt>label0021__cmt>// button controls rows 3-4if(m6==1)noexecute
+Options27=Actv01Stop00OutO00StMa00000005label0021__cmt>// button controls rows 1-2if(m6==0)noexecutelabel0006__cmt>label0021__cmt>// button controls rows 3-4if(m6==1)execute
+Options28=Actv01Stop00OutO00StMa00000005label0021__cmt>// button controls rows 1-2if(m6==0)executelabel0006__cmt>label0021__cmt>// button controls rows 3-4if(m6==1)noexecute
+Options29=Actv01Stop00OutO00StMa00000005label0021__cmt>// button controls rows 1-2if(m6==0)noexecutelabel0006__cmt>label0021__cmt>// button controls rows 3-4if(m6==1)execute
 Options3=Actv01Stop00OutO00
-Options30=Actv01Stop00OutO00StMa00000005label0021__cmt>// button controls rows 1-2if(m6==0)noexecutelabel0006__cmt>label0021__cmt>// button controls rows 3-4if(m6==1)execute
-Options31=Actv01Stop00OutO00StMa00000005label0021__cmt>// button controls rows 1-2if(m6==0)executelabel0006__cmt>label0021__cmt>// button controls rows 3-4if(m6==1)noexecute
-Options32=Actv01Stop00OutO00StMa00000005label0021__cmt>// button controls rows 1-2if(m6==0)noexecutelabel0006__cmt>label0021__cmt>// button controls rows 3-4if(m6==1)execute
-Options33=Actv01Stop00OutO00StMa00000005label0021__cmt>// button controls rows 1-2if(m6==0)executelabel0006__cmt>label0021__cmt>// button controls rows 3-4if(m6==1)noexecute
-Options34=Actv01Stop00OutO00StMa00000005label0021__cmt>// button controls rows 1-2if(m6==0)noexecutelabel0006__cmt>label0021__cmt>// button controls rows 3-4if(m6==1)execute
-Options35=Actv01Stop00OutO00StMa00000005label0021__cmt>// button controls rows 1-2if(m6==0)executelabel0006__cmt>label0021__cmt>// button controls rows 3-4if(m6==1)noexecute
-Options36=Actv01Stop00OutO00StMa00000005label0021__cmt>// button controls rows 1-2if(m6==0)noexecutelabel0006__cmt>label0021__cmt>// button controls rows 3-4if(m6==1)execute
-Options37=Actv01Stop00OutO00StMa00000005label0021__cmt>// button controls rows 1-2if(m6==0)executelabel0006__cmt>label0021__cmt>// button controls rows 3-4if(m6==1)noexecute
-Options38=Actv01Stop00OutO00StMa00000005label0021__cmt>// button controls rows 1-2if(m6==0)noexecutelabel0006__cmt>label0021__cmt>// button controls rows 3-4if(m6==1)execute
-Options39=Actv01Stop00OutO00StMa00000005label0021__cmt>// button controls rows 1-2if(m6==0)executelabel0006__cmt>label0021__cmt>// button controls rows 3-4if(m6==1)noexecute
+Options30=Actv01Stop00OutO00StMa00000005label0021__cmt>// button controls rows 1-2if(m6==0)executelabel0006__cmt>label0021__cmt>// button controls rows 3-4if(m6==1)noexecute
+Options31=Actv01Stop00OutO00StMa00000005label0021__cmt>// button controls rows 1-2if(m6==0)noexecutelabel0006__cmt>label0021__cmt>// button controls rows 3-4if(m6==1)execute
+Options32=Actv01Stop00OutO00StMa00000005label0021__cmt>// button controls rows 1-2if(m6==0)executelabel0006__cmt>label0021__cmt>// button controls rows 3-4if(m6==1)noexecute
+Options33=Actv01Stop00OutO00StMa00000005label0021__cmt>// button controls rows 1-2if(m6==0)noexecutelabel0006__cmt>label0021__cmt>// button controls rows 3-4if(m6==1)execute
+Options34=Actv01Stop00OutO00StMa00000005label0021__cmt>// button controls rows 1-2if(m6==0)executelabel0006__cmt>label0021__cmt>// button controls rows 3-4if(m6==1)noexecute
+Options35=Actv01Stop00OutO00StMa00000005label0021__cmt>// button controls rows 1-2if(m6==0)noexecutelabel0006__cmt>label0021__cmt>// button controls rows 3-4if(m6==1)execute
+Options36=Actv01Stop00OutO00StMa00000005label0021__cmt>// button controls rows 1-2if(m6==0)executelabel0006__cmt>label0021__cmt>// button controls rows 3-4if(m6==1)noexecute
+Options37=Actv01Stop00OutO00StMa00000005label0021__cmt>// button controls rows 1-2if(m6==0)noexecutelabel0006__cmt>label0021__cmt>// button controls rows 3-4if(m6==1)execute
+Options38=Actv01Stop00OutO00StMa00000005label0021__cmt>// button controls rows 1-2if(m6==0)executelabel0006__cmt>label0021__cmt>// button controls rows 3-4if(m6==1)noexecute
+Options39=Actv01Stop00OutO00StMa00000005label0021__cmt>// button controls rows 1-2if(m6==0)noexecutelabel0006__cmt>label0021__cmt>// button controls rows 3-4if(m6==1)execute
 Options4=Actv01Stop00OutO00
-Options40=Actv01Stop00OutO00StMa00000005label0021__cmt>// button controls rows 1-2if(m6==0)noexecutelabel0006__cmt>label0021__cmt>// button controls rows 3-4if(m6==1)execute
-Options41=Actv01Stop00OutO00
-Options42=Actv01Stop00OutO00StMa00000001label0026__log>>>>>>>>>>>>> m3 from CC30 = %m3%
-Options43=Actv01Stop00OutO00
-Options44=Actv01Stop00OutO00Dlay50:Millis
+Options40=Actv01Stop00OutO00StMa00000005label0021__cmt>// button controls rows 1-2if(m6==0)executelabel0006__cmt>label0021__cmt>// button controls rows 3-4if(m6==1)noexecute
+Options41=Actv01Stop00OutO00StMa00000005label0021__cmt>// button controls rows 1-2if(m6==0)noexecutelabel0006__cmt>label0021__cmt>// button controls rows 3-4if(m6==1)execute
+Options42=Actv01Stop00OutO00
+Options43=Actv01Stop00OutO00StMa00000001label0026__log>>>>>>>>>>>>> m3 from CC30 = %m3%
+Options44=Actv01Stop00OutO00
 Options45=Actv01Stop00OutO00Dlay50:Millis
-Options46=Actv01Stop00OutO00
+Options46=Actv01Stop00OutO00Dlay50:Millis
+Options47=Actv01Stop00OutO00
 Options5=Actv01Stop00OutO00
 Options6=Actv01Stop00OutO00
 Options7=Actv01Stop00OutO00
-Options8=Actv01Stop00OutO00
-Options9=Actv01Stop00OutO00Dlayg2:Millis
+Options8=Actv01Stop00OutO00StMa00000001pd=pc
+Options9=Actv01Stop00OutO00
 Outgoing0=Prfm<Outgoing Action="Perform"><Name>Traktor - Set modifier m1</Name></Outgoing>
 Outgoing1=Prfm<Outgoing Action="Perform"><Name>Traktor - Browser - Search</Name><Params>pa,pb,pc</Params></Outgoing>
-Outgoing10=Prfm<Outgoing Action="Perform"><Name>Traktor - Set modifier m4</Name></Outgoing>
-Outgoing11=Prfm<Outgoing Action="Perform"><Name>Traktor - Set modifier m3</Name></Outgoing>
-Outgoing12=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Slot Size</Name><Params>pa,pb,pc</Params></Outgoing>
-Outgoing13=Prfm<Outgoing Action="Perform"><Name>Traktor - Browser - Load Deck</Name><Params>pa,pb,pc</Params></Outgoing>
-Outgoing14=Prfm<Outgoing Action="Perform"><Name>Live - Tempo Phase Nudge</Name><Params>ga,gb</Params></Outgoing>
-Outgoing15=Prfm<Outgoing Action="Perform"><Name>Traktor - Browser - Load Deck</Name><Params>pa,pb,pc</Params></Outgoing>
-Outgoing16=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Slot Punch</Name><Params>pa,pb,pc</Params></Outgoing>
-Outgoing17=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - BPM x2</Name><Params>ga</Params></Outgoing>
-Outgoing18=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - BPM /2</Name><Params>ga</Params></Outgoing>
-Outgoing19=Prfm<Outgoing Action="Perform"><Name>Traktor - Rename Hot Cue</Name><Params>pb</Params></Outgoing>
+Outgoing10=Prfm<Outgoing Action="Perform"><Name>Bome - Toggle Presets</Name></Outgoing>
+Outgoing11=Prfm<Outgoing Action="Perform"><Name>Traktor - Set modifier m4</Name></Outgoing>
+Outgoing12=Prfm<Outgoing Action="Perform"><Name>Traktor - Set modifier m3</Name></Outgoing>
+Outgoing13=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Slot Size</Name><Params>pa,pb,pc</Params></Outgoing>
+Outgoing14=Prfm<Outgoing Action="Perform"><Name>Traktor - Browser - Load Deck</Name><Params>pa,pb,pc</Params></Outgoing>
+Outgoing15=Prfm<Outgoing Action="Perform"><Name>Live - Tempo Phase Nudge</Name><Params>ga,gb</Params></Outgoing>
+Outgoing16=Prfm<Outgoing Action="Perform"><Name>Traktor - Browser - Load Deck</Name><Params>pa,pb,pc</Params></Outgoing>
+Outgoing17=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Slot Punch</Name><Params>pa,pb,pc</Params></Outgoing>
+Outgoing18=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - BPM x2</Name><Params>ga</Params></Outgoing>
+Outgoing19=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - BPM /2</Name><Params>ga</Params></Outgoing>
 Outgoing2=Prfm<Outgoing Action="Perform"><Name>Traktor - Browser - Load Deck</Name><Params>pa,pb,pc</Params></Outgoing>
 Outgoing20=Prfm<Outgoing Action="Perform"><Name>Traktor - Rename Hot Cue</Name><Params>pb</Params></Outgoing>
 Outgoing21=Prfm<Outgoing Action="Perform"><Name>Traktor - Rename Hot Cue</Name><Params>pb</Params></Outgoing>
-Outgoing22=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Rename Cell</Name><Params>ga</Params></Outgoing>
-Outgoing23=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Reverse</Name><Params>pa,pb,pc</Params></Outgoing>
-Outgoing24=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Slot Cell Play Mode</Name><Params>pa,pb,pc</Params></Outgoing>
-Outgoing25=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 1 Cell 1</Name><Params>pa,pb,pc</Params></Outgoing>
-Outgoing26=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 1 Cell 3</Name><Params>pa,pb,pc</Params></Outgoing>
-Outgoing27=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 2 Cell 1</Name><Params>pa,pb,pc</Params></Outgoing>
-Outgoing28=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 2 Cell 3</Name><Params>pa,pb,pc</Params></Outgoing>
-Outgoing29=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 3 Cell 1</Name><Params>pa,pb,pc</Params></Outgoing>
+Outgoing22=Prfm<Outgoing Action="Perform"><Name>Traktor - Rename Hot Cue</Name><Params>pb</Params></Outgoing>
+Outgoing23=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Rename Cell</Name><Params>ga</Params></Outgoing>
+Outgoing24=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Reverse</Name><Params>pa,pb,pc</Params></Outgoing>
+Outgoing25=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Slot Cell Play Mode</Name><Params>pa,pb,pc</Params></Outgoing>
+Outgoing26=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 1 Cell 1</Name><Params>pa,pb,pc</Params></Outgoing>
+Outgoing27=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 1 Cell 3</Name><Params>pa,pb,pc</Params></Outgoing>
+Outgoing28=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 2 Cell 1</Name><Params>pa,pb,pc</Params></Outgoing>
+Outgoing29=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 2 Cell 3</Name><Params>pa,pb,pc</Params></Outgoing>
 Outgoing3=Prfm<Outgoing Action="Perform"><Name>Traktor - Audio Recorder - Record</Name><Params>pa,pb,pc</Params></Outgoing>
-Outgoing30=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 3 Cell 3</Name><Params>pa,pb,pc</Params></Outgoing>
-Outgoing31=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 4 Cell 1</Name><Params>pa,pb,pc</Params></Outgoing>
-Outgoing32=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 4 Cell 3</Name><Params>pa,pb,pc</Params></Outgoing>
-Outgoing33=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 1 Cell 2</Name><Params>pa,pb,pc</Params></Outgoing>
-Outgoing34=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 1 Cell 4</Name><Params>pa,pb,pc</Params></Outgoing>
-Outgoing35=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 2 Cell 2</Name><Params>pa,pb,pc</Params></Outgoing>
-Outgoing36=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 2 Cell 4</Name><Params>pa,pb,pc</Params></Outgoing>
-Outgoing37=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 3 Cell 2</Name><Params>pa,pb,pc</Params></Outgoing>
-Outgoing38=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 3 Cell 4</Name><Params>pa,pb,pc</Params></Outgoing>
-Outgoing39=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 4 Cell 2</Name><Params>pa,pb,pc</Params></Outgoing>
+Outgoing30=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 3 Cell 1</Name><Params>pa,pb,pc</Params></Outgoing>
+Outgoing31=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 3 Cell 3</Name><Params>pa,pb,pc</Params></Outgoing>
+Outgoing32=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 4 Cell 1</Name><Params>pa,pb,pc</Params></Outgoing>
+Outgoing33=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 4 Cell 3</Name><Params>pa,pb,pc</Params></Outgoing>
+Outgoing34=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 1 Cell 2</Name><Params>pa,pb,pc</Params></Outgoing>
+Outgoing35=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 1 Cell 4</Name><Params>pa,pb,pc</Params></Outgoing>
+Outgoing36=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 2 Cell 2</Name><Params>pa,pb,pc</Params></Outgoing>
+Outgoing37=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 2 Cell 4</Name><Params>pa,pb,pc</Params></Outgoing>
+Outgoing38=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 3 Cell 2</Name><Params>pa,pb,pc</Params></Outgoing>
+Outgoing39=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 3 Cell 4</Name><Params>pa,pb,pc</Params></Outgoing>
 Outgoing4=Prfm<Outgoing Action="Perform"><Name>Traktor - Loop Recorder - Record</Name><Params>pa,pb,pc</Params></Outgoing>
-Outgoing40=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 4 Cell 4</Name><Params>pa,pb,pc</Params></Outgoing>
-Outgoing41=Prfm<Outgoing Action="Perform"><Name>Traktor - Set modifier m2</Name></Outgoing>
-Outgoing42=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Grid Mode</Name></Outgoing>
-Outgoing43=Prfm<Outgoing Action="Perform"><Name>Traktor - Set modifier m6</Name></Outgoing>
-Outgoing44=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Sample Offset BWD</Name><Params>ga</Params></Outgoing>
-Outgoing45=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Sample Offset FWD</Name><Params>ga</Params></Outgoing>
-Outgoing46=Prfm<Outgoing Action="Perform"><Name>Stream Deck - Navigate to Profile / Page</Name></Outgoing>
+Outgoing40=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 4 Cell 2</Name><Params>pa,pb,pc</Params></Outgoing>
+Outgoing41=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 4 Cell 4</Name><Params>pa,pb,pc</Params></Outgoing>
+Outgoing42=Prfm<Outgoing Action="Perform"><Name>Traktor - Set modifier m2</Name></Outgoing>
+Outgoing43=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Grid Mode</Name></Outgoing>
+Outgoing44=Prfm<Outgoing Action="Perform"><Name>Traktor - Set modifier m6</Name></Outgoing>
+Outgoing45=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Sample Offset BWD</Name><Params>ga</Params></Outgoing>
+Outgoing46=Prfm<Outgoing Action="Perform"><Name>Traktor - Remix Deck C - Sample Offset FWD</Name><Params>ga</Params></Outgoing>
+Outgoing47=Prfm<Outgoing Action="Perform"><Name>Stream Deck - Navigate to Profile / Page</Name></Outgoing>
 Outgoing5=Prfm<Outgoing Action="Perform"><Name>Traktor - Loop Recorder - Delete</Name></Outgoing>
 Outgoing6=Prfm<Outgoing Action="Perform"><Name>Traktor - Browser - Load Deck</Name><Params>pa,pb,pc</Params></Outgoing>
 Outgoing7=Prfm<Outgoing Action="Perform"><Name>Traktor - Loop Recorder - Length</Name><Params>pa,pb,pc</Params></Outgoing>
-Outgoing8=Prfm<Outgoing Action="Perform"><Name>Traktor - Layout - Decks</Name><Params>pa,pb,pc</Params></Outgoing>
-Outgoing9=Prfm<Outgoing Action="Perform"><Name>Bome - Toggle Presets</Name></Outgoing>
+Outgoing8=Prfm<Outgoing Action="Perform"><Name>Traktor - Focus Deck</Name><Params>pd</Params></Outgoing>
+Outgoing9=Prfm<Outgoing Action="Perform"><Name>Traktor - Layout - Decks</Name><Params>pa,pb,pc</Params></Outgoing>
 PresetSwitchIgnore=1
 
 [Preset.9]
@@ -1008,6 +1020,6 @@ Version=2
 
 [Signatures]
 SigName-1=[Midi Translator Pro Internal]
-Signature-1=SRqTbEexdnyjy3eAUSPUfO/ODFMgDb0JfCNDXEV5g1sGUjUWMzYHqFVYh/eLThEHCyf8NP3+qve+LNauYe8f57Z2s/UOCDKttH40LssHjutPn2XiLBrLH7iOh7RUZJFM5oIyx3QWA1S4hTVXK4PCcLrAXGQhJV4pwy12hMtQCzE=
+Signature-1=LV3e1oI4j6JTVWzr0THhGVBdKtX6/vdo2uUc2Rw9OH7CU+IktBS/pwKsdykkn60ShcczmtgI0sv/7pXE2JGINrR69ldTlKSGm0whms62yc80MzG2+rxps3s6eLdASj9dJYBQoW/zqOjFHcXjm9zJQfa/D8WalwIICqx1hC3qdVU=
 SignedBy-1=Dan Smith
 
