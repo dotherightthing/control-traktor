@@ -402,7 +402,7 @@ src/traktor/CT6 - Streamdeck XL.tsi",6
 C - Browse / Rename - Row 2 Col 1,"-,
 Playlists,
 Samples,
-Track Collection",Label,Ch.10.CC.35,Cycle,Various (XML Cycle file),Traktor Virtual Input,Traktor Virtual Output,Sets/Displays Traktor's ‘Selector' (select a predefined browser folder),"Stream Deck Icon Library > Elgato Icons (White) > Tag Icon (Filled, White),
+Track Collection",Label,Ch.10.CC.35,Cycle,Various (XML Cycle file),Traktor Virtual Input,Traktor Virtual Output,Sets/Displays Traktor's ‘Selector' (select a predefined browser folder),"src/streamdeck-xl/icons/button-creator/heart.fill.png,
 
 src/streamdeck-xl/plugins/streamdeck-midi-plugin/cycle-files/favourites.xml,
 src/traktor/CT6 - Streamdeck XL.tsi",5
