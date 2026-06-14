@@ -451,6 +451,19 @@ C - Browse / Rename - Row 3 Col 3,Bassline,T,,System: Text,,,,Rename the selecte
 C - Browse / Rename - Row 3 Col 4,Drums,T,,System: Text,,,,Rename the selected hot cue or slot with this string,"Stock icon for System > Text,",6
 C - Browse / Rename - Row 3 Col 5,FX,T,,System: Text,,,,Rename the selected hot cue or slot with this string,"Stock icon for System > Text,",6
 C - Browse / Rename - Row 3 Col 6,Hit,T,,System: Text,,,,Rename the selected hot cue or slot with this string,"Stock icon for System > Text,",6
+C - Browse / Rename - Row 4 Col 2,Loop Rec To Deck,List Numbered,,Navigation: Folder,,,,Provide access to keyboard pitching and access the Freeze function to trigger different parts of the loop,"src/streamdeck-xl/icons/button-creator/list.number.png,
+
+src/streamdeck-xl/icons/button-creator/arrow.up.right.png,
+
+src/streamdeck-xl/icons/button-creator/1.png,
+
+src/streamdeck-xl/icons/button-creator/2.png,
+
+src/streamdeck-xl/icons/button-creator/3.png,
+
+src/streamdeck-xl/icons/button-creator/4.png,
+
+src/streamdeck-xl/icons/button-creator/5.png",6
 C - Browse / Rename - Row 4 Col 3,Lead,T,,System: Text,,,,Rename the selected hot cue or slot with this string,"Stock icon for System > Text,",6
 C - Browse / Rename - Row 4 Col 4,Pads,T,,System: Text,,,,Rename the selected hot cue or slot with this string,"Stock icon for System > Text,",6
 C - Browse / Rename - Row 4 Col 5,Vocals,T,,System: Text,,,,Rename the selected hot cue or slot with this string,"Stock icon for System > Text,",6
