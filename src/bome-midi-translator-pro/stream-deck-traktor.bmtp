@@ -7,7 +7,7 @@ In0=Bome MIDI Translator 1 Virtual In
 Out0=Traktor Virtual Input
 
 [Preset.0]
-Active=1
+Active=0
 Comments=Traktor running on MBP Built-in Display when used as Main display. Dell U2518D is 2560x1440. Built-in Display is 1536x960.
 DefaultInPorts=MIDA00010021Bome MIDI Translator 1 Virtual In
 DefaultOutPorts=MIDA00010015Traktor Virtual Input
@@ -97,7 +97,7 @@ Incoming6=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select S
 Incoming7=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 4 Cell 2</Name></Incoming>
 Incoming8=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 1 Cell 3</Name></Incoming>
 Incoming9=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 2 Cell 3</Name></Incoming>
-Name=Traktor - Mouse - MBP MAIN - Grid
+Name=Traktor - Mouse - MBP 1536x960 - Grid
 Name0=ACTION - Traktor - Remix Deck C - Select Slot 1 Cell 1
 Name1=ACTION - Traktor - Remix Deck C - Select Slot 2 Cell 1
 Name10=ACTION - Traktor - Remix Deck C - Select Slot 3 Cell 3
@@ -513,7 +513,7 @@ Outgoing4=KAM3<Outgoing Action="KeyStrokes" SwapWinForCtrl="1"><Type>Text</Type>
 PresetSwitchIgnore=1
 
 [Preset.2]
-Active=0
+Active=1
 Comments=Traktor running on MBP Built-in Display when used as Extended display. Dell U2518D is 2560x1440. Built-in Display is 1536x960.
 Incoming0=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 1 Cell 1</Name></Incoming>
 Incoming1=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 2 Cell 1</Name></Incoming>
@@ -531,7 +531,7 @@ Incoming6=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select S
 Incoming7=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 4 Cell 2</Name></Incoming>
 Incoming8=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 1 Cell 3</Name></Incoming>
 Incoming9=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Select Slot 2 Cell 3</Name></Incoming>
-Name=Traktor - Mouse - MBP EXT - Grid
+Name=Traktor - Mouse - Dell 2560x1440 - Grid
 Name0=ACTION - Traktor - Remix Deck C - Select Slot 1 Cell 1
 Name1=ACTION - Traktor - Remix Deck C - Select Slot 2 Cell 1
 Name10=ACTION - Traktor - Remix Deck C - Select Slot 3 Cell 3
@@ -564,22 +564,22 @@ Options6=Actv01Stop00OutO00
 Options7=Actv01Stop00OutO00
 Options8=Actv01Stop00OutO00
 Options9=Actv01Stop00OutO00
-Outgoing0=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2634"/><Y num="656"/></Outgoing>
-Outgoing1=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2781"/><Y num="657"/></Outgoing>
-Outgoing10=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2927"/><Y num="698"/></Outgoing>
-Outgoing11=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="3072"/><Y num="694"/></Outgoing>
-Outgoing12=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2633"/><Y num="714"/></Outgoing>
-Outgoing13=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2784"/><Y num="714"/></Outgoing>
-Outgoing14=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2921"/><Y num="713"/></Outgoing>
-Outgoing15=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="3067"/><Y num="714"/></Outgoing>
-Outgoing2=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2920"/><Y num="656"/></Outgoing>
-Outgoing3=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="3065"/><Y num="657"/></Outgoing>
-Outgoing4=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2635"/><Y num="677"/></Outgoing>
-Outgoing5=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2778"/><Y num="675"/></Outgoing>
-Outgoing6=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2924"/><Y num="677"/></Outgoing>
-Outgoing7=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="3061"/><Y num="677"/></Outgoing>
-Outgoing8=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2639"/><Y num="697"/></Outgoing>
-Outgoing9=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2784"/><Y num="695"/></Outgoing>
+Outgoing0=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="124"/><Y num="656"/></Outgoing>
+Outgoing1=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="374"/><Y num="655"/></Outgoing>
+Outgoing10=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="684"/><Y num="691"/></Outgoing>
+Outgoing11=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="942"/><Y num="698"/></Outgoing>
+Outgoing12=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="108"/><Y num="714"/></Outgoing>
+Outgoing13=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="370"/><Y num="715"/></Outgoing>
+Outgoing14=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="652"/><Y num="716"/></Outgoing>
+Outgoing15=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="934"/><Y num="712"/></Outgoing>
+Outgoing2=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="642"/><Y num="657"/></Outgoing>
+Outgoing3=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="927"/><Y num="659"/></Outgoing>
+Outgoing4=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="114"/><Y num="675"/></Outgoing>
+Outgoing5=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="384"/><Y num="676"/></Outgoing>
+Outgoing6=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="661"/><Y num="675"/></Outgoing>
+Outgoing7=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="932"/><Y num="678"/></Outgoing>
+Outgoing8=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="109"/><Y num="695"/></Outgoing>
+Outgoing9=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="402"/><Y num="695"/></Outgoing>
 PresetSwitchIgnore=0
 
 [Preset.20]
@@ -611,7 +611,7 @@ Outgoing0=MID3<Outgoing Action="MIDI"><Ports><Port>Traktor Virtual Input</Port><
 PresetSwitchIgnore=1
 
 [Preset.3]
-Active=1
+Active=0
 Comments=Traktor running on MBP Built-in Display when used as Main display. Dell U2518D is 2560x1440. Built-in Display is 1536x960.
 Incoming0=Prfm<Incoming Action="Perform"><Name>Traktor - Deck A - Rename Hot Cue</Name></Incoming>
 Incoming1=Prfm<Incoming Action="Perform"><Name>Traktor - Deck B - Rename Hot Cue</Name></Incoming>
@@ -622,7 +622,7 @@ Incoming5=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Sample O
 Incoming6=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Sample Offset BWD</Name></Incoming>
 Incoming7=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Sample Offset FWD</Name></Incoming>
 Incoming8=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Sample Offset FWD</Name></Incoming>
-Name=Traktor - Mouse - MBP MAIN - General
+Name=Traktor - Mouse - MBP 1536x960 - General
 Name0=ACTION - Traktor - Deck A - Rename Hot Cue
 Name1=ACTION - Traktor - Deck B - Rename Hot Cue
 Name2=ACTION - Traktor - Deck D - Rename Hot Cue
@@ -653,7 +653,7 @@ Outgoing8=Mse3<Outgoing Action="Mouse"><Type>ButtonUp</Type><Button num="0"/><X 
 PresetSwitchIgnore=0
 
 [Preset.4]
-Active=0
+Active=1
 Comments=Traktor running on MBP Built-in Display when used as Extended display. Dell U2518D is 2560x1440. Built-in Display is 1536x960.
 Incoming0=Prfm<Incoming Action="Perform"><Name>Traktor - Deck A - Rename Hot Cue</Name></Incoming>
 Incoming1=Prfm<Incoming Action="Perform"><Name>Traktor - Deck B - Rename Hot Cue</Name></Incoming>
@@ -664,7 +664,7 @@ Incoming5=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Sample O
 Incoming6=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Sample Offset BWD</Name></Incoming>
 Incoming7=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Sample Offset FWD</Name></Incoming>
 Incoming8=Prfm<Incoming Action="Perform"><Name>Traktor - Remix Deck C - Sample Offset FWD</Name></Incoming>
-Name=Traktor - Mouse - MBP EXT - General
+Name=Traktor - Mouse - Dell 2560x1440 - General
 Name0=ACTION - Traktor - Deck A - Rename Hot Cue
 Name1=ACTION - Traktor - Deck B - Rename Hot Cue
 Name2=ACTION - Traktor - Deck D - Rename Hot Cue
@@ -683,15 +683,15 @@ Options5=Actv01Stop00OutO01StMa00000002if(m1==1)executeif(m1==0)noexecute
 Options6=Actv01Stop00OutO01Dlay50:MillisStMa00000002if(m1==1)executeif(m1==0)noexecute
 Options7=Actv01Stop00OutO01StMa00000002if(m1==0)executeif(m1==1)noexecute
 Options8=Actv01Stop00OutO01Dlay50:MillisStMa00000002if(m1==0)executeif(m1==1)noexecute
-Outgoing0=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2798"/><Y num="485"/></Outgoing>
-Outgoing1=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="3688"/><Y num="485"/></Outgoing>
-Outgoing2=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="3699"/><Y num="811"/></Outgoing>
-Outgoing3=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2681"/><Y num="790"/></Outgoing>
-Outgoing4=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">Click</Type><Button num="0"/><X num="2682"/><Y num="809"/></Outgoing>
-Outgoing5=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">ButtonDown</Type><Button num="0"/><X num="3030"/><Y num="788"/></Outgoing>
-Outgoing6=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">ButtonUp</Type><Button num="0"/><X num="3030"/><Y num="788"/></Outgoing>
-Outgoing7=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">ButtonDown</Type><Button num="0"/><X num="3059"/><Y num="788"/></Outgoing>
-Outgoing8=Mse3<Outgoing Action="Mouse"><Type Display="Desktop">ButtonUp</Type><Button num="0"/><X num="3059"/><Y num="788"/></Outgoing>
+Outgoing0=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="192"/><Y num="484"/></Outgoing>
+Outgoing1=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="1598"/><Y num="485"/></Outgoing>
+Outgoing2=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="1602"/><Y num="812"/></Outgoing>
+Outgoing3=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="121"/><Y num="790"/></Outgoing>
+Outgoing4=Mse3<Outgoing Action="Mouse"><Type>Click</Type><Button num="0"/><X num="124"/><Y num="810"/></Outgoing>
+Outgoing5=Mse3<Outgoing Action="Mouse"><Type>ButtonDown</Type><Button num="0"/><X num="981"/><Y num="794"/></Outgoing>
+Outgoing6=Mse3<Outgoing Action="Mouse"><Type>ButtonUp</Type><Button num="0"/><X num="983"/><Y num="788"/></Outgoing>
+Outgoing7=Mse3<Outgoing Action="Mouse"><Type>ButtonDown</Type><Button num="0"/><X num="1015"/><Y num="790"/></Outgoing>
+Outgoing8=Mse3<Outgoing Action="Mouse"><Type>ButtonUp</Type><Button num="0"/><X num="1014"/><Y num="789"/></Outgoing>
 PresetSwitchIgnore=0
 
 [Preset.5]
@@ -699,40 +699,40 @@ Active=1
 Comments=
 Incoming0=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets</Name></Incoming>
 Incoming1=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Button - Grid</Name></Incoming>
-Incoming10=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP EXT - Grid</Name></Incoming>
-Incoming11=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP EXT - Grid</Name></Incoming>
-Incoming12=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP EXT - Grid</Name></Incoming>
-Incoming13=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP MAIN - General</Name></Incoming>
-Incoming14=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP MAIN - General</Name></Incoming>
-Incoming15=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP EXT - General</Name></Incoming>
-Incoming16=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP EXT - General</Name></Incoming>
+Incoming10=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - Dell 2560x1440 - Grid</Name></Incoming>
+Incoming11=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - Dell 2560x1440 - Grid</Name></Incoming>
+Incoming12=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - Dell 2560x1440 - Grid</Name></Incoming>
+Incoming13=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP 1536x960 - General</Name></Incoming>
+Incoming14=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP 1536x960 - General</Name></Incoming>
+Incoming15=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - Dell 2560x1440 - General</Name></Incoming>
+Incoming16=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - Dell 2560x1440 - General</Name></Incoming>
 Incoming2=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Button - Grid</Name></Incoming>
 Incoming3=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Button - Grid</Name></Incoming>
 Incoming4=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Button - Slot</Name></Incoming>
 Incoming5=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Button - Slot</Name></Incoming>
 Incoming6=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Button - Slot</Name></Incoming>
-Incoming7=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP MAIN - Grid</Name></Incoming>
-Incoming8=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP MAIN - Grid</Name></Incoming>
-Incoming9=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP MAIN - Grid</Name></Incoming>
+Incoming7=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP 1536x960 - Grid</Name></Incoming>
+Incoming8=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP 1536x960 - Grid</Name></Incoming>
+Incoming9=Prfm<Incoming Action="Perform"><Name>Bome - Toggle Presets - Mouse - MBP 1536x960 - Grid</Name></Incoming>
 Name=Bome - Toggle Presets
 Name0=ACTION - Bome - Toggle Presets
 Name1=ACTION - Bome - Toggle Presets - Button - Grid
-Name10=ACTION - Bome - Toggle Presets -  Mouse - Grid - MBP EXT
-Name11=ACTION - Bome - Toggle Presets -  Mouse - Grid - MBP EXT
-Name12=ACTION - Bome - Toggle Presets -  Mouse - Grid - MBP EXT
-Name13=ACTION - Bome - Toggle Presets - Mouse - MBP MAIN - General
-Name14=ACTION - Bome - Toggle Presets - Mouse - MBP MAIN - General
-Name15=ACTION - Bome - Toggle Presets - Mouse - MBP EXT - General
-Name16=ACTION - Bome - Toggle Presets - Mouse - MBP EXT - General
+Name10=ACTION - Bome - Toggle Presets -  Mouse - Grid - Dell 2560x1440
+Name11=ACTION - Bome - Toggle Presets -  Mouse - Grid - Dell 2560x1440
+Name12=ACTION - Bome - Toggle Presets -  Mouse - Grid - Dell 2560x1440
+Name13=ACTION - Bome - Toggle Presets - Mouse - MBP 1536x960 - General
+Name14=ACTION - Bome - Toggle Presets - Mouse - MBP 1536x960 - General
+Name15=ACTION - Bome - Toggle Presets - Mouse - Dell 2560x1440 - General
+Name16=ACTION - Bome - Toggle Presets - Mouse - Dell 2560x1440 - General
 Name2=ACTION - Bome - Toggle Presets - Button - Grid
 Name3=ACTION - Bome - Toggle Presets - Button - Grid
 Name4=ACTION - Bome - Toggle Presets - Button - Slot
 Name5=ACTION - Bome - Toggle Presets - Button - Slot
 Name6=ACTION - Bome - Toggle Presets - Button - Slot
-Name7=ACTION - Bome - Toggle Presets - Mouse - Grid - MBP MAIN
-Name8=ACTION - Bome - Toggle Presets - Mouse - Grid - MBP MAIN
-Name9=ACTION - Bome - Toggle Presets - Mouse - Grid - MBP MAIN
-Options0=Actv01Stop00OutO00StMa00000015label0042__cmt>// Non-grid mouse actions work independently of Grid settinglabel0025__cmt>// Mouse - MBP Main - m3=1 m4=0label0025__cmt>// Mouse - MBP Ext  - m3=1 m4=1if(m4==0)prfm>0034"Bome - Toggle Presets - Mouse - MBP MAIN - General"if(m4==1)prfm>0033"Bome - Toggle Presets - Mouse - MBP EXT - General"label0006__cmt>label001C__cmt>// Grid button actionslabel0016__cmt>// Button - m3=0if(m3==0)prfm>0027"Bome - Toggle Presets - Button - Grid"if(m3==0)noexecutelabel0006__cmt>label001A__cmt>// Grid slot actionslabel0014__cmt>// Slot - m3=2if(m3==2)prfm>0027"Bome - Toggle Presets - Button - Slot"if(m3==2)noexecutelabel0006__cmt>label0024__cmt>// Grid mouse actions if m3==1label0025__cmt>// Mouse - MBP Main - m3=1 m4=0label0025__cmt>// Mouse - MBP Ext  - m3=1 m4=1if(m4==0)prfm>0031"Bome - Toggle Presets - Mouse - MBP MAIN - Grid"if(m4==1)prfm>0030"Bome - Toggle Presets - Mouse - MBP EXT - Grid"
+Name7=ACTION - Bome - Toggle Presets - Mouse - Grid - MBP 1536x960
+Name8=ACTION - Bome - Toggle Presets - Mouse - Grid - MBP 1536x960
+Name9=ACTION - Bome - Toggle Presets - Mouse - Grid - MBP 1536x960
+Options0=Actv01Stop00OutO00StMa00000015label0042__cmt>// Non-grid mouse actions work independently of Grid settinglabel0029__cmt>// Mouse - MBP 1536x960 - m3=1 m4=0label002B__cmt>// Mouse - Dell 2560x1440 - m3=1 m4=1if(m4==0)prfm>0038"Bome - Toggle Presets - Mouse - MBP 1536x960 - General"if(m4==1)prfm>003A"Bome - Toggle Presets - Mouse - Dell 2560x1440 - General"label0006__cmt>label001C__cmt>// Grid button actionslabel0016__cmt>// Button - m3=0if(m3==0)prfm>0027"Bome - Toggle Presets - Button - Grid"if(m3==0)noexecutelabel0006__cmt>label001A__cmt>// Grid slot actionslabel0014__cmt>// Slot - m3=2if(m3==2)prfm>0027"Bome - Toggle Presets - Button - Slot"if(m3==2)noexecutelabel0006__cmt>label0024__cmt>// Grid mouse actions if m3==1label0029__cmt>// Mouse - MBP 1536x960 - m3=1 m4=0label002B__cmt>// Mouse - Dell 2560x1440 - m3=1 m4=1if(m4==0)prfm>0035"Bome - Toggle Presets - Mouse - MBP 1536x960 - Grid"if(m4==1)prfm>0037"Bome - Toggle Presets - Mouse - Dell 2560x1440 - Grid"
 Options1=Actv01Stop00OutO00StMa00000001label0006__cmt>
 Options10=Actv01Stop00OutO00
 Options11=Actv01Stop00OutO00
@@ -751,21 +751,21 @@ Options8=Actv01Stop00OutO00
 Options9=Actv01Stop00OutO00
 Outgoing0=None
 Outgoing1=Pres040017Traktor - Button - Grid
-Outgoing10=Pres040020Traktor - Mouse - MBP EXT - Grid
+Outgoing10=Pres040027Traktor - Mouse - Dell 2560x1440 - Grid
 Outgoing11=Pres060017Traktor - Button - Grid
-Outgoing12=Pres060021Traktor - Mouse - MBP MAIN - Grid
-Outgoing13=Pres040024Traktor - Mouse - MBP MAIN - General
-Outgoing14=Pres060023Traktor - Mouse - MBP EXT - General
-Outgoing15=Pres040023Traktor - Mouse - MBP EXT - General
-Outgoing16=Pres060024Traktor - Mouse - MBP MAIN - General
-Outgoing2=Pres060021Traktor - Mouse - MBP MAIN - Grid
-Outgoing3=Pres060020Traktor - Mouse - MBP EXT - Grid
+Outgoing12=Pres060025Traktor - Mouse - MBP 1536x960 - Grid
+Outgoing13=Pres040028Traktor - Mouse - MBP 1536x960 - General
+Outgoing14=Pres06002ATraktor - Mouse - Dell 2560x1440 - General
+Outgoing15=Pres04002ATraktor - Mouse - Dell 2560x1440 - General
+Outgoing16=Pres060028Traktor - Mouse - MBP 1536x960 - General
+Outgoing2=Pres060025Traktor - Mouse - MBP 1536x960 - Grid
+Outgoing3=Pres060027Traktor - Mouse - Dell 2560x1440 - Grid
 Outgoing4=Pres060017Traktor - Button - Grid
-Outgoing5=Pres060021Traktor - Mouse - MBP MAIN - Grid
-Outgoing6=Pres060020Traktor - Mouse - MBP EXT - Grid
-Outgoing7=Pres040021Traktor - Mouse - MBP MAIN - Grid
+Outgoing5=Pres060025Traktor - Mouse - MBP 1536x960 - Grid
+Outgoing6=Pres060027Traktor - Mouse - Dell 2560x1440 - Grid
+Outgoing7=Pres040025Traktor - Mouse - MBP 1536x960 - Grid
 Outgoing8=Pres060017Traktor - Button - Grid
-Outgoing9=Pres060020Traktor - Mouse - MBP EXT - Grid
+Outgoing9=Pres060027Traktor - Mouse - Dell 2560x1440 - Grid
 PresetSwitchIgnore=1
 
 [Preset.6]
@@ -1024,6 +1024,6 @@ Version=2
 
 [Signatures]
 SigName-1=[Midi Translator Pro Internal]
-Signature-1=Y0/FIGfdTPJ5F2vwcbewPgky8w7ZqNE/1YwSmuikWgX99OFc3QSAkU0bHkBFmusM7q/YhuncWniWfd7pfND3+1G4W09ShGvDMsXkFDO4Vs1by/JsomRI6a7HSRb5E8sWPFSqSiJuroZEt6yrRMDfQ5fI/pCx0Nog9J32H7cFofE=
+Signature-1=jHLkFWSeyGqxs1RLRh1TnXB28rm2so8v2dMk4Wtnz5qj6SrSgQC9cYZaMehPVkhgaeDQhdWx7K8aPe+2V/i1geI4DEMwpcHcmBY0h7tAi7xij4y0udXekiTS+I5eBhJDQqhR2GjJp146VpCuPJ6wjr/SsdmziW1332Y56P6b1as=
 SignedBy-1=Dan Smith
 

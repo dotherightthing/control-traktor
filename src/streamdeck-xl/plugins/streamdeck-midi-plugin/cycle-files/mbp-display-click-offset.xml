@@ -2,8 +2,8 @@
 <MidiSteps version="1.1">
   <Default send="yes" receive="yes" display="" image="" displayonsend="yes" useclosestvalueonreceive="yes"/>
   <StepValues>
-    <Step value="0" display="Click&#xA;&#xA;&#xA;&#xA;MBP Main"/>
-    <Step value="1" display="Click&#xA;&#xA;&#xA;&#xA;MBP Ext"/>
+    <Step value="0" display="Click MBP&#xA;&#xA;&#xA;&#xA;1536x960"/>
+    <Step value="1" display="Click Dell&#xA;&#xA;&#xA;&#xA;2560x1440"/>
   </StepValues>
 </MidiSteps>
 
